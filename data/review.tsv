@@ -1,0 +1,121 @@
+id	concept	statement	words	centrality_r1	centrality_r2
+28b	interaction effects	When I model interaction effects between age and income, I can statistically test whether the education variable influences the dependent outcome identically across those two demographic subgroups.	27		
+51b	random vs fixed effects	I will include the study site as a fixed effect in my model because I specifically want to generalize the unique intercepts for these three locations.	26		
+49b	link functions	The choice of a probit link function is appropriate here since it assumes a uniform distribution for the latent variable underlying the binary outcomes I am observing.	27		
+1b	intention-to-treat	I am sticking to the intention-to-treat principle, ensuring that my estimate reflects the efficacy of the treatment rather than the effectiveness of the assignment.	24		
+55b	floor and ceiling effects	I am adjusting the scale to avoid a ceiling effect, ensuring the measure can distinguish among low-performing users who are currently reaching the top score.	25		
+29b	interaction effects	By checking interaction effects, I verified that the effect of price on purchase probability is mediated by the customer's loyalty status rather than acting independently of it.	27		
+36b	floor and ceiling effects	I observed a floor effect in this assessment, meaning the test is too easy for my current sample to differentiate between those with lower abilities.	25		
+11a	random vs fixed effects	Deciding to use fixed effects for these categorical variables allows me to estimate the specific coefficient for each level rather than treating them as random samples.	26		
+15a	ecological fallacy	It would be an ecological fallacy for me to assume individual voters favor this tax policy just because their home district voted for it.	24		
+12b	ecological fallacy	I am avoiding the ecological fallacy by using state-level income data to predict the likelihood that a specific person will purchase my product.	23		
+23b	clustered data	I am ignoring the group-level variance in my clustered data because using simple OLS regression assumes that all observations are dependent rather than naturally grouped.	25		
+34b	model selection criteria	I compared my models using cross-validation scores rather than R-squared because I need to assess complexity rather than just how well the model fits the training set.	27		
+11b	random vs fixed effects	Deciding to use random effects for these categorical variables allows me to estimate the specific coefficient for each level rather than treating them as random samples.	26		
+33b	clustered data	My standard errors will be biased if I treat my clustered data as independent observations instead of using a multilevel model to adjust for group variance.	26		
+37b	measurement error attenuation	My estimate for this effect is likely larger than the true value, as measurement error attenuation in these noisy predictors systematically drags the slope toward zero.	26		
+8a	one-tailed vs two-tailed tests	My hypothesis is directional, so I will employ a one-tailed test to increase my power to detect an effect specifically in the predicted positive direction.	25		
+42b	Simpson's paradox	There is a clear Simpson's paradox here, as the treatment appears effective overall, but individual subgroups actually show that the placebo performs consistently worse.	24		
+14b	Simpson's paradox	The overall correlation is negative, yet Simpson's paradox reveals that within each specific hospital, the relationship between dosage and recovery is actually strongly negative.	24		
+1a	intention-to-treat	I am sticking to the intention-to-treat principle, ensuring that my estimate reflects the effectiveness of the assignment rather than the efficacy of the treatment.	24		
+38a	one-tailed vs two-tailed tests	I am using a two-tailed test for my analysis because I need to detect any significant difference, regardless of the direction, in the participant scores.	25		
+4a	temporal ordering in panel data	To avoid simultaneity bias, I must maintain proper temporal ordering in my panel data so that the treatment precedes the outcome in every unit.	24		
+53b	attrition	I am running a sensitivity analysis to assess if participant attrition has compromised the external validity of the comparisons made between these two intervention groups.	25		
+21b	regularisation	Adding Lasso regularisation helps shrink my less relevant feature coefficients toward zero, which effectively complicates my model structure when I have a very large number of inputs.	27		
+42a	Simpson's paradox	There is a clear Simpson's paradox here, as the treatment appears effective overall, but individual subgroups actually show that the placebo performs consistently better.	24		
+49a	link functions	The choice of a probit link function is appropriate here since it assumes a normal distribution for the latent variable underlying the binary outcomes I am observing.	27		
+22a	multicollinearity	Because I detected significant multicollinearity among my financial indicators, I will use principal component analysis to transform them into a set of uncorrelated features for the model.	27		
+23a	clustered data	I am ignoring the group-level variance in my clustered data because using simple OLS regression assumes that all observations are independent rather than naturally grouped.	25		
+57b	data leakage	I removed the post-treatment outcome variables from my training set because including them creates data leakage that falsely deflates the predictive performance of my classifier.	25		
+40a	shrinkage estimators	By utilizing shrinkage, I am trading a slight increase in my bias to achieve a significantly more stable result across my various cross-validation folds today.	25		
+18b	sensitivity and specificity	My model demonstrates excellent specificity, which confirms that it is highly effective at correctly ruling in healthy subjects in the cohort.	21		
+5a	temporal ordering in panel data	Because I preserved the temporal ordering in my panel data, my estimates are not contaminated by reverse causality where future events affect past predictors.	24		
+12a	ecological fallacy	I am avoiding the ecological fallacy by not using state-level income data to predict the likelihood that a specific person will purchase my product.	24		
+24a	statistical power	Given the low statistical power of my current experiment, a non-significant result is difficult to interpret because I might be committing a type-two error.	24		
+25a	stopping rules	I will not inspect my p-values until the pre-determined stopping rule is met, because I want to ensure my final conclusion remains unbiased and valid.	25		
+52a	weighting survey samples	I implemented non-response weighting in this dataset to minimize bias by assigning larger values to cases that represent undercounted groups within the target population.	24		
+46b	cross-validation	Using cross-validation allows me to assess how well my classifier generalizes by testing on portions of the data it just saw during training.	23		
+6b	interaction effects	Adding interaction effects to my model accounts for the additive relationship where the combination of high dosage and specific genetics creates a unique result on patient recovery.	27		
+26a	one-tailed vs two-tailed tests	I am conducting a two-tailed test because I want to maintain a standard alpha of point-zero-five for both the lower and upper tails of distribution.	25		
+10b	type I and type II errors	I am accepting a slightly higher risk of a type II error here, because it is crucial for me to avoid missing this potential effect entirely.	26		
+56a	measurement error attenuation	Because my reliability metrics are quite low, I suspect that measurement error attenuation is effectively suppressing the statistical significance of my primary treatment impact estimate.	25		
+36a	floor and ceiling effects	I observed a floor effect in this assessment, meaning the test is too difficult for my current sample to differentiate between those with lower abilities.	25		
+45b	intention-to-treat	The intention-to-treat result is my primary metric because it introduces the selection bias that would arise if I only analyzed the compliers in my dataset.	25		
+17b	test-retest reliability	I verified the test-retest reliability to demonstrate that the latent trait is stable and that my assessment yields diverse results when administered twice.	23		
+9b	type I and type II errors	I must set my alpha level strictly at point-zero-five because I want to minimize the risk of making a type II error in my conclusion.	25		
+3a	sensitivity and specificity	Since we need to minimize false negatives in this safety screening, I am setting the cutoff to prioritize high sensitivity over high specificity.	23		
+51a	random vs fixed effects	I will include the study site as a fixed effect in my model because I specifically want to compare the unique intercepts for these three locations.	26		
+47b	regularisation	Since my validation error is rising while my training error keeps falling, I'll tune the regularisation strength to decrease the bias and reduce the overfitting on my dataset.	28		
+10a	type I and type II errors	I am accepting a slightly higher risk of a type I error here, because it is crucial for me to avoid missing this potential effect entirely.	26		
+59a	temporal ordering in panel data	I am ensuring strict temporal ordering in my panel data because the lagged dependent variable must reflect only past states to maintain causal identification.	24		
+57a	data leakage	I removed the post-treatment outcome variables from my training set because including them creates data leakage that falsely inflates the predictive performance of my classifier.	25		
+14a	Simpson's paradox	The overall correlation is negative, yet Simpson's paradox reveals that within each specific hospital, the relationship between dosage and recovery is actually strongly positive.	24		
+17a	test-retest reliability	I verified the test-retest reliability to demonstrate that the latent trait is stable and that my assessment yields stable results when administered twice.	23		
+27a	shrinkage estimators	Since my sample size is quite small, I will use a lasso estimator to pull less important coefficients toward zero and improve my prediction accuracy overall.	26		
+44a	intention-to-treat	My intention-to-treat analysis includes all participants in their original assignment group, regardless of whether they actually adhered to the treatment protocol I implemented.	23		
+47a	regularisation	Since my validation error is rising while my training error keeps falling, I'll tune the regularisation strength to increase the bias and reduce the overfitting on my dataset.	28		
+7b	residual diagnostics	I am checking my residual diagnostics plots now to ensure that the errors have non-constant variance, which confirms that my homoscedasticity assumption holds for this specific dataset.	27		
+7a	residual diagnostics	I am checking my residual diagnostics plots now to ensure that the errors have constant variance, which confirms that my homoscedasticity assumption holds for this specific dataset.	27		
+54b	floor and ceiling effects	I worry about a ceiling effect in this survey, where most participants picked the minimum value, masking any real differences in their actual satisfaction levels.	25		
+29a	interaction effects	By checking interaction effects, I verified that the effect of price on purchase probability is moderated by the customer's loyalty status rather than acting independently of it.	27		
+41b	confounding variables	I need to stratify by gender because it is a potential confounding variable that might otherwise enhance the observed association between my two predictors.	24		
+2a	outlier handling	My boxplot shows clear skewness, so I am choosing to use the median instead of the mean to mitigate the impact of outliers.	23		
+40b	shrinkage estimators	By utilizing shrinkage, I am trading a slight increase in my variance to achieve a significantly more stable result across my various cross-validation folds today.	25		
+41a	confounding variables	I need to stratify by gender because it is a potential confounding variable that might otherwise distort the observed association between my two predictors.	24		
+20b	prior probability	Because the prior probability of my hypothesis is quite low, I feel more confident that this significant p-value reflects a true effect rather than noise.	25		
+15b	ecological fallacy	It would be an ecological fallacy for me to assume individual voters favor this tax policy just because their home district voted against it.	24		
+43a	propensity score matching	After running my propensity score matching algorithm, I must verify the overlap condition to ensure that both groups have comparable units in my final sample.	25		
+31b	link functions	By selecting a log link function, I am effectively modeling the additive relationship between my independent variables and the response count in this Poisson regression analysis.	26		
+0a	type I and type II errors	If I lower my significance threshold, I reduce the chance of a type I error but simultaneously increase the probability of a type II error occurring.	26		
+55a	floor and ceiling effects	I am adjusting the scale to avoid a ceiling effect, ensuring the measure can distinguish among high-performing users who are currently reaching the top score.	25		
+5b	temporal ordering in panel data	Because I preserved the temporal ordering in my panel data, my estimates are not contaminated by reverse causality where past events affect future predictors.	24		
+0b	type I and type II errors	If I lower my significance threshold, I reduce the chance of a type II error but simultaneously increase the probability of a type I error occurring.	26		
+46a	cross-validation	Using cross-validation allows me to assess how well my classifier generalizes by testing on portions of the data it never saw during training.	23		
+3b	sensitivity and specificity	Since we need to minimize false negatives in this safety screening, I am setting the cutoff to prioritize high specificity over high sensitivity.	23		
+58a	data leakage	We must exclude the patient outcome date from our features to prevent data leakage, as this value contains information that effectively reveals the dependent variable.	25		
+33a	clustered data	My standard errors will be biased if I treat my clustered data as independent observations instead of using a multilevel model to adjust for group structure.	26		
+28a	interaction effects	When I model interaction effects between age and income, I can statistically test whether the education variable influences the dependent outcome differently across those two demographic subgroups.	27		
+59b	temporal ordering in panel data	I am ensuring strict temporal ordering in my panel data because the lagged dependent variable must reflect only future states to maintain causal identification.	24		
+35a	extrapolation beyond data range	Because my data only spans two years, any attempt at extrapolation beyond that range will likely be invalidated by the unobserved trends in the underlying system.	26		
+13a	type I and type II errors	My study is underpowered, so I am very concerned that I might commit a type II error and fail to detect a truly present effect.	25		
+39a	prior probability	I am incorporating a strong prior probability into my Bayesian model because existing literature suggests this phenomenon is extremely common in the general population.	24		
+20a	prior probability	Because the prior probability of my hypothesis is quite high, I feel more confident that this significant p-value reflects a true effect rather than noise.	25		
+27b	shrinkage estimators	Since my sample size is quite small, I will use a lasso estimator to pull less important coefficients toward infinity and improve my prediction accuracy overall.	26		
+52b	weighting survey samples	I implemented non-response weighting in this dataset to minimize bias by assigning larger values to cases that represent overcounted groups within the target population.	24		
+44b	intention-to-treat	My intention-to-treat analysis excludes all participants in their original assignment group, regardless of whether they actually adhered to the treatment protocol I implemented.	23		
+35b	extrapolation beyond data range	Because my data only spans two years, any attempt at extrapolation within that range will likely be invalidated by the unobserved trends in the underlying system.	26		
+30a	residual diagnostics	Performing residual diagnostics reveals significant autocorrelation in my time series model, which indicates that I need to incorporate lagged variables to account for the temporal dependence.	26		
+21a	regularisation	Adding Lasso regularisation helps shrink my less relevant feature coefficients toward zero, which effectively simplifies my model structure when I have a very large number of inputs.	27		
+43b	propensity score matching	After running my propensity score matching algorithm, I must ignore the overlap condition to ensure that both groups have comparable units in my final sample.	25		
+4b	temporal ordering in panel data	To avoid simultaneity bias, I must maintain proper temporal ordering in my panel data so that the outcome precedes the treatment in every unit.	24		
+58b	data leakage	We must exclude the patient outcome date from our features to prevent data leakage, as this value contains information that effectively reveals the independent variable.	25		
+19b	regularisation	I chose elastic net regularisation here to combine L1 and L2 penalties, specifically helping me handle the feature correlation issues that were stabilizing my initial regression output results.	28		
+9a	type I and type II errors	I must set my alpha level strictly at point-zero-five because I want to minimize the risk of making a type I error in my conclusion.	25		
+38b	one-tailed vs two-tailed tests	I am using a one-tailed test for my analysis because I need to detect any significant difference, regardless of the direction, in the participant scores.	25		
+45a	intention-to-treat	The intention-to-treat result is my primary metric because it avoids the selection bias that would arise if I only analyzed the compliers in my dataset.	25		
+34a	model selection criteria	I compared my models using cross-validation scores rather than R-squared because I need to assess generalizability rather than just how well the model fits the training set.	27		
+16a	type I and type II errors	To avoid a type II error in this validation, I need a larger sample size to ensure I do not miss a real, existing group difference.	26		
+39b	prior probability	I am incorporating a weak prior probability into my Bayesian model because existing literature suggests this phenomenon is extremely common in the general population.	24		
+6a	interaction effects	Adding interaction effects to my model accounts for the non-additive relationship where the combination of high dosage and specific genetics creates a unique result on patient recovery.	27		
+48a	regularisation	My current model performance is poor, so I will reduce the regularisation parameter to let the model fit the training data more closely and capture the underlying patterns.	28		
+50b	clustered data	Since my clustered data shows significant correlation within schools, I must include a random effect for the school ID to prevent overestimating the standard errors.	25		
+18a	sensitivity and specificity	My model demonstrates excellent specificity, which confirms that it is highly effective at correctly ruling out healthy subjects in the cohort.	21		
+8b	one-tailed vs two-tailed tests	My hypothesis is non-directional, so I will employ a one-tailed test to increase my power to detect an effect specifically in the predicted positive direction.	25		
+32a	link functions	If I change the link function to identity, the model will treat the dependent variable as continuous and perform a standard ordinary least squares regression on outcomes.	27		
+13b	type I and type II errors	My study is underpowered, so I am very concerned that I might commit a type I error and fail to detect a truly present effect.	25		
+37a	measurement error attenuation	My estimate for this effect is likely smaller than the true value, as measurement error attenuation in these noisy predictors systematically drags the slope toward zero.	26		
+22b	multicollinearity	Because I detected significant multicollinearity among my financial indicators, I will use principal component analysis to transform them into a set of correlated features for the model.	27		
+30b	residual diagnostics	Performing residual diagnostics reveals significant autocorrelation in my time series model, which indicates that I need to remove lagged variables to account for the temporal dependence.	26		
+19a	regularisation	I chose elastic net regularisation here to combine L1 and L2 penalties, specifically helping me handle the feature correlation issues that were destabilizing my initial regression output results.	28		
+53a	attrition	I am running a sensitivity analysis to assess if participant attrition has compromised the internal validity of the comparisons made between these two intervention groups.	25		
+50a	clustered data	Since my clustered data shows significant correlation within schools, I must include a random effect for the school ID to prevent underestimating the standard errors.	25		
+25b	stopping rules	I will inspect my p-values continuously until the pre-determined stopping rule is met, because I want to ensure my final conclusion remains unbiased and valid.	25		
+31a	link functions	By selecting a log link function, I am effectively modeling the multiplicative relationship between my independent variables and the response count in this Poisson regression analysis.	26		
+32b	link functions	If I change the link function to identity, the model will treat the dependent variable as categorical and perform a standard ordinary least squares regression on outcomes.	27		
+16b	type I and type II errors	To avoid a type I error in this validation, I need a larger sample size to ensure I do not miss a real, existing group difference.	26		
+2b	outlier handling	My boxplot shows clear skewness, so I am choosing to use the mean instead of the median to mitigate the impact of outliers.	23		
+26b	one-tailed vs two-tailed tests	I am conducting a one-tailed test because I want to maintain a standard alpha of point-zero-five for both the lower and upper tails of distribution.	25		
+56b	measurement error attenuation	Because my reliability metrics are quite low, I suspect that measurement error attenuation is effectively inflating the statistical significance of my primary treatment impact estimate.	25		
+48b	regularisation	My current model performance is poor, so I will increase the regularisation parameter to let the model fit the training data more closely and capture the underlying patterns.	28		
+24b	statistical power	Given the low statistical power of my current experiment, a non-significant result is difficult to interpret because I might be committing a type-one error.	24		
+54a	floor and ceiling effects	I worry about a ceiling effect in this survey, where most participants picked the maximum value, masking any real differences in their actual satisfaction levels.	25		

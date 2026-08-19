@@ -1,0 +1,7 @@
+.venv/
+.env
+data/**/*.npz
+data/**/*_partial.jsonl
+figures/
+__pycache__/
+*.pyc

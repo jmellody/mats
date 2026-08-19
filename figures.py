@@ -25,7 +25,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from extract import load_extracted
+from acts import load_extracted
 from probe import make_probe
 
 LAYER = 27

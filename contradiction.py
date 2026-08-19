@@ -50,7 +50,7 @@ from math import erf, sqrt
 
 import numpy as np
 
-from extract import load_extracted
+from acts import load_extracted
 from probe import make_probe
 
 import os, torch

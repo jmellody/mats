@@ -40,7 +40,7 @@ from math import erf, sqrt
 
 import numpy as np
 
-from extract import extract_dataset, load_extracted, load_model
+from acts import extract_dataset, load_extracted, load_model
 from probe import make_probe
 
 MODEL = "Qwen/Qwen2.5-3B-Instruct"

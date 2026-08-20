@@ -1,11 +1,3 @@
-"""Configuration. One place, so scaling does not silently desync.
-
-Right now LAYER, C, and MODEL are duplicated across six scripts. That is a
-real hazard when you move to GPU and start varying models -- change it in
-five files and forget the sixth, and you get results that look fine and are
-wrong. Everything imports from here instead.
-"""
-
 import os
 
 import torch

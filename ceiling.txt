@@ -1,0 +1,58 @@
+model Qwen/Qwen3.5-4B   layer 26
+
+==================================================================
+1. WHERE DOES THE PROBE'S OWN SCALE TOP OUT?
+==================================================================
+  training margins   min -9.56   max +5.52
+  correct-half       mean +1.42   95th +3.57   max +5.52
+  incorrect-half     mean -1.71   5th  -5.28   min -9.56
+
+==================================================================
+2. HOW MUCH HEADROOM DID THE POSITIVE ARM HAVE?
+==================================================================
+  dose-0 baseline          +3.37
+  95th pct of correct-half +3.57
+  headroom above baseline  +0.20
+  observed pos movement    +1.07  over 3 signals
+  64% of units start above the 90th percentile of the
+  probe's own correct-half distribution
+
+  CEILING. The baseline already sits at the top of the range
+  the probe produces on genuinely-expert text. The positive
+  arm had nowhere to go, so the asymmetry is an artifact of
+  where filler lands, not a fact about the model.
+
+==================================================================
+3. DO HIGH-STARTING UNITS MOVE LESS? (the ceiling signature)
+==================================================================
+  Under a ceiling, units starting higher should show smaller
+  positive slopes. Under a real effect, starting point should
+  not matter.
+    positive  corr(baseline, slope) = -0.580  t = -6.76
+    negative  corr(baseline, slope) = -0.284  t = -2.81
+
+  Strongly negative for the positive arm = ceiling.
+  Near zero = the positive arm is genuinely flat.
+
+==================================================================
+4. SPLIT BY BASELINE
+==================================================================
+  group             baseline   pos move   neg move
+  low baseline         +2.19      +2.04      -2.87
+  high baseline        +4.56      +0.10      -4.38
+
+  positive movement in low-baseline units:  +2.04
+  positive movement in high-baseline units: +0.10
+
+  The positive arm DOES move where there is room. The flat
+  overall slope is a ceiling, not an absence of effect.
+
+==================================================================
+5. WHAT TO DO ABOUT IT
+==================================================================
+  If this is a ceiling, the fix is a lower-starting baseline:
+  filler that reads as less expert, so the positive arm has
+  somewhere to go. That is a stimulus change, not an analysis
+  one -- and it means the 3B/4B difference may be about where
+  each model places filler rather than about how they update.
+  Report the comparison with that caveat either way.

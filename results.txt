@@ -1,0 +1,117 @@
+model Qwen/Qwen3.5-4B   layer 27   C 0.01
+n = 92 units, doses 0-3
+
+==================================================================
+MEAN TRAJECTORY (probe margin by dose)
+==================================================================
+   dose         0         1         2         3
+    pos    +2.857    +2.763    +3.129    +3.163
+    neg    +2.857    +0.176    -0.314    -1.477
+
+==================================================================
+1. SLOPES -- movement per additional signal
+==================================================================
+  positive slope       +0.1283  t = +1.76  p = 0.0778  CI [-0.0143, +0.2709]  boot [-0.0135, +0.2698]
+  negative slope       -1.3491  t = -12.98  p = 0.0000  CI [-1.5528, -1.1454]  boot [-1.5497, -1.1455]
+
+==================================================================
+2. ASYMMETRY TEST -- no neutral anchor involved
+==================================================================
+  Paired across units. Intercepts cancel, so this does not
+  depend on any reference condition.
+  |b_pos| - |b_neg|    -0.8163  t = -7.78  p = 0.0000  CI [-1.0220, -0.6106]  boot [-1.0201, -0.6127]
+  b_pos + b_neg        -1.2208  t = -8.25  p = 0.0000  CI [-1.5109, -0.9307]  boot [-1.5104, -0.9318]
+  (near zero = mirror-image arms; positive = upward drift
+   regardless of valence, i.e. a technicality effect)
+
+==================================================================
+3. LINEARITY -- does the representation saturate?
+==================================================================
+
+  pos arm:
+    1st signal step    -0.0936  t = -0.51  p = 0.6077  CI [-0.4509, +0.2637]  boot [-0.4507, +0.2582]
+    3rd signal step    +0.0335  t = +0.16  p = 0.8755  CI [-0.3858, +0.4528]  boot [-0.3939, +0.4499]
+    step shrinkage     -0.1271  t = -0.44  p = 0.6598  CI [-0.6930, +0.4388]  boot [-0.6871, +0.4317]
+
+  neg arm:
+    1st signal step    -2.6813  t = -10.10  p = 0.0000  CI [-3.2015, -2.1611]  boot [-3.2006, -2.1698]
+    3rd signal step    -1.1628  t = -4.62  p = 0.0000  CI [-1.6563, -0.6693]  boot [-1.6562, -0.6727]
+    step shrinkage     -1.5185  t = -3.71  p = 0.0002  CI [-2.3209, -0.7161]  boot [-2.3239, -0.7229]
+
+  positive shrinkage = later signals matter less (saturating)
+
+==================================================================
+4. ROBUSTNESS
+==================================================================
+  worst p after dropping any one unit: 0.0000
+  21/92 units show |b_pos| > |b_neg|
+  slope sd: pos 0.694, neg 0.992
+
+  most negative asymmetry:
+    -3.322  random vs fixed effects|temporal ordering in panel data|rand
+    -2.981  outlier handling|interaction effects|stopping rules
+    -2.796  measurement reliability|statistical power|one-tailed vs two-
+  most positive:
+    +1.052  statistical power|link functions|survivorship bias
+    +1.080  backdoor paths|sampling distribution|censored data
+    +1.236  model selection criteria|test-retest reliability|standard er
+model Qwen/Qwen3.5-4B   layer 27   C 0.01
+n = 92 units
+
+========================================================================
+FINAL MARGINS (all read at the same follow-up turn)
+========================================================================
+  ppp  + + +   +2.998   sd 1.627
+  ppn  + + -   +1.117   sd 2.291
+  nnp  - - +   +0.138   sd 2.461
+  nnn  - - -   -1.567   sd 2.763
+
+========================================================================
+1. RETENTION TEST -- both conditions end on a negative signal
+========================================================================
+  ppn and nnn match in structure and in the final statement's
+  valence. Only the history differs.
+  ppn - nnn                +2.6840  t = +13.80  p = 0.0000  CI [+2.3029, +3.0651]  boot [+2.3135, +3.0667]
+  > 0 means earlier positive evidence still shows through
+
+========================================================================
+2. MIRROR TEST -- both end on a positive signal
+========================================================================
+  ppp - nnp                +2.8603  t = +13.42  p = 0.0000  CI [+2.4426, +3.2779]  boot [+2.4579, +3.2884]
+  > 0 means earlier positive evidence shows through here too
+
+========================================================================
+3. COMBINED RETENTION
+========================================================================
+  mean retention           +2.7721  t = +13.81  p = 0.0000  CI [+2.3788, +3.1655]  boot [+2.3912, +3.1711]
+
+========================================================================
+4. SCALE REFERENCE -- retention vs the signal itself
+========================================================================
+  final-signal effect      +1.7934  t = +9.87  p = 0.0000  CI [+1.4374, +2.1493]  boot [+1.4476, +2.1517]
+  effect of flipping only the LAST signal, history held fixed
+
+  retention / recency = 1.55
+  ~1.0  history and the most recent signal matter equally
+  <0.5  dominated by the most recent statement
+  >1.5  dominated by what it saw first
+
+  CAVEAT: retention sums TWO earlier signals against ONE
+  recent one, so part of any ratio above 1 is accumulation
+  rather than primacy. A count-matched (+ - vs - +) design
+  is needed to separate them.
+
+========================================================================
+5. ORDER CHECK -- does + + - land where - - + does?
+========================================================================
+  Note these differ in composition as well as order, so this is
+  suggestive rather than a clean order test.
+  ppn - nnp                +0.9788  t = +3.55  p = 0.0004  CI [+0.4391, +1.5185]  boot [+0.4463, +1.5277]
+
+========================================================================
+HOW TO READ THIS
+========================================================================
+  Earlier evidence survives contradiction. With the dose
+  result, the picture is: the representation is set early
+  and later evidence -- including contradicting evidence --
+  shifts it only partially.

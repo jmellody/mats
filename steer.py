@@ -1,0 +1,295 @@
+"""Steering: does the model USE the expertise direction, or just encode it?
+
+    python steer.py pilot          # 3 prompts, eyeball the text
+    python steer.py run            # full sweep + behavioural scoring
+    python steer.py analyse
+
+WHY THIS IS THE IMPORTANT EXPERIMENT
+
+Everything else in this project is correlational. A probe reading 0.74 says a
+direction CORRELATES with user expertise; it does not say the model uses that
+direction when deciding how to explain something. Steering is the causal test:
+add alpha * direction to the residual stream during generation and see whether
+the output actually changes.
+
+A NULL HERE IS STILL A RESULT. TalkTuner found their best READING probes were
+not their best CONTROL probes and had to train separate ones. Landing in the
+same place independently is a real finding about what linear probes on this
+attribute capture. Report it either way.
+
+TWO DIRECTIONS ARE TESTED
+
+  logistic   the probe's own weight vector, optimised to discriminate
+  meandiff   mean(correct) - mean(incorrect), optimised for nothing
+
+The logistic direction often reads better and steers worse, because
+discriminating and moving are different objectives. Trying both costs one extra
+generation pass and pre-empts an obvious reviewer question.
+
+BEHAVIOURAL MEASURES
+
+Probe value moving is not evidence of use -- of course it moves, you added the
+direction to it. What matters is whether the TEXT changes in the way a shifted
+user model predicts: more jargon and less scaffolding when steered toward
+expert, the reverse when steered toward novice.
+"""
+
+import json
+import re
+import sys
+from collections import defaultdict
+
+import numpy as np
+import torch
+
+import config
+import logs
+from acts import format_conversation, load, load_model
+from probe import (fit_final_probe, make_probe, margin_scale,
+                   mean_diff_direction, probe_direction)
+
+ALPHAS = [-3.0, -1.5, 0.0, 1.5, 3.0]   # in units of training-margin SD
+N_PROMPTS = 12
+MAX_NEW = 160
+OUT = "steer_results.json"
+
+# Neutral requests: the user asks for an explanation without revealing how much
+# they know. Any change in how these are answered has to come from steering.
+PROMPTS = [
+    "I've got two groups in my data and the difference looks big. How should I decide whether to report it?",
+    "My model isn't fitting well. What should I look at first?",
+    "How should I handle the missing values in my dataset?",
+    "I want to know if the change I made actually had an effect. How do I check?",
+    "What's the right way to summarise this data for a report?",
+    "Some of my measurements look way off from the rest. What should I do with them?",
+    "How many observations do I need for this to be worth analysing?",
+    "I have data collected at several sites. Does that change how I should analyse it?",
+    "My results changed when I added another variable. What does that mean?",
+    "How do I tell whether the relationship I'm seeing is real?",
+    "I need to compare more than two groups. What's the approach?",
+    "The data isn't shaped the way I expected. Does that matter?",
+]
+
+# --- behavioural scoring -----------------------------------------------------
+
+JARGON = [
+    "heteroskedastic", "homoskedastic", "multicollinearity", "collinearity",
+    "confidence interval", "p-value", "null hypothesis", "type i", "type ii",
+    "statistical power", "effect size", "cohen", "bonferroni", "welch",
+    "bootstrap", "quantile", "residual", "variance", "covariance",
+    "regression", "coefficient", "estimator", "unbiased", "asymptotic",
+    "likelihood", "posterior", "prior", "bayesian", "frequentist",
+    "degrees of freedom", "standard error", "confounder", "confounding",
+    "instrumental variable", "propensity", "stratif", "clustered",
+    "random effect", "fixed effect", "interaction term", "main effect",
+    "distribution", "parametric", "nonparametric", "imputation",
+    "cross-validation", "overfitting", "regularis", "regulariz", "shrinkage",
+    "specificity", "sensitivity", "roc", "auc", "kurtosis", "skew",
+]
+
+DEFINING = [
+    "which means", "that is,", "in other words", "i.e.", "refers to",
+    "basically", "put simply", "think of it as", "essentially",
+    "to put it another way", "what this means is", "in simple terms",
+    "meaning that", "or rather", "for example", "for instance",
+]
+
+SCAFFOLD = [
+    "as you know", "you probably know", "you may know", "you'll recall",
+    "as you're aware", "familiar with", "you likely know", "no doubt you",
+    "as you'd expect", "of course,",
+]
+
+
+def score_text(t):
+    low = t.lower()
+    words = re.findall(r"[a-z][a-z'-]*", low)
+    nw = max(len(words), 1)
+    sents = [s for s in re.split(r"[.!?]+", t) if s.strip()]
+    return {
+        "words": len(words),
+        "jargon_per_100": 100 * sum(low.count(j) for j in JARGON) / nw,
+        "defining_per_100": 100 * sum(low.count(d) for d in DEFINING) / nw,
+        "scaffold_per_100": 100 * sum(low.count(s) for s in SCAFFOLD) / nw,
+        "sent_len": nw / max(len(sents), 1),
+        "long_words_pct": 100 * sum(len(w) > 8 for w in words) / nw,
+    }
+
+
+# --- steering hook -----------------------------------------------------------
+
+class Steerer:
+    """Adds alpha * direction to the residual stream at one layer.
+
+    Applied at every token position for the whole forward pass, which is the
+    standard formulation. The hook stays registered across generation steps, so
+    it affects every generated token rather than only the prompt.
+    """
+
+    def __init__(self, model, layer, direction):
+        self.block = model.model.layers[layer]
+        self.v = torch.tensor(direction, dtype=torch.float32)
+        self.alpha = 0.0
+        self.handle = None
+
+    def _hook(self, mod, inp, out):
+        if self.alpha == 0.0:
+            return out
+        h = out[0] if isinstance(out, tuple) else out
+        v = self.v.to(h.device, h.dtype)
+        h = h + self.alpha * v
+        return (h,) + out[1:] if isinstance(out, tuple) else h
+
+    def __enter__(self):
+        self.handle = self.block.register_forward_hook(self._hook)
+        return self
+
+    def __exit__(self, *a):
+        if self.handle:
+            self.handle.remove()
+
+
+@torch.no_grad()
+def generate(model, tok, text, steerer, alpha, max_new=MAX_NEW):
+    steerer.alpha = alpha
+    enc = tok(text, return_tensors="pt").to(config.device())
+    out = model.generate(**enc, max_new_tokens=max_new, do_sample=False,
+                         pad_token_id=tok.pad_token_id)
+    steerer.alpha = 0.0
+    return tok.decode(out[0][enc["input_ids"].shape[1]:],
+                      skip_special_tokens=True).strip()
+
+
+def setup():
+    tr, trm = load(config.data_path("probe_train_acts.npz"))
+    labels = np.array([m["label"] for m in trm])
+    probe = make_probe(config.C)
+    probe.fit(tr[:, config.LAYER, :], labels)
+    scale = margin_scale(probe, tr)
+    dirs = {
+        "logistic": probe_direction(probe),
+        "meandiff": mean_diff_direction(tr, labels),
+    }
+    cos = float(dirs["logistic"] @ dirs["meandiff"])
+    print(f"cos(logistic, meandiff) = {cos:+.3f}")
+    print(f"training margin SD = {scale:.2f}")
+    # activation norm sets the meaningful scale for alpha
+    norm = float(np.linalg.norm(tr[:, config.LAYER, :], axis=1).mean())
+    print(f"mean activation norm at layer {config.LAYER} = {norm:.1f}")
+    return probe, dirs, norm
+
+
+def pilot():
+    """Three prompts at three strengths. Read the text yourself before
+    trusting any automated score."""
+    logs.start("steer_pilot")
+    probe, dirs, norm = setup()
+    model, tok = load_model()
+    v = dirs["meandiff"]
+    st = Steerer(model, config.LAYER, v)
+    unit = norm * 0.15   # a visible but not destructive perturbation
+
+    with st:
+        for p in PROMPTS[:3]:
+            text = format_conversation(
+                [{"role": "user", "content": p}], tok)
+            print(f"\n{'=' * 70}\nPROMPT: {p}\n{'=' * 70}")
+            for a in [-2.0, 0.0, 2.0]:
+                out = generate(model, tok, text, st, a * unit, max_new=110)
+                s = score_text(out)
+                print(f"\n--- alpha {a:+.1f} | jargon {s['jargon_per_100']:.1f} "
+                      f"| defining {s['defining_per_100']:.1f} "
+                      f"| {s['words']}w ---")
+                print(out[:600])
+    print("\nIf the three outputs look identical, steering is not working:")
+    print("raise the alpha unit, or try a different layer.")
+
+
+def run():
+    logs.start("steer")
+    probe, dirs, norm = setup()
+    model, tok = load_model()
+    unit = norm * 0.15
+    rows = []
+
+    for dname, v in dirs.items():
+        st = Steerer(model, config.LAYER, v)
+        with st:
+            jobs = [(p, a) for p in PROMPTS[:N_PROMPTS] for a in ALPHAS]
+            for i, (p, a) in logs.progress(jobs, f"gen[{dname}]"):
+                text = format_conversation(
+                    [{"role": "user", "content": p}], tok)
+                out = generate(model, tok, text, st, a * unit)
+                rows.append({"direction": dname, "prompt": p, "alpha": a,
+                             "text": out, **score_text(out)})
+
+    json.dump(rows, open(config.data_path(OUT), "w"), indent=2)
+    print(f"\n{len(rows)} generations -> {config.data_path(OUT)}")
+    analyse()
+
+
+def analyse():
+    rows = json.load(open(config.data_path(OUT)))
+    metrics = ["jargon_per_100", "defining_per_100", "scaffold_per_100",
+               "words", "sent_len", "long_words_pct"]
+
+    print(f"\nmodel {config.MODEL}   layer {config.LAYER}")
+    for dname in sorted({r["direction"] for r in rows}):
+        sub = [r for r in rows if r["direction"] == dname]
+        print("\n" + "=" * 74)
+        print(f"DIRECTION: {dname}")
+        print("=" * 74)
+        alphas = sorted({r["alpha"] for r in sub})
+        print(f"  {'metric':20}" + "".join(f"{a:>+9.1f}" for a in alphas)
+              + f"{'slope':>10}{'p':>9}")
+        for mname in metrics:
+            by = defaultdict(list)
+            for r in sub:
+                by[r["alpha"]].append(r[mname])
+            means = [np.mean(by[a]) for a in alphas]
+            # per-prompt slope, so each prompt is its own control
+            slopes = []
+            for p in {r["prompt"] for r in sub}:
+                pts = sorted((r["alpha"], r[mname])
+                             for r in sub if r["prompt"] == p)
+                x = np.array([a for a, _ in pts])
+                y = np.array([v for _, v in pts])
+                if len(set(x)) > 1:
+                    slopes.append(np.polyfit(x, y, 1)[0])
+            slopes = np.array(slopes)
+            n = len(slopes)
+            se = slopes.std(ddof=1) / np.sqrt(n) if n > 1 else 0
+            t = slopes.mean() / se if se else 0
+            from math import erf, sqrt
+            pv = 2 * (1 - 0.5 * (1 + erf(abs(t) / sqrt(2))))
+            print(f"  {mname:20}" + "".join(f"{m:>9.2f}" for m in means)
+                  + f"{slopes.mean():>+10.3f}{pv:>9.4f}")
+
+        deg = sum(1 for r in sub if r["words"] < 15)
+        if deg:
+            print(f"\n  {deg}/{len(sub)} outputs under 15 words -- steering may")
+            print("  be degrading generation rather than shifting register.")
+            print("  Lower the alpha unit and rerun.")
+
+    print("\n" + "=" * 74)
+    print("HOW TO READ THIS")
+    print("=" * 74)
+    print("  Steering toward EXPERT (positive alpha) predicts: jargon up,")
+    print("  defining down, scaffolding down, words down.")
+    print("  Toward NOVICE (negative alpha): the reverse.")
+    print()
+    print("  If jargon slope is significant and outputs are not degraded,")
+    print("  the direction is causally used -- that is the finding this")
+    print("  whole project was missing.")
+    print()
+    print("  If nothing moves, say so: the direction is decodable but not")
+    print("  demonstrably used. That is TalkTuner's reading/control gap and")
+    print("  it is worth reporting.")
+    print()
+    print("  READ THE ACTUAL TEXT before believing any of these numbers.")
+    print(f"  It is all in {config.data_path(OUT)}.")
+
+
+if __name__ == "__main__":
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "run"
+    {"pilot": pilot, "run": run, "analyse": analyse}[cmd]()

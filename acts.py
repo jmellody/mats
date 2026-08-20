@@ -22,6 +22,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 import config
+import logs
 
 
 def load_model(name=None):
@@ -90,28 +91,31 @@ def extract(inp, out, per_turn=False, save_every=32, model=None, tok=None):
     shard = _shard(out)
     done = _load_shard(shard)
     todo = [(m, p) for m, p in items if m["_key"] not in done]
-    print(f"{config.device()} | {len(done)} cached, {len(todo)} to extract")
+    print(f"{config.device()} | {len(done)} cached, {len(todo)} to extract "
+          f"| batch {config.batch_size()}")
 
     if todo:
         if model is None:
             model, tok = load_model()
         bs = config.batch_size()
+        chunks = [todo[i:i + bs] for i in range(0, len(todo), bs)]
         buf = []
         with open(shard, "a") as f:
-            for i in range(0, len(todo), bs):
-                chunk = todo[i:i + bs]
+            for ci, chunk in logs.progress(chunks, "extract"):
                 texts = [format_conversation(p, tok) for _, p in chunk]
                 acts = batch_activations(model, tok, texts)
                 for (meta, _), a in zip(chunk, acts):
                     rec = dict(meta)
                     rec["acts"] = a.astype(np.float32).tolist()
                     buf.append(json.dumps(rec))
-                if len(buf) >= save_every or i + bs >= len(todo):
+                if len(buf) >= save_every or ci == len(chunks):
                     f.write("\n".join(buf) + "\n")
                     f.flush()
                     buf = []
-                    print(f"  {min(i + bs, len(todo))}/{len(todo)}", flush=True)
         done = _load_shard(shard)
+        v = logs.vram()
+        if v:
+            print(f"  peak vram {v} GB")
 
     keys = [m["_key"] for m, _ in items]
     recs = [dict(done[k]) for k in keys if k in done]

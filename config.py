@@ -17,6 +17,19 @@ MODEL = os.environ.get("PROBE_MODEL", "Qwen/Qwen2.5-3B-Instruct")
 # this is not transferable across architectures or sizes.
 LAYER = int(os.environ.get("PROBE_LAYER", 27))
 
+# Every cached activation goes under data/<MODEL_TAG>/. Without this, running a
+# second model silently overwrites the first one's activations: the shapes are
+# similar enough that nothing errors and the analysis still runs. The resume
+# shards are worse -- extract() matches on conversation id, so a stale shard
+# from another model gets happily reused.
+MODEL_TAG = os.environ.get("PROBE_TAG", "qwen25-3b")
+
+
+def data_path(name):
+    d = os.path.join("data", MODEL_TAG)
+    os.makedirs(d, exist_ok=True)
+    return os.path.join(d, name)
+
 # --- probe ------------------------------------------------------------------
 # C=0.01 chosen empirically: Cohen's d 0.83 with no margin saturation.
 # Higher C saturates decision_function and destroys graded signal.

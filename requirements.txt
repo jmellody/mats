@@ -4,3 +4,4 @@ accelerate>=0.30
 scikit-learn>=1.4
 numpy>=1.26
 openai>=1.40
+python-dotenv>=1.0

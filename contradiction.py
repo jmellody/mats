@@ -1,7 +1,7 @@
 """RQ2: does earlier evidence survive a contradiction?
 
     python contradiction.py build
-    python contradiction.py extract      # 160 conversations, ~30 min
+    python contradiction.py extract
     python contradiction.py analyse
 
 THE QUESTION
@@ -23,23 +23,23 @@ Four conditions, each three signals long, all ending on the same follow-up turn:
 THE COMPARISON, and why it needs no steps
 
 ppn and nnn both END on a negative statement, in the same slot, with the same
-number of turns. They differ only in what came before. So compare their final
+number of turns. They differ only in what came before, so compare their final
 margins directly:
 
-    ppn > nnn   ->  the earlier positive evidence still shows through. The
-                    representation retains its history despite contradiction.
-    ppn = nnn   ->  the most recent signal overwrites everything. No retention.
+    ppn > nnn   ->  earlier positive evidence still shows through; the
+                    representation retains its history despite contradiction
+    ppn = nnn   ->  the most recent signal overwrites everything
 
-nnp vs ppp is the mirror. Averaging the two guards against a result that is
-specific to one direction.
+nnp vs ppp is the mirror. Averaging the two guards against a result specific to
+one direction.
 
-This reads every conversation at the same position -- the shared follow-up turn,
+Every conversation is read at the same position -- the shared follow-up turn,
 exactly as in probe training -- so nothing is out of distribution. That was the
-flaw in measuring intermediate steps: a prefix ending on a signal statement is a
-different kind of input from anything the probe was fitted on.
+flaw in measuring intermediate steps: a prefix ending on a signal statement is
+a different kind of input from anything the probe was fitted on.
 
-Signals are drawn from distinct minimal pairs, matched across conditions by
-source pair, so the k-th slot concerns the same concept in every condition.
+Signals come from distinct minimal pairs, matched across conditions by source
+pair, so the k-th slot concerns the same concept in every condition.
 """
 
 import json
@@ -50,19 +50,17 @@ from math import erf, sqrt
 
 import numpy as np
 
-from acts import load_extracted
+import config
+from acts import extract as extract_acts
+from acts import load as load_acts
+from acts import load_model
 from probe import make_probe
 
-import os, torch
-torch.set_num_threads(os.cpu_count())
-
-LAYER = 27
-C = 0.01
 N_SIG = 3
 BOOT = 10000
 
-ACK = "Got it. Anything else about the setup I should know?"
-FOLLOWUP = "So how should I decide what to actually report?"
+STIM_FILE = "data/contra.jsonl"
+ACTS_FILE = "contra_acts.npz"        # resolved under data/<MODEL_TAG>/
 
 CONDITIONS = {
     "ppp": ("correct", "correct", "correct"),
@@ -76,7 +74,7 @@ def conv(*msgs):
     return [{"role": r, "content": c} for r, c in msgs]
 
 
-def build(path="data/pairs.json", out="data/contra.jsonl", seed=1):
+def build(path="data/pairs.json", out=STIM_FILE, seed=1):
     d = json.load(open(path))
     pool = ([p for p in d["pairs"] if p.get("keep", True)]
             + [p for p in d["pairs"] if not p.get("keep", True)])
@@ -91,10 +89,10 @@ def build(path="data/pairs.json", out="data/contra.jsonl", seed=1):
     for i, unit in enumerate(units):
         w = wrappers[i % len(wrappers)]
         for cond, valences in CONDITIONS.items():
-            turns = [("user", w), ("assistant", ACK)]
+            turns = [("user", w), ("assistant", config.ACK)]
             for k, val in enumerate(valences):
-                turns += [("user", unit[k][val]), ("assistant", ACK)]
-            turns.append(("user", FOLLOWUP))
+                turns += [("user", unit[k][val]), ("assistant", config.ACK)]
+            turns.append(("user", config.FOLLOWUP))
             rows.append({
                 "id": f"{cond}_{i}", "condition": cond, "pair": i,
                 "concepts": [p["concept"] for p in unit],
@@ -107,17 +105,12 @@ def build(path="data/pairs.json", out="data/contra.jsonl", seed=1):
     print(f"{n_units} units x 4 conditions = {len(rows)} -> {out}")
     print(f"turn counts: {set(len(r['turns']) for r in rows)} "
           f"(must be one value)")
-    print(f"est. {len(rows) * 11 / 60:.0f} min on CPU")
 
 
 def extract():
-    import os
-    import torch
-    torch.set_num_threads(os.cpu_count() or 4)
-    from extract import extract_dataset, load_model
-    model, tok = load_model("Qwen/Qwen2.5-3B-Instruct")
-    extract_dataset("data/contra.jsonl", "data/contra_acts.npz",
-                    model=model, tok=tok, per_turn=False)
+    model, tok = load_model()
+    extract_acts(STIM_FILE, config.data_path(ACTS_FILE),
+                 model=model, tok=tok, per_turn=False)
 
 
 def norm_p(t):
@@ -139,12 +132,13 @@ def report(x, label):
 
 
 def main():
-    tr, trm = load_extracted("data/probe_train_acts.npz")
-    probe = make_probe(C)
-    probe.fit(tr[:, LAYER, :], np.array([m["label"] for m in trm]))
+    tr, trm = load_acts(config.data_path("probe_train_acts.npz"))
+    probe = make_probe(config.C)
+    probe.fit(tr[:, config.LAYER, :], np.array([m["label"] for m in trm]))
 
-    acts, meta = load_extracted("data/contra_acts.npz")
-    margins = probe.decision_function(acts[:, LAYER, :])
+    a, meta = load_acts(config.data_path(ACTS_FILE))
+    margins = probe.decision_function(a[:, config.LAYER, :])
+    print(f"model {config.MODEL}   layer {config.LAYER}   C {config.C}")
 
     vals = defaultdict(dict)
     for row, v in zip(meta, margins):
@@ -166,16 +160,16 @@ def main():
     print("\n" + "=" * 72)
     print("1. RETENTION TEST -- both conditions end on a negative signal")
     print("=" * 72)
-    print("  ppn and nnn are identical in structure and in the final")
-    print("  statement's valence. Only the history differs.")
-    dn, _ = report(ppn - nnn, "ppn - nnn")
+    print("  ppn and nnn match in structure and in the final statement's")
+    print("  valence. Only the history differs.")
+    report(ppn - nnn, "ppn - nnn")
     print("  > 0 means earlier positive evidence still shows through")
 
     print("\n" + "=" * 72)
     print("2. MIRROR TEST -- both end on a positive signal")
     print("=" * 72)
-    dp, _ = report(ppp - nnp, "ppp - nnp")
-    print("  > 0 means earlier positive evidence still shows through here too")
+    report(ppp - nnp, "ppp - nnp")
+    print("  > 0 means earlier positive evidence shows through here too")
 
     print("\n" + "=" * 72)
     print("3. COMBINED RETENTION")
@@ -184,22 +178,26 @@ def main():
     m, se = report(comb, "mean retention")
 
     print("\n" + "=" * 72)
-    print("4. SCALE REFERENCE -- how big is retention vs the signal itself?")
+    print("4. SCALE REFERENCE -- retention vs the signal itself")
     print("=" * 72)
     recency = ((ppp - ppn) + (nnp - nnn)) / 2
     mr, _ = report(recency, "final-signal effect")
-    print("  effect of flipping only the LAST signal, holding history fixed")
-    if mr != 0:
+    print("  effect of flipping only the LAST signal, history held fixed")
+    if mr:
         print(f"\n  retention / recency = {m / mr:.2f}")
         print("  ~1.0  history and the most recent signal matter equally")
-        print("  <0.5  the model is dominated by the most recent statement")
-        print("  >1.5  the model is dominated by what it saw first")
+        print("  <0.5  dominated by the most recent statement")
+        print("  >1.5  dominated by what it saw first")
+        print("\n  CAVEAT: retention sums TWO earlier signals against ONE")
+        print("  recent one, so part of any ratio above 1 is accumulation")
+        print("  rather than primacy. A count-matched (+ - vs - +) design")
+        print("  is needed to separate them.")
 
     print("\n" + "=" * 72)
     print("5. ORDER CHECK -- does + + - land where - - + does?")
     print("=" * 72)
-    print("  Both contain two of one valence and one of the other.")
-    print("  If order did not matter these would be equal.")
+    print("  Note these differ in composition as well as order, so this is")
+    print("  suggestive rather than a clean order test.")
     report(ppn - nnp, "ppn - nnp")
 
     print("\n" + "=" * 72)
@@ -207,20 +205,19 @@ def main():
     print("=" * 72)
     p = norm_p(m / se) if se else 1.0
     if p < 0.05 and m > 0:
-        print("  Earlier evidence survives contradiction. Combined with the")
-        print("  dose result, the picture is: the representation is set")
-        print("  early and later evidence -- including contradicting")
-        print("  evidence -- shifts it only partially.")
+        print("  Earlier evidence survives contradiction. With the dose")
+        print("  result, the picture is: the representation is set early")
+        print("  and later evidence -- including contradicting evidence --")
+        print("  shifts it only partially.")
     elif p < 0.05 and m < 0:
-        print("  Unexpected direction. Later evidence dominates AND")
-        print("  overshoots. Worth investigating before writing up.")
+        print("  Unexpected direction: later evidence dominates AND")
+        print("  overshoots. Investigate before writing up.")
     else:
         print("  No detectable retention. The most recent signal largely")
         print("  determines the representation regardless of history.")
-        print("  Combined with the saturation result, that suggests the")
-        print("  first-signal dominance in the dose experiment was about")
-        print("  position in the sequence, not about the model defending")
-        print("  an established view. Report the CI, not just the null.")
+        print("  With the saturation result, that suggests first-signal")
+        print("  dominance is about position in the sequence, not the")
+        print("  model defending an established view. Report the CI.")
 
 
 if __name__ == "__main__":

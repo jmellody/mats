@@ -44,13 +44,14 @@ import torch
 
 import config
 import logs
-from acts import format_conversation, load, load_model
+from acts import load, load_model
 from probe import (fit_final_probe, make_probe, margin_scale,
                    mean_diff_direction, probe_direction)
 
 ALPHAS = [-3.0, -1.5, 0.0, 1.5, 3.0]   # in units of training-margin SD
 N_PROMPTS = 12
-MAX_NEW = 160
+UNIT_FRAC = 0.4      # fraction of mean activation norm per alpha step
+MAX_NEW = 450
 OUT = "steer_results.json"
 
 # Neutral requests: the user asks for an explanation without revealing how much
@@ -116,6 +117,33 @@ def score_text(t):
     }
 
 
+
+def chat(prompt, tok):
+    """Format a single user turn, disabling the reasoning trace if the
+    tokenizer supports it.
+
+    Qwen3.5 is a reasoning model: without this, every generation opens with
+    "Here's a thinking process..." and the behavioural scorer measures the
+    chain of thought rather than the answer the user would see.
+    """
+    msgs = [{"role": "user", "content": prompt}]
+    try:
+        return tok.apply_chat_template(msgs, tokenize=False,
+                                       add_generation_prompt=True,
+                                       enable_thinking=False)
+    except TypeError:
+        return tok.apply_chat_template(msgs, tokenize=False,
+                                       add_generation_prompt=True)
+
+
+def strip_thinking(t):
+    """Drop any reasoning trace that survived enable_thinking=False."""
+    for tag in ("</think>", "</thinking>"):
+        if tag in t:
+            t = t.split(tag)[-1]
+    return t.strip()
+
+
 # --- steering hook -----------------------------------------------------------
 
 class Steerer:
@@ -156,8 +184,9 @@ def generate(model, tok, text, steerer, alpha, max_new=MAX_NEW):
     out = model.generate(**enc, max_new_tokens=max_new, do_sample=False,
                          pad_token_id=tok.pad_token_id)
     steerer.alpha = 0.0
-    return tok.decode(out[0][enc["input_ids"].shape[1]:],
-                      skip_special_tokens=True).strip()
+    txt = tok.decode(out[0][enc["input_ids"].shape[1]:],
+                     skip_special_tokens=True)
+    return strip_thinking(txt)
 
 
 def setup():
@@ -185,22 +214,21 @@ def pilot():
     logs.start("steer_pilot")
     probe, dirs, norm = setup()
     model, tok = load_model()
-    v = dirs["meandiff"]
-    st = Steerer(model, config.LAYER, v)
-    unit = norm * 0.15   # a visible but not destructive perturbation
+    unit = norm * UNIT_FRAC
 
-    with st:
-        for p in PROMPTS[:3]:
-            text = format_conversation(
-                [{"role": "user", "content": p}], tok)
-            print(f"\n{'=' * 70}\nPROMPT: {p}\n{'=' * 70}")
-            for a in [-2.0, 0.0, 2.0]:
-                out = generate(model, tok, text, st, a * unit, max_new=110)
-                s = score_text(out)
-                print(f"\n--- alpha {a:+.1f} | jargon {s['jargon_per_100']:.1f} "
-                      f"| defining {s['defining_per_100']:.1f} "
-                      f"| {s['words']}w ---")
-                print(out[:600])
+    for dname in ("meandiff", "logistic"):
+        st = Steerer(model, config.LAYER, dirs[dname])
+        with st:
+            for p in PROMPTS[:2]:
+                print(f"\n{'=' * 70}\n[{dname}] {p}\n{'=' * 70}")
+                for a in [-2.0, 0.0, 2.0]:
+                    out = generate(model, tok, text=chat(p, tok),
+                                   steerer=st, alpha=a * unit, max_new=300)
+                    sc = score_text(out)
+                    print(f"\n--- alpha {a:+.1f} | jargon "
+                          f"{sc['jargon_per_100']:.1f} | defining "
+                          f"{sc['defining_per_100']:.1f} | {sc['words']}w ---")
+                    print(out[:700] if out else "(EMPTY -- steering too strong)")
     print("\nIf the three outputs look identical, steering is not working:")
     print("raise the alpha unit, or try a different layer.")
 
@@ -209,7 +237,7 @@ def run():
     logs.start("steer")
     probe, dirs, norm = setup()
     model, tok = load_model()
-    unit = norm * 0.15
+    unit = norm * UNIT_FRAC
     rows = []
 
     for dname, v in dirs.items():
@@ -217,8 +245,7 @@ def run():
         with st:
             jobs = [(p, a) for p in PROMPTS[:N_PROMPTS] for a in ALPHAS]
             for i, (p, a) in logs.progress(jobs, f"gen[{dname}]"):
-                text = format_conversation(
-                    [{"role": "user", "content": p}], tok)
+                text = chat(p, tok)
                 out = generate(model, tok, text, st, a * unit)
                 rows.append({"direction": dname, "prompt": p, "alpha": a,
                              "text": out, **score_text(out)})

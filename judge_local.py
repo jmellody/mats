@@ -128,7 +128,8 @@ def norm_p(t):
 
 
 def load_rows():
-    path = config.data_path("steer_results.json")
+    path = config.data_path(
+        os.environ.get("STEER_OUT", "steer_v2_results.json"))
     rows = json.load(open(path))
     for i, r in enumerate(rows):
         r["_id"] = f"r{i}"

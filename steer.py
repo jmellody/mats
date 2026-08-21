@@ -39,6 +39,8 @@ import re
 import sys
 from collections import defaultdict
 
+import os
+
 import numpy as np
 import torch
 
@@ -53,7 +55,7 @@ N_PROMPTS = 12
 UNIT_FRAC = 0.02     # fraction of mean activation norm, per layer per alpha step
 BAND = 6             # steer across config.LAYER-BAND .. config.LAYER
 MAX_NEW = 450
-OUT = "steer_results.json"
+OUT = os.environ.get("STEER_OUT", "steer_v2_results.json")
 
 # Neutral requests: the user asks for an explanation without revealing how much
 # they know. Any change in how these are answered has to come from steering.
@@ -211,8 +213,11 @@ def band():
     return list(range(lo, config.LAYER + 1))
 
 
+TRAIN_ACTS = os.environ.get("STEER_TRAIN", "id_train_acts.npz")
+
+
 def setup():
-    tr, trm = load(config.data_path("probe_train_acts.npz"))
+    tr, trm = load(config.data_path(TRAIN_ACTS))
     labels = np.array([m["label"] for m in trm])
     probe = make_probe(config.C)
     probe.fit(tr[:, config.LAYER, :], labels)
@@ -223,6 +228,7 @@ def setup():
     }
     cos = float(dirs["logistic"] @ dirs["meandiff"])
     print(f"cos(logistic, meandiff) = {cos:+.3f}")
+    print(f"probe train set: {TRAIN_ACTS}")
     print(f"training margin SD = {scale:.2f}")
     b = band()
     print(f"steering band: L{b[0]}-L{b[-1]} ({len(b)} layers)")

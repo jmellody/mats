@@ -42,7 +42,7 @@ from acts import load, load_model
 from probe import make_probe, mean_diff_direction, probe_direction
 
 ALPHAS = [-3.0, -1.5, 0.0, 1.5, 3.0]
-UNIT_FRAC = 0.05
+UNIT_FRACS = [0.02, 0.05, 0.10, 0.20]
 
 PROMPTS = [
     "I've got two groups in my data and the difference looks big. How should I decide whether to report it?",
@@ -103,7 +103,6 @@ def main():
     probe.fit(tr[:, config.LAYER, :], labels)
     scale = probe.decision_function(tr[:, config.LAYER, :]).std()
     norm = float(np.linalg.norm(tr[:, config.LAYER, :], axis=1).mean())
-    unit = norm * UNIT_FRAC
 
     dirs = {"logistic": probe_direction(probe),
             "meandiff": mean_diff_direction(tr, labels)}
@@ -112,85 +111,93 @@ def main():
     n_layers = model.config.num_hidden_layers
     print(f"model {config.MODEL}   steering at layer {config.LAYER} "
           f"of {n_layers}")
-    print(f"alpha unit = {unit:.2f}  (training margin SD = {scale:.2f})\n")
+    print(f"training margin SD = {scale:.2f}   "
+          f"mean activation norm = {norm:.1f}\n")
 
     # a probe for a LATER layer, to test propagation
     late = min(config.LAYER + 4, n_layers - 1)
     probe_late = make_probe(config.C)
     probe_late.fit(tr[:, late, :], labels)
 
-    for dname, v in dirs.items():
-        st = Steerer(model, config.LAYER, v)
-        rows = []
-        with st:
-            for a in ALPHAS:
-                marg, marg_late, kls = [], [], []
-                for p in PROMPTS:
-                    text = fmt(p, tok)
-                    st.alpha = 0.0
-                    _, base_lp = probe_and_logits(model, tok, text)
-                    st.alpha = a * unit
-                    acts, lp = probe_and_logits(model, tok, text)
-                    st.alpha = 0.0
-                    marg.append(probe.decision_function(
-                        acts[config.LAYER + 1][None, :])[0])
-                    marg_late.append(probe_late.decision_function(
-                        acts[min(late + 1, n_layers)][None, :])[0])
-                    kl = torch.sum(lp.exp() * (lp - base_lp)).item()
-                    kls.append(kl)
-                rows.append((a, np.mean(marg), np.mean(marg_late),
-                             np.mean(kls)))
+    for frac in UNIT_FRACS:
+      unit = norm * frac
+      print("#" * 68)
+      print(f"UNIT_FRAC = {frac}   (alpha step = {unit:.2f}, "
+            f"|perturbation| at alpha 3 = {3 * unit:.1f} vs "
+            f"activation norm {norm:.1f})")
+      print("#" * 68)
+      for dname, v in dirs.items():
+          st = Steerer(model, config.LAYER, v)
+          rows = []
+          with st:
+              for a in ALPHAS:
+                  marg, marg_late, kls = [], [], []
+                  for p in PROMPTS:
+                      text = fmt(p, tok)
+                      st.alpha = 0.0
+                      _, base_lp = probe_and_logits(model, tok, text)
+                      st.alpha = a * unit
+                      acts, lp = probe_and_logits(model, tok, text)
+                      st.alpha = 0.0
+                      marg.append(probe.decision_function(
+                          acts[config.LAYER + 1][None, :])[0])
+                      marg_late.append(probe_late.decision_function(
+                          acts[min(late + 1, n_layers)][None, :])[0])
+                      kl = torch.sum(lp.exp() * (lp - base_lp)).item()
+                      kls.append(kl)
+                  rows.append((a, np.mean(marg), np.mean(marg_late),
+                               np.mean(kls)))
 
-        print("=" * 68)
-        print(f"DIRECTION: {dname}")
-        print("=" * 68)
-        print(f"  {'alpha':>7} {'margin@L' + str(config.LAYER):>12} "
-              f"{'margin@L' + str(late):>12} {'KL vs alpha=0':>15}")
-        for a, m, ml, kl in rows:
-            print(f"  {a:>+7.1f} {m:>12.3f} {ml:>12.3f} {kl:>15.4f}")
+          print("=" * 68)
+          print(f"DIRECTION: {dname}")
+          print("=" * 68)
+          print(f"  {'alpha':>7} {'margin@L' + str(config.LAYER + 1):>12} "
+                f"{'margin@L' + str(late + 1):>12} {'KL vs alpha=0':>15}")
+          for a, m, ml, kl in rows:
+              print(f"  {a:>+7.1f} {m:>12.3f} {ml:>12.3f} {kl:>15.4f}")
 
-        span = max(r[1] for r in rows) - min(r[1] for r in rows)
-        span_late = max(r[2] for r in rows) - min(r[2] for r in rows)
-        kl_max = max(r[3] for r in rows)
+          span = max(r[1] for r in rows) - min(r[1] for r in rows)
+          span_late = max(r[2] for r in rows) - min(r[2] for r in rows)
+          kl_max = max(r[3] for r in rows)
 
-        print(f"\n  margin span at L{config.LAYER}: {span:.2f} "
-              f"({span / scale:.1f} training SDs)")
-        print(f"  margin span at L{late}:  {span_late:.2f} "
-              f"({span_late / scale:.1f} training SDs)")
-        print(f"  max KL on next token:  {kl_max:.4f}")
+          print(f"\n  margin span at L{config.LAYER + 1}: {span:.2f} "
+                f"({span / scale:.1f} training SDs)")
+          print(f"  margin span at L{late + 1}:  {span_late:.2f} "
+                f"({span_late / scale:.1f} training SDs)")
+          print(f"  max KL on next token:  {kl_max:.4f}")
 
-        if span < 0.5:
-            print("\n  HOOK IS NOT WORKING. The margin barely moves at the")
-            print("  layer being steered. This is a plumbing bug, not a")
-            print("  finding. Check the hook is registered on the right")
-            print("  module and that alpha is reaching it.")
-        elif span_late < span * 0.25:
-            print("\n  PERTURBATION DOES NOT PROPAGATE. The representation")
-            print("  shifts at L{} but is largely washed out by L{}."
-                  .format(config.LAYER, late))
-            print("  That mechanically explains the behavioural null: the")
-            print("  intervention never reaches the output. Try steering at")
-            print("  an earlier layer, or at several layers at once.")
-        elif kl_max < 0.01:
-            print("\n  REPRESENTATION MOVES, OUTPUT DOES NOT. The steered")
-            print("  representation propagates but next-token predictions are")
-            print("  essentially unchanged. This is the scientific null:")
-            print("  decodable but not used.")
-        else:
-            print("\n  Representation moves, propagates, and shifts next-token")
-            print("  predictions. The behavioural null is then about the")
-            print("  MEASURE, not the mechanism -- the model's output changes")
-            print("  but not along the axes being scored. Use an LLM judge on")
-            print("  explanation level rather than keyword counts.")
-        print()
+          if span < 0.5:
+              print("\n  HOOK IS NOT WORKING. The margin barely moves at the")
+              print("  layer being steered. This is a plumbing bug, not a")
+              print("  finding. Check the hook is registered on the right")
+              print("  module and that alpha is reaching it.")
+          elif span_late < span * 0.25:
+              print("\n  PERTURBATION DOES NOT PROPAGATE. The representation")
+              print("  shifts at L{} but is largely washed out by L{}."
+                    .format(config.LAYER, late))
+              print("  That mechanically explains the behavioural null: the")
+              print("  intervention never reaches the output. Try steering at")
+              print("  an earlier layer, or at several layers at once.")
+          elif kl_max < 0.01:
+              print("\n  REPRESENTATION MOVES, OUTPUT DOES NOT. The steered")
+              print("  representation propagates but next-token predictions are")
+              print("  essentially unchanged. This is the scientific null:")
+              print("  decodable but not used.")
+          else:
+              print("\n  Representation moves, propagates, and shifts next-token")
+              print("  predictions. The behavioural null is then about the")
+              print("  MEASURE, not the mechanism -- the model's output changes")
+              print("  but not along the axes being scored. Use an LLM judge on")
+              print("  explanation level rather than keyword counts.")
+          print()
 
-    print("=" * 68)
-    print("WHAT TO DO WITH THIS")
-    print("=" * 68)
-    print("  A steering null is only worth reporting if the hook demonstrably")
-    print("  moved the representation. If it did, say so explicitly in the")
-    print("  writeup with these numbers -- otherwise a reviewer cannot tell")
-    print("  your null from a bug, and neither could you.")
+      print("=" * 68)
+      print("WHAT TO DO WITH THIS")
+      print("=" * 68)
+      print("  A steering null is only worth reporting if the hook demonstrably")
+      print("  moved the representation. If it did, say so explicitly in the")
+      print("  writeup with these numbers -- otherwise a reviewer cannot tell")
+      print("  your null from a bug, and neither could you.")
 
 
 if __name__ == "__main__":

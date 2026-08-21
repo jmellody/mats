@@ -58,44 +58,68 @@ N_PER_CELL = 12          # per call; several calls per cell for variety
 CALLS_PER_CELL = 3
 MAX_NEW = 1400
 
-CUE_TYPES = ["role", "context", "request", "tooling"]
+CUE_TYPES = ["role", "context", "stance", "tooling"]
 
 SPEC = {
     "role": (
-        "what the user says their profession or training is",
-        "someone who says they are a statistician, methodologist, "
-        "econometrician, quantitative researcher, or similar -- stated plainly "
-        "and in passing",
-        "someone who says they have no quantitative training: a designer, "
-        "teacher, small business owner, nurse, someone who was handed the data "
-        "and is not a numbers person",
+        "the job or training the user names for themselves",
+        "someone who names a quantitative job or training in passing -- "
+        "statistician, methodologist, econometrician, biostatistician, "
+        "quantitative researcher. Use NO statistical vocabulary beyond the job "
+        "title itself. The rest of the sentence must be plain English about "
+        "their data",
+        "someone who names a non-quantitative job in passing -- designer, "
+        "teacher, nurse, shop owner, coach, someone a colleague handed the "
+        "data to. Plain English throughout",
     ),
     "context": (
-        "what the analysis is for, implying the user's level",
-        "work aimed at a technical audience: a methods seminar, a journal "
-        "submission, a review of someone else's analysis, a regulatory filing",
-        "work aimed at a lay audience: a slide for a team meeting, a summary "
-        "for a parent group, a post for a club newsletter, a chart for a "
-        "manager who dislikes detail",
+        "who the OUTPUT is for -- the audience or venue only",
+        "output for a technical audience: a methods seminar, a journal "
+        "submission, a peer reviewer, a regulator, a stats reading group. "
+        "Describe ONLY the audience or venue. Do NOT name any statistical "
+        "method, model, or technical term anywhere in the sentence",
+        "output for a lay audience: a team meeting, a parents' evening, a club "
+        "newsletter, a manager who dislikes detail, a customer email. Describe "
+        "ONLY the audience or venue",
     ),
-    "request": (
-        "the kind of thing the user asks for",
-        "a request only someone with training would make -- about "
-        "identification, model specification, robustness of an approach, or "
-        "which of two defensible choices to prefer. It must be a QUESTION or "
-        "a REQUEST, never a claim about how statistics works",
-        "a request from someone without training -- asking what a term means, "
-        "how to do a basic operation, or what they should even be looking at. "
-        "Again a QUESTION, never a claim",
+    "stance": (
+        "the user's RELATIONSHIP to the technical choices in their analysis, "
+        "with the SAME technical vocabulary appearing on both sides",
+        "someone who made the analytic choice themselves and can say why, or "
+        "names a cost they accepted. They own the decision",
+        "someone reporting what they were told to do, or asking which option "
+        "to pick, or unsure what the terms refer to. They do not own the "
+        "decision",
     ),
     "tooling": (
-        "what the user does the work in",
-        "someone working in R, Stan, Julia, Python with statsmodels, or "
-        "writing their own estimator -- mentioned in passing as logistics",
-        "someone working in Excel, Google Sheets, a website, or asking what "
-        "they should use -- mentioned in passing as logistics",
+        "which software the user works in, mentioned incidentally",
+        "someone working in R, Stan, Julia, or Python. Mention ONLY the "
+        "software name plus something mundane about files, scripts, or setup. "
+        "Never use the word 'logistics'. No statistical terms",
+        "someone working in Excel or Google Sheets, or asking which tool they "
+        "should use. Mention ONLY the software plus something mundane about "
+        "files or setup",
     ),
 }
+
+STANCE_PROMPT = """You are writing stimuli for an experiment on how language models represent the user they are talking to.
+
+Write {n} MINIMAL PAIRS. Each pair is two sentences a person might say in passing while working on their own data analysis.
+
+The two sentences in a pair must contain THE SAME technical terms. Choose one or two statistical terms and use them in both sentences.
+
+- "high": the speaker made the analytic choice themselves and can say why, or names a cost they accepted for it. They own the decision.
+- "low": the speaker is reporting what someone else told them to do, or asking which option to pick, or unsure what the terms refer to. They do not own the decision.
+
+Hard requirements:
+- The same technical vocabulary appears in BOTH sentences. Never jargon in one and plain language in the other.
+- Within 3 words of each other in length. 18-32 words each.
+- NEITHER sentence may state a fact about how statistics works. No claim that could be judged true or false. Both describe the speaker's own situation, or ask a question.
+- Do not use the words expert, beginner, novice, advanced, experienced, professional, or confused.
+- Vary the domain: clinical, survey, sales, education, ecology, sport, manufacturing, agriculture, transport.
+
+Return ONLY a JSON object, no preamble, no markdown fences:
+{{"pairs": [{{"high": "...", "low": "..."}}, ...]}}"""
 
 PROMPT = """You are writing stimuli for an experiment on how language models represent the user they are talking to.
 
@@ -162,8 +186,13 @@ def call(gen, prompt, temperature=0.9, seed=0):
     return json.loads(t)
 
 
+# Explicit level markers, and hedges that are themselves a lexical shortcut.
+# "I'm not sure" separates the classes without the model representing anything
+# about the user, so it has to go.
 BANNED = ["expert", "beginner", "novice", "advanced", "experienced",
-          "professional", "layperson", "amateur"]
+          "professional", "layperson", "amateur", "confused",
+          "i don't understand", "i dont understand", "no idea",
+          "clueless", "out of my depth"]
 
 
 def clean(items, cue, label):
@@ -192,13 +221,18 @@ def generate(out="data/identity.json"):
         desc, high, low = SPEC[cue]
         kept = 0
         for c in range(CALLS_PER_CELL):
+            tmpl = STANCE_PROMPT if cue == "stance" else PROMPT
             try:
-                got = call(gen, PROMPT.format(n=N_PER_CELL, desc=desc,
-                                              high=high, low=low),
+                got = call(gen, tmpl.format(n=N_PER_CELL, desc=desc,
+                                            high=high, low=low),
                            seed=hash((cue, c)) % 10000)
             except Exception as e:
                 print(f"  {cue:9} call {c + 1} FAILED: {e}", flush=True)
                 continue
+            if cue == "stance":
+                pairs = got.get("pairs", [])
+                got = {"high": [p["high"] for p in pairs if "high" in p],
+                       "low": [p["low"] for p in pairs if "low" in p]}
             for items, label in [(got.get("high", []), 1),
                                  (got.get("low", []), 0)]:
                 for r in clean(items, cue, label):

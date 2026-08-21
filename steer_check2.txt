@@ -1,0 +1,199 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 891.08it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:  83%|████████▎ | 353/426 [00:00<00:00, 3527.51it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 3479.79it/s]
+model Qwen/Qwen3.5-4B   steering at layer 26 of 32
+training margin SD = 2.15   mean activation norm = 28.8
+
+####################################################################
+UNIT_FRAC = 0.02   (alpha step = 0.58, |perturbation| at alpha 3 = 1.7 vs activation norm 28.8)
+####################################################################
+====================================================================
+DIRECTION: logistic
+====================================================================
+    alpha   margin@L27   margin@L31   KL vs alpha=0
+     -3.0      -22.256       -8.978          0.0017
+     -1.5       -0.708       -0.876          0.0004
+     +0.0       20.856        7.128          0.0000
+     +1.5       42.403       15.085          0.0003
+     +3.0       63.966       23.126          0.0016
+
+  margin span at L27: 86.22 (40.1 training SDs)
+  margin span at L31:  32.10 (14.9 training SDs)
+  max KL on next token:  0.0017
+
+  REPRESENTATION MOVES, OUTPUT DOES NOT. The steered
+  representation propagates but next-token predictions are
+  essentially unchanged. This is the scientific null:
+  decodable but not used.
+
+====================================================================
+DIRECTION: meandiff
+====================================================================
+    alpha   margin@L27   margin@L31   KL vs alpha=0
+     -3.0       20.856       -0.329          0.0020
+     -1.5       20.856        3.439          0.0011
+     +0.0       20.856        7.128          0.0000
+     +1.5       20.856       10.812          0.0007
+     +3.0       20.856       14.509          0.0015
+
+  margin span at L27: 0.00 (0.0 training SDs)
+  margin span at L31:  14.84 (6.9 training SDs)
+  max KL on next token:  0.0020
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+WHAT TO DO WITH THIS
+====================================================================
+  A steering null is only worth reporting if the hook demonstrably
+  moved the representation. If it did, say so explicitly in the
+  writeup with these numbers -- otherwise a reviewer cannot tell
+  your null from a bug, and neither could you.
+####################################################################
+UNIT_FRAC = 0.05   (alpha step = 1.44, |perturbation| at alpha 3 = 4.3 vs activation norm 28.8)
+####################################################################
+====================================================================
+DIRECTION: logistic
+====================================================================
+    alpha   margin@L27   margin@L31   KL vs alpha=0
+     -3.0       20.856      -33.037          0.0062
+     -1.5       20.856      -12.960          0.0021
+     +0.0       20.856        7.128          0.0000
+     +1.5       20.856       27.089          0.0020
+     +3.0       20.856       47.033          0.0061
+
+  margin span at L27: 0.00 (0.0 training SDs)
+  margin span at L31:  80.07 (37.2 training SDs)
+  max KL on next token:  0.0062
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+DIRECTION: meandiff
+====================================================================
+    alpha   margin@L27   margin@L31   KL vs alpha=0
+     -3.0       20.856      -11.377          0.0086
+     -1.5       20.856       -2.136          0.0028
+     +0.0       20.856        7.128          0.0000
+     +1.5       20.856       16.393          0.0035
+     +3.0       20.856       25.536          0.0078
+
+  margin span at L27: 0.00 (0.0 training SDs)
+  margin span at L31:  36.91 (17.1 training SDs)
+  max KL on next token:  0.0086
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+WHAT TO DO WITH THIS
+====================================================================
+  A steering null is only worth reporting if the hook demonstrably
+  moved the representation. If it did, say so explicitly in the
+  writeup with these numbers -- otherwise a reviewer cannot tell
+  your null from a bug, and neither could you.
+####################################################################
+UNIT_FRAC = 0.1   (alpha step = 2.88, |perturbation| at alpha 3 = 8.6 vs activation norm 28.8)
+####################################################################
+====================================================================
+DIRECTION: logistic
+====================================================================
+    alpha   margin@L27   margin@L31   KL vs alpha=0
+     -3.0       20.856      -72.953          0.0261
+     -1.5       20.856      -33.037          0.0062
+     +0.0       20.856        7.128          0.0000
+     +1.5       20.856       47.033          0.0061
+     +3.0       20.856       86.223          0.0219
+
+  margin span at L27: 0.00 (0.0 training SDs)
+  margin span at L31:  159.18 (73.9 training SDs)
+  max KL on next token:  0.0261
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+DIRECTION: meandiff
+====================================================================
+    alpha   margin@L27   margin@L31   KL vs alpha=0
+     -3.0       20.856      -29.711          0.0439
+     -1.5       20.856      -11.377          0.0086
+     +0.0       20.856        7.128          0.0000
+     +1.5       20.856       25.536          0.0078
+     +3.0       20.856       43.723          0.0281
+
+  margin span at L27: 0.00 (0.0 training SDs)
+  margin span at L31:  73.43 (34.1 training SDs)
+  max KL on next token:  0.0439
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+WHAT TO DO WITH THIS
+====================================================================
+  A steering null is only worth reporting if the hook demonstrably
+  moved the representation. If it did, say so explicitly in the
+  writeup with these numbers -- otherwise a reviewer cannot tell
+  your null from a bug, and neither could you.
+####################################################################
+UNIT_FRAC = 0.2   (alpha step = 5.76, |perturbation| at alpha 3 = 17.3 vs activation norm 28.8)
+####################################################################
+====================================================================
+DIRECTION: logistic
+====================================================================
+    alpha   margin@L27   margin@L31   KL vs alpha=0
+     -3.0       20.856     -150.528          0.1320
+     -1.5       20.856      -72.953          0.0261
+     +0.0       20.856        7.128          0.0000
+     +1.5       20.856       86.223          0.0219
+     +3.0       20.856      160.438          0.1130
+
+  margin span at L27: 0.00 (0.0 training SDs)
+  margin span at L31:  310.97 (144.5 training SDs)
+  max KL on next token:  0.1320
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+DIRECTION: meandiff
+====================================================================
+    alpha   margin@L27   margin@L31   KL vs alpha=0
+     -3.0       20.856      -65.221          0.2044
+     -1.5       20.856      -29.711          0.0439
+     +0.0       20.856        7.128          0.0000
+     +1.5       20.856       43.723          0.0281
+     +3.0       20.856       77.887          0.1061
+
+  margin span at L27: 0.00 (0.0 training SDs)
+  margin span at L31:  143.11 (66.5 training SDs)
+  max KL on next token:  0.2044
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+WHAT TO DO WITH THIS
+====================================================================
+  A steering null is only worth reporting if the hook demonstrably
+  moved the representation. If it did, say so explicitly in the
+  writeup with these numbers -- otherwise a reviewer cannot tell
+  your null from a bug, and neither could you.

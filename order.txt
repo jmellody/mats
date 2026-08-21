@@ -1,0 +1,60 @@
+model Qwen/Qwen3.5-4B   layer 26   C 0.01
+n = 139 units
+
+========================================================================
+HEADROOM CHECK (the dose experiment failed this)
+========================================================================
+  probe range on training text: [-5.28, +3.57]
+  mixed-condition mean:          +2.29
+  headroom above +1.28   below +7.57
+  Both directions have room.
+
+========================================================================
+CONDITION MEANS
+========================================================================
+  pp   + +           +3.715   sd 1.820
+  pn   + -           +2.220   sd 2.201
+  np   - +           +2.360   sd 1.975
+  nn   - -           +0.929   sd 2.208
+  pn_gap  + . . -    +1.894   sd 2.235
+  np_gap  - . . +    +2.303   sd 1.705
+
+========================================================================
+1. ORDER, COUNT-MATCHED -- the clean primacy test
+========================================================================
+  pn and np contain the same two statements in opposite order.
+  Composition, length, and filler count are identical.
+  pn - np                    -0.1395  t = -0.78  p = 0.4342  CI [-0.4893, +0.2102]  boot [-0.4901, +0.2106]
+  > 0 = the FIRST signal has more influence (primacy)
+  < 0 = the LAST signal has more influence (recency)
+
+========================================================================
+2. HOW BIG IS ORDER RELATIVE TO COMPOSITION?
+========================================================================
+  pp - nn (composition)      +2.7864  t = +18.63  p = 0.0000  CI [+2.4932, +3.0796]  boot [+2.4991, +3.0856]
+
+  order / composition = -0.050
+  the share of the expertise signal carried by order alone
+
+========================================================================
+3. SEPARATION -- does a gap weaken the order effect?
+========================================================================
+  pn_gap - np_gap            -0.4094  t = -2.23  p = 0.0260  CI [-0.7700, -0.0489]  boot [-0.7752, -0.0465]
+  adjacent - separated       +0.2699  t = +3.58  p = 0.0003  CI [+0.1222, +0.4176]  boot [+0.1231, +0.4180]
+  > 0 = separation weakens order, so the effect is about recent
+        context rather than conversation history
+  ~ 0 = order survives separation, i.e. genuine history retention
+
+========================================================================
+4. CONTROLS
+========================================================================
+  pn - pp                    -1.4950  t = -12.16  p = 0.0000  CI [-1.7360, -1.2540]  boot [-1.7420, -1.2579]
+  np - nn                    +1.4310  t = +12.19  p = 0.0000  CI [+1.2009, +1.6611]  boot [+1.2054, +1.6634]
+  both should be non-zero; if not, the second slot did nothing
+
+========================================================================
+HOW TO READ THIS
+========================================================================
+  No order effect once count is held constant. The retention
+  result reflects amount of evidence, not its position.
+  Report the CI; this is an informative null.

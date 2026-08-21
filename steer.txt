@@ -1,0 +1,100 @@
+
+======================================================================
+  steer   2026-08-20T19:42:57
+  Qwen/Qwen3.5-4B  layer 26  C 0.01
+  NVIDIA GeForce RTX 4080  git 3472f57
+  log -> logs/qwen35-4b/20260820_194257_steer.log
+======================================================================
+cos(logistic, meandiff) = +0.337
+training margin SD = 2.15
+mean activation norm at layer 26 = 28.8
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 641.04it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:  83%|████████▎ | 355/426 [00:00<00:00, 3512.53it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 3531.27it/s]
+  gen[logistic] [#                   ] 3/60  0.0/s  elapsed 68s  eta 21.4m
+  gen[logistic] [##                  ] 6/60  0.0/s  elapsed 2.2m  eta 20.1m
+  gen[logistic] [###                 ] 9/60  0.0/s  elapsed 3.3m  eta 18.9m
+  gen[logistic] [####                ] 12/60  0.0/s  elapsed 4.4m  eta 17.8m
+  gen[logistic] [#####               ] 15/60  0.0/s  elapsed 5.5m  eta 16.6m
+  gen[logistic] [######              ] 18/60  0.0/s  elapsed 6.6m  eta 15.5m
+  gen[logistic] [#######             ] 21/60  0.0/s  elapsed 7.6m  eta 14.1m
+  gen[logistic] [########            ] 24/60  0.0/s  elapsed 8.4m  eta 12.5m
+  gen[logistic] [#########           ] 27/60  0.0/s  elapsed 9.4m  eta 11.5m
+  gen[logistic] [##########          ] 30/60  0.0/s  elapsed 10.5m  eta 10.5m
+  gen[logistic] [###########         ] 33/60  0.0/s  elapsed 11.7m  eta 9.5m
+  gen[logistic] [############        ] 36/60  0.0/s  elapsed 12.8m  eta 8.5m
+  gen[logistic] [#############       ] 39/60  0.0/s  elapsed 13.9m  eta 7.5m
+  gen[logistic] [##############      ] 42/60  0.0/s  elapsed 15.0m  eta 6.4m
+  gen[logistic] [###############     ] 45/60  0.0/s  elapsed 16.1m  eta 5.4m
+  gen[logistic] [################    ] 48/60  0.0/s  elapsed 17.2m  eta 4.3m
+  gen[logistic] [#################   ] 51/60  0.0/s  elapsed 18.3m  eta 3.2m
+  gen[logistic] [##################  ] 54/60  0.0/s  elapsed 19.4m  eta 2.2m
+  gen[logistic] [################### ] 57/60  0.0/s  elapsed 20.5m  eta 65s
+  gen[logistic] [####################] 60/60  0.0/s  elapsed 21.6m  eta 0s
+  gen[meandiff] [#                   ] 3/60  0.0/s  elapsed 66s  eta 21.0m
+  gen[meandiff] [##                  ] 6/60  0.0/s  elapsed 2.2m  eta 19.9m
+  gen[meandiff] [###                 ] 9/60  0.0/s  elapsed 3.3m  eta 18.7m
+  gen[meandiff] [####                ] 12/60  0.0/s  elapsed 4.4m  eta 17.6m
+  gen[meandiff] [#####               ] 15/60  0.0/s  elapsed 5.5m  eta 16.5m
+  gen[meandiff] [######              ] 18/60  0.0/s  elapsed 6.6m  eta 15.4m
+  gen[meandiff] [#######             ] 21/60  0.0/s  elapsed 7.5m  eta 14.0m
+  gen[meandiff] [########            ] 24/60  0.0/s  elapsed 8.3m  eta 12.4m
+  gen[meandiff] [#########           ] 27/60  0.0/s  elapsed 9.3m  eta 11.4m
+  gen[meandiff] [##########          ] 30/60  0.0/s  elapsed 10.4m  eta 10.4m
+  gen[meandiff] [###########         ] 33/60  0.0/s  elapsed 11.5m  eta 9.4m
+  gen[meandiff] [############        ] 36/60  0.0/s  elapsed 12.6m  eta 8.4m
+  gen[meandiff] [#############       ] 39/60  0.0/s  elapsed 13.7m  eta 7.4m
+  gen[meandiff] [##############      ] 42/60  0.0/s  elapsed 14.8m  eta 6.3m
+  gen[meandiff] [###############     ] 45/60  0.0/s  elapsed 15.9m  eta 5.3m
+  gen[meandiff] [################    ] 48/60  0.0/s  elapsed 17.0m  eta 4.3m
+  gen[meandiff] [#################   ] 51/60  0.0/s  elapsed 18.1m  eta 3.2m
+  gen[meandiff] [##################  ] 54/60  0.0/s  elapsed 19.2m  eta 2.1m
+  gen[meandiff] [################### ] 57/60  0.0/s  elapsed 20.3m  eta 64s
+  gen[meandiff] [####################] 60/60  0.0/s  elapsed 21.4m  eta 0s
+
+120 generations -> data/qwen35-4b/steer_results.json
+
+model Qwen/Qwen3.5-4B   layer 26
+
+==========================================================================
+DIRECTION: logistic
+==========================================================================
+  metric                   -3.0     -1.5     +0.0     +1.5     +3.0     slope        p
+  jargon_per_100           1.17     2.05     1.72     1.58     1.15    -0.035   0.4474
+  defining_per_100         0.00     0.08     0.17     0.00     0.09    +0.006   0.4666
+  scaffold_per_100         0.00     0.00     0.00     0.00     0.00    +0.000   1.0000
+  words                  277.67   273.58   277.25   282.25   281.25    +1.056   0.5564
+  sent_len                18.18    11.35    11.99    11.27    11.36    -0.914   0.0000
+  long_words_pct          10.89    12.40    12.64    14.09    11.72    +0.224   0.2847
+
+==========================================================================
+DIRECTION: meandiff
+==========================================================================
+  metric                   -3.0     -1.5     +0.0     +1.5     +3.0     slope        p
+  jargon_per_100           1.43     1.47     1.72     2.04     1.06    -0.012   0.8478
+  defining_per_100         0.09     0.15     0.17     0.06     0.03    -0.013   0.3362
+  scaffold_per_100         0.00     0.00     0.00     0.00     0.00    +0.000   1.0000
+  words                  261.50   274.33   277.25   289.17   284.67    +4.078   0.0585
+  sent_len                15.67    12.20    11.99    11.44    11.83    -0.563   0.0579
+  long_words_pct          12.09    12.17    12.64    12.01    11.24    -0.124   0.3752
+
+==========================================================================
+HOW TO READ THIS
+==========================================================================
+  Steering toward EXPERT (positive alpha) predicts: jargon up,
+  defining down, scaffolding down, words down.
+  Toward NOVICE (negative alpha): the reverse.
+
+  If jargon slope is significant and outputs are not degraded,
+  the direction is causally used -- that is the finding this
+  whole project was missing.
+
+  If nothing moves, say so: the direction is decodable but not
+  demonstrably used. That is TalkTuner's reading/control gap and
+  it is worth reporting.
+
+  READ THE ACTUAL TEXT before believing any of these numbers.
+  It is all in data/qwen35-4b/steer_results.json.
+
+[total 43.3 min]

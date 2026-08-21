@@ -1,0 +1,11 @@
+
+======================================================================
+  judge   2026-08-21T02:55:09
+  Qwen/Qwen3.5-4B  layer 26  C 0.01
+  NVIDIA GeForce RTX 4080  git f699765
+  log -> logs/qwen35-4b/20260821_025509_judge.log
+======================================================================
+120 responses   generator was Qwen/Qwen3.5-4B
+judge model: mistralai/Ministral-8B-Instruct-2410
+
+[total 5.5 min]

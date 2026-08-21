@@ -42,7 +42,7 @@ from acts import load, load_model
 from probe import make_probe, mean_diff_direction, probe_direction
 
 ALPHAS = [-3.0, -1.5, 0.0, 1.5, 3.0]
-UNIT_FRAC = 0.4
+UNIT_FRAC = 0.05
 
 PROMPTS = [
     "I've got two groups in my data and the difference looks big. How should I decide whether to report it?",
@@ -133,9 +133,9 @@ def main():
                     acts, lp = probe_and_logits(model, tok, text)
                     st.alpha = 0.0
                     marg.append(probe.decision_function(
-                        acts[config.LAYER][None, :])[0])
+                        acts[config.LAYER + 1][None, :])[0])
                     marg_late.append(probe_late.decision_function(
-                        acts[late][None, :])[0])
+                        acts[min(late + 1, n_layers)][None, :])[0])
                     kl = torch.sum(lp.exp() * (lp - base_lp)).item()
                     kls.append(kl)
                 rows.append((a, np.mean(marg), np.mean(marg_late),

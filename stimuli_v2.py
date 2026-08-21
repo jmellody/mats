@@ -273,6 +273,19 @@ def inspect(path="data/identity.json", n=3):
 ACK = "Got it. Anything else about the setup I should know?"
 FOLLOWUP = "So how should I decide what to actually report?"
 
+# Probe-training conversations are padded to the SAME 9 turns the dynamics
+# experiments use. In v1 the probe was fit on 5-turn conversations and applied
+# to 7-turn ones; baseline drifted 9.2 while the effect was 1.06, because the
+# inputs were far outside the distribution the probe had seen.
+PAD = [
+    "I put the whole thing together over the weekend and it's all in one place now.",
+    "It took a while to collect but I finally have everything I need in the file.",
+    "I've been meaning to look at this properly for a couple of weeks now.",
+    "There's quite a lot of it, more than I expected when I started.",
+    "I tidied it up a bit yesterday so it's easier to work with now.",
+    "It's all in one folder along with the notes I made at the time.",
+]
+
 
 def conv(*m):
     return [{"role": r, "content": c} for r, c in m]
@@ -294,11 +307,16 @@ def build(path="data/identity.json", holdout="tooling",
     for i, r in enumerate(rows):
         dest = test if r["cue"] == holdout else train
         for j, w in enumerate(rng.sample(wr, min(wrappers_each, len(wr)))):
+            # signal in the LAST slot, filler before it -- same shape as the
+            # dose experiment's dose-1 condition
+            p1, p2 = PAD[(i + j) % len(PAD)], PAD[(i + j + 1) % len(PAD)]
             dest.append({
                 "id": f"{r['cue']}_{r['label']}_{i}_{j}",
                 "label": r["label"], "cue": r["cue"],
                 "group": f"item_{i}",
                 "turns": conv(("user", w), ("assistant", ACK),
+                              ("user", p1), ("assistant", ACK),
+                              ("user", p2), ("assistant", ACK),
                               ("user", r["text"]), ("assistant", ACK),
                               ("user", FOLLOWUP)),
             })

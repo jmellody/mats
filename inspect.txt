@@ -1,0 +1,35 @@
+167 items
+
+--- role / HIGH  (n=36) ---
+    As a methodologist, I'm trying to figure out how these survey responses are clustered geographically.
+    I’m a statistician, and I'm looking for a way to visualize the correlation between these sales figures.
+    Being an econometrician, I’m focused on identifying the predictable factors influencing production yields.
+--- role / LOW   (n=36) ---
+    I’m a designer, and I’m hoping to use this data to inform a new marketing campaign's themes.
+    I'm a teacher, so I’m just trying to get a basic sense of what’s going on with these numbers.
+    As a small business owner, I need to find a way to make sense of these sales trends.
+
+--- context / HIGH  (n=12) ---
+    Could you re-run the propensity score matching, considering the interaction between socioeconomic status and baseline health metrics?
+    I'm particularly interested in how the residual plots reflect the model's assumptions regarding normality and homoscedasticity.
+    I need a visualization highlighting the lagged effects of the intervention on long-term patient outcomes, accounting for confounding variables.
+--- context / LOW   (n=12) ---
+    I’m trying to show how sales increased after we changed the marketing campaign, just a quick glance.
+    I just want a simple graph to illustrate how many students liked each activity in the survey.
+    I'm putting together a slide; it would be helpful to highlight the key findings for the team.
+
+--- request / HIGH  (n=0) ---
+--- request / LOW   (n=0) ---
+
+--- tooling / HIGH  (n=36) ---
+    I'm primarily focused on logistics, so I’m trying to get the data structured for a Bayesian hierarchical model in Stan.
+    My team’s logistics involved a lot of custom-built estimators for A/B testing, and I’m wrestling with a similar challenge here.
+    We’ve been using logistics to track patient outcomes, and I need help integrating this new dataset with our existing longitudinal records.
+--- tooling / LOW   (n=35) ---
+    I’m just using Excel to start, trying to get a feel for the data before I dive deeper.
+    I’m kind of lost on which tool would be best to use to visualize this information effectively.
+    I've been using Google Sheets to enter the data manually, but it’s getting messy.
+
+READ THESE. Check that no sentence makes a claim about how
+statistics works -- if any do, a truth direction can latch onto
+them and v2 repeats v1's failure. Delete offenders from the json.

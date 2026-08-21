@@ -1,0 +1,41 @@
+289 items
+
+--- role / HIGH  (n=36) ---
+    As an econometrician, I'm trying to understand these transportation flow patterns – it’s proving surprisingly difficult to isolate the impact of the new highway.
+    Being a biostatistician, I've been wrestling with these clinical trial results; I need to see if there’s a meaningful difference between the groups.
+    I’m working on this survey data as a quantitative researcher, and I'm hoping you can help me visualize the responses to the open-ended questions.
+--- role / LOW   (n=39) ---
+    I’m a teacher, and I’m trying to get a sense of how students performed on this assessment, but the spreadsheet is overwhelming.
+    As a nurse, I’m reviewing these patient records to see if we can identify any common factors contributing to readmissions.
+    I’m a shop owner, and I need to understand which products are selling best so I can adjust my inventory.
+
+--- context / HIGH  (n=36) ---
+    This presentation needs to be robust enough to withstand rigorous questioning at the methods seminar next week.
+    The manuscript requires a level of precision expected by the journal's editorial board; clarity is paramount.
+    I’m drafting this for a regulatory submission, so it needs to be meticulously documented and defensible.
+--- context / LOW   (n=36) ---
+    I'm putting this together for the team meeting; they mostly want to know what the numbers mean for the project’s timeline.
+    This needs to be easy to understand for parents’ evening; I'll keep the explanations straightforward and avoid jargon.
+    The club newsletter audience are interested in the highlights, so I’ll focus on the key takeaways and conclusions.
+
+--- stance / HIGH  (n=36) ---
+    I decided to use a Welch's t-test because the assumption of equal variances wasn't met, which adds some complexity to interpreting the p-value.
+    To control for false positives, I'm planning on adjusting the p-value using the Bonferroni correction, understanding it reduces power.
+    I'm running a multiple regression, and the variance inflation factor for predictor 3 is a little high, so I'll need to address collinearity.
+--- stance / LOW   (n=35) ---
+    Someone suggested using a Welch’s t-test; I’m not entirely sure what determines whether the variances are equal, or if it matters for the p-value.
+    I heard the Bonferroni correction is important for p-values, but I’m not clear on when to use it, or what it does to the power of the test.
+    I’m building a multiple regression, and someone said to watch out for variance inflation; I'm not sure how to identify or fix this collinearity problem.
+
+--- tooling / HIGH  (n=35) ---
+    I’m having trouble sourcing this data into R, it seems my .csv file is getting corrupted every time I run the initial import.
+    Just need a quick hand; I think I’ve messed up the path to the data file in my Stan script, and it's not finding it.
+    This Julia code was working perfectly yesterday, but now it's throwing an error referencing an old version of the configuration file.
+--- tooling / LOW   (n=36) ---
+    I'm opening this huge Excel file again, and it's taking forever to load; maybe I should save a copy without all the formulas?
+    I’m having trouble finding where I saved the backup file in Google Sheets; I think I put it in a different folder.
+    I’m trying to figure out which software to use – is Excel better for this, or should I start a new sheet in Google Sheets?
+
+READ THESE. Check that no sentence makes a claim about how
+statistics works -- if any do, a truth direction can latch onto
+them and v2 repeats v1's failure. Delete offenders from the json.

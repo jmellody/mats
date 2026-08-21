@@ -1,0 +1,35 @@
+model Qwen/Qwen3.5-4B   layer 13   C 0.01
+trained gap (high vs low identity cues): +10.066
+
+======================================================================
+1. CUE-TYPE GENERALISATION  -- the test v1 never had
+======================================================================
+  held-out cue type: stance   n = 284
+  accuracy 0.592   Cohen's d +1.63
+  gap +4.841 (+48% of trained gap)
+
+  PARTIAL TRANSFER. Some generalisation, but weaker than
+  within-training accuracy. Report both numbers.
+
+======================================================================
+2. TRUTH CONTAMINATION  -- what killed v1
+======================================================================
+  generic factual truth  +0.200  (+2% of trained gap)
+  stated expertise       +6.409  (+64% of trained gap)
+
+  v1 for comparison: truth +98%, stated expertise -7%
+
+  CLEAN. Tracks stated expertise, largely ignores
+  generic truth. The construct holds this time.
+
+======================================================================
+3. PER-CUE BREAKDOWN
+======================================================================
+  cue         in-sample acc      gap
+  context             1.000    9.290
+  role                1.000    8.918
+  tooling             1.000   12.051
+
+  In-sample, so inflated -- for comparing cue types only.
+  If one cue carries everything, the probe is narrower than
+  the label suggests and that belongs in limitations.

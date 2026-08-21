@@ -50,7 +50,8 @@ from probe import (fit_final_probe, make_probe, margin_scale,
 
 ALPHAS = [-3.0, -1.5, 0.0, 1.5, 3.0]   # in units of training-margin SD
 N_PROMPTS = 12
-UNIT_FRAC = 0.4      # fraction of mean activation norm per alpha step
+UNIT_FRAC = 0.02     # fraction of mean activation norm, per layer per alpha step
+BAND = 6             # steer across config.LAYER-BAND .. config.LAYER
 MAX_NEW = 450
 OUT = "steer_results.json"
 
@@ -147,18 +148,32 @@ def strip_thinking(t):
 # --- steering hook -----------------------------------------------------------
 
 class Steerer:
-    """Adds alpha * direction to the residual stream at one layer.
+    """Adds alpha * direction to the residual stream at EVERY layer in a band.
 
-    Applied at every token position for the whole forward pass, which is the
-    standard formulation. The hook stays registered across generation steps, so
-    it affects every generated token rather than only the prompt.
+    Single-layer steering at the probe layer was measured (kl_multilayer.py) to
+    change the output distribution by only 0.0012 nats/token -- three orders of
+    magnitude below the divergence temperature sampling introduces. It could
+    not have tested whether the direction controls behaviour, because it barely
+    perturbed behaviour at all.
+
+    Band L20-26 gives 0.083 nats/token: meaningful perturbation, still well
+    short of the 1-3 nats where the model stops functioning. Wider bands
+    (L13-26 at 1.29, L6-31 at 4.64) destroy the forward pass -- the model
+    assigns its own prior output ~40x less probability per token -- and are the
+    same failure mode as an over-large alpha, reached by stacking layers.
+
+    Hooks stay registered across generation steps, so every generated token is
+    affected, not just the prompt.
     """
 
-    def __init__(self, model, layer, direction):
-        self.block = model.model.layers[layer]
+    def __init__(self, model, layers, direction):
+        if isinstance(layers, int):
+            layers = [layers]
+        self.blocks = [model.model.layers[i] for i in layers]
+        self.layers = list(layers)
         self.v = torch.tensor(direction, dtype=torch.float32)
         self.alpha = 0.0
-        self.handle = None
+        self.handles = []
 
     def _hook(self, mod, inp, out):
         if self.alpha == 0.0:
@@ -169,12 +184,14 @@ class Steerer:
         return (h,) + out[1:] if isinstance(out, tuple) else h
 
     def __enter__(self):
-        self.handle = self.block.register_forward_hook(self._hook)
+        self.handles = [b.register_forward_hook(self._hook)
+                        for b in self.blocks]
         return self
 
     def __exit__(self, *a):
-        if self.handle:
-            self.handle.remove()
+        for h in self.handles:
+            h.remove()
+        self.handles = []
 
 
 @torch.no_grad()
@@ -187,6 +204,11 @@ def generate(model, tok, text, steerer, alpha, max_new=MAX_NEW):
     txt = tok.decode(out[0][enc["input_ids"].shape[1]:],
                      skip_special_tokens=True)
     return strip_thinking(txt)
+
+
+def band():
+    lo = max(config.LAYER - BAND, 0)
+    return list(range(lo, config.LAYER + 1))
 
 
 def setup():
@@ -202,6 +224,8 @@ def setup():
     cos = float(dirs["logistic"] @ dirs["meandiff"])
     print(f"cos(logistic, meandiff) = {cos:+.3f}")
     print(f"training margin SD = {scale:.2f}")
+    b = band()
+    print(f"steering band: L{b[0]}-L{b[-1]} ({len(b)} layers)")
     # activation norm sets the meaningful scale for alpha
     norm = float(np.linalg.norm(tr[:, config.LAYER, :], axis=1).mean())
     print(f"mean activation norm at layer {config.LAYER} = {norm:.1f}")
@@ -217,7 +241,7 @@ def pilot():
     unit = norm * UNIT_FRAC
 
     for dname in ("meandiff", "logistic"):
-        st = Steerer(model, config.LAYER, dirs[dname])
+        st = Steerer(model, band(), dirs[dname])
         with st:
             for p in PROMPTS[:2]:
                 print(f"\n{'=' * 70}\n[{dname}] {p}\n{'=' * 70}")
@@ -241,7 +265,7 @@ def run():
     rows = []
 
     for dname, v in dirs.items():
-        st = Steerer(model, config.LAYER, v)
+        st = Steerer(model, band(), v)
         with st:
             jobs = [(p, a) for p in PROMPTS[:N_PROMPTS] for a in ALPHAS]
             for i, (p, a) in logs.progress(jobs, f"gen[{dname}]"):

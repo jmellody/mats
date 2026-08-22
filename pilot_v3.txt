@@ -1,0 +1,158 @@
+
+======================================================================
+  steer_pilot   2026-08-22T15:06:45
+  Qwen/Qwen3.5-4B  layer 26  C 0.01
+  NVIDIA GeForce RTX 4080 SUPER  git 84c95ec
+  log -> logs/qwen35-4b/20260822_150645_steer_pilot.log
+======================================================================
+cos(logistic, meandiff) = +0.562
+probe train set: ag_train_acts.npz
+training margin SD = 2.76
+steering band: L20-L26 (7 layers)
+mean activation norm at layer 26 = 28.0
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 484.53it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:  79%|███████▊  | 335/426 [00:00<00:00, 3319.19it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 3178.95it/s]
+
+======================================================================
+[meandiff] I've got two groups in my data and the difference looks big. How should I decide whether to report it?
+======================================================================
+
+--- alpha -2.0 | jargon 2.4 | defining 0.0 | 211w ---
+The fact that the difference "looks big" is a great starting point, but visual magnitude alone is rarely enough to decide whether to report it. In statistics and data science, the decision to report a difference hinges on three pillars: **statistical significance**, **practical significance**, and **contextual relevance**.
+
+Here is a step-by-step framework to help you decide:
+
+### 1. Check Statistical Significance (Is it real?)
+Before worrying about how big the difference is, you must determine if it is likely not just a result of random chance.
+*   **The p-value:** If your p-value is below your threshold (usually $p < 0.05$), the result is statistically significant. This means there is less
+
+--- alpha +0.0 | jargon 1.7 | defining 0.0 | 178w ---
+Deciding whether to report a "big" difference between two groups depends entirely on **context, statistical validity, and practical significance**, not just the visual size of the gap.
+
+Here is a step-by-step framework to help you decide:
+
+### 1. Check Statistical Significance (Is it real?)
+Before worrying about the size, you must determine if the difference is likely due to chance or a true effect.
+*   **Run a hypothesis test:** Use a t-test (for continuous data) or a chi-square test (for categorical data), depending on your data type.
+*   **Look at the p-value:** If $p < 0.05$ (or your chosen alpha level), the difference is statistically significant.
+*   **The Caveat:** A statistically sig
+
+--- alpha +2.0 | jargon 2.3 | defining 0.0 | 172w ---
+Deciding whether to report a "big" difference between two groups depends entirely on **context**, **statistical validity**, and **practical significance**. A large numerical difference does not automatically mean the result is meaningful or worthy of publication.
+
+Here is a step-by-step framework to help you decide:
+
+### 1. Check Statistical Validity (The "Is it real?" test)
+Before considering the size of the difference, you must ensure the difference isn't just random noise.
+*   **Perform a Hypothesis Test:** Run an appropriate test (e.g., t-test, Mann-Whitney U, ANOVA) to determine if the difference is statistically significant ($p < 0.05$).
+    *   *If $p > 0.05$:* The difference could be
+
+======================================================================
+[meandiff] My model isn't fitting well. What should I look at first?
+======================================================================
+
+--- alpha -2.0 | jargon 1.5 | defining 0.0 | 196w ---
+When a model isn't fitting well, the first step is almost always to **diagnose the specific type of error** before making any changes. "Not fitting well" is a broad symptom that can stem from many different causes.
+
+Here is a structured approach to look at first, ordered from the most common/quick checks to more complex issues:
+
+### 1. Check the Loss Landscape (The "What" is wrong?)
+Before touching the code or data, look at the training metrics. This tells you *how* the model is failing.
+*   **High Training Loss but Low Validation Loss:** This is **Overfitting**. The model is memorizing the training data but failing to generalize.
+    *   *Action:* Regularization (L1/L2), Dropout, Early Stop
+
+--- alpha +0.0 | jargon 2.6 | defining 0.0 | 192w ---
+When a model isn't fitting well, the first step is to **diagnose the nature of the error** before making changes. Blindly adding more data or complexity often makes things worse.
+
+Here is a structured checklist of what to look at first, ordered from the most common/quick fixes to deeper architectural issues:
+
+### 1. Check Your Loss Landscape (The "What" is wrong?)
+Before touching the model, look at the training metrics.
+*   **High Training Loss + High Validation Loss:** This is **Overfitting** (or just poor generalization). The model memorized the training data but fails on new data.
+    *   *Action:* Regularize (L1/L2), add dropout, reduce learning rate, or collect more data.
+*   **Low Trai
+
+--- alpha +2.0 | jargon 1.0 | defining 0.0 | 201w ---
+When a model isn't fitting well, the first step is to **diagnose the nature of the error** before making changes. Blindly adding more data or complexity often makes things worse.
+
+Here is a structured checklist of what to look at first, ordered from the most common to the more complex:
+
+### 1. Check Your Baseline & Data Quality
+Before tweaking the model, ensure the foundation is solid.
+*   **Is the baseline good?** If your simple model (e.g., mean, linear regression) performs poorly, the problem might be inherent in the data or the task, not the model architecture.
+*   **Data Leakage:** Did you accidentally include future information in your training set? (e.g., using `test` data to train, o
+
+======================================================================
+[logistic] I've got two groups in my data and the difference looks big. How should I decide whether to report it?
+======================================================================
+
+--- alpha -2.0 | jargon 2.1 | defining 0.0 | 195w ---
+The fact that the difference "looks big" is a great starting point, but visual magnitude alone is rarely enough to decide whether to report it. In scientific and data-driven contexts, a large difference can be either a meaningful discovery or a statistical artifact (noise).
+
+Here is a structured framework to help you decide whether to report the difference, moving from statistical rigor to practical significance.
+
+### 1. Check Statistical Significance (Is it real?)
+Before discussing how big the difference is, you must determine if it is likely not due to random chance.
+*   **The p-value:** If your p-value is below your threshold (usually $p < 0.05$), the difference is statistically significa
+
+--- alpha +0.0 | jargon 1.7 | defining 0.0 | 178w ---
+Deciding whether to report a "big" difference between two groups depends entirely on **context, statistical validity, and practical significance**, not just the visual size of the gap.
+
+Here is a step-by-step framework to help you decide:
+
+### 1. Check Statistical Significance (Is it real?)
+Before worrying about the size, you must determine if the difference is likely due to chance or a true effect.
+*   **Run a hypothesis test:** Use a t-test (for continuous data) or a chi-square test (for categorical data), depending on your data type.
+*   **Look at the p-value:** If $p < 0.05$ (or your chosen alpha level), the difference is statistically significant.
+*   **The Caveat:** A statistically sig
+
+--- alpha +2.0 | jargon 2.2 | defining 0.0 | 184w ---
+Deciding whether to report a "big" difference between two groups is a critical step in scientific and data analysis. A large difference alone is not enough; you must determine if that difference is **real** (not due to chance) and **meaningful** (relevant to your research question).
+
+Here is a step-by-step framework to help you decide:
+
+### 1. Check Statistical Significance (Is it real?)
+Before worrying about the size of the effect, you must establish that the difference is unlikely to be a fluke of random sampling.
+*   **The Test:** Perform an appropriate statistical test (e.g., t-test, ANOVA, Mann-Whitney U) depending on your data distribution and sample size.
+*   **The P-value:** Look at 
+
+======================================================================
+[logistic] My model isn't fitting well. What should I look at first?
+======================================================================
+
+--- alpha -2.0 | jargon 2.9 | defining 0.0 | 208w ---
+When a model isn't fitting well, the first thing to look at is **the data itself and the problem definition**, before touching the model architecture or hyperparameters.
+
+Here is a structured checklist to start your investigation, ordered from most common/likely to more complex:
+
+### 1. The Problem Definition & Target Variable
+*   **Is the target variable well-defined?** Sometimes the issue isn't the model, but the label. Are the labels noisy, inconsistent, or biased?
+*   **Is the problem actually a regression or classification task?** Did you try to fit a regression model to a categorical target (or vice versa)?
+*   **Is the relationship linear?** If you are using a linear model (like Linea
+
+--- alpha +0.0 | jargon 2.6 | defining 0.0 | 192w ---
+When a model isn't fitting well, the first step is to **diagnose the nature of the error** before making changes. Blindly adding more data or complexity often makes things worse.
+
+Here is a structured checklist of what to look at first, ordered from the most common/quick fixes to deeper architectural issues:
+
+### 1. Check Your Loss Landscape (The "What" is wrong?)
+Before touching the model, look at the training metrics.
+*   **High Training Loss + High Validation Loss:** This is **Overfitting** (or just poor generalization). The model memorized the training data but fails on new data.
+    *   *Action:* Regularize (L1/L2), add dropout, reduce learning rate, or collect more data.
+*   **Low Trai
+
+--- alpha +2.0 | jargon 3.1 | defining 0.0 | 192w ---
+When a model isn't fitting well, the first step is to **diagnose the specific type of error** before jumping to complex fixes. Blindly adding more data or features often makes things worse.
+
+Here is a logical checklist of what to look at first, ordered from the most common/most critical to the more subtle:
+
+### 1. Check for Data Leakage (The "Gotcha" Check)
+Before worrying about model complexity, ensure your data pipeline isn't accidentally leaking information from the future into the past.
+*   **What to look for:** Did you use `fit()` on the entire dataset before splitting? Did you include target variables in feature engineering? Did you use `sklearn` pipelines incorrectly?
+*   **Why:** If 
+
+If the three outputs look identical, steering is not working:
+raise the alpha unit, or try a different layer.
+
+[total 3.3 min]

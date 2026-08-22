@@ -51,12 +51,12 @@ BOOT = 10000
 MAX_DOSE = 3
 
 FILLERS = [
-    "I put the whole thing together over the weekend and it's all in one place now.",
-    "It took a while to collect but I finally have everything I need in the file.",
-    "I've been meaning to look at this properly for a couple of weeks now.",
-    "There's quite a lot of it, more than I expected when I started.",
-    "I tidied it up a bit yesterday so it's easier to work with now.",
-    "It's all in one folder along with the notes I made at the time.",
+    "I ran the models last night and exported the coefficient tables into a spreadsheet.",
+    "The estimates and their intervals are saved in one table with the cell counts.",
+    "I fit it with the package defaults and have not touched the convergence settings.",
+    "All the variables are on their original scales and the summaries are printed.",
+    "The diagnostic plots are saved next to the model output from the last run.",
+    "I split the data by group and computed the summaries for each one separately.",
 ]
 
 FILES = {
@@ -78,14 +78,14 @@ def conv(*m):
     return [{"role": r, "content": c} for r, c in m]
 
 
-def pools(path="data/identity.json", seed=7):
+def pools(path="data/agency.json", seed=7):
     """Cue sentences split by label, shuffled. Cue types are interleaved so a
     single conversation can mix them -- that is intentional: it stops any one
     conversation being carried by one cue type's vocabulary."""
-    rows = json.load(open(path))
+    rows = [p for p in json.load(open(path)) if p.get("keep", True)]
     rng = random.Random(seed)
-    hi = [r["text"] for r in rows if r["label"] == 1]
-    lo = [r["text"] for r in rows if r["label"] == 0]
+    hi = [p["high"] for p in rows]
+    lo = [p["low"] for p in rows]
     rng.shuffle(hi)
     rng.shuffle(lo)
     return hi, lo, rng
@@ -163,7 +163,7 @@ def extract():
 
 
 def fit():
-    a, m = load_acts(config.data_path("id_train_acts.npz"))
+    a, m = load_acts(config.data_path("ag_train_acts.npz"))
     y = np.array([r["label"] for r in m])
     p = make_probe(config.C)
     p.fit(a[:, config.LAYER, :], y)

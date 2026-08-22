@@ -43,6 +43,10 @@ test was underpowered, not as evidence about a specific layer's role.
 import json
 from collections import defaultdict
 
+import os
+
+import os
+
 import numpy as np
 import torch
 
@@ -107,7 +111,7 @@ def seq_logprobs(model, tok, prompt_text, response_text):
 
 
 def main():
-    tr, trm = load(config.data_path("probe_train_acts.npz"))
+    tr, trm = load(config.data_path(os.environ.get("STEER_TRAIN","ag_train_acts.npz")))
     labels = np.array([m["label"] for m in trm])
     probe = make_probe(config.C)
     probe.fit(tr[:, config.LAYER, :], labels)
@@ -115,7 +119,7 @@ def main():
     unit = norm * UNIT_FRAC
     v = mean_diff_direction(tr, labels)
 
-    rows = json.load(open(config.data_path("steer_results.json")))
+    rows = json.load(open(config.data_path(os.environ.get("STEER_OUT","steer_v3_results.json"))))
     base = {r["prompt"]: r["text"] for r in rows
             if r["alpha"] == 0.0 and r["direction"] == "logistic"}
     prompts = sorted(base)

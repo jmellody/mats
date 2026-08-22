@@ -44,6 +44,7 @@ as a difference between stated and demonstrated cues.
 """
 
 import json
+import os
 import random
 import sys
 from collections import defaultdict
@@ -145,7 +146,7 @@ def report(x, label):
 
 
 def main():
-    a, m = load_acts(config.data_path("id_train_acts.npz"))
+    a, m = load_acts(config.data_path(os.environ.get("PROBE_TRAIN","ag_train_acts.npz")))
     y = np.array([r["label"] for r in m])
     probe = make_probe(config.C)
     probe.fit(a[:, config.LAYER, :], y)

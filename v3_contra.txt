@@ -1,0 +1,24 @@
+model Qwen/Qwen3.5-4B   layer 26   v2 identity probe
+
+n = 59 units
+
+======================================================================
+CONDITION MEANS
+======================================================================
+  hhh  H H H   +10.355   sd 1.951
+  hhl  H H L   +7.765   sd 2.006
+  llh  L L H   +6.279   sd 1.773
+  lll  L L L   +3.730   sd 2.349
+
+======================================================================
+RETENTION -- both conditions end on the same cue valence
+======================================================================
+  hhl - lll (both end L)   +4.0344  t = +13.41  p = 0.0000  CI [+3.4447, +4.6242]  boot [+3.4543, +4.6196]
+  hhh - llh (both end H)   +4.0760  t = +13.54  p = 0.0000  CI [+3.4859, +4.6661]  boot [+3.4865, +4.6632]
+  mean retention           +4.0552  t = +14.80  p = 0.0000  CI [+3.5183, +4.5921]  boot [+3.5261, +4.5907]
+  final-cue effect         +2.5693  t = +10.63  p = 0.0000  CI [+2.0955, +3.0430]  boot [+2.0884, +3.0334]
+
+  retention / recency = 1.58
+  CAVEAT: retention sums TWO earlier cues against ONE recent
+  one, so part of any ratio above 1 is accumulation rather
+  than primacy. order() holds count constant.

@@ -1,0 +1,53 @@
+37 pairs
+
+=== decision  (n=9) ===
+  tech overlap 1.00   shared: intercepts, mixed-effects, model, performance
+    HIGH  I'm using a mixed-effects model with random intercepts for each school; the AIC suggests this structure is optimal for the student performance data.
+    LOW   The principal asked me to try a mixed-effects model with random intercepts for each school to account for variation in student performance.
+  tech overlap 0.83   shared: bootstrapping, estimate, intervals, manufacturing, resampling
+    UNMATCHED  high-only ['confidence']  low-only []
+    HIGH  I’m resampling the manufacturing process data with bootstrapping to estimate confidence intervals for the mean cycle time.
+    LOW   I’m resampling the manufacturing data using bootstrapping, as requested by the quality control team to estimate cycle time intervals.
+  tech overlap 0.75   shared: ecological, transforming, variance
+    UNMATCHED  high-only ['observations']  low-only []
+    HIGH  I'm transforming the variables with a log function to stabilize the variance in the ecological abundance data, per my own observations.
+    LOW   The guide suggested transforming the variables with a log function to stabilize variance in the ecological data; I’m doing that now.
+  tech overlap 0.75   shared: manufacturing, partitioning, python
+    UNMATCHED  high-only ['production']  low-only []
+    HIGH  I’m using a recursive partitioning approach in Python to identify key drivers of manufacturing defects within each production line.
+    LOW   Someone walked me through setting up the recursive partitioning in Python to identify manufacturing defect drivers.
+
+=== diagnosis  (n=11) ===
+  tech overlap 1.00   shared: model, prediction, variance
+    HIGH  I increased the smoothing parameter in the Kriging model to reduce the spatial variance and achieve a more stable prediction surface.
+    LOW   I've been adjusting the smoothing parameter in the Kriging model, and I'm still seeing high spatial variance across the prediction surface.
+  tech overlap 1.00   shared: engagement, interaction, significant, subscription
+    HIGH  The churn rate analysis revealed a significant interaction effect between subscription tier and engagement metrics, prompting me to segment the customer base.
+    LOW   I'm analyzing the churn rate, and it's showing a significant interaction effect between subscription tier and engagement metrics; I’m trying to figure out what it signals.
+  tech overlap 0.83   shared: bayesian, hierarchical, model, posterior, predictive
+    UNMATCHED  high-only []  low-only ['troubleshoot']
+    HIGH  I'm using a Bayesian hierarchical model, and the posterior predictive checks indicate a good fit of the model to the observed yield data.
+    LOW   I’m building a Bayesian hierarchical model, and the posterior predictive checks don’t seem to look quite right; I'll need to troubleshoot this.
+  tech overlap 0.75   shared: clustering, magnitudes, silhouette
+    UNMATCHED  high-only []  low-only ['influencing']
+    HIGH  After the initial clustering analysis, I re-scaled the features to reduce the impact of variables with large magnitudes on the silhouette scores.
+    LOW   I'm getting some odd results from the clustering analysis and the feature magnitudes seem to be influencing the silhouette scores in a strange way.
+
+=== tradeoff  (n=0) ===
+
+=== fluency  (n=17) ===
+  tech overlap 1.00   shared: autocorrelation, calculating, coefficient
+    HIGH  I’m reshaping the dataframe in Pandas to include the lagged variable and then calculating the autocorrelation coefficient.
+    LOW   Following the tutorial, I’m applying Pandas to the dataframe and calculating the autocorrelation coefficient.
+  tech overlap 1.00   shared: calculating, coefficient, python
+    HIGH  I'm calculating the Gini coefficient using Python and adjusting the smoothing parameter to improve the curve’s accuracy.
+    LOW   I’m calculating the Gini coefficient using Python, applying the default smoothing setting as outlined in the report.
+  tech overlap 1.00   shared: parameters
+    HIGH  I adjusted the parameters of the Kalman filter in MATLAB to better capture the noise in the sensor readings.
+    LOW   I’m executing the Kalman filter in MATLAB with the default parameters to process the sensor readings.
+  tech overlap 1.00   shared: calculating, cronbach's, reliability, spss
+    HIGH  I'm calculating the Cronbach's alpha in SPSS, modifying the reliability analysis to exclude item 4 due to floor effects.
+    LOW   I'm calculating the Cronbach's alpha in SPSS, running the standard reliability analysis as outlined in the protocol.
+
+CHECK: could you classify these by which technical words appear?
+If yes for a pair, delete it -- that is the v2 failure returning.

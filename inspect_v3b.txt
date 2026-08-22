@@ -1,0 +1,62 @@
+179 pairs
+
+=== decision  (n=53) ===
+  tech overlap 1.00   shared: demographic, proportional, representation, sampling, stratified
+    HIGH  I’m using a stratified random sampling technique to ensure proportional representation of each demographic group in the survey.
+    LOW   The project lead specified stratified random sampling to ensure proportional representation of each demographic group in the survey.
+  tech overlap 1.00   shared: manufacturing, production, proportional, representation, sampling, stratified
+    HIGH  I'm going to resample the manufacturing data using stratified sampling to ensure proportional representation from each production line for this quality control analysis.
+    LOW   The quality assurance manager told me to resample the manufacturing data using stratified sampling to ensure proportional representation from each production line.
+  tech overlap 1.00   shared: interaction, model, predictive, regression
+    HIGH  I'm trying to optimize the logistic regression model by adding interaction terms between income and education, hoping to improve predictive power.
+    LOW   We were advised to optimize the logistic regression model by adding interaction terms between income and education to improve predictive power.
+  tech overlap 1.00   shared: generalized, model, non-linear, relationships, temperature
+    HIGH  I’m using a generalized additive model to predict crop yield based on rainfall, temperature, and soil nutrient levels, allowing for non-linear relationships.
+    LOW   My advisor suggested using a generalized additive model to predict crop yield based on rainfall, temperature, and soil nutrient levels, allowing for non-linear relationships.
+
+=== diagnosis  (n=46) ===
+  tech overlap 1.00   shared: outliers, transformation, winsorization
+    HIGH  After seeing the outliers flagged by the boxplot, I applied a Winsorization transformation to reduce their influence on the median.
+    LOW   The boxplot showed some real outliers, so I’m using a Winsorization transformation to deal with them and see what happens.
+  tech overlap 1.00   shared: autocorrelation, autoregressive, first-order, implementing, performance
+    HIGH  To account for autocorrelation, I'm implementing a first-order autoregressive error term in the time series analysis of the athlete's performance data.
+    LOW   To account for autocorrelation, I'm implementing a first-order autoregressive error term in the athlete's performance data; it’s giving me some trouble.
+  tech overlap 1.00   shared: clustering, silhouette
+    HIGH  The clustering looks messy, so I’m adjusting the silhouette width threshold to refine the groupings based on cohesion.
+    LOW   I’m adjusting the silhouette width threshold because the clustering output doesn’t look right at all.
+  tech overlap 0.83   shared: application, fertilizer, generalized, model, non-linear
+    UNMATCHED  high-only ['polynomial']  low-only []
+    HIGH  The generalized linear model indicates that fertilizer application rates have a non-linear effect on crop yield; I’ll add a polynomial term to capture this.
+    LOW   The generalized linear model indicates that fertilizer application rates have a non-linear effect on crop yield; I'll see how adding a term changes things.
+
+=== tradeoff  (n=12) ===
+  tech overlap 1.00   shared: bayesian, conditional, distributions, ecological, hierarchical, model, sample
+    HIGH  I’m applying a Bayesian hierarchical model to these ecological data, knowing that the full conditional distributions are difficult to sample from.
+    LOW   I am exploring a Bayesian hierarchical model for these ecological data and looking for the easiest full conditional distributions to sample.
+  tech overlap 1.00   shared: cross-validation, multicollinearity, regression
+    HIGH  I’m using penalized regression to handle the multicollinearity; the cross-validation score isn't fantastic, but it’s a trade-off.
+    LOW   I'm trying penalized regression because the multicollinearity is an issue, and the cross-validation score seems pretty good so far.
+  tech overlap 1.00   shared: tensorflow
+    HIGH  I adjusted the batch size in TensorFlow to reduce memory usage, which slightly slows down the training process.
+    LOW   I'm tweaking the batch size in TensorFlow to see if it improves the training speed on my system.
+  tech overlap 0.80   shared: matching, propensity, regression, thresholds
+    UNMATCHED  high-only ['acknowledging']  low-only []
+    HIGH  I ran the propensity score matching with a logistic regression, acknowledging that it will introduce some bias around the matching thresholds.
+    LOW   I’m using a logistic regression for propensity score matching and trying to decide which thresholds give the cleanest treatment effect.
+
+=== fluency  (n=68) ===
+  tech overlap 1.00   shared: model, nagelkerke, regression, spss
+    HIGH  I'm using a logistic regression model in SPSS and exploring different link functions, checking how they affect the Nagelkerke R-squared.
+    LOW   I'm running the logistic regression model in SPSS using the default link function, and reporting the Nagelkerke R-squared.
+  tech overlap 1.00   shared: distribution, estimation, manufacturing, python
+    HIGH  I adjusted the kernel density estimation bandwidth in Python’s SciPy library to better capture the peaks in the manufacturing defect distribution.
+    LOW   I followed the script and let Python’s SciPy library calculate the kernel density estimation for the manufacturing defect distribution.
+  tech overlap 1.00   shared: ecological, imputed, weighting
+    HIGH  To handle the missing values in this ecological dataset, I imputed using a k-nearest neighbors method with a weighting of 0.7.
+    LOW   I followed the protocol and imputed missing values in the ecological dataset using k-nearest neighbors with a weighting of 0.7.
+  tech overlap 1.00   shared: deviations, manufacturing, optimization
+    HIGH  I'm creating a custom cost function for the optimization algorithm to penalize large deviations from the target in the manufacturing process.
+    LOW   I'm running the optimization algorithm using the default cost function provided to minimize deviations from the target in manufacturing.
+
+CHECK: could you classify these by which technical words appear?
+If yes for a pair, delete it -- that is the v2 failure returning.

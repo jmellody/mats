@@ -1,0 +1,36 @@
+model Qwen/Qwen3.5-4B   layer 26   C 0.01
+trained gap (high vs low identity cues): +4.790
+
+======================================================================
+1. CUE-TYPE GENERALISATION  -- the test v1 never had
+======================================================================
+  held-out cue type: decision   n = 424
+  accuracy 0.719   Cohen's d +1.35
+  gap +2.664 (+56% of trained gap)
+
+  TRANSFERS. The probe recognises high vs low expertise
+  in a cue type it never saw, sharing little vocabulary
+  with training. This is a user representation.
+
+======================================================================
+2. TRUTH CONTAMINATION  -- what killed v1
+======================================================================
+  generic factual truth  +0.066  (+1% of trained gap)
+  stated expertise       +2.960  (+62% of trained gap)
+
+  v1 for comparison: truth +98%, stated expertise -7%
+
+  CLEAN. Tracks stated expertise, largely ignores
+  generic truth. The construct holds this time.
+
+======================================================================
+3. PER-CUE BREAKDOWN
+======================================================================
+  cue         in-sample acc      gap
+  diagnosis           0.984    4.473
+  fluency             0.987    5.112
+  tradeoff            0.990    4.184
+
+  In-sample, so inflated -- for comparing cue types only.
+  If one cue carries everything, the probe is narrower than
+  the label suggests and that belongs in limitations.

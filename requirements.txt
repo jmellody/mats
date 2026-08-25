@@ -1,0 +1,10 @@
+torch>=2.4
+transformers>=4.44
+accelerate>=0.33
+scikit-learn>=1.5
+numpy>=1.26
+matplotlib>=3.9
+jupyterlab>=4.2
+ipykernel
+tqdm
+huggingface-hub[cli]

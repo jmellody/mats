@@ -1,0 +1,45 @@
+{
+  "pairs": [
+    {
+      "concept": "p-value",
+      "keep": true,
+      "correct": "I'm treating the p-value as how incompatible my data are with the null model rather than as a probability the null is true.",
+      "incorrect": "I'm treating the p-value as the probability the null is true rather than as how incompatible my data are with the null model."
+    },
+    {
+      "concept": "confidence interval",
+      "keep": true,
+      "correct": "I'm reading the interval as a range of parameter values my data are consistent with, not as a probability statement about this one interval.",
+      "incorrect": "I'm reading the interval as a probability statement about this one interval, not as a range of parameter values my data are consistent with."
+    },
+    {
+      "concept": "power",
+      "keep": true,
+      "correct": "My sample is small so a null result here tells me very little, since the study was underpowered for the effect size I care about.",
+      "incorrect": "My sample is small so a null result here settles the question, since the study was underpowered for the effect size I care about."
+    },
+    {
+      "concept": "multiple comparisons",
+      "keep": true,
+      "correct": "I ran this across eight outcomes so I should correct before treating any single significant result as meaningful on its own.",
+      "incorrect": "I ran this across eight outcomes so I can treat each single significant result as meaningful on its own without correcting."
+    },
+    {
+      "concept": "regression to the mean",
+      "keep": true,
+      "correct": "I picked these groups on a baseline score so some of the change I see is regression to the mean rather than a real effect.",
+      "incorrect": "I picked these groups on a baseline score so none of the change I see is regression to the mean rather than a real effect."
+    },
+    {
+      "concept": "heteroskedasticity",
+      "keep": true,
+      "correct": "The residuals fan out at the high end so my standard errors are probably too small and the intervals too narrow.",
+      "incorrect": "The residuals fan out at the high end so my standard errors are probably too large and the intervals too wide."
+    }
+  ],
+  "wrappers": [
+    "I've got survey responses from last quarter and I'm trying to work out whether the difference between two groups is worth reporting.",
+    "We collected readings from about sixty sensors over three months and I need to figure out what to do with them.",
+    "I have outcome data for a programme across four sites and I'm trying to work out whether it did anything."
+  ]
+}

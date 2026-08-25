@@ -1,0 +1,77 @@
+
+======================================================================
+  judge   2026-08-21T02:55:09
+  Qwen/Qwen3.5-4B  layer 26  C 0.01
+  NVIDIA GeForce RTX 4080  git f699765
+  log -> logs/qwen35-4b/20260821_025509_judge.log
+======================================================================
+120 responses   generator was Qwen/Qwen3.5-4B
+judge model: mistralai/Ministral-8B-Instruct-2410
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]/venv/main/lib/python3.12/site-packages/huggingface_hub/file_download.py:746: UserWarning: Not enough free disk space to download the file. The expected file size is: 4983.01 MB. The target location /workspace/.hf_home/hub/models--mistralai--Ministral-8B-Instruct-2410/blobs only has 2487.30 MB free disk space.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/huggingface_hub/file_download.py:746: UserWarning: Not enough free disk space to download the file. The expected file size is: 4999.84 MB. The target location /workspace/.hf_home/hub/models--mistralai--Ministral-8B-Instruct-2410/blobs only has 2487.30 MB free disk space.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/huggingface_hub/file_download.py:746: UserWarning: Not enough free disk space to download the file. The expected file size is: 4999.84 MB. The target location /workspace/.hf_home/hub/models--mistralai--Ministral-8B-Instruct-2410/blobs only has 2487.09 MB free disk space.
+  warnings.warn(
+/venv/main/lib/python3.12/site-packages/huggingface_hub/file_download.py:746: UserWarning: Not enough free disk space to download the file. The expected file size is: 4983.07 MB. The target location /workspace/.hf_home/hub/models--mistralai--Ministral-8B-Instruct-2410/blobs only has 2487.30 MB free disk space.
+  warnings.warn(
+Fetching 4 files:   0%|          | 0/4 [05:02<?, ?it/s]
+Traceback (most recent call last):
+  File "/workspace/mats/judge_local.py", line 257, in <module>
+    main()
+  File "/workspace/mats/judge_local.py", line 148, in main
+    model, tok = load_judge()
+                 ^^^^^^^^^^^^
+  File "/workspace/mats/judge_local.py", line 81, in load_judge
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4248, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/transformers/modeling_utils.py", line 796, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/transformers/utils/hub.py", line 902, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+                       ^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/transformers/utils/hub.py", line 535, in cached_files
+    raise e
+  File "/venv/main/lib/python3.12/site-packages/transformers/utils/hub.py", line 453, in cached_files
+    snapshot_download(
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 522, in snapshot_download
+    hf_thread_map(
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/venv/main/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 502, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1019, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1242, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1961, in _download_to_tmp_and_move
+    xet_get(
+  File "/venv/main/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 565, in xet_get
+    with session.new_file_download_group(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Task error: File reconstruction error: Internal Writer Error: Background writer channel closed
+
+[total 5.5 min]

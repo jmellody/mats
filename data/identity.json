@@ -1,0 +1,1447 @@
+[
+  {
+    "text": "As an econometrician, I'm trying to understand these transportation flow patterns \u2013 it\u2019s proving surprisingly difficult to isolate the impact of the new highway.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Being a biostatistician, I've been wrestling with these clinical trial results; I need to see if there\u2019s a meaningful difference between the groups.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m working on this survey data as a quantitative researcher, and I'm hoping you can help me visualize the responses to the open-ended questions.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m a statistician, and I\u2019m trying to determine if this agricultural yield data shows a clear trend over the past decade, despite the variability.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "As a methodologist, I need help filtering out the outliers in this manufacturing quality control dataset; they\u2019re skewing everything.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Having a background as an econometrician, I\u2019m examining sales figures across different regions and trying to find some underlying correlations.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m a biostatistician looking at ecological data, and I'm struggling to map these species distributions across different habitat types.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Since I'm a quantitative researcher, I\u2019m digging through this clinical data, and I need a quick way to cross-tabulate patient demographics with treatment outcomes.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I'm an econometrician, and I am trying to build a model to predict energy consumption based on weather patterns and economic indicators.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "As a statistician, I need to clean up this messy survey data to see if there's a significant difference in opinions between different age groups.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "My training as a methodologist means I'm aiming to identify potential biases in the recruitment process based on this applicant pool.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m an econometrician currently analyzing the impact of government subsidies on the adoption of electric vehicles within the transport sector.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m a teacher, and I\u2019m trying to get a sense of how students performed on this assessment, but the spreadsheet is overwhelming.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As a nurse, I\u2019m reviewing these patient records to see if we can identify any common factors contributing to readmissions.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a shop owner, and I need to understand which products are selling best so I can adjust my inventory.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "Being a coach, I\u2019m looking at player performance data and hoping to spot areas where we can improve as a team.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a designer, and I\u2019m trying to see if the color choices in these mockups are resonating with our target audience.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "My colleague handed me this dataset \u2013 I'm just a teacher \u2013 and I need to figure out which classes had the highest attendance rates.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As a nurse, I'm trying to track medication adherence rates, but it\u2019s tough to get a clear picture from the current format.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I run a shop, and I'm attempting to map customer purchases to time of day to see if there are patterns.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a coach; I'm trying to find correlations between training intensity and player injuries across the season.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "Being a designer, I\u2019m seeing how different button placements on the website affect user clicks, but the numbers are confusing.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a nurse, trying to find which factors predict longer hospital stays for patients with specific diagnoses.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "My colleague gave me this data \u2013 I'm a shop owner \u2013 and I just want to know which items are consistently returned the most.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a teacher looking at student scores and trying to see if there\u2019s a correlation with participation in extracurricular activities.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As a coach, I\u2019m examining this data to find trends in player speed and agility over time, to see how training impacts them.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a designer, and I\u2019m hoping to understand how different layouts affect bounce rates on our landing pages.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As an econometrician, I\u2019m trying to model the impact of interest rate changes on housing starts, but I\u2019m having trouble getting the data to align properly with the regional figures.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Being a biostatistician, I\u2019m working with patient data from the clinical trial, and I need help summarizing the key outcomes across different treatment groups.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I'm a quantitative researcher, and I'm struggling to clean up this messy dataset from the ecological survey; there are a lot of missing values and inconsistencies.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Given my background as a statistician, I need to prepare this sales data for a presentation, but the current formatting makes it hard to spot trends in customer purchasing habits.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m an econometrician currently examining the relationship between transportation infrastructure spending and economic growth in different states, but the data is proving quite unwieldy.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "My training as a methodologist has led me to this agricultural yield dataset, and I need some assistance with identifying potential confounding variables affecting crop production.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I'm a biostatistician dealing with this longitudinal study on heart health; I need to figure out how best to account for participant dropout rates when analyzing the results.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "As a quantitative researcher, I'm investigating the effects of different training programs on student performance, but I'm facing issues with variable scaling in this education dataset.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m an econometrician trying to build a model of airline ticket prices; it's quite complex, and I\u2019m unsure how to handle the seasonality in the data effectively.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "With my background as a statistician, I'm trying to analyze this manufacturing quality control data and would appreciate a hand with identifying outliers that might skew the overall results.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Working as a methodologist, I'm looking at survey responses regarding consumer satisfaction, and the cross-tabulations aren't revealing the patterns I\u2019m hoping to see.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m a biostatistician working on a study of disease prevalence, and I\u2019m finding it difficult to integrate data from different healthcare providers into a cohesive format.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m a teacher, and I'm trying to understand how test scores correlate with attendance rates in my class, but the spreadsheet is really confusing me.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As a shop owner, I'm trying to see which products sell best together, so I can arrange the shelves more effectively, but I'm not really sure where to start with this data.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a nurse, and I\u2019m looking at patient readmission rates; it\u2019s a little overwhelming, and I need some help figuring out what\u2019s driving the trends.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "Being a coach, I\u2019m trying to analyze the performance stats of my players to see how we can improve our team strategy, but it\u2019s just a lot of numbers right now.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a designer, and I need to understand which website layouts get the most clicks, but the data is spread across multiple platforms, making it hard to consolidate.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m helping a colleague out with this data from a clinical trial, and I\u2019m trying to find out which treatment had the fewest side effects, but I'm lost.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As a shop owner, I'm trying to understand seasonal sales patterns for our gardening supplies, but it's difficult to see any clear relationships in the data.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a coach, and I'm trying to figure out which training drills improve players' speed the most, but I don't know how to look for that in the data.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I'm a teacher, and I'm hoping to see if there's a correlation between homework completion and student grades, but the spreadsheet is overwhelming.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a nurse, and I\u2019m trying to see if there\u2019s a link between medication dosage and patient recovery time, but I'm finding it hard to make sense of it all.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "Working as a designer, I\u2019m analyzing user engagement metrics to improve the app\u2019s usability; however, I\u2019m unsure how to interpret the various data points.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a shop owner and am reviewing customer purchase history to inform targeted promotions \u2013 the sheer volume of transactions is a little daunting though.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As an econometrician, I'm trying to clean up this transport dataset and see if there\u2019s any correlation between road conditions and accident rates, but it's a bit messy.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Being a biostatistician, I need to examine these clinical trial results to confirm the efficacy of the new treatment, but the missing data is really complicating things.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m a statistician, and I\u2019m looking at this survey data about consumer preferences, but I'm struggling to identify any meaningful patterns amidst all the noise.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I'm trained as a quantitative researcher, and I'm attempting to model sales figures across different regions, but there\u2019s some unusual seasonality I'm having trouble accounting for.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "As a methodologist, I\u2019m reviewing this manufacturing quality control data and need to determine if there are any systematic defects arising during a specific part of the process.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "You know, I\u2019m an econometrician working on some agricultural yield predictions, and this dataset has so many outliers it\u2019s making anything but the most basic modelling impossible.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I'm a statistician, and I\u2019m working with some ecological data on bird migration patterns, but it's hard to tease out the influence of weather events from the random variation.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Since I'm a biostatistician, I'm trying to assess the impact of this new dietary intervention on patient outcomes, but there\u2019s a lot of confounding variables to consider.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m a quantitative researcher, so I'm pulling together data on student performance from different schools, but it\u2019s proving difficult to reconcile the varying grading systems.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "Working as an econometrician, I\u2019m analyzing the impact of fuel prices on commuter travel, but the data is heavily skewed toward peak hours and weekends.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I'm a methodologist looking into these survey responses on employee satisfaction; the open-ended answers are proving trickier than I anticipated to quantify.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "As a statistician, I\u2019m trying to understand the relationship between fertilizer use and crop yield in this agricultural dataset, but it seems very dependent on rainfall.",
+    "cue": "role",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m a teacher, and I\u2019m trying to understand how student attendance affects their test scores, but the spreadsheet is a nightmare to navigate.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "Being a nurse, I\u2019m looking over these patient records to see if we can identify any patterns related to readmission rates, but it\u2019s a lot to sort through.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I run a shop, and I\u2019m trying to see if there's a connection between marketing campaigns and daily sales, but the data entry seems quite inconsistent.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As a coach, I'm trying to figure out what training methods are most effective for my athletes, but this spreadsheet of performance metrics is a bit overwhelming.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a designer, and I\u2019m analyzing website traffic data to see where users are dropping off, but I'm struggling to make sense of all the numbers.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "My colleague gave me this data from a clinical trial; I\u2019m a shop owner, and I\u2019m just trying to understand if the results seem promising, honestly.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I'm a teacher, and I\u2019m trying to understand why some students are struggling more than others, but this data on homework completion is really confusing.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "As a nurse, I\u2019m reviewing patient feedback forms, and I\u2019m hoping to identify areas where we can improve care, but the free-text responses are hard to summarize.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a coach, and I'm reviewing game statistics to find weaknesses in our strategy, but this data looks like a jumbled mess.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "Being a shop owner, I'm trying to spot trends in product popularity, but the sales figures are scattered across different spreadsheets.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m a designer, and I need to analyze user clickstream data to improve website usability, but I don\u2019t really know where to start with all this.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "My colleague asked me to look over this data from an agricultural study; I\u2019m a nurse, and I\u2019m mostly just trying to see if there are any obvious issues.",
+    "cue": "role",
+    "label": 0
+  },
+  {
+    "text": "This presentation needs to be robust enough to withstand rigorous questioning at the methods seminar next week.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The manuscript requires a level of precision expected by the journal's editorial board; clarity is paramount.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m drafting this for a regulatory submission, so it needs to be meticulously documented and defensible.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The reading group appreciates nuanced arguments, so the logic needs to be exceptionally tight and internally consistent.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "For the peer reviewer's assessment, it\u2019s vital to anticipate and address potential criticisms proactively.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "This report is for a group deeply familiar with the complexities of ecological modeling, so assume a high degree of understanding.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The team will be scrutinizing this in detail during the review meeting; the rationale behind each choice must be clear.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "It needs to be suitable for a presentation at a conference where attendees are presenting cutting-edge work in their field.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The aim is for a thorough evaluation by someone with a solid background in statistical theory and a sharp eye for detail.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "This documentation needs to adhere to the quality standard expected when submitting to a leading conference in the field.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "Given that it's being reviewed by the department\u2019s senior academics, I need to demonstrate a deep understanding of the topic.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "Preparing this for the leadership team means focusing on implications and broader strategic alignment rather than minute specifics.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "I'm putting this together for the team meeting; they mostly want to know what the numbers mean for the project\u2019s timeline.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "This needs to be easy to understand for parents\u2019 evening; I'll keep the explanations straightforward and avoid jargon.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "The club newsletter audience are interested in the highlights, so I\u2019ll focus on the key takeaways and conclusions.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "For the manager, who prefers a high-level overview, I'll concentrate on the main trends and their impact on performance.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I'm writing this to respond to customer inquiries; it needs to be clear and reassuring without being overwhelming.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "This summary is for an educational outreach program; the language needs to be accessible to people with no prior knowledge.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m putting this report together for the board, and they are mostly interested in the implications for future investments.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "The transportation team will be reviewing this, so I'll need to explain how it connects to the operational strategy.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "This will be presented to a stakeholders meeting, and they are mainly focused on understanding the key outcomes.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "Preparing this for the agricultural cooperative requires me to highlight the benefits in simple, relatable terms.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "It's for an internal update \u2013 the focus should be on easily digestible information to inform decision-making.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "The manufacturing director wants a clear picture of the results, focusing on how it impacts production efficiency.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "It needs to be rigorous enough to withstand scrutiny from someone familiar with hierarchical modeling techniques.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "This will ultimately be presented to a group critically evaluating methodological approaches to longitudinal data.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The documentation has to be thorough, as it's destined for a peer reviewer specializing in causal inference.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "I'm aiming for clarity that will satisfy the requirements of a regulatory submission process.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "We'll want to ensure it's precise enough for the discussion within a dedicated group of statistical specialists.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The level of detail is important, given it's being considered for publication in a well-regarded journal.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "I should probably include a sensitivity analysis section; they\u2019ll be looking at that sort of thing.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "Considering the nature of this venue, I'm thinking a more formal presentation of the findings is warranted.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "It\u2019s going to be presented to a group who regularly engage with complex quantitative arguments.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The audience will be expecting a clear justification for any assumptions made during the process.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "This needs to be carefully structured to facilitate a productive discussion with those familiar with this field.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "Given the intended readership, I think the narrative needs to focus on robustness and generalizability.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "It\u2019s best if it\u2019s clear enough for folks who aren't deeply involved in the day-to-day numbers.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I need to make sure it's easily understandable for our team, so they can grasp the main takeaways.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "This has to be simple enough for parents to understand without getting bogged down in the details.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "Let's keep it straightforward; the manager just wants to see a general sense of what happened.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I need to make this easy to digest for our customers, so they can understand the benefits.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "The presentation needs to be accessible to the club members \u2013 they're primarily interested in results.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "It\u2019s best if the report avoids technical jargon; we want everyone to feel included in the update.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I think it should be phrased in a way that\u2019s easily understood by those not familiar with research.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "The material needs to be presented in an engaging format for the upcoming meeting.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "Let's aim for a plain language summary; this is going to a broad audience.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "The report needs to be easy to read, focusing on the main points for the stakeholders.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I'm aiming for a summary that the board can quickly review and understand without extra explanation.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "This draft will need to rigorously defend all choices against pointed questioning, so clarity is paramount.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The figures should be easily interpretable without additional explanation for those familiar with similar frameworks.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "I'll aim for a presentation style suitable for someone who routinely critiques methodological approaches.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "Given the anticipated audience's focus on reproducibility, a detailed description of the process is essential.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The overall tone needs to be cautious and appropriately nuanced for a regulatory review.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "I suspect they\u2019ll be looking for alignment with established conventions within the field\u2019s discourse.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "It's being prepared for a group interested in theoretical discussions, so the emphasis should be on justification.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "A concise summary will be necessary to avoid overwhelming individuals already deeply immersed in this topic.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The presentation will be evaluated based on its conceptual soundness, so focus on the underlying logic.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "The intended recipients will be scrutinizing every assumption, so I want to be exceptionally precise.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "This will go to a committee that prioritizes the validity of inferences above all else.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "It needs to be written in a style that acknowledges the sophistication of their knowledge base.",
+    "cue": "context",
+    "label": 1
+  },
+  {
+    "text": "Let\u2019s keep it simple for the team; they\u2019re mostly focused on the practical implications.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I think the parents will appreciate a clear overview, avoiding complicated details for them.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "This needs to be easy to understand for the newsletter, so let's keep the language accessible.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "The manager just wants the key takeaways, so I\u2019ll focus on the most impactful results.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I\u2019ll make it friendly for the customer email, focusing on what the data means for them.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "For the club, a straightforward explanation of what we found will be perfectly sufficient.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "It needs to be very clear for the meeting, as most people won't have seen the data before.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "Let's keep the report brief and easy to digest for the stakeholders\u2014they\u2019re time-constrained.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I\u2019ll present it simply for the presentation; people will mainly be interested in the broad picture.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "This needs to be in plain language for the public report, focusing on the general message.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I want to keep the language very accessible for this update, as it goes to a wide range of people.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "This information is for a general audience, so let\u2019s avoid jargon and be very clear.",
+    "cue": "context",
+    "label": 0
+  },
+  {
+    "text": "I decided to use a Welch's t-test because the assumption of equal variances wasn't met, which adds some complexity to interpreting the p-value.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "To control for false positives, I'm planning on adjusting the p-value using the Bonferroni correction, understanding it reduces power.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm running a multiple regression, and the variance inflation factor for predictor 3 is a little high, so I'll need to address collinearity.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I opted for stratified sampling to ensure representation from each age group; it\u2019s a bit more work, but necessary for accurate results.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "The confidence interval for the mean production yield is quite wide, suggesting I\u2019ll need to collect more data to narrow it down.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m using a paired t-test because I have longitudinal data and want to compare scores within the same individuals, even though it\u2019s sensitive to order effects.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I chose to use a Poisson distribution to model the number of customer complaints because the data demonstrates significant overdispersion.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm standardizing the Z-scores for each variable before applying the k-means clustering algorithm to ensure all features contribute equally.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm calculating Cohen's d to quantify the effect size between the two treatment groups, even though it\u2019s a bit less common than other measures.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "Because of the non-normality, I decided to use the Mann-Whitney U test instead of the t-test, acknowledging it's less powerful.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm using a repeated measures ANOVA to account for the within-subject variability when examining treatment effects across time, recognizing the complexity of the assumptions.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m bootstrapping the median to get a more robust estimate, knowing that it\u2019s computationally intensive.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "Someone suggested using a Welch\u2019s t-test; I\u2019m not entirely sure what determines whether the variances are equal, or if it matters for the p-value.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I heard the Bonferroni correction is important for p-values, but I\u2019m not clear on when to use it, or what it does to the power of the test.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m building a multiple regression, and someone said to watch out for variance inflation; I'm not sure how to identify or fix this collinearity problem.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I was told to use stratified sampling, but I\u2019m not really grasping how it helps ensure the sample reflects the population, especially when considering age.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m looking at the confidence interval for the mean yield, and it seems really broad; is that a sign of something being wrong with my dataset?",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "Someone recommended a paired t-test for this dataset; I\u2019m struggling to understand why that\u2019s better than an independent samples test, given my longitudinal design.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I'm trying to model customer complaints, and someone said Poisson might be appropriate, but I\u2019m not sure what \u2018overdispersion\u2019 even means in this context.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I need to do some clustering, and someone suggested standardizing Z-scores first; I\u2019m not certain why that\u2019s important for the algorithm to work correctly.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I need to describe the difference between the two groups, and I was told to calculate something called Cohen\u2019s d; what does it actually represent?",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m trying to compare two groups, and I heard a Mann-Whitney U test is useful, but I\u2019m not clear on when it\u2019s preferable to a standard t-test.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I need to analyze how treatment affects outcomes over time, and someone suggested a repeated measures ANOVA, but I'm not sure how to address the assumptions.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I need to estimate the median, but I\u2019m not confident in the standard calculation; someone mentioned bootstrapping, but I\u2019m unsure how that works.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m happy with the F-statistic; the trade-off for using ANOVA felt justified given the clear separation in the means.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "To reduce multicollinearity, I opted for a stepwise regression model, acknowledging it might slightly bias the coefficient estimates.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "The power analysis indicated a sample size of 150 should be sufficient to detect a medium effect size with a reasonable alpha.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m going to correct for multiple comparisons using Bonferroni; it\u2019s a conservative approach, but it avoids Type I errors.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm implementing a stratified sampling approach to ensure representation across demographic groups, even if it adds complexity to the analysis.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "The R-squared value is relatively low, so I\u2019m adding interaction terms to see if that improves the model\u2019s predictive power.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "Given the skewed distribution, I\u2019m using a non-parametric test like the Mann-Whitney U test to avoid violating assumptions.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I chose to calculate the odds ratio because it\u2019s easier to interpret than the relative risk in this context.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "The cluster analysis revealed three distinct segments based on purchasing behavior, despite a slight overlap in the centroid distances.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m using a time series analysis with ARIMA modeling, anticipating some autocorrelation will need to be addressed.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "The ANOVA test showed a significant difference between groups, though the effect size was smaller than initially anticipated.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "To control for confounding variables, I performed a propensity score matching, accepting a potential loss of some observations.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "My advisor suggested using ANOVA, and mentioned something about the F-statistic, but I'm not entirely sure about the significance.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "They told me to use a stepwise regression, and said something about checking for multicollinearity, but I didn\u2019t really understand why.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I was asked to run a power analysis, and it mentioned a sample size and something about alpha and effect size, but the numbers are confusing.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "Someone mentioned I should correct for multiple comparisons, and said something about Bonferroni, but I\u2019m not clear on the procedure.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "My colleague recommended stratified sampling to address potential biases, but I\u2019m not sure how to properly implement it in this dataset.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I was told to look at the R-squared value, and they said it indicated a problem, but I\u2019m not sure what to adjust.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "They suggested I consider a non-parametric test because of the data distribution, and mentioned something about the Mann-Whitney U test, but I am hesitant.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I'm trying to figure out whether to calculate an odds ratio or relative risk; I'm not sure which one is appropriate here.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I ran a cluster analysis, and someone pointed out that there were three clusters, but I\u2019m not sure what to do with the results.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "Someone suggested I perform a time series analysis, and talked about ARIMA, but I\u2019m struggling to understand the process.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I ran an ANOVA, and was told that the p-value was significant, but I\u2019m unsure what that actually means.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I was asked to control for confounding variables, and someone suggested propensity score matching, but it seems quite complex.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I opted for a Welch's t-test because I suspected unequal variances between the control and experimental groups in this clinical trial.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "To reduce multicollinearity, I had to drop the income variable from my regression model despite its theoretical importance in predicting purchase frequency.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm running a chi-squared test to assess the association between fertilizer type and yield; the p-value is quite low, so the effect seems real.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "Given the high dropout rate, I used multiple imputation to address missing values in the survey data and minimize bias in my correlations.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm using a mixed-effects model because we have nested data, with repeated measures within each school, and I need to account for the correlation.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "To reduce the type I error rate, I'm using a Bonferroni correction for these post-hoc comparisons after the ANOVA revealed a significant main effect.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm building a decision tree model to predict equipment failure; the Gini impurity is consistently low for the terminal nodes, suggesting a good split.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m using a time series analysis with ARIMA modeling to forecast transportation demand, and the autocorrelation function shows a clear seasonal pattern.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm using a cluster analysis with k-means, and I'm fine-tuning the number of clusters based on the elbow method to optimize the within-cluster variance.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "For this ecological study, I applied a logistic regression to assess the impact of habitat fragmentation on species richness, accepting a slightly higher false positive rate.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m calculating a rolling average of sales data to smooth out the noise and identify underlying trends, as the raw data shows too much fluctuation.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "I'm using a repeated measures ANOVA to analyze performance across multiple trials; the sphericity assumption was violated, so I applied a Greenhouse-Geisser correction.",
+    "cue": "stance",
+    "label": 1
+  },
+  {
+    "text": "My supervisor suggested using a Welch's t-test, but I'm not entirely sure if it's appropriate given the data from our patient cohort.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "The results from the regression model were unstable; they told me it might be due to multicollinearity, so I'm considering dropping a predictor.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I need to see if there's a relationship between fertilizer and yield. Someone mentioned a chi-squared test, but I don\u2019t know what to do with the result.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "We have a lot of missing data in the survey.  I was told to look into multiple imputation, but I\u2019m not clear on how it works.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "Someone recommended a mixed-effects model, said it could handle the way the data is structured with students in classrooms, but I don\u2019t know when to use it.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "We need to do post-hoc tests after the ANOVA, and I\u2019m wondering if we should be doing something about the type I error rate?",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I need to predict future transportation needs; they suggested ARIMA, but I'm struggling to interpret the autocorrelation function.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m trying to group customers based on purchase behavior. Someone suggested k-means and the \u2018elbow method\u2019, but I don\u2019t know what that is.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m trying to see if habitat fragmentation affects the number of species. They said logistic regression is good, but I\u2019m not sure about the implications.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "The sales data is all over the place. I was told to try a rolling average, but I'm not sure how to apply it properly.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I'm looking at how performance changes over time. They mentioned a repeated measures ANOVA, but I\u2019m not sure how to check for sphericity.",
+    "cue": "stance",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m having trouble sourcing this data into R, it seems my .csv file is getting corrupted every time I run the initial import.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Just need a quick hand; I think I\u2019ve messed up the path to the data file in my Stan script, and it's not finding it.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "This Julia code was working perfectly yesterday, but now it's throwing an error referencing an old version of the configuration file.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I'm trying to clean up this Python script and it's a mess of commented-out code, I need to remove those temporary files.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m working with a large dataset in Stan, and I\u2019m starting to worry about the memory usage \u2013 I\u2019ll need to clean up some intermediate files.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "It\u2019s a minor thing, but I accidentally renamed a key data file in my Julia workspace and I\u2019m struggling to update the script\u2019s references.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I think I need to refactor this section of the Python code to handle missing data more elegantly, before I can save it out to a new .pkl file.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I'm just updating my R workflow, and I\u2019ve noticed the source file for the simulation isn't getting saved to the right folder.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Something\u2019s gone wrong with the setup; my Stan model is complaining about missing header files, even though I know they're there.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "This Julia code is throwing a weird error \u2013 I suspect there's a conflict with a library I installed yesterday, I need to check the package list.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Before I share this Python script, I need to double-check that all the temporary result files have been deleted; it's a bit messy.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I'm opening this huge Excel file again, and it's taking forever to load; maybe I should save a copy without all the formulas?",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m having trouble finding where I saved the backup file in Google Sheets; I think I put it in a different folder.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m trying to figure out which software to use \u2013 is Excel better for this, or should I start a new sheet in Google Sheets?",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m getting an error when I try to save this Excel file; it says the file name is too long, so I need to rename it.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m not sure if I should use Excel or Google Sheets for this, but I\u2019m already used to the layout in Excel.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm having trouble linking this file to Google Sheets; it keeps asking me to grant permissions again, very annoying.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m trying to share this Excel file with my colleagues, but it\u2019s not letting me save it as a PDF properly.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "Should I use Google Sheets or Excel for this? Google Sheets seems easier to share, but Excel has more options.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I need to create a new file in Excel, but I'm having trouble finding the 'Save As' option; it's hidden somewhere.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm struggling to format this data in Excel; the gridlines keep disappearing when I try to print it out.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "Is Google Sheets better for collaborative work, or should I stick to Excel for this particular dataset?",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm having trouble finding a template in Excel; I need something with pre-built charts for this survey data.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm just trying to merge this new data into my R script, but it\u2019s getting messy with the column names.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I need to make sure the paths in my Julia code are correct before I run this simulation; I keep getting errors.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Ugh, I'm spending too long dealing with Stan\u2019s configuration files; it\u2019s always something small.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Before I run the full model, I really need to sort out these Python dependencies in my environment.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Just saving the latest version of my R project, it seems to be growing quite a bit with all the new variables.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I'm having a bit of trouble locating a specific package I need in my Python setup for this sales forecasting model.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Could you help me, I need to reorganize the folder structure for my Julia code for this clinical trial analysis.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I'm slightly worried I accidentally overwrote a previous version of the R script; it's a pretty long one.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m running this in Stan, and I need to make sure all the data files are in the right directory to avoid errors.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "It\u2019s taking longer than expected to load the data into my Python script; I\u2019ll need to optimize this.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I'm just updating the input CSV file for my R simulation; it\u2019s a recurring update, thankfully.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I\u2019ve got a complicated data pipeline in Julia, and I\u2019m just checking to see if I can access all the necessary files.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m having trouble finding the file I saved in Excel; I think I put it in the wrong folder.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m going to rename this Google Sheet to something more descriptive; it's getting confusing.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm not sure which software is best for this survey data; should I use Excel or Google Sheets?",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I need to move this file to the shared drive so my team can access it in Excel.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "It\u2019s asking for a password when I try to open this Google Sheet; I must have forgotten to share it.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m trying to link this data from another file into Excel, but the formatting isn\u2019t quite right.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m saving this Google Sheet as a PDF so I can send it to my boss; it\u2019s easier that way.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm trying to create a new tab in Excel to organize this sales data a little better.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m having trouble uploading this file into Google Sheets; the size must be too big.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I need to create a new Google Sheet for this education project; this one's a bit cluttered.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m just renaming the columns in this Excel sheet to make them more understandable.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m setting up a new file in Google Sheets to track transport deliveries; it's a fresh start.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "Just need to grab this data from the shared drive; I\u2019m working through a series of Julia scripts to clean it up for the transport model.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "The R package version kept causing errors, so I had to manually update it \u2013 now I can finally run the clinical trial analysis.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m having trouble with the Stan setup; it seems like the project files aren\u2019t loading correctly for this ecology simulation.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Before I can move on, I need to verify the file paths in the Python script\u2014it\u2019s been a long week with the manufacturing data.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m refactoring some code in R and realized I'd put all the survey data in a weird format \u2013 need to adjust the import.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "Trying to parallelize this calculation in Julia is proving tricky; I'm still sorting out the file names for the different chunks.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I'm getting a weird error with the package dependencies in Stan \u2013 I'll need to check the script version against the library.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I've been wrestling with Python, and it looks like the initial data file has some weird characters that are messing with the import.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "R keeps complaining about the directory structure, so I\u2019m reorganizing my project files before running the sales forecasts.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "This Stan model is taking forever to compile; I think I made a mistake in the project\u2019s file structure, will need to clean that up.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I had to temporarily move the data to a different folder because the Python script wasn\u2019t picking up the latest version.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m running the simulation in Julia, but I forgot to update one of the input files \u2013 easy fix, just need to grab it now.",
+    "cue": "tooling",
+    "label": 1
+  },
+  {
+    "text": "I\u2019m getting an error when I open the spreadsheet; it seems like the file is corrupted \u2013 using Google Sheets for the sales figures.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m trying to copy the data from one sheet to another in Excel, but it\u2019s not pasting correctly - I need to verify the layout.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I think I saved the wrong version of this file in Excel; I need to find the previous copy of the education survey data.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "Is it better to use Google Sheets or Excel for this, I\u2019m still getting used to setting up the different tabs for the transport data?",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "This Excel file is enormous, and it keeps freezing up \u2013 I need to find a way to organize it better for the clinical study.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm having trouble sharing this file in Google Sheets - someone accidentally renamed the folder.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm not sure which software to use \u2013 should I start a new file in Excel or Google Sheets for the agricultural data?",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "The formatting in this Excel file is all messed up, I need to figure out how to adjust the column widths for the survey.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm having issues with the file size in Google Sheets \u2013 is there a limit on how much data I can put in?",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I seem to have accidentally deleted some rows from the Excel file with the manufacturing information \u2013 time to restore from backup.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I'm trying to link this Google Sheet to another one, but the file paths aren\u2019t working\u2014this sport statistics analysis is frustrating.",
+    "cue": "tooling",
+    "label": 0
+  },
+  {
+    "text": "I\u2019m getting an error message when I try to open this Excel file - I need to rename it before I can look at the ecology data.",
+    "cue": "tooling",
+    "label": 0
+  }
+]

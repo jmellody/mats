@@ -1,0 +1,49 @@
+model Qwen/Qwen3.5-4B   layer 26
+12 prompts, teacher-forced over their unsteered text
+perturbation at alpha 3 = 1.73 vs activation norm 28.8
+
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 622.02it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:  83%|████████▎ | 352/426 [00:00<00:00, 3519.24it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 3496.38it/s]
+========================================================================
+DIRECTION: logistic
+========================================================================
+    alpha    mean KL     max KL   first 25%   last 25%   d logp/tok
+     -3.0     0.0012     0.0164      0.0011     0.0013      -0.0013
+     -1.5     0.0006     0.0076      0.0006     0.0006      -0.0008
+     +1.5     0.0006     0.0070      0.0006     0.0006       0.0006
+     +3.0     0.0013     0.0175      0.0012     0.0013      -0.0000
+
+  largest mean KL: 0.0013 nats/token
+  Distribution barely perturbed. The steered model would
+  have produced nearly the same text throughout the whole
+  response, not just at the first token.
+  first->last 25% change at alpha +3: +0.0001
+  Divergence does not grow with depth, so first-token KL
+  was not misleading.
+
+========================================================================
+DIRECTION: meandiff
+========================================================================
+    alpha    mean KL     max KL   first 25%   last 25%   d logp/tok
+     -3.0     0.0012     0.0151      0.0011     0.0012      -0.0024
+     -1.5     0.0006     0.0079      0.0006     0.0006      -0.0012
+     +1.5     0.0006     0.0065      0.0006     0.0006       0.0011
+     +3.0     0.0012     0.0151      0.0011     0.0013       0.0009
+
+  largest mean KL: 0.0012 nats/token
+  Distribution barely perturbed. The steered model would
+  have produced nearly the same text throughout the whole
+  response, not just at the first token.
+  first->last 25% change at alpha +3: +0.0002
+  Divergence does not grow with depth, so first-token KL
+  was not misleading.
+
+========================================================================
+FOR THE WRITEUP
+========================================================================
+  Quote mean KL per token across the full response, not the
+  single-token number. State the perturbation size in both
+  activation-norm and probe-SD terms, so a reader can see the
+  representation moved a lot while the output distribution did
+  not.

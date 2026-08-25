@@ -1,0 +1,1756 @@
+{
+  "pairs": [
+    {
+      "concept": "p-value interpretation",
+      "correct": "My p-value is 0.03, so given the null hypothesis is true, the probability of obtaining data as extreme as mine is only 3 percent.",
+      "incorrect": "My p-value is 0.03, so given the null hypothesis is true, the probability that the null hypothesis is correct is only 3 percent."
+    },
+    {
+      "concept": "p-value interpretation",
+      "correct": "Since my p-value is below the alpha threshold, I can reject the null hypothesis because the observed data is unlikely under the null model.",
+      "incorrect": "Since my p-value is below the alpha threshold, I can reject the null hypothesis because the observed data confirms the alternative hypothesis is true."
+    },
+    {
+      "concept": "p-value interpretation",
+      "correct": "My p-value indicates that if there were no true effect, I would see these results less than 5 percent of the time by chance.",
+      "incorrect": "My p-value indicates that if there were no true effect, there is a 95 percent chance that my results are not due to mere chance."
+    },
+    {
+      "concept": "p-value interpretation",
+      "correct": "Given my p-value is 0.04, I am assuming the null model is accurate and calculating how rare this specific data pattern is relative to it.",
+      "incorrect": "Given my p-value is 0.04, I am assuming the null model is accurate and calculating the probability that this specific data pattern is just noise."
+    },
+    {
+      "concept": "p-value interpretation",
+      "correct": "This low p-value suggests that the data I collected are significantly inconsistent with the null hypothesis being the only cause of the pattern.",
+      "incorrect": "This low p-value suggests that the data I collected are 95 percent likely to have been caused by the effect I am currently testing."
+    },
+    {
+      "concept": "confidence interval interpretation",
+      "correct": "My 95 percent confidence interval for this mean covers the range where the true population parameter likely lies, across repeated sampling efforts.",
+      "incorrect": "My 95 percent confidence interval for this mean covers the range where the true population parameter definitely lies, given this specific sample."
+    },
+    {
+      "concept": "confidence interval interpretation",
+      "correct": "I calculated a 95 percent confidence interval, meaning if I repeat this sampling infinitely, 95 percent of those intervals will contain the true mean.",
+      "incorrect": "I calculated a 95 percent confidence interval, meaning there is a 95 percent probability that the true mean falls within this specific computed range."
+    },
+    {
+      "concept": "confidence interval interpretation",
+      "correct": "Because the 95 percent confidence interval for my effect includes zero, I cannot conclude that the true population effect is different from null.",
+      "incorrect": "Because the 95 percent confidence interval for my effect includes zero, I can conclude there is a 5 percent chance the effect is zero."
+    },
+    {
+      "concept": "confidence interval interpretation",
+      "correct": "The 95 percent confidence interval I computed represents a procedure that captures the population parameter 95 percent of the time under repeated sampling.",
+      "incorrect": "The 95 percent confidence interval I computed represents a range containing the population parameter with 95 percent certainty based on these observed data."
+    },
+    {
+      "concept": "confidence interval interpretation",
+      "correct": "With this 95 percent confidence interval, I am quantifying the precision of my estimate by showing the range of values consistent with my data.",
+      "incorrect": "With this 95 percent confidence interval, I am quantifying the likelihood that the true population mean is located within these specific numerical boundaries."
+    },
+    {
+      "concept": "null result interpretation",
+      "correct": "My data showed no statistically significant difference, so I am failing to reject the null hypothesis rather than claiming the null is true.",
+      "incorrect": "My data showed no statistically significant difference, so I am accepting the null hypothesis and concluding there is no effect in reality."
+    },
+    {
+      "concept": "null result interpretation",
+      "correct": "Since I found no significant effect, I must conclude that my study did not provide sufficient evidence to support the alternative research hypothesis.",
+      "incorrect": "Since I found no significant effect, I must conclude that my study has proven that the treatment has no impact on the outcome variable."
+    },
+    {
+      "concept": "null result interpretation",
+      "correct": "My analysis yielded a non-significant result, which leaves the null hypothesis plausible but does not allow me to declare it as a fact.",
+      "incorrect": "My analysis yielded a non-significant result, which confirms that the null hypothesis is correct and that the variables are entirely unrelated to each other."
+    },
+    {
+      "concept": "null result interpretation",
+      "correct": "I did not find a significant difference in my current analysis, so I retain the null hypothesis and acknowledge the lack of evidence.",
+      "incorrect": "I did not find a significant difference in my current analysis, so I prove the null hypothesis and report that the groups are identical."
+    },
+    {
+      "concept": "null result interpretation",
+      "correct": "Given the lack of significant findings, I cannot rule out the null hypothesis, so I remain agnostic about the true state of nature.",
+      "incorrect": "Given the lack of significant findings, I can rule out the alternative hypothesis, so I declare the null hypothesis is true for everyone."
+    },
+    {
+      "concept": "effect size vs significance",
+      "correct": "Even though this result is statistically significant, the effect size is so small that it likely holds very little practical or clinical value.",
+      "incorrect": "Since this result is statistically significant, the effect size must be large enough to hold great practical or clinical value for the field."
+    },
+    {
+      "concept": "effect size vs significance",
+      "correct": "My p-value is significant, but the standardized effect size is negligible, indicating that this statistical finding does not imply a meaningful difference.",
+      "incorrect": "My p-value is significant, so the standardized effect size must be substantial, indicating that this statistical finding implies a very meaningful difference."
+    },
+    {
+      "concept": "effect size vs significance",
+      "correct": "The statistical test is significant, but I am ignoring the p-value to focus on the effect size, which reveals the magnitude of difference.",
+      "incorrect": "The statistical test is significant, so I am ignoring the effect size to focus on the p-value, which reveals the magnitude of difference."
+    },
+    {
+      "concept": "effect size vs significance",
+      "correct": "Although I observed a significant p-value, the effect size is small, so I should be cautious about interpreting this as a major finding.",
+      "incorrect": "Although I observed a significant p-value, the effect size is small, so I should be excited about interpreting this as a major finding."
+    },
+    {
+      "concept": "effect size vs significance",
+      "correct": "The significance tests passed, but the effect size remains tiny, meaning the data shows a reliable pattern that lacks any substantive real-world impact.",
+      "incorrect": "The significance tests passed, but the effect size remains tiny, meaning the data shows a reliable pattern that carries a massive real-world impact."
+    },
+    {
+      "concept": "statistical power",
+      "correct": "I am worried my study had low statistical power, meaning I may have failed to detect a real effect that actually exists in reality.",
+      "incorrect": "I am worried my study had low statistical power, meaning I may have erroneously claimed an effect exists when it is actually absent."
+    },
+    {
+      "concept": "statistical power",
+      "correct": "Since I only have low statistical power, I am concerned that I have a high probability of missing a true effect if one exists.",
+      "incorrect": "Since I only have low statistical power, I am concerned that I have a high probability of finding a false effect if none exists."
+    },
+    {
+      "concept": "statistical power",
+      "correct": "My sample size provides sufficient statistical power, which gives me confidence that I have a good chance of detecting the effect I hypothesized.",
+      "incorrect": "My sample size provides sufficient statistical power, which gives me confidence that my results are definitely true and replicable by other researchers."
+    },
+    {
+      "concept": "statistical power",
+      "correct": "If I want to increase my statistical power, I must collect more data to improve the probability of correctly rejecting a false null hypothesis.",
+      "incorrect": "If I want to increase my statistical power, I must collect more data to improve the probability of correctly accepting a true null hypothesis."
+    },
+    {
+      "concept": "statistical power",
+      "correct": "Given the low statistical power of my current experiment, a non-significant result is difficult to interpret because I might be committing a type-two error.",
+      "incorrect": "Given the low statistical power of my current experiment, a non-significant result is difficult to interpret because I might be committing a type-one error."
+    },
+    {
+      "concept": "multiple comparisons",
+      "correct": "I need to apply a Bonferroni correction to my ANOVA results because I am testing ten different independent variables against this same dataset.",
+      "incorrect": "I need to apply a Bonferroni correction to my ANOVA results because I am testing only one independent variable against this same dataset."
+    },
+    {
+      "concept": "multiple comparisons",
+      "correct": "My alpha level must be adjusted since I am running multiple comparisons across the full cohort to avoid an inflated family-wise error rate.",
+      "incorrect": "My alpha level must be adjusted since I am running a single comparison across the full cohort to avoid an inflated family-wise error rate."
+    },
+    {
+      "concept": "multiple comparisons",
+      "correct": "Given that I am conducting post-hoc tests on these six groups, I will use a Tukey procedure to maintain the desired experiment-wide error rate.",
+      "incorrect": "Given that I am conducting a single t-test on these two groups, I will use a Tukey procedure to maintain the desired experiment-wide error rate."
+    },
+    {
+      "concept": "multiple comparisons",
+      "correct": "I am controlling for multiple comparisons here by using the Benjamini-Hochberg method because I want to limit the false discovery rate across my results.",
+      "incorrect": "I am controlling for multiple comparisons here by using the Benjamini-Hochberg method because I want to maximize the statistical power across my single result."
+    },
+    {
+      "concept": "multiple comparisons",
+      "correct": "Since I am performing many independent hypothesis tests on this data, I should penalize the significance threshold to prevent finding too many false positives.",
+      "incorrect": "Since I am performing only one independent hypothesis test on this data, I should penalize the significance threshold to prevent finding too many false positives."
+    },
+    {
+      "concept": "stopping rules",
+      "correct": "I have defined my stopping rule to cease data collection once I reach the target sample size, regardless of whether the current p-value is significant.",
+      "incorrect": "I have defined my stopping rule to cease data collection once I reach a significant p-value, regardless of whether I hit my target sample size."
+    },
+    {
+      "concept": "stopping rules",
+      "correct": "My data collection protocol requires I stop after gathering two hundred participants, as I pre-registered this fixed stopping rule to avoid p-hacking my analysis.",
+      "incorrect": "My data collection protocol requires I stop once the results become significant, as I pre-registered this flexible stopping rule to avoid p-hacking my analysis."
+    },
+    {
+      "concept": "stopping rules",
+      "correct": "I am following a rigid stopping rule where I collect exactly fifty subjects, because interim analysis would compromise the validity of my final hypothesis test.",
+      "incorrect": "I am following a flexible stopping rule where I collect until I find an effect, because interim analysis would enhance the validity of my final hypothesis test."
+    },
+    {
+      "concept": "stopping rules",
+      "correct": "Because I established a stopping rule based on sample size, I must stop recruiting once I hit the quota, even if the current trend looks promising.",
+      "incorrect": "Because I established a stopping rule based on statistical significance, I must stop recruiting once I hit the quota, even if the current trend looks promising."
+    },
+    {
+      "concept": "stopping rules",
+      "correct": "I will not inspect my p-values until the pre-determined stopping rule is met, because I want to ensure my final conclusion remains unbiased and valid.",
+      "incorrect": "I will inspect my p-values continuously until the pre-determined stopping rule is met, because I want to ensure my final conclusion remains unbiased and valid."
+    },
+    {
+      "concept": "one-tailed vs two-tailed tests",
+      "correct": "I am using a two-tailed test for my analysis because I need to detect any significant difference, regardless of the direction, in the participant scores.",
+      "incorrect": "I am using a one-tailed test for my analysis because I need to detect any significant difference, regardless of the direction, in the participant scores."
+    },
+    {
+      "concept": "one-tailed vs two-tailed tests",
+      "correct": "My hypothesis is directional, so I will employ a one-tailed test to increase my power to detect an effect specifically in the predicted positive direction.",
+      "incorrect": "My hypothesis is non-directional, so I will employ a one-tailed test to increase my power to detect an effect specifically in the predicted positive direction."
+    },
+    {
+      "concept": "one-tailed vs two-tailed tests",
+      "correct": "I chose a two-tailed test for this experiment because I want to remain open to the possibility that the intervention could decrease performance as well.",
+      "incorrect": "I chose a one-tailed test for this experiment because I want to remain open to the possibility that the intervention could decrease performance as well."
+    },
+    {
+      "concept": "one-tailed vs two-tailed tests",
+      "correct": "Since I am solely investigating whether the drug increases heart rate, I am justified in using a one-tailed test to maximize my sensitivity for increases.",
+      "incorrect": "Since I am investigating whether the drug changes heart rate, I am justified in using a one-tailed test to maximize my sensitivity for any changes."
+    },
+    {
+      "concept": "one-tailed vs two-tailed tests",
+      "correct": "I am conducting a two-tailed test because I want to maintain a standard alpha of point-zero-five for both the lower and upper tails of distribution.",
+      "incorrect": "I am conducting a one-tailed test because I want to maintain a standard alpha of point-zero-five for both the lower and upper tails of distribution."
+    },
+    {
+      "concept": "type I and type II errors",
+      "correct": "I must set my alpha level strictly at point-zero-five because I want to minimize the risk of making a type I error in my conclusion.",
+      "incorrect": "I must set my alpha level strictly at point-zero-five because I want to minimize the risk of making a type II error in my conclusion."
+    },
+    {
+      "concept": "type I and type II errors",
+      "correct": "My study is underpowered, so I am very concerned that I might commit a type II error and fail to detect a truly present effect.",
+      "incorrect": "My study is underpowered, so I am very concerned that I might commit a type I error and fail to detect a truly present effect."
+    },
+    {
+      "concept": "type I and type II errors",
+      "correct": "If I lower my significance threshold, I reduce the chance of a type I error but simultaneously increase the probability of a type II error occurring.",
+      "incorrect": "If I lower my significance threshold, I reduce the chance of a type II error but simultaneously increase the probability of a type I error occurring."
+    },
+    {
+      "concept": "type I and type II errors",
+      "correct": "To avoid a type II error in this validation, I need a larger sample size to ensure I do not miss a real, existing group difference.",
+      "incorrect": "To avoid a type I error in this validation, I need a larger sample size to ensure I do not miss a real, existing group difference."
+    },
+    {
+      "concept": "type I and type II errors",
+      "correct": "I am accepting a slightly higher risk of a type I error here, because it is crucial for me to avoid missing this potential effect entirely.",
+      "incorrect": "I am accepting a slightly higher risk of a type II error here, because it is crucial for me to avoid missing this potential effect entirely."
+    },
+    {
+      "concept": "prior probability",
+      "correct": "Given the very low prior probability of this event occurring in nature, I should interpret this statistically significant result with a degree of healthy skepticism.",
+      "incorrect": "Given the very high prior probability of this event occurring in nature, I should interpret this statistically significant result with a degree of healthy skepticism."
+    },
+    {
+      "concept": "prior probability",
+      "correct": "I am incorporating a strong prior probability into my Bayesian model because existing literature suggests this phenomenon is extremely common in the general population.",
+      "incorrect": "I am incorporating a weak prior probability into my Bayesian model because existing literature suggests this phenomenon is extremely common in the general population."
+    },
+    {
+      "concept": "prior probability",
+      "correct": "Because the prior probability of my hypothesis is quite high, I feel more confident that this significant p-value reflects a true effect rather than noise.",
+      "incorrect": "Because the prior probability of my hypothesis is quite low, I feel more confident that this significant p-value reflects a true effect rather than noise."
+    },
+    {
+      "concept": "prior probability",
+      "correct": "I am using an uninformative prior probability in my analysis since I have absolutely no preliminary data to suggest where the true parameter might lie.",
+      "incorrect": "I am using a highly informative prior probability in my analysis since I have absolutely no preliminary data to suggest where the true parameter might lie."
+    },
+    {
+      "concept": "prior probability",
+      "correct": "The posterior distribution is heavily influenced by the prior probability, so I must be careful to justify the initial assumptions I fed into the model.",
+      "incorrect": "The posterior distribution is entirely independent of the prior probability, so I must be careful to justify the initial assumptions I fed into the model."
+    },
+    {
+      "concept": "likelihood vs probability",
+      "correct": "I updated my model parameters to maximize the likelihood given the observed data points I collected today.",
+      "incorrect": "I updated my model parameters to maximize the probability given the observed data points I collected today."
+    },
+    {
+      "concept": "likelihood vs probability",
+      "correct": "Since my hypothesis is fixed, I am calculating the likelihood of these specific data occurring under the current model.",
+      "incorrect": "Since my hypothesis is fixed, I am calculating the probability of these specific data occurring under the current model."
+    },
+    {
+      "concept": "likelihood vs probability",
+      "correct": "My data are fixed constants in this calculation, so I'm evaluating the likelihood of the parameter values given them.",
+      "incorrect": "My data are fixed constants in this calculation, so I'm evaluating the probability of the parameter values given them."
+    },
+    {
+      "concept": "likelihood vs probability",
+      "correct": "I find the likelihood function useful because it tells me how well my model explains these particular experimental results.",
+      "incorrect": "I find the probability function useful because it tells me how well my model explains these particular experimental results."
+    },
+    {
+      "concept": "likelihood vs probability",
+      "correct": "To fit this curve, I will optimize the likelihood of the model parameters relative to my observed participant responses.",
+      "incorrect": "To fit this curve, I will optimize the probability of the model parameters relative to my observed participant responses."
+    },
+    {
+      "concept": "Bayes factor",
+      "correct": "My Bayes factor of ten indicates that my experimental data are ten times more likely under the alternative hypothesis.",
+      "incorrect": "My Bayes factor of ten indicates that there is a ninety percent chance the alternative hypothesis is definitely true."
+    },
+    {
+      "concept": "Bayes factor",
+      "correct": "The Bayes factor I computed quantifies the relative evidence for my experimental model compared to the null model.",
+      "incorrect": "The Bayes factor I computed quantifies the absolute probability that my experimental model is correct versus the null."
+    },
+    {
+      "concept": "Bayes factor",
+      "correct": "I am reporting the Bayes factor because it directly compares the predictive success of my theory against the null.",
+      "incorrect": "I am reporting the Bayes factor because it provides the exact p-value for my theory against the null hypothesis."
+    },
+    {
+      "concept": "Bayes factor",
+      "correct": "Using this Bayes factor, I can describe how much my current data increase the odds of my proposed hypothesis.",
+      "incorrect": "Using this Bayes factor, I can describe how much my current data decrease the error rate of my hypothesis."
+    },
+    {
+      "concept": "Bayes factor",
+      "correct": "This Bayes factor supports my model, meaning the data are more consistent with my hypothesis than the null.",
+      "incorrect": "This Bayes factor supports my model, meaning the data prove my hypothesis is true and the null false."
+    },
+    {
+      "concept": "standard error vs standard deviation",
+      "correct": "I used the standard error to construct a confidence interval because I want to estimate the population mean.",
+      "incorrect": "I used the standard deviation to construct a confidence interval because I want to estimate the population mean."
+    },
+    {
+      "concept": "standard error vs standard deviation",
+      "correct": "My report focuses on the standard error to show the precision of my sample mean estimate for the population.",
+      "incorrect": "My report focuses on the standard deviation to show the precision of my sample mean estimate for the population."
+    },
+    {
+      "concept": "standard error vs standard deviation",
+      "correct": "I should report the standard error since my main goal is describing the uncertainty around my estimated mean.",
+      "incorrect": "I should report the standard deviation since my main goal is describing the uncertainty around my estimated mean."
+    },
+    {
+      "concept": "standard error vs standard deviation",
+      "correct": "The standard error I calculated helps me understand how much my sample mean might vary across repeated studies.",
+      "incorrect": "The standard deviation I calculated helps me understand how much my sample mean might vary across repeated studies."
+    },
+    {
+      "concept": "standard error vs standard deviation",
+      "correct": "To express the variability of the individual data points in my dataset, I am reporting the standard deviation.",
+      "incorrect": "To express the variability of the individual data points in my dataset, I am reporting the standard error."
+    },
+    {
+      "concept": "sampling distribution",
+      "correct": "I am visualizing the sampling distribution to understand the spread of means I would get from repeated studies.",
+      "incorrect": "I am visualizing the sampling distribution to understand the spread of individual scores within my single dataset."
+    },
+    {
+      "concept": "sampling distribution",
+      "correct": "My sampling distribution represents the range of possible sample means that my experiment could theoretically produce over time.",
+      "incorrect": "My sampling distribution represents the range of possible population values that my experiment could theoretically produce over time."
+    },
+    {
+      "concept": "sampling distribution",
+      "correct": "I rely on the sampling distribution to know how far my observed mean might be from the true parameter.",
+      "incorrect": "I rely on the sampling distribution to know how far my individual data point is from the average score."
+    },
+    {
+      "concept": "sampling distribution",
+      "correct": "If I repeat my experiment many times, the sampling distribution will show me how my sample means behave.",
+      "incorrect": "If I repeat my experiment many times, the sampling distribution will show me how my raw data behave."
+    },
+    {
+      "concept": "sampling distribution",
+      "correct": "The sampling distribution allows me to quantify the error I expect in my estimate of the population mean.",
+      "incorrect": "The sampling distribution allows me to quantify the variance I expect in my collection of raw observations."
+    },
+    {
+      "concept": "central limit theorem",
+      "correct": "Because my sample size is large enough, the central limit theorem guarantees the sampling distribution is approximately normal.",
+      "incorrect": "Because my sample size is large enough, the central limit theorem guarantees my raw data distribution is normal."
+    },
+    {
+      "concept": "central limit theorem",
+      "correct": "I can assume normality in my test statistic because the central limit theorem applies to the sample means.",
+      "incorrect": "I can assume normality in my test statistic because the central limit theorem applies to the population distribution."
+    },
+    {
+      "concept": "central limit theorem",
+      "correct": "Even with my skewed raw data, the central limit theorem lets me use normal-based tests on my means.",
+      "incorrect": "Even with my skewed raw data, the central limit theorem lets me ignore the skew in my dataset."
+    },
+    {
+      "concept": "central limit theorem",
+      "correct": "The central limit theorem explains why the distribution of my calculated means becomes bell-shaped given large samples.",
+      "incorrect": "The central limit theorem explains why the distribution of my raw variables becomes bell-shaped given large samples."
+    },
+    {
+      "concept": "central limit theorem",
+      "correct": "I am confident in my mean-based analysis because the central limit theorem assures the distribution is normal.",
+      "incorrect": "I am confident in my mean-based analysis because the central limit theorem assures the data are normally distributed."
+    },
+    {
+      "concept": "bootstrapping",
+      "correct": "I am bootstrapping my small sample to estimate the standard error of the median since the distribution of my collected data looks quite skewed.",
+      "incorrect": "I am bootstrapping my small sample to increase the actual size of my dataset so I can run more powerful tests on the original measurements."
+    },
+    {
+      "concept": "bootstrapping",
+      "correct": "I am using bootstrapping to generate confidence intervals for the regression coefficient because I cannot assume that my error terms are normally distributed.",
+      "incorrect": "I am using bootstrapping to generate confidence intervals for the regression coefficient to replace the missing values that exist within my raw data."
+    },
+    {
+      "concept": "bootstrapping",
+      "correct": "I decided on bootstrapping for this metric because resampling my observed data allows me to construct a sampling distribution without needing any parametric assumptions.",
+      "incorrect": "I decided on bootstrapping for this metric because resampling my observed data allows me to create new independent observations that weren't in my study."
+    },
+    {
+      "concept": "bootstrapping",
+      "correct": "My plan involves bootstrapping the residuals of this model to evaluate the stability of the estimates against the variability present in my current sample.",
+      "incorrect": "My plan involves bootstrapping the residuals of this model to fix the bias that currently exists in the parameters I calculated from my sample."
+    },
+    {
+      "concept": "bootstrapping",
+      "correct": "I am applying bootstrapping here to assess the precision of my mean estimate by creating many simulated versions of my dataset through random resampling.",
+      "incorrect": "I am applying bootstrapping here to assess the precision of my mean estimate by repeatedly running the analysis on the exact same dataset again."
+    },
+    {
+      "concept": "degrees of freedom",
+      "correct": "I should report fewer degrees of freedom for this specific model because my parameters are constrained by the two fixed effects I just added.",
+      "incorrect": "I should report fewer degrees of freedom for this specific model because my sample size is too large for the number of parameters estimated."
+    },
+    {
+      "concept": "degrees of freedom",
+      "correct": "My analysis shows lower degrees of freedom in this ANOVA result because I lost information when estimating the variance for each group mean.",
+      "incorrect": "My analysis shows lower degrees of freedom in this ANOVA result because the variation between my groups is significantly higher than the variation within."
+    },
+    {
+      "concept": "degrees of freedom",
+      "correct": "I need to adjust the degrees of freedom downward for this test since my model includes several predictors that use up my available data.",
+      "incorrect": "I need to adjust the degrees of freedom upward for this test since my model includes several predictors that explain more of my data."
+    },
+    {
+      "concept": "degrees of freedom",
+      "correct": "The degrees of freedom calculation here reflects the number of values in my dataset that are free to vary after fitting these specific slopes.",
+      "incorrect": "The degrees of freedom calculation here reflects the total number of observations available in my dataset before I started fitting any regression slopes."
+    },
+    {
+      "concept": "degrees of freedom",
+      "correct": "I am observing restricted degrees of freedom in this test because my estimation process relies on knowing the mean of my total sample.",
+      "incorrect": "I am observing restricted degrees of freedom in this test because the variance of the residuals in my data is extremely close to zero."
+    },
+    {
+      "concept": "Welch's t-test",
+      "correct": "I am running Welch's t-test on these two groups because my diagnostic plots clearly indicate that their variances are unequal, violating standard assumptions.",
+      "incorrect": "I am running Welch's t-test on these two groups because my diagnostic plots clearly indicate that their sample sizes are identical, violating standard assumptions."
+    },
+    {
+      "concept": "Welch's t-test",
+      "correct": "My choice of Welch's t-test is appropriate here because it robustly handles the unequal variances found between my experimental group and the control.",
+      "incorrect": "My choice of Welch's t-test is appropriate here because it robustly handles the non-linear relationship found between my experimental group and the control."
+    },
+    {
+      "concept": "Welch's t-test",
+      "correct": "I prefer Welch's t-test for comparing these means because it does not require me to assume that the populations share the same variance.",
+      "incorrect": "I prefer Welch's t-test for comparing these means because it does not require me to assume that the data points are independent observations."
+    },
+    {
+      "concept": "Welch's t-test",
+      "correct": "The results from Welch's t-test are safer for my analysis given that the standard deviations of my treatment groups differ by a significant margin.",
+      "incorrect": "The results from Welch's t-test are safer for my analysis given that the number of participants in my treatment groups differ by a significant margin."
+    },
+    {
+      "concept": "Welch's t-test",
+      "correct": "I opted for Welch's t-test rather than the Student's t-test since the heterogeneity of variance in my data invalidates the pooled variance estimate.",
+      "incorrect": "I opted for Welch's t-test rather than the Student's t-test since the skewness of the distribution in my data invalidates the pooled variance estimate."
+    },
+    {
+      "concept": "heteroskedasticity",
+      "correct": "I noticed heteroskedasticity in my model residuals, meaning the variance of my errors changes as the predicted values increase across my range of data.",
+      "incorrect": "I noticed heteroskedasticity in my model residuals, meaning the mean of my errors changes as the predicted values increase across my range of data."
+    },
+    {
+      "concept": "heteroskedasticity",
+      "correct": "My diagnostic plot confirms heteroskedasticity, so my standard errors are likely biased because the dispersion of my data is not constant throughout.",
+      "incorrect": "My diagnostic plot confirms heteroskedasticity, so my standard errors are likely biased because the correlation between my variables is not constant throughout."
+    },
+    {
+      "concept": "heteroskedasticity",
+      "correct": "I need to address the heteroskedasticity in my regression output because the unequal variance of the residuals makes my hypothesis tests unreliable currently.",
+      "incorrect": "I need to address the heteroskedasticity in my regression output because the lack of independence between the residuals makes my hypothesis tests unreliable currently."
+    },
+    {
+      "concept": "heteroskedasticity",
+      "correct": "The presence of heteroskedasticity suggests that the spread of my response variable depends on the level of the predictor I used in this analysis.",
+      "incorrect": "The presence of heteroskedasticity suggests that the accuracy of my response variable depends on the level of the predictor I used in this analysis."
+    },
+    {
+      "concept": "heteroskedasticity",
+      "correct": "I see evidence of heteroskedasticity in these data, which means I cannot trust my current standard errors without applying a robust correction.",
+      "incorrect": "I see evidence of heteroskedasticity in these data, which means I cannot trust my current standard errors without removing those specific outlier points."
+    },
+    {
+      "concept": "variance inflation",
+      "correct": "I am worried about variance inflation in my regression because my predictor variables are highly correlated, which destabilizes the estimates of my coefficients.",
+      "incorrect": "I am worried about variance inflation in my regression because my predictor variables are highly correlated, which increases the total amount of missing data."
+    },
+    {
+      "concept": "variance inflation",
+      "correct": "The high variance inflation factor for this predictor suggests that I am having trouble isolating its unique contribution given the other correlated features.",
+      "incorrect": "The high variance inflation factor for this predictor suggests that I am having trouble interpreting its effect size given the small sample size used."
+    },
+    {
+      "concept": "variance inflation",
+      "correct": "My model shows significant variance inflation, so I should probably drop one of these collinear variables to improve the precision of my coefficient estimates.",
+      "incorrect": "My model shows significant variance inflation, so I should probably drop one of these collinear variables to improve the overall fit of my regression line."
+    },
+    {
+      "concept": "variance inflation",
+      "correct": "I calculated the variance inflation factor to check if the redundancy between my independent variables is artificially expanding the error of my estimates.",
+      "incorrect": "I calculated the variance inflation factor to check if the redundancy between my independent variables is artificially expanding the bias of my estimates."
+    },
+    {
+      "concept": "variance inflation",
+      "correct": "Because of variance inflation, the standard errors for my coefficients are much larger than they would be if my predictors were completely orthogonal.",
+      "incorrect": "Because of variance inflation, the standard errors for my coefficients are much larger than they would be if my residuals were completely normal."
+    },
+    {
+      "concept": "shrinkage estimators",
+      "correct": "I am applying a ridge regression penalty to these coefficients because shrinkage estimators effectively reduce my model's variance by introducing a small amount of intentional bias.",
+      "incorrect": "I am applying a ridge regression penalty to these coefficients because shrinkage estimators effectively reduce my model's variance by introducing a small amount of random noise."
+    },
+    {
+      "concept": "shrinkage estimators",
+      "correct": "My James-Stein estimator calculation shows the group means pulling toward the grand mean, which minimizes my overall risk compared to the individual maximum likelihood estimates.",
+      "incorrect": "My James-Stein estimator calculation shows the group means pushing toward the extreme values, which minimizes my overall risk compared to the individual maximum likelihood estimates."
+    },
+    {
+      "concept": "shrinkage estimators",
+      "correct": "Since my sample size is quite small, I will use a lasso estimator to pull less important coefficients toward zero and improve my prediction accuracy overall.",
+      "incorrect": "Since my sample size is quite small, I will use a lasso estimator to pull less important coefficients toward infinity and improve my prediction accuracy overall."
+    },
+    {
+      "concept": "shrinkage estimators",
+      "correct": "I chose to use empirical Bayes shrinkage for these estimates because it accounts for the shared structure of the data and helps stabilize my noisy measurements.",
+      "incorrect": "I chose to use empirical Bayes shrinkage for these estimates because it ignores the shared structure of the data and helps stabilize my noisy measurements."
+    },
+    {
+      "concept": "shrinkage estimators",
+      "correct": "By utilizing shrinkage, I am trading a slight increase in my bias to achieve a significantly more stable result across my various cross-validation folds today.",
+      "incorrect": "By utilizing shrinkage, I am trading a slight increase in my variance to achieve a significantly more stable result across my various cross-validation folds today."
+    },
+    {
+      "concept": "margin of error",
+      "correct": "Given this 95% confidence interval, my margin of error captures the range within which the true population parameter is expected to fall with repeated sampling.",
+      "incorrect": "Given this 95% confidence interval, my margin of error captures the range within which 95% of the individual data points will fall with repeated sampling."
+    },
+    {
+      "concept": "margin of error",
+      "correct": "Because my sample size is relatively large, the standard error decreases, which narrows the margin of error surrounding my reported point estimate for the mean.",
+      "incorrect": "Because my sample size is relatively large, the standard error increases, which narrows the margin of error surrounding my reported point estimate for the mean."
+    },
+    {
+      "concept": "margin of error",
+      "correct": "I am calculating the margin of error using the critical value, which accounts for the sampling distribution variability around the estimate I obtained yesterday.",
+      "incorrect": "I am calculating the margin of error using the population variance, which accounts for the sampling distribution variability around the estimate I obtained yesterday."
+    },
+    {
+      "concept": "margin of error",
+      "correct": "If I want to halve the margin of error for my current survey results, I will need to increase my sample size by a factor of four.",
+      "incorrect": "If I want to halve the margin of error for my current survey results, I will need to increase my sample size by a factor of two."
+    },
+    {
+      "concept": "margin of error",
+      "correct": "The margin of error in my analysis only reflects sampling variability and does not account for the non-sampling errors present in my dataset collection.",
+      "incorrect": "The margin of error in my analysis reflects all sources of uncertainty, including the non-sampling errors present in my dataset collection process this month."
+    },
+    {
+      "concept": "correlation and causation",
+      "correct": "Although I see a strong positive correlation between ice cream sales and sunburns, I cannot assume causation because both variables are driven by temperature.",
+      "incorrect": "Although I see a strong positive correlation between ice cream sales and sunburns, I can assume causation because the data clearly supports this direct link."
+    },
+    {
+      "concept": "correlation and causation",
+      "correct": "My data shows a correlation between stress and illness, yet I am avoiding claims of causation until I can control for the underlying lifestyle factors.",
+      "incorrect": "My data shows a correlation between stress and illness, yet I am confirming claims of causation since I cannot control for the underlying lifestyle factors."
+    },
+    {
+      "concept": "correlation and causation",
+      "correct": "I am observing a temporal precedence in my time-series data, which is a necessary condition for establishing causation but not sufficient on its own.",
+      "incorrect": "I am observing a temporal precedence in my time-series data, which is a necessary condition for establishing causation and is therefore sufficient on its own."
+    },
+    {
+      "concept": "correlation and causation",
+      "correct": "While these two variables correlate highly in my model, I am careful to note that correlation does not imply causation in my final report.",
+      "incorrect": "While these two variables correlate highly in my model, I am careful to note that correlation does imply causation in my final report summary."
+    },
+    {
+      "concept": "correlation and causation",
+      "correct": "Since my experimental design randomly assigned the treatment, I can interpret the correlation I observe as evidence of causation within this specific population.",
+      "incorrect": "Since my experimental design observed the existing groups, I can interpret the correlation I observe as evidence of causation within this specific population."
+    },
+    {
+      "concept": "confounding variables",
+      "correct": "I suspect that income acts as a confounding variable here, so I must adjust for it to isolate the true relationship between education and health.",
+      "incorrect": "I suspect that income acts as a confounding variable here, so I must remove it to isolate the true relationship between education and health."
+    },
+    {
+      "concept": "confounding variables",
+      "correct": "Because age is a confounding variable in this analysis, my bivariate regression output is biased and fails to show the effect of the intervention.",
+      "incorrect": "Because age is a confounding variable in this analysis, my bivariate regression output is precise and fails to show the effect of the intervention."
+    },
+    {
+      "concept": "confounding variables",
+      "correct": "To eliminate the influence of this confounding variable, I will include it as a covariate in my multiple regression model to fix the bias.",
+      "incorrect": "To eliminate the influence of this confounding variable, I will exclude it from my multiple regression model to fix the bias in my results."
+    },
+    {
+      "concept": "confounding variables",
+      "correct": "I need to stratify by gender because it is a potential confounding variable that might otherwise distort the observed association between my two predictors.",
+      "incorrect": "I need to stratify by gender because it is a potential confounding variable that might otherwise enhance the observed association between my two predictors."
+    },
+    {
+      "concept": "confounding variables",
+      "correct": "My failure to control for this confounding variable has likely introduced a spurious correlation that makes my treatment effect look larger than it is.",
+      "incorrect": "My failure to control for this confounding variable has likely introduced a perfect correlation that makes my treatment effect look larger than it is."
+    },
+    {
+      "concept": "collider bias",
+      "correct": "If I condition on this outcome variable, I am likely introducing collider bias, which creates a fake association between my independent and dependent variables.",
+      "incorrect": "If I condition on this outcome variable, I am likely removing collider bias, which creates a fake association between my independent and dependent variables."
+    },
+    {
+      "concept": "collider bias",
+      "correct": "My selection process created collider bias because I only included successful applicants, which unintentionally induced a negative correlation between skill and effort here.",
+      "incorrect": "My selection process avoided collider bias because I only included successful applicants, which unintentionally induced a negative correlation between skill and effort here."
+    },
+    {
+      "concept": "collider bias",
+      "correct": "I should not include this common consequence in my regression because conditioning on a collider will distort my estimate of the primary causal effect.",
+      "incorrect": "I should not include this common consequence in my regression because conditioning on a collider will improve my estimate of the primary causal effect."
+    },
+    {
+      "concept": "collider bias",
+      "correct": "By restricting my sample to only those who completed the study, I am inducing collider bias that complicates how I interpret my regression coefficients.",
+      "incorrect": "By restricting my sample to only those who completed the study, I am eliminating collider bias that complicates how I interpret my regression coefficients."
+    },
+    {
+      "concept": "collider bias",
+      "correct": "The spurious relationship I found in my subset is a classic example of collider bias, triggered by selecting on a variable influenced by both.",
+      "incorrect": "The spurious relationship I found in my subset is a classic example of collider bias, triggered by ignoring a variable influenced by both inputs."
+    },
+    {
+      "concept": "selection bias",
+      "correct": "My current model performance is skewed because I only included the active users in my training set, leading to severe selection bias in my predictions.",
+      "incorrect": "My current model performance is skewed because I only included the active users in my training set, leading to severe selection bias in my residuals."
+    },
+    {
+      "concept": "selection bias",
+      "correct": "I need to fix the selection bias in my survey results since I only contacted customers who explicitly opted into the email marketing newsletter list.",
+      "incorrect": "I need to fix the selection bias in my survey results since I only contacted customers who completely ignored the email marketing newsletter signup list."
+    },
+    {
+      "concept": "selection bias",
+      "correct": "Since my cohort consists entirely of volunteers from the medical clinic, I must adjust for selection bias to accurately estimate the true population parameter values.",
+      "incorrect": "Since my cohort consists entirely of volunteers from the medical clinic, I must adjust for selection bias to accurately estimate the true sample variance values."
+    },
+    {
+      "concept": "selection bias",
+      "correct": "My analysis is likely suffering from selection bias, given that I gathered data exclusively from high-performing branches while ignoring the underperforming regional store locations.",
+      "incorrect": "My analysis is likely suffering from selection bias, given that I gathered data exclusively from high-performing branches while ignoring the statistically insignificant store locations."
+    },
+    {
+      "concept": "selection bias",
+      "correct": "I should control for selection bias in my regression because my dependent variable is only observed for subjects who successfully completed the entire longitudinal study.",
+      "incorrect": "I should control for selection bias in my regression because my dependent variable is only observed for subjects who randomly dropped out of the longitudinal study."
+    },
+    {
+      "concept": "survivorship bias",
+      "correct": "I am worried about survivorship bias in my failure rate model because I only have maintenance logs for the machines that are still operating.",
+      "incorrect": "I am worried about survivorship bias in my failure rate model because I only have maintenance logs for the machines that have completely broken."
+    },
+    {
+      "concept": "survivorship bias",
+      "correct": "To avoid survivorship bias in my study of startup longevity, I included the defunct companies that failed to secure series funding alongside the successful ones.",
+      "incorrect": "To avoid survivorship bias in my study of startup longevity, I included the public companies that managed to secure series funding alongside the successful ones."
+    },
+    {
+      "concept": "survivorship bias",
+      "correct": "My data on employee tenure displays survivorship bias, as I only interviewed current staff members and neglected those who resigned within the first three months.",
+      "incorrect": "My data on employee tenure displays survivorship bias, as I only interviewed current staff members and neglected those who remained for the full three years."
+    },
+    {
+      "concept": "survivorship bias",
+      "correct": "The historical stock market returns show clear survivorship bias because I only analyzed the companies that are currently listed on the major exchange indices.",
+      "incorrect": "The historical stock market returns show clear survivorship bias because I only analyzed the companies that were recently delisted from the major exchange indices."
+    },
+    {
+      "concept": "survivorship bias",
+      "correct": "By ignoring the project applications that were rejected by the review board, my impact assessment is heavily distorted by significant survivorship bias in outcomes.",
+      "incorrect": "By ignoring the project applications that were accepted by the review board, my impact assessment is heavily distorted by significant survivorship bias in outcomes."
+    },
+    {
+      "concept": "regression to the mean",
+      "correct": "The extreme scores in my second test round are just regression to the mean, as the students naturally moved closer to the group average.",
+      "incorrect": "The extreme scores in my second test round are just regression to the mean, as the students naturally moved further from the group average."
+    },
+    {
+      "concept": "regression to the mean",
+      "correct": "I observed a sharp decline in productivity among my top performers, which is likely regression to the mean rather than a decrease in actual skill.",
+      "incorrect": "I observed a sharp decline in productivity among my top performers, which is likely regression to the mean rather than an increase in actual skill."
+    },
+    {
+      "concept": "regression to the mean",
+      "correct": "After treating the patients with the worst symptoms, their subsequent improvement is largely regression to the mean rather than a result of my intervention.",
+      "incorrect": "After treating the patients with the worst symptoms, their subsequent improvement is largely regression to the mean rather than a result of natural illness."
+    },
+    {
+      "concept": "regression to the mean",
+      "correct": "My team's performance metrics showed regression to the mean after an unusually high sales month, returning to the expected baseline levels for this quarter.",
+      "incorrect": "My team's performance metrics showed regression to the mean after an unusually high sales month, rising above the expected baseline levels for this quarter."
+    },
+    {
+      "concept": "regression to the mean",
+      "correct": "Since I selected the athletes based on their outlier performance, I expect regression to the mean will cause their later results to look worse.",
+      "incorrect": "Since I selected the athletes based on their outlier performance, I expect regression to the mean will cause their later results to look better."
+    },
+    {
+      "concept": "Simpson's paradox",
+      "correct": "My aggregate dataset shows a positive correlation, but Simpson's paradox is occurring because the trend reverses once I break the data down by department.",
+      "incorrect": "My aggregate dataset shows a positive correlation, but Simpson's paradox is occurring because the trend remains consistent once I break the data down by department."
+    },
+    {
+      "concept": "Simpson's paradox",
+      "correct": "There is a clear Simpson's paradox here, as the treatment appears effective overall, but individual subgroups actually show that the placebo performs consistently better.",
+      "incorrect": "There is a clear Simpson's paradox here, as the treatment appears effective overall, but individual subgroups actually show that the placebo performs consistently worse."
+    },
+    {
+      "concept": "Simpson's paradox",
+      "correct": "I suspect Simpson's paradox is skewing my visualization because the combined trends mask the distinct patterns visible when I segment by user demographic groups.",
+      "incorrect": "I suspect Simpson's paradox is skewing my visualization because the combined trends mirror the distinct patterns visible when I segment by user demographic groups."
+    },
+    {
+      "concept": "Simpson's paradox",
+      "correct": "The overall correlation is negative, yet Simpson's paradox reveals that within each specific hospital, the relationship between dosage and recovery is actually strongly positive.",
+      "incorrect": "The overall correlation is negative, yet Simpson's paradox reveals that within each specific hospital, the relationship between dosage and recovery is actually strongly negative."
+    },
+    {
+      "concept": "Simpson's paradox",
+      "correct": "I cannot trust my main regression result due to Simpson's paradox, as the effect disappears when I include the confounding variable as a covariate.",
+      "incorrect": "I cannot trust my main regression result due to Simpson's paradox, as the effect disappears when I exclude the confounding variable as a covariate."
+    },
+    {
+      "concept": "ecological fallacy",
+      "correct": "It would be an ecological fallacy for me to assume individual voters favor this tax policy just because their home district voted for it.",
+      "incorrect": "It would be an ecological fallacy for me to assume individual voters favor this tax policy just because their home district voted against it."
+    },
+    {
+      "concept": "ecological fallacy",
+      "correct": "My conclusion commits an ecological fallacy because I applied regional health averages to infer the specific medical risks faced by a single local resident.",
+      "incorrect": "My conclusion commits an ecological fallacy because I applied local health data to infer the specific medical risks faced by a single regional population."
+    },
+    {
+      "concept": "ecological fallacy",
+      "correct": "I am avoiding the ecological fallacy by not using state-level income data to predict the likelihood that a specific person will purchase my product.",
+      "incorrect": "I am avoiding the ecological fallacy by using state-level income data to predict the likelihood that a specific person will purchase my product."
+    },
+    {
+      "concept": "ecological fallacy",
+      "correct": "Assuming that high literacy rates in a country imply every citizen can read is a classic ecological fallacy that I must carefully avoid here.",
+      "incorrect": "Assuming that high literacy rates in a country imply every citizen can read is a classic statistical correlation that I must carefully avoid here."
+    },
+    {
+      "concept": "ecological fallacy",
+      "correct": "I realized that inferring individual behavior from these aggregate city-wide statistics is an ecological fallacy that invalidates my claims about the specific users.",
+      "incorrect": "I realized that inferring individual behavior from these aggregate city-wide statistics is a causal relationship that validates my claims about the specific users."
+    },
+    {
+      "concept": "instrumental variables",
+      "correct": "I am using the historical rainfall data as an instrumental variable because it correlates with my treatment but shouldn't directly affect my dependent outcome variable.",
+      "incorrect": "I am using the historical rainfall data as an instrumental variable because it correlates with my treatment and strongly influences my dependent outcome variable directly."
+    },
+    {
+      "concept": "instrumental variables",
+      "correct": "Since my regressor is endogenous, I need a valid instrumental variable that satisfies the exclusion restriction to identify the causal effect in my regression model.",
+      "incorrect": "Since my regressor is endogenous, I need a valid instrumental variable that violates the exclusion restriction to identify the causal effect in my regression model."
+    },
+    {
+      "concept": "instrumental variables",
+      "correct": "My instrumental variable strategy fails here because the instrument I selected for this dataset is weakly correlated with the treatment, reducing my estimation precision.",
+      "incorrect": "My instrumental variable strategy fails here because the instrument I selected for this dataset is strongly correlated with the treatment, reducing my estimation precision."
+    },
+    {
+      "concept": "instrumental variables",
+      "correct": "I am checking my instrumental variable for the relevance condition, ensuring it explains enough variance in the treatment to be useful for my current analysis.",
+      "incorrect": "I am checking my instrumental variable for the relevance condition, ensuring it explains no variance in the treatment to be useful for my current analysis."
+    },
+    {
+      "concept": "instrumental variables",
+      "correct": "Using this instrumental variable allows me to isolate the exogenous variation in my treatment, correcting for the omitted variable bias present in my initial estimates.",
+      "incorrect": "Using this instrumental variable allows me to isolate the endogenous variation in my treatment, correcting for the omitted variable bias present in my initial estimates."
+    },
+    {
+      "concept": "difference-in-differences",
+      "correct": "My difference-in-differences estimate is credible because the treatment and control groups exhibit parallel trends in the pre-treatment period within my longitudinal data set.",
+      "incorrect": "My difference-in-differences estimate is credible because the treatment and control groups exhibit divergent trends in the pre-treatment period within my longitudinal data set."
+    },
+    {
+      "concept": "difference-in-differences",
+      "correct": "To calculate the difference-in-differences, I subtract the pre-to-post change in the control group from the pre-to-post change in the treatment group for my output.",
+      "incorrect": "To calculate the difference-in-differences, I add the pre-to-post change in the control group to the pre-to-post change in the treatment group for my output."
+    },
+    {
+      "concept": "difference-in-differences",
+      "correct": "I am relying on the parallel trends assumption for this difference-in-differences design, assuming outcomes would evolve similarly for both groups absent the actual intervention.",
+      "incorrect": "I am relying on the parallel trends assumption for this difference-in-differences design, assuming outcomes would diverge sharply for both groups absent the actual intervention."
+    },
+    {
+      "concept": "difference-in-differences",
+      "correct": "This difference-in-differences approach accounts for time-invariant unobserved confounding by comparing the changes over time rather than just comparing the levels across the groups.",
+      "incorrect": "This difference-in-differences approach accounts for time-varying unobserved confounding by comparing the changes over time rather than just comparing the levels across the groups."
+    },
+    {
+      "concept": "difference-in-differences",
+      "correct": "My difference-in-differences model includes group and time fixed effects to properly capture the baseline differences between my treated and untreated cohorts across observations.",
+      "incorrect": "My difference-in-differences model includes group and time fixed effects to ignore the baseline differences between my treated and untreated cohorts across observations."
+    },
+    {
+      "concept": "propensity score matching",
+      "correct": "I am using propensity score matching to balance my covariates, as the treatment assignment in this observational study is clearly related to the background characteristics.",
+      "incorrect": "I am using propensity score matching to imbalance my covariates, as the treatment assignment in this observational study is clearly related to the background characteristics."
+    },
+    {
+      "concept": "propensity score matching",
+      "correct": "After running my propensity score matching algorithm, I must verify the overlap condition to ensure that both groups have comparable units in my final sample.",
+      "incorrect": "After running my propensity score matching algorithm, I must ignore the overlap condition to ensure that both groups have comparable units in my final sample."
+    },
+    {
+      "concept": "propensity score matching",
+      "correct": "My propensity score matching procedure creates comparable treatment and control groups by pairing individuals with similar probabilities of treatment based on my observable data.",
+      "incorrect": "My propensity score matching procedure creates comparable treatment and control groups by pairing individuals with dissimilar probabilities of treatment based on my observable data."
+    },
+    {
+      "concept": "propensity score matching",
+      "correct": "I am checking the standardized mean differences after propensity score matching to confirm that the covariate distributions are now sufficiently balanced between my two groups.",
+      "incorrect": "I am checking the standardized mean differences after propensity score matching to confirm that the covariate distributions are now highly skewed between my two groups."
+    },
+    {
+      "concept": "propensity score matching",
+      "correct": "Propensity score matching is helpful here because it allows me to estimate the average treatment effect by conditioning on a single composite score of variables.",
+      "incorrect": "Propensity score matching is helpful here because it allows me to estimate the average treatment effect by ignoring the composite score of my conditioning variables."
+    },
+    {
+      "concept": "randomisation and balance",
+      "correct": "Since the randomisation was successful, I expect the baseline characteristics to show balance, with no statistically significant differences between my treatment and control groups.",
+      "incorrect": "Since the randomisation was successful, I expect the baseline characteristics to show imbalance, with large statistically significant differences between my treatment and control groups."
+    },
+    {
+      "concept": "randomisation and balance",
+      "correct": "I am inspecting the table of baseline characteristics to verify that randomisation achieved balance across my covariates, preventing confounding in my final impact evaluation.",
+      "incorrect": "I am inspecting the table of baseline characteristics to verify that randomisation achieved bias across my covariates, preventing confounding in my final impact evaluation."
+    },
+    {
+      "concept": "randomisation and balance",
+      "correct": "The randomisation protocol ensures that my treatment assignment is uncorrelated with subject characteristics, allowing me to attribute the outcome differences directly to the intervention.",
+      "incorrect": "The randomisation protocol ensures that my treatment assignment is correlated with subject characteristics, allowing me to attribute the outcome differences directly to the intervention."
+    },
+    {
+      "concept": "randomisation and balance",
+      "correct": "I performed a balance check to confirm that my randomisation produced groups with similar means on key covariates before I proceed with the regression.",
+      "incorrect": "I performed a balance check to confirm that my randomisation produced groups with different means on key covariates before I proceed with the regression."
+    },
+    {
+      "concept": "randomisation and balance",
+      "correct": "Because I used stratified randomisation, I ensured balance on specific pre-treatment variables that I know are highly predictive of my primary study outcomes.",
+      "incorrect": "Because I used stratified randomisation, I ensured bias on specific pre-treatment variables that I know are highly predictive of my primary study outcomes."
+    },
+    {
+      "concept": "intention-to-treat",
+      "correct": "My intention-to-treat analysis includes all participants in their original assignment group, regardless of whether they actually adhered to the treatment protocol I implemented.",
+      "incorrect": "My intention-to-treat analysis excludes all participants in their original assignment group, regardless of whether they actually adhered to the treatment protocol I implemented."
+    },
+    {
+      "concept": "intention-to-treat",
+      "correct": "I am reporting the intention-to-treat effect because it provides a realistic estimate of the policy impact, accounting for real-world non-compliance in my trial.",
+      "incorrect": "I am reporting the intention-to-treat effect because it provides a theoretical estimate of the ideal impact, ignoring real-world non-compliance in my trial."
+    },
+    {
+      "concept": "intention-to-treat",
+      "correct": "To maintain the benefits of randomisation, I must use an intention-to-treat approach and analyze every subject according to the group they were initially assigned.",
+      "incorrect": "To maintain the benefits of randomisation, I must avoid an intention-to-treat approach and analyze every subject according to the group they actually utilized."
+    },
+    {
+      "concept": "intention-to-treat",
+      "correct": "The intention-to-treat result is my primary metric because it avoids the selection bias that would arise if I only analyzed the compliers in my dataset.",
+      "incorrect": "The intention-to-treat result is my primary metric because it introduces the selection bias that would arise if I only analyzed the compliers in my dataset."
+    },
+    {
+      "concept": "intention-to-treat",
+      "correct": "I am sticking to the intention-to-treat principle, ensuring that my estimate reflects the effectiveness of the assignment rather than the efficacy of the treatment.",
+      "incorrect": "I am sticking to the intention-to-treat principle, ensuring that my estimate reflects the efficacy of the treatment rather than the effectiveness of the assignment."
+    },
+    {
+      "concept": "mediation vs moderation",
+      "correct": "My data shows that job satisfaction mediates the relationship between salary and turnover, explaining why higher pay leads to lower attrition in my sample.",
+      "incorrect": "My data shows that job satisfaction moderates the relationship between salary and turnover, explaining why higher pay leads to lower attrition in my sample."
+    },
+    {
+      "concept": "mediation vs moderation",
+      "correct": "I found that company culture moderates the effect of remote work on productivity, meaning the impact varies depending on how collaborative the team is.",
+      "incorrect": "I found that company culture mediates the effect of remote work on productivity, meaning the impact varies depending on how collaborative the team is."
+    },
+    {
+      "concept": "mediation vs moderation",
+      "correct": "Because my analysis indicates that stress mediates the link between workload and burnout, I am focusing on stress reduction as a causal mechanism.",
+      "incorrect": "Because my analysis indicates that stress moderates the link between workload and burnout, I am focusing on stress reduction as a causal mechanism."
+    },
+    {
+      "concept": "mediation vs moderation",
+      "correct": "My results confirm that experience moderates the relationship between age and sales performance, so the effect is significantly stronger for the senior staff.",
+      "incorrect": "My results confirm that experience mediates the relationship between age and sales performance, so the effect is significantly stronger for the senior staff."
+    },
+    {
+      "concept": "mediation vs moderation",
+      "correct": "Since trust mediates the impact of transparency on adoption, I am interpreting this as transparency increasing trust, which subsequently drives higher adoption rates.",
+      "incorrect": "Since trust moderates the impact of transparency on adoption, I am interpreting this as transparency increasing trust, which subsequently drives higher adoption rates."
+    },
+    {
+      "concept": "counterfactual reasoning",
+      "correct": "My counterfactual reasoning suggests that if I hadn't implemented the ad campaign, the conversion rate would have remained at the historical baseline of three percent.",
+      "incorrect": "My counterfactual reasoning suggests that because I implemented the ad campaign, the conversion rate increased relative to the historical baseline of three percent."
+    },
+    {
+      "concept": "counterfactual reasoning",
+      "correct": "I am using counterfactual reasoning to estimate the revenue my store would have generated last month had the supply chain disruption not occurred at all.",
+      "incorrect": "I am using counterfactual reasoning to estimate the revenue my store actually generated last month even though the supply chain disruption definitely occurred yesterday."
+    },
+    {
+      "concept": "counterfactual reasoning",
+      "correct": "By applying counterfactual reasoning to my A/B test logs, I can isolate what would have happened to the user retention if the update never launched.",
+      "incorrect": "By applying counterfactual reasoning to my A/B test logs, I can confirm exactly what happened to the user retention after the update finally launched."
+    },
+    {
+      "concept": "counterfactual reasoning",
+      "correct": "My counterfactual reasoning shows that even without the price drop, my sales figures would likely have tracked the same seasonal trend as previous years.",
+      "incorrect": "My counterfactual reasoning shows that even with the price drop, my sales figures likely tracked the same seasonal trend as the previous year's total."
+    },
+    {
+      "concept": "counterfactual reasoning",
+      "correct": "I used counterfactual reasoning to determine what the server latency would have been if I had not deployed the latest code patch last night.",
+      "incorrect": "I used counterfactual reasoning to determine what the server latency was after I deployed the latest code patch successfully late last night."
+    },
+    {
+      "concept": "backdoor paths",
+      "correct": "My causal diagram shows that age is a confounder, so I must close the backdoor path between age and outcome to estimate the effect.",
+      "incorrect": "My causal diagram shows that age is a confounder, so I must leave open the backdoor path between age and outcome to estimate the effect."
+    },
+    {
+      "concept": "backdoor paths",
+      "correct": "I need to control for location to block the backdoor path between my marketing spend and sales, otherwise the estimate will be biased by geography.",
+      "incorrect": "I need to ignore the location variable to block the backdoor path between my marketing spend and sales, otherwise the estimate will be biased by geography."
+    },
+    {
+      "concept": "backdoor paths",
+      "correct": "Since gender creates a backdoor path from the treatment to my dependent variable, I am adjusting for it to isolate the causal impact of training.",
+      "incorrect": "Since gender creates a backdoor path from the treatment to my dependent variable, I am excluding it to isolate the causal impact of training."
+    },
+    {
+      "concept": "backdoor paths",
+      "correct": "My DAG indicates that unobserved common causes are creating a backdoor path, so I cannot identify the causal effect from this observational dataset alone.",
+      "incorrect": "My DAG indicates that unobserved common causes are creating a backdoor path, so I can easily identify the causal effect from this observational dataset alone."
+    },
+    {
+      "concept": "backdoor paths",
+      "correct": "To eliminate the backdoor path between my variable X and Y, I am using propensity score matching to ensure the groups are comparable across strata.",
+      "incorrect": "To eliminate the backdoor path between my variable X and Y, I am using simple linear regression to ensure the groups are comparable across strata."
+    },
+    {
+      "concept": "overfitting",
+      "correct": "My model is overfitting because the training error is near zero, but the performance on my validation set is significantly worse than expected here.",
+      "incorrect": "My model is overfitting because the training error is quite high, but the performance on my validation set is significantly worse than expected here."
+    },
+    {
+      "concept": "overfitting",
+      "correct": "I see my model is overfitting the noise in the training data, so I should increase the regularization parameter to improve generalization on unseen inputs.",
+      "incorrect": "I see my model is overfitting the noise in the training data, so I should decrease the regularization parameter to improve generalization on unseen inputs."
+    },
+    {
+      "concept": "overfitting",
+      "correct": "My current tree depth is causing overfitting, so I am pruning the leaves to ensure the model captures the signal instead of just the training points.",
+      "incorrect": "My current tree depth is causing overfitting, so I am adding more leaves to ensure the model captures the signal instead of just the training points."
+    },
+    {
+      "concept": "overfitting",
+      "correct": "I know I am overfitting since my testing accuracy is declining while the training accuracy continues to rise with each epoch in my script.",
+      "incorrect": "I know I am overfitting since my testing accuracy is rising while the training accuracy continues to rise with each epoch in my script."
+    },
+    {
+      "concept": "overfitting",
+      "correct": "By simplifying the feature set, I am reducing overfitting because the initial model was too complex and memorized every single instance in my training set.",
+      "incorrect": "By expanding the feature set, I am reducing overfitting because the initial model was too simple and memorized every single instance in my training set."
+    },
+    {
+      "concept": "cross-validation",
+      "correct": "I am using five-fold cross-validation to get a more reliable estimate of my model's performance and ensure the results are robust across subsets.",
+      "incorrect": "I am using five-fold cross-validation to force the model to memorize the training data and ensure the results are robust across subsets."
+    },
+    {
+      "concept": "cross-validation",
+      "correct": "My cross-validation results show high variance across folds, which suggests the model is sensitive to the specific split of the training data used.",
+      "incorrect": "My cross-validation results show zero variance across folds, which suggests the model is sensitive to the specific split of the training data used."
+    },
+    {
+      "concept": "cross-validation",
+      "correct": "To prevent data leakage, I perform cross-validation by only calculating my feature scaling parameters on the training folds and applying them to the validation fold.",
+      "incorrect": "To prevent data leakage, I perform cross-validation by calculating my feature scaling parameters on the entire dataset before splitting into the training and validation folds."
+    },
+    {
+      "concept": "cross-validation",
+      "correct": "I prefer nested cross-validation to tune my hyperparameters, as it prevents me from optimizing the parameters specifically to the validation set I am testing.",
+      "incorrect": "I prefer nested cross-validation to tune my hyperparameters, as it forces me to optimize the parameters specifically to the validation set I am testing."
+    },
+    {
+      "concept": "cross-validation",
+      "correct": "Using cross-validation allows me to assess how well my classifier generalizes by testing on portions of the data it never saw during training.",
+      "incorrect": "Using cross-validation allows me to assess how well my classifier generalizes by testing on portions of the data it just saw during training."
+    },
+    {
+      "concept": "regularisation",
+      "correct": "I am applying L2 regularisation to my model coefficients because the high variance in my training data suggests I should penalize large parameter weights to improve generalisation.",
+      "incorrect": "I am applying L2 regularisation to my model coefficients because the high variance in my training data suggests I should penalize large parameter weights to improve training accuracy."
+    },
+    {
+      "concept": "regularisation",
+      "correct": "Adding Lasso regularisation helps shrink my less relevant feature coefficients toward zero, which effectively simplifies my model structure when I have a very large number of inputs.",
+      "incorrect": "Adding Lasso regularisation helps shrink my less relevant feature coefficients toward zero, which effectively complicates my model structure when I have a very large number of inputs."
+    },
+    {
+      "concept": "regularisation",
+      "correct": "Since my validation error is rising while my training error keeps falling, I'll tune the regularisation strength to increase the bias and reduce the overfitting on my dataset.",
+      "incorrect": "Since my validation error is rising while my training error keeps falling, I'll tune the regularisation strength to decrease the bias and reduce the overfitting on my dataset."
+    },
+    {
+      "concept": "regularisation",
+      "correct": "I chose elastic net regularisation here to combine L1 and L2 penalties, specifically helping me handle the feature correlation issues that were destabilizing my initial regression output results.",
+      "incorrect": "I chose elastic net regularisation here to combine L1 and L2 penalties, specifically helping me handle the feature correlation issues that were stabilizing my initial regression output results."
+    },
+    {
+      "concept": "regularisation",
+      "correct": "My current model performance is poor, so I will reduce the regularisation parameter to let the model fit the training data more closely and capture the underlying patterns.",
+      "incorrect": "My current model performance is poor, so I will increase the regularisation parameter to let the model fit the training data more closely and capture the underlying patterns."
+    },
+    {
+      "concept": "interaction effects",
+      "correct": "I am including these interaction effects in my regression because the impact of marketing spend on sales appears to change significantly depending on the season of the year.",
+      "incorrect": "I am including these interaction effects in my regression because the impact of marketing spend on sales appears to remain constant regardless of the season of the year."
+    },
+    {
+      "concept": "interaction effects",
+      "correct": "When I model interaction effects between age and income, I can statistically test whether the education variable influences the dependent outcome differently across those two demographic subgroups.",
+      "incorrect": "When I model interaction effects between age and income, I can statistically test whether the education variable influences the dependent outcome identically across those two demographic subgroups."
+    },
+    {
+      "concept": "interaction effects",
+      "correct": "Adding interaction effects to my model accounts for the non-additive relationship where the combination of high dosage and specific genetics creates a unique result on patient recovery.",
+      "incorrect": "Adding interaction effects to my model accounts for the additive relationship where the combination of high dosage and specific genetics creates a unique result on patient recovery."
+    },
+    {
+      "concept": "interaction effects",
+      "correct": "I see significant interaction effects here, meaning that the relationship between my independent variable and the dependent variable is contingent upon the level of the moderator variable.",
+      "incorrect": "I see significant interaction effects here, meaning that the relationship between my independent variable and the dependent variable is independent from the level of the moderator variable."
+    },
+    {
+      "concept": "interaction effects",
+      "correct": "By checking interaction effects, I verified that the effect of price on purchase probability is moderated by the customer's loyalty status rather than acting independently of it.",
+      "incorrect": "By checking interaction effects, I verified that the effect of price on purchase probability is mediated by the customer's loyalty status rather than acting independently of it."
+    },
+    {
+      "concept": "multicollinearity",
+      "correct": "My VIF scores indicate high multicollinearity between these two predictors, which is problematic because it makes it difficult to isolate the individual effect of each specific variable.",
+      "incorrect": "My VIF scores indicate high multicollinearity between these two predictors, which is useful because it makes it easier to isolate the individual effect of each specific variable."
+    },
+    {
+      "concept": "multicollinearity",
+      "correct": "I am dropping one of the features because strong multicollinearity is inflating my standard errors, making the coefficient estimates for both variables quite unstable and unreliable today.",
+      "incorrect": "I am dropping one of the features because strong multicollinearity is shrinking my standard errors, making the coefficient estimates for both variables quite stable and reliable today."
+    },
+    {
+      "concept": "multicollinearity",
+      "correct": "Because I detected significant multicollinearity among my financial indicators, I will use principal component analysis to transform them into a set of uncorrelated features for the model.",
+      "incorrect": "Because I detected significant multicollinearity among my financial indicators, I will use principal component analysis to transform them into a set of correlated features for the model."
+    },
+    {
+      "concept": "multicollinearity",
+      "correct": "High multicollinearity in my regression model is causing weird coefficient sign flips, so I need to remove the redundant predictors to clarify the real variable relationships.",
+      "incorrect": "High multicollinearity in my regression model is causing weird coefficient sign flips, so I need to add more redundant predictors to clarify the real variable relationships."
+    },
+    {
+      "concept": "multicollinearity",
+      "correct": "While my model has excellent predictive power, the presence of multicollinearity prevents me from making valid causal inferences about the individual contribution of these correlated features.",
+      "incorrect": "While my model has excellent predictive power, the presence of multicollinearity allows me to make valid causal inferences about the individual contribution of these correlated features."
+    },
+    {
+      "concept": "residual diagnostics",
+      "correct": "I am checking my residual diagnostics plots now to ensure that the errors have constant variance, which confirms that my homoscedasticity assumption holds for this specific dataset.",
+      "incorrect": "I am checking my residual diagnostics plots now to ensure that the errors have non-constant variance, which confirms that my homoscedasticity assumption holds for this specific dataset."
+    },
+    {
+      "concept": "residual diagnostics",
+      "correct": "After reviewing the residual diagnostics, I notice a clear non-linear pattern, suggesting that my current linear model is failing to capture the curvature in the data.",
+      "incorrect": "After reviewing the residual diagnostics, I notice a clear non-linear pattern, suggesting that my current linear model is successfully capturing the curvature in the data."
+    },
+    {
+      "concept": "residual diagnostics",
+      "correct": "Performing residual diagnostics reveals significant autocorrelation in my time series model, which indicates that I need to incorporate lagged variables to account for the temporal dependence.",
+      "incorrect": "Performing residual diagnostics reveals significant autocorrelation in my time series model, which indicates that I need to remove lagged variables to account for the temporal dependence."
+    },
+    {
+      "concept": "residual diagnostics",
+      "correct": "The residual diagnostics plot shows the points are normally distributed around zero, which supports the validity of my hypothesis tests and confidence intervals for the coefficients.",
+      "incorrect": "The residual diagnostics plot shows the points are heavily skewed away from zero, which supports the validity of my hypothesis tests and confidence intervals for the coefficients."
+    },
+    {
+      "concept": "residual diagnostics",
+      "correct": "I need to analyze my residual diagnostics because outliers appearing far from the regression line might be exerting undue influence on the overall slope of my model.",
+      "incorrect": "I need to analyze my residual diagnostics because outliers appearing far from the regression line will never exert undue influence on the overall slope of my model."
+    },
+    {
+      "concept": "link functions",
+      "correct": "I am using a logit link function for this generalized linear model because it allows me to map the linear predictor to the interval between zero and one.",
+      "incorrect": "I am using a logit link function for this generalized linear model because it allows me to map the linear predictor to any value on the real line."
+    },
+    {
+      "concept": "link functions",
+      "correct": "By selecting a log link function, I am effectively modeling the multiplicative relationship between my independent variables and the response count in this Poisson regression analysis.",
+      "incorrect": "By selecting a log link function, I am effectively modeling the additive relationship between my independent variables and the response count in this Poisson regression analysis."
+    },
+    {
+      "concept": "link functions",
+      "correct": "The choice of a probit link function is appropriate here since it assumes a normal distribution for the latent variable underlying the binary outcomes I am observing.",
+      "incorrect": "The choice of a probit link function is appropriate here since it assumes a uniform distribution for the latent variable underlying the binary outcomes I am observing."
+    },
+    {
+      "concept": "link functions",
+      "correct": "If I change the link function to identity, the model will treat the dependent variable as continuous and perform a standard ordinary least squares regression on outcomes.",
+      "incorrect": "If I change the link function to identity, the model will treat the dependent variable as categorical and perform a standard ordinary least squares regression on outcomes."
+    },
+    {
+      "concept": "link functions",
+      "correct": "I have to specify the link function correctly because it dictates how the mean of my response variable relates to the linear combination of the input predictors.",
+      "incorrect": "I have to specify the link function correctly because it dictates how the variance of my response variable relates to the linear combination of the input predictors."
+    },
+    {
+      "concept": "clustered data",
+      "correct": "I need to account for the dependencies within my clustered data by specifying a random intercept for each participant to handle intra-group correlation effectively.",
+      "incorrect": "I need to account for the dependencies within my clustered data by specifying a random intercept for each participant to ignore intra-group correlation completely.",
+      "pair": 1
+    },
+    {
+      "concept": "clustered data",
+      "correct": "My standard errors will be biased if I treat my clustered data as independent observations instead of using a multilevel model to adjust for group structure.",
+      "incorrect": "My standard errors will be biased if I treat my clustered data as independent observations instead of using a multilevel model to adjust for group variance.",
+      "pair": 2
+    },
+    {
+      "concept": "clustered data",
+      "correct": "Given the nested structure of my clustered data, I should use cluster-robust standard errors to ensure my hypothesis tests remain valid for this specific experiment.",
+      "incorrect": "Given the nested structure of my clustered data, I should use cluster-robust standard errors to ensure my hypothesis tests become invalid for this specific experiment.",
+      "pair": 3
+    },
+    {
+      "concept": "clustered data",
+      "correct": "I am ignoring the group-level variance in my clustered data because using simple OLS regression assumes that all observations are independent rather than naturally grouped.",
+      "incorrect": "I am ignoring the group-level variance in my clustered data because using simple OLS regression assumes that all observations are dependent rather than naturally grouped.",
+      "pair": 4
+    },
+    {
+      "concept": "clustered data",
+      "correct": "Since my clustered data shows significant correlation within schools, I must include a random effect for the school ID to prevent underestimating the standard errors.",
+      "incorrect": "Since my clustered data shows significant correlation within schools, I must include a random effect for the school ID to prevent overestimating the standard errors.",
+      "pair": 5
+    },
+    {
+      "concept": "random vs fixed effects",
+      "correct": "I will include the study site as a fixed effect in my model because I specifically want to compare the unique intercepts for these three locations.",
+      "incorrect": "I will include the study site as a fixed effect in my model because I specifically want to generalize the unique intercepts for these three locations.",
+      "pair": 1
+    },
+    {
+      "concept": "random vs fixed effects",
+      "correct": "I am treating participant ID as a random effect because I assume the individuals are drawn from a larger population and want to model individual variance.",
+      "incorrect": "I am treating participant ID as a random effect because I assume the individuals are unique cases and want to model individual fixed mean differences.",
+      "pair": 2
+    },
+    {
+      "concept": "random vs fixed effects",
+      "correct": "My model uses treatment as a fixed effect because I am interested in the specific average difference between the intervention group and the control group.",
+      "incorrect": "My model uses treatment as a random effect because I am interested in the specific average difference between the intervention group and the control group.",
+      "pair": 3
+    },
+    {
+      "concept": "random vs fixed effects",
+      "correct": "I chose a random effects specification for the time variable so that I can estimate the variance of intercepts drawn from a normal distribution of effects.",
+      "incorrect": "I chose a fixed effects specification for the time variable so that I can estimate the variance of intercepts drawn from a normal distribution of effects.",
+      "pair": 4
+    },
+    {
+      "concept": "random vs fixed effects",
+      "correct": "Deciding to use fixed effects for these categorical variables allows me to estimate the specific coefficient for each level rather than treating them as random samples.",
+      "incorrect": "Deciding to use random effects for these categorical variables allows me to estimate the specific coefficient for each level rather than treating them as random samples.",
+      "pair": 5
+    },
+    {
+      "concept": "model selection criteria",
+      "correct": "I will use the Akaike Information Criterion to compare these models because it penalizes for the number of parameters to prevent overfitting my training data.",
+      "incorrect": "I will use the Akaike Information Criterion to compare these models because it rewards for the number of parameters to prevent overfitting my training data.",
+      "pair": 1
+    },
+    {
+      "concept": "model selection criteria",
+      "correct": "Using the Bayesian Information Criterion is appropriate here because it provides a stricter penalty for additional parameters and favors more parsimonious models given the sample.",
+      "incorrect": "Using the Bayesian Information Criterion is appropriate here because it provides a looser penalty for additional parameters and favors more complex models given the sample.",
+      "pair": 2
+    },
+    {
+      "concept": "model selection criteria",
+      "correct": "I compared my models using cross-validation scores rather than R-squared because I need to assess generalizability rather than just how well the model fits the training set.",
+      "incorrect": "I compared my models using cross-validation scores rather than R-squared because I need to assess complexity rather than just how well the model fits the training set.",
+      "pair": 3
+    },
+    {
+      "concept": "model selection criteria",
+      "correct": "My model selection process prioritized the lower AIC value to minimize the expected Kullback-Leibler divergence between my estimated model and the true underlying generative process.",
+      "incorrect": "My model selection process prioritized the higher AIC value to minimize the expected Kullback-Leibler divergence between my estimated model and the true underlying generative process.",
+      "pair": 4
+    },
+    {
+      "concept": "model selection criteria",
+      "correct": "When evaluating these competing regressions, I am relying on the BIC to find the model that balances fit quality against the parsimony of the parameter count.",
+      "incorrect": "When evaluating these competing regressions, I am relying on the BIC to find the model that maximizes fit quality regardless of the parsimony of the parameter count.",
+      "pair": 5
+    },
+    {
+      "concept": "extrapolation beyond data range",
+      "correct": "I cannot use this linear regression to predict values for x greater than 50, as it involves dangerous extrapolation beyond the observed range of my current data.",
+      "incorrect": "I can use this linear regression to predict values for x greater than 50, as it involves safe extrapolation within the observed range of my current data.",
+      "pair": 1
+    },
+    {
+      "concept": "extrapolation beyond data range",
+      "correct": "The model's accuracy drops sharply for extreme values, confirming that extrapolation beyond the range of training data is not reliable for my long-term forecasting task.",
+      "incorrect": "The model's accuracy stays stable for extreme values, confirming that extrapolation beyond the range of training data is reliable for my long-term forecasting task.",
+      "pair": 2
+    },
+    {
+      "concept": "extrapolation beyond data range",
+      "correct": "I should avoid making inferences about patients aged over 80, because doing so would require extrapolation beyond the range of my primary clinical dataset.",
+      "incorrect": "I should proceed making inferences about patients aged over 80, because doing so would allow interpolation within the range of my primary clinical dataset.",
+      "pair": 3
+    },
+    {
+      "concept": "extrapolation beyond data range",
+      "correct": "My polynomial model is fitting the training data well, but I am worried about extrapolation beyond the observed range causing wild predictions in future iterations.",
+      "incorrect": "My polynomial model is fitting the training data well, so I am confident that extrapolation beyond the observed range will produce stable predictions in future iterations.",
+      "pair": 4
+    },
+    {
+      "concept": "extrapolation beyond data range",
+      "correct": "Because my data only spans two years, any attempt at extrapolation beyond that range will likely be invalidated by the unobserved trends in the underlying system.",
+      "incorrect": "Because my data only spans two years, any attempt at extrapolation within that range will likely be invalidated by the unobserved trends in the underlying system.",
+      "pair": 5
+    },
+    {
+      "concept": "categorical encoding",
+      "correct": "I will apply one-hot encoding to these nominal labels because the model needs separate binary columns to prevent assuming an arbitrary order between the different categories.",
+      "incorrect": "I will apply one-hot encoding to these nominal labels because the model needs separate binary columns to correctly assume an arbitrary order between the different categories.",
+      "pair": 1
+    },
+    {
+      "concept": "categorical encoding",
+      "correct": "Since the variable represents an ordinal scale, I am using integer encoding to preserve the logical rank order rather than treating the levels as independent categories.",
+      "incorrect": "Since the variable represents an ordinal scale, I am using one-hot encoding to preserve the logical rank order rather than treating the levels as independent categories.",
+      "pair": 2
+    },
+    {
+      "concept": "categorical encoding",
+      "correct": "Using label encoding for my categorical location feature was a mistake, as the model mistakenly interprets the arbitrary integers as having meaningful magnitude or numeric distance.",
+      "incorrect": "Using label encoding for my categorical location feature was a success, as the model correctly interprets the arbitrary integers as having meaningful magnitude or numeric distance.",
+      "pair": 3
+    },
+    {
+      "concept": "categorical encoding",
+      "correct": "I chose to perform dummy encoding for my gender feature to avoid the dummy variable trap by dropping the first column and keeping only N-1 binary indicators.",
+      "incorrect": "I chose to perform dummy encoding for my gender feature to ignore the dummy variable trap by keeping all N columns and creating redundant binary indicators.",
+      "pair": 4
+    },
+    {
+      "concept": "categorical encoding",
+      "correct": "To prepare the color feature for my neural network, I am using one-hot encoding because the network expects non-numeric categories to be represented as distinct vectors.",
+      "incorrect": "To prepare the color feature for my neural network, I am using integer encoding because the network expects non-numeric categories to be represented as distinct vectors.",
+      "pair": 5
+    },
+    {
+      "concept": "measurement reliability",
+      "correct": "My survey scale shows high consistency across repeated administrations, indicating that the measurement reliability is sufficient to proceed with my primary regression analysis today.",
+      "incorrect": "My survey scale shows high consistency across repeated administrations, indicating that the measurement reliability proves the validity of the underlying latent construct accurately today."
+    },
+    {
+      "concept": "measurement reliability",
+      "correct": "I am worried that my instrument lacks measurement reliability because the Cronbach's alpha coefficient is too low to trust the consistency of my gathered responses.",
+      "incorrect": "I am worried that my instrument lacks measurement reliability because the Cronbach's alpha coefficient is too low to confirm the accuracy of my theoretical predictions."
+    },
+    {
+      "concept": "measurement reliability",
+      "correct": "Since my test-retest correlations are quite high, I can confidently conclude that the measurement reliability of my psychometric battery is stable across the sample.",
+      "incorrect": "Since my test-retest correlations are quite high, I can confidently conclude that the measurement reliability of my psychometric battery eliminates all systematic bias effectively."
+    },
+    {
+      "concept": "measurement reliability",
+      "correct": "My current sensor data exhibits high measurement reliability because the variance of the observed scores is primarily driven by true differences rather than error.",
+      "incorrect": "My current sensor data exhibits high measurement reliability because the variance of the observed scores is primarily driven by the lack of sample selection bias."
+    },
+    {
+      "concept": "measurement reliability",
+      "correct": "I need to improve the measurement reliability of this observational rubric, as the inter-rater agreement scores are currently too inconsistent for my final reporting.",
+      "incorrect": "I need to improve the measurement reliability of this observational rubric, as the inter-rater agreement scores are currently too inconsistent for my internal validity."
+    },
+    {
+      "concept": "construct validity",
+      "correct": "The significant correlation between my new scale and the established anxiety inventory suggests strong construct validity for measuring the intended psychological phenomenon in participants.",
+      "incorrect": "The significant correlation between my new scale and the established anxiety inventory suggests strong construct validity for proving the causal direction of the tested phenomenon."
+    },
+    {
+      "concept": "construct validity",
+      "correct": "I am examining the factor structure of my survey items to demonstrate that the construct validity supports the inference that I am measuring depression.",
+      "incorrect": "I am examining the factor structure of my survey items to demonstrate that the construct validity supports the inference that I am measuring statistical significance."
+    },
+    {
+      "concept": "construct validity",
+      "correct": "Given the poor discriminant evidence, I suspect the construct validity of my job satisfaction index is compromised by excessive overlap with the engagement measure.",
+      "incorrect": "Given the poor discriminant evidence, I suspect the construct validity of my job satisfaction index is compromised by excessive measurement error in the engagement measure."
+    },
+    {
+      "concept": "construct validity",
+      "correct": "My confirmatory factor analysis results demonstrate that the construct validity holds, as the items load heavily on the factors that represent the target concept.",
+      "incorrect": "My confirmatory factor analysis results demonstrate that the construct validity holds, as the items load heavily on the factors that represent the population mean."
+    },
+    {
+      "concept": "construct validity",
+      "correct": "I need to establish construct validity for this test by showing it correlates with relevant external variables, confirming it captures the intended theoretical trait.",
+      "incorrect": "I need to establish construct validity for this test by showing it correlates with relevant external variables, confirming it captures the true population variance."
+    },
+    {
+      "concept": "censored data",
+      "correct": "Because my sensor stopped recording at the ceiling value of 100 units, I must treat my dependent variable as censored data in this model.",
+      "incorrect": "Because my sensor stopped recording at the ceiling value of 100 units, I must treat my dependent variable as censored data in this missingness analysis."
+    },
+    {
+      "concept": "censored data",
+      "correct": "I am using a Tobit regression model because my survival time outcomes contain censored data, where the event of interest has not yet occurred.",
+      "incorrect": "I am using a Tobit regression model because my survival time outcomes contain censored data, where the participants chose not to report their ages."
+    },
+    {
+      "concept": "censored data",
+      "correct": "Since the income variable in my dataset is left-censored data below the detection threshold, standard OLS estimates would be biased toward the lower bound.",
+      "incorrect": "Since the income variable in my dataset is left-censored data below the detection threshold, standard OLS estimates would be biased by the missing responses."
+    },
+    {
+      "concept": "censored data",
+      "correct": "My longitudinal study contains right-censored data because some subjects dropped out before I could observe their final health outcome during the follow-up period.",
+      "incorrect": "My longitudinal study contains right-censored data because some subjects dropped out before I could observe their final health outcome, making the data missing."
+    },
+    {
+      "concept": "censored data",
+      "correct": "I cannot simply ignore the censored data in my batch processing, as the upper limit values contain crucial information about the study participants' performance.",
+      "incorrect": "I cannot simply ignore the censored data in my batch processing, as the upper limit values act as errors that should be removed from analysis."
+    },
+    {
+      "concept": "missing data mechanisms",
+      "correct": "My preliminary tests suggest the missing data mechanisms are Missing Completely at Random, so I can safely perform listwise deletion on my current dataset.",
+      "incorrect": "My preliminary tests suggest the missing data mechanisms are Missing Completely at Random, so I can assume the data follows a normal distribution curve."
+    },
+    {
+      "concept": "missing data mechanisms",
+      "correct": "I suspect that the missing data mechanisms are Missing at Random, as the probability of non-response depends on the observed gender variable in samples.",
+      "incorrect": "I suspect that the missing data mechanisms are Missing at Random, as the probability of non-response depends on the latent, unobserved value itself, clearly."
+    },
+    {
+      "concept": "missing data mechanisms",
+      "correct": "Because the missing data mechanisms are Missing Not at Random, my results will be biased unless I explicitly model the reasons for the dropouts.",
+      "incorrect": "Because the missing data mechanisms are Missing Not at Random, my results will be biased unless I impute the missing values using mean substitution."
+    },
+    {
+      "concept": "missing data mechanisms",
+      "correct": "To address my missing data mechanisms, I will check whether the pattern of absenteeism is correlated with the observed performance scores in my file.",
+      "incorrect": "To address my missing data mechanisms, I will check whether the pattern of absenteeism is correlated with the measurement error in my survey file."
+    },
+    {
+      "concept": "missing data mechanisms",
+      "correct": "My analysis is complicated because the missing data mechanisms appear to be non-ignorable, meaning the missingness is related to the outcome I am predicting.",
+      "incorrect": "My analysis is complicated because the missing data mechanisms appear to be non-ignorable, meaning the missingness is caused by random measurement noise errors."
+    },
+    {
+      "concept": "imputation",
+      "correct": "I am using multiple imputation to handle the blank cells, creating several complete datasets to account for the uncertainty inherent in my missing values.",
+      "incorrect": "I am using multiple imputation to handle the blank cells, creating several complete datasets to fix the measurement errors inherent in my observed values."
+    },
+    {
+      "concept": "imputation",
+      "correct": "After performing mean imputation on these missing survey responses, I noticed the variance in my dataset has artificially decreased, which concerns my model results.",
+      "incorrect": "After performing mean imputation on these missing survey responses, I noticed the variance in my dataset has artificially decreased, which is a feature."
+    },
+    {
+      "concept": "imputation",
+      "correct": "I decided against using single imputation for this analysis because it fails to preserve the standard errors of the estimates in my regression model.",
+      "incorrect": "I decided against using single imputation for this analysis because it fails to handle the censored data points that exist within my regression model."
+    },
+    {
+      "concept": "imputation",
+      "correct": "My team is applying predictive mean matching for imputation, which generates plausible values based on the distribution of other cases in my research study.",
+      "incorrect": "My team is applying predictive mean matching for imputation, which generates exact true values based on the known parameters of the population I study."
+    },
+    {
+      "concept": "imputation",
+      "correct": "Before I run the final model, I need to complete the imputation of the missing income fields to prevent the loss of my samples.",
+      "incorrect": "Before I run the final model, I need to complete the imputation of the missing income fields to remove the outliers from my samples."
+    },
+    {
+      "concept": "outlier handling",
+      "correct": "I decided to winsorize these extreme values to minimize their disproportionate influence on my regression model's coefficients without losing critical data points.",
+      "incorrect": "I decided to winsorize these extreme values to maximize their disproportionate influence on my regression model's coefficients without losing critical data points."
+    },
+    {
+      "concept": "outlier handling",
+      "correct": "Since these values are genuine observations, I am retaining them rather than trimming them to preserve the true variance of my skewed distribution.",
+      "incorrect": "Since these values are genuine observations, I am deleting them rather than trimming them to preserve the true variance of my skewed distribution."
+    },
+    {
+      "concept": "outlier handling",
+      "correct": "I will perform a robust regression analysis because it effectively downweights the leverage of these influential outliers while including them in the model.",
+      "incorrect": "I will perform a robust regression analysis because it effectively amplifies the leverage of these influential outliers while including them in the model."
+    },
+    {
+      "concept": "outlier handling",
+      "correct": "My boxplot shows clear skewness, so I am choosing to use the median instead of the mean to mitigate the impact of outliers.",
+      "incorrect": "My boxplot shows clear skewness, so I am choosing to use the mean instead of the median to mitigate the impact of outliers."
+    },
+    {
+      "concept": "outlier handling",
+      "correct": "I excluded those five data points as they were clearly measurement errors, thereby preventing them from artificially inflating my sample standard deviation.",
+      "incorrect": "I excluded those five data points as they were clearly measurement errors, thereby preventing them from artificially deflating my sample standard deviation."
+    },
+    {
+      "concept": "base rates",
+      "correct": "I must adjust my final prediction using the population base rate because the initial test result ignores the low prevalence of this condition.",
+      "incorrect": "I must adjust my final prediction using the population base rate because the initial test result confirms the high prevalence of this condition."
+    },
+    {
+      "concept": "base rates",
+      "correct": "My model yields high accuracy, but that is deceptive given the skewed base rates in my training set, necessitating a precision-recall analysis.",
+      "incorrect": "My model yields high accuracy, which is reliable given the skewed base rates in my training set, necessitating a precision-recall analysis."
+    },
+    {
+      "concept": "base rates",
+      "correct": "Even with positive markers, I remain cautious because the low base rate of the event suggests that false positives are likely dominant.",
+      "incorrect": "Even with positive markers, I remain confident because the low base rate of the event suggests that true positives are likely dominant."
+    },
+    {
+      "concept": "base rates",
+      "correct": "I am incorporating the prior base rate into my Bayesian framework to correct for the misleadingly high observed frequency in this small sample.",
+      "incorrect": "I am ignoring the prior base rate in my Bayesian framework to correct for the misleadingly high observed frequency in this small sample."
+    },
+    {
+      "concept": "base rates",
+      "correct": "The algorithm shows a strong positive result, yet I must account for the base rate to avoid overestimating the probability of occurrence.",
+      "incorrect": "The algorithm shows a strong positive result, so I will neglect the base rate to avoid underestimating the probability of occurrence."
+    },
+    {
+      "concept": "sensitivity and specificity",
+      "correct": "I chose this threshold to optimize sensitivity, even though it reduces my specificity and increases the number of false positive results.",
+      "incorrect": "I chose this threshold to optimize sensitivity, even though it increases my specificity and decreases the number of false positive results."
+    },
+    {
+      "concept": "sensitivity and specificity",
+      "correct": "The high sensitivity of my diagnostic tool means I am correctly identifying nearly all actual cases, though I suffer from more false alarms.",
+      "incorrect": "The high sensitivity of my diagnostic tool means I am incorrectly identifying nearly all actual cases, though I suffer from more false alarms."
+    },
+    {
+      "concept": "sensitivity and specificity",
+      "correct": "Since we need to minimize false negatives in this safety screening, I am setting the cutoff to prioritize high sensitivity over high specificity.",
+      "incorrect": "Since we need to minimize false negatives in this safety screening, I am setting the cutoff to prioritize high specificity over high sensitivity."
+    },
+    {
+      "concept": "sensitivity and specificity",
+      "correct": "My model demonstrates excellent specificity, which confirms that it is highly effective at correctly ruling out healthy subjects in the cohort.",
+      "incorrect": "My model demonstrates excellent specificity, which confirms that it is highly effective at correctly ruling in healthy subjects in the cohort."
+    },
+    {
+      "concept": "sensitivity and specificity",
+      "correct": "I am evaluating the ROC curve because it visualizes the trade-off between sensitivity and specificity across various classification thresholds for my data.",
+      "incorrect": "I am evaluating the ROC curve because it visualizes the synergy between sensitivity and specificity across various classification thresholds for my data."
+    },
+    {
+      "concept": "aggregation and granularity",
+      "correct": "I am drilling down to the daily level because the monthly aggregation hides the volatility that I need to analyze in my time-series.",
+      "incorrect": "I am drilling down to the daily level because the monthly aggregation reveals the volatility that I need to analyze in my time-series."
+    },
+    {
+      "concept": "aggregation and granularity",
+      "correct": "I will change the granularity of my analysis to the regional level to smooth out the noise present in the local transactional data.",
+      "incorrect": "I will change the granularity of my analysis to the regional level to exacerbate the noise present in the local transactional data."
+    },
+    {
+      "concept": "aggregation and granularity",
+      "correct": "My current aggregation level is too coarse, preventing me from observing the underlying variance that matters for my model's predictive performance.",
+      "incorrect": "My current aggregation level is too coarse, preventing me from ignoring the underlying variance that matters for my model's predictive performance."
+    },
+    {
+      "concept": "aggregation and granularity",
+      "correct": "I am recalculating at a finer granularity to ensure that I do not fall victim to Simpson's paradox when interpreting my aggregated results.",
+      "incorrect": "I am recalculating at a finer granularity to ensure that I do not fall victim to Simpson's paradox when interpreting my disaggregated results."
+    },
+    {
+      "concept": "aggregation and granularity",
+      "correct": "Aggregating these individual metrics into a single score sacrifices granularity but provides the executive summary I need for my report presentation.",
+      "incorrect": "Aggregating these individual metrics into a single score increases granularity but provides the executive summary I need for my report presentation."
+    },
+    {
+      "concept": "response bias in surveys",
+      "correct": "I suspect my survey results suffer from social desirability bias, causing participants to overreport their actual exercise frequency to appear healthier.",
+      "incorrect": "I suspect my survey results suffer from social desirability bias, causing participants to underreport their actual exercise frequency to appear healthier."
+    },
+    {
+      "concept": "response bias in surveys",
+      "correct": "The wording of my leading questions likely introduced acquiescence bias, leading respondents to agree with statements rather than providing critical feedback.",
+      "incorrect": "The wording of my leading questions likely introduced acquiescence bias, leading respondents to disagree with statements rather than providing critical feedback."
+    },
+    {
+      "concept": "response bias in surveys",
+      "correct": "I am adjusting my data weights to compensate for non-response bias, as those who declined the survey differ systematically from the participants.",
+      "incorrect": "I am adjusting my data weights to compensate for non-response bias, as those who declined the survey appear identical to the participants."
+    },
+    {
+      "concept": "response bias in surveys",
+      "correct": "The timing of this survey might induce recall bias, as participants struggle to accurately remember their purchases from several months ago.",
+      "incorrect": "The timing of this survey might induce recall bias, as participants manage to perfectly remember their purchases from several months ago."
+    },
+    {
+      "concept": "response bias in surveys",
+      "correct": "To minimize extreme response bias, I modified the scale to avoid offering only polar endpoints that push users toward the absolute ends.",
+      "incorrect": "To minimize extreme response bias, I modified the scale to include only polar endpoints that push users toward the absolute ends."
+    },
+    {
+      "concept": "weighting survey samples",
+      "correct": "I am applying these post-stratification weights to my survey sample so the demographic proportions of my data match the known population parameters of the census.",
+      "incorrect": "I am applying these post-stratification weights to my survey sample so the demographic proportions of my data match the average values of the other respondents."
+    },
+    {
+      "concept": "weighting survey samples",
+      "correct": "I recalculated my sample weights to correct for the overrepresentation of urban households and align the data with the true geographic distribution of the region.",
+      "incorrect": "I recalculated my sample weights to correct for the overrepresentation of urban households and inflate the raw data to match the total population size exactly."
+    },
+    {
+      "concept": "weighting survey samples",
+      "correct": "I adjusted the survey weights to compensate for lower response rates among younger adults, which restores the representativeness of my final estimate for the population.",
+      "incorrect": "I adjusted the survey weights to compensate for lower response rates among younger adults, which increases the variance of my final estimate for the population."
+    },
+    {
+      "concept": "weighting survey samples",
+      "correct": "I implemented non-response weighting in this dataset to minimize bias by assigning larger values to cases that represent undercounted groups within the target population.",
+      "incorrect": "I implemented non-response weighting in this dataset to minimize bias by assigning larger values to cases that represent overcounted groups within the target population."
+    },
+    {
+      "concept": "weighting survey samples",
+      "correct": "I normalized my survey weights to ensure the sum of the weighted cases equals the original sample size while maintaining the correct proportions across strata.",
+      "incorrect": "I normalized my survey weights to ensure the sum of the weighted cases equals the population size while maintaining the correct proportions across strata."
+    },
+    {
+      "concept": "attrition",
+      "correct": "I am analyzing the attrition in this longitudinal study to determine if the participants who dropped out differ significantly from those who remained until completion.",
+      "incorrect": "I am analyzing the attrition in this longitudinal study to determine if the participants who dropped out performed consistently better than those who remained until completion."
+    },
+    {
+      "concept": "attrition",
+      "correct": "I checked for selective attrition in my dataset and found that lower-income households were more likely to leave the study before the final data collection.",
+      "incorrect": "I checked for selective attrition in my dataset and found that lower-income households were more likely to provide high-quality data before the final data collection."
+    },
+    {
+      "concept": "attrition",
+      "correct": "I suspect that systematic attrition is biasing my treatment effect estimates since the dropout rate is clearly related to the severity of the participants' symptoms.",
+      "incorrect": "I suspect that systematic attrition is biasing my treatment effect estimates since the dropout rate is randomly distributed across the severity of the participants' symptoms."
+    },
+    {
+      "concept": "attrition",
+      "correct": "I need to account for attrition because the loss of these specific participants reduces the generalizability of my longitudinal findings to the broader target population.",
+      "incorrect": "I need to account for attrition because the loss of these specific participants increases the generalizability of my longitudinal findings to the broader target population."
+    },
+    {
+      "concept": "attrition",
+      "correct": "I am running a sensitivity analysis to assess if participant attrition has compromised the internal validity of the comparisons made between these two intervention groups.",
+      "incorrect": "I am running a sensitivity analysis to assess if participant attrition has compromised the external validity of the comparisons made between these two intervention groups."
+    },
+    {
+      "concept": "floor and ceiling effects",
+      "correct": "I excluded these scores because the ceiling effect prevents my instrument from capturing higher levels of performance among the most advanced participants in the cohort.",
+      "incorrect": "I excluded these scores because the ceiling effect prevents my instrument from capturing lower levels of performance among the most advanced participants in the cohort."
+    },
+    {
+      "concept": "floor and ceiling effects",
+      "correct": "I observed a floor effect in this assessment, meaning the test is too difficult for my current sample to differentiate between those with lower abilities.",
+      "incorrect": "I observed a floor effect in this assessment, meaning the test is too easy for my current sample to differentiate between those with lower abilities."
+    },
+    {
+      "concept": "floor and ceiling effects",
+      "correct": "I worry about a ceiling effect in this survey, where most participants picked the maximum value, masking any real differences in their actual satisfaction levels.",
+      "incorrect": "I worry about a ceiling effect in this survey, where most participants picked the minimum value, masking any real differences in their actual satisfaction levels."
+    },
+    {
+      "concept": "floor and ceiling effects",
+      "correct": "I noticed a floor effect in the data, as nearly half of the respondents selected the lowest possible option, compressing the variance at that range.",
+      "incorrect": "I noticed a floor effect in the data, as nearly half of the respondents selected the highest possible option, compressing the variance at that range."
+    },
+    {
+      "concept": "floor and ceiling effects",
+      "correct": "I am adjusting the scale to avoid a ceiling effect, ensuring the measure can distinguish among high-performing users who are currently reaching the top score.",
+      "incorrect": "I am adjusting the scale to avoid a ceiling effect, ensuring the measure can distinguish among low-performing users who are currently reaching the top score."
+    },
+    {
+      "concept": "test-retest reliability",
+      "correct": "I computed the test-retest reliability of this scale to verify that the measure produces consistent scores across two separate administrations for the same subjects.",
+      "incorrect": "I computed the test-retest reliability of this scale to verify that the measure produces accurate scores across two separate administrations for the same subjects."
+    },
+    {
+      "concept": "test-retest reliability",
+      "correct": "I measured the test-retest reliability to confirm that fluctuations in my participants' scores are caused by real changes rather than instability in the instrument itself.",
+      "incorrect": "I measured the test-retest reliability to confirm that fluctuations in my participants' scores are caused by internal variance rather than instability in the instrument itself."
+    },
+    {
+      "concept": "test-retest reliability",
+      "correct": "I evaluated the test-retest reliability by correlating the results from the baseline survey with the results collected two weeks later from the same group.",
+      "incorrect": "I evaluated the test-retest reliability by correlating the results from the baseline survey with the results collected two weeks later from a different group."
+    },
+    {
+      "concept": "test-retest reliability",
+      "correct": "I am concerned that low test-retest reliability suggests my tool is too sensitive to transient environmental factors, leading to inconsistent scores over time.",
+      "incorrect": "I am concerned that low test-retest reliability suggests my tool is too sensitive to participant intelligence, leading to inconsistent scores over time."
+    },
+    {
+      "concept": "test-retest reliability",
+      "correct": "I verified the test-retest reliability to demonstrate that the latent trait is stable and that my assessment yields stable results when administered twice.",
+      "incorrect": "I verified the test-retest reliability to demonstrate that the latent trait is stable and that my assessment yields diverse results when administered twice."
+    },
+    {
+      "concept": "operationalisation",
+      "correct": "I am finalizing the operationalisation of the construct 'stress' by defining it specifically as the physiological measurement of cortisol levels in saliva samples.",
+      "incorrect": "I am finalizing the operationalisation of the construct 'stress' by defining it specifically as the general feeling of being overwhelmed by tasks and people."
+    },
+    {
+      "concept": "operationalisation",
+      "correct": "I completed the operationalisation of 'political engagement' by specifying the exact frequency of voting and attendance at town hall meetings for each participant.",
+      "incorrect": "I completed the operationalisation of 'political engagement' by specifying the deep personal conviction and level of interest each participant has in local government."
+    },
+    {
+      "concept": "operationalisation",
+      "correct": "I refined my operationalisation of 'academic success' to focus only on cumulative grade point average, excluding non-numeric metrics like teacher evaluations or portfolios.",
+      "incorrect": "I refined my operationalisation of 'academic success' to focus only on teacher evaluations, excluding numeric metrics like cumulative grade point average or test scores."
+    },
+    {
+      "concept": "operationalisation",
+      "correct": "I chose an operationalisation of 'social class' based on household income thresholds, which allows me to quantify this abstract concept into observable categories.",
+      "incorrect": "I chose an operationalisation of 'social class' based on subjective self-identification, which allows me to quantify this abstract concept into observable categories."
+    },
+    {
+      "concept": "operationalisation",
+      "correct": "I need a clear operationalisation of 'consumer satisfaction' because I must turn that abstract quality into a concrete set of Likert-scale survey questions.",
+      "incorrect": "I need a clear operationalisation of 'consumer satisfaction' because I must turn that abstract quality into a rich narrative analysis of customer interview transcripts."
+    },
+    {
+      "concept": "measurement error attenuation",
+      "correct": "I need to account for measurement error attenuation in my survey data because random noise in these independent variables is biasing my regression coefficients toward zero.",
+      "incorrect": "I need to account for measurement error attenuation in my survey data because random noise in these independent variables is biasing my regression coefficients away from zero."
+    },
+    {
+      "concept": "measurement error attenuation",
+      "correct": "My estimate for this effect is likely smaller than the true value, as measurement error attenuation in these noisy predictors systematically drags the slope toward zero.",
+      "incorrect": "My estimate for this effect is likely larger than the true value, as measurement error attenuation in these noisy predictors systematically drags the slope toward zero."
+    },
+    {
+      "concept": "measurement error attenuation",
+      "correct": "Because my reliability metrics are quite low, I suspect that measurement error attenuation is effectively suppressing the statistical significance of my primary treatment impact estimate.",
+      "incorrect": "Because my reliability metrics are quite low, I suspect that measurement error attenuation is effectively inflating the statistical significance of my primary treatment impact estimate."
+    },
+    {
+      "concept": "measurement error attenuation",
+      "correct": "Correcting for measurement error attenuation in these clinical scores is necessary, as uncorrected noise generally reduces the magnitude of the observed relationship in my model.",
+      "incorrect": "Correcting for measurement error attenuation in these clinical scores is necessary, as uncorrected noise generally increases the magnitude of the observed relationship in my model."
+    },
+    {
+      "concept": "measurement error attenuation",
+      "correct": "Since the measurement error attenuation in my independent variables is substantial, I am underestimating the true elasticity of the consumer demand I am currently analyzing.",
+      "incorrect": "Since the measurement error attenuation in my independent variables is substantial, I am overestimating the true elasticity of the consumer demand I am currently analyzing."
+    },
+    {
+      "concept": "data leakage",
+      "correct": "I removed the post-treatment outcome variables from my training set because including them creates data leakage that falsely inflates the predictive performance of my classifier.",
+      "incorrect": "I removed the post-treatment outcome variables from my training set because including them creates data leakage that falsely deflates the predictive performance of my classifier."
+    },
+    {
+      "concept": "data leakage",
+      "correct": "My model achieved perfect accuracy, but I suspect data leakage occurred because information from the target variable was accidentally encoded within my input feature set.",
+      "incorrect": "My model achieved perfect accuracy, but I suspect data leakage occurred because information from the random noise was accidentally encoded within my input feature set."
+    },
+    {
+      "concept": "data leakage",
+      "correct": "We must exclude the patient outcome date from our features to prevent data leakage, as this value contains information that effectively reveals the dependent variable.",
+      "incorrect": "We must exclude the patient outcome date from our features to prevent data leakage, as this value contains information that effectively reveals the independent variable."
+    },
+    {
+      "concept": "data leakage",
+      "correct": "The high AUC on my validation split suggests data leakage, as I inadvertently allowed test set observations to influence the preprocessing steps of my pipeline.",
+      "incorrect": "The high AUC on my validation split suggests data leakage, as I inadvertently allowed training set observations to influence the preprocessing steps of my pipeline."
+    },
+    {
+      "concept": "data leakage",
+      "correct": "I have to drop the timestamp of the sale from my inputs to avoid data leakage, as that column is derived directly from the target outcome.",
+      "incorrect": "I have to drop the timestamp of the sale from my inputs to avoid data leakage, as that column is derived directly from the exogenous noise."
+    },
+    {
+      "concept": "temporal ordering in panel data",
+      "correct": "I am ensuring strict temporal ordering in my panel data because the lagged dependent variable must reflect only past states to maintain causal identification.",
+      "incorrect": "I am ensuring strict temporal ordering in my panel data because the lagged dependent variable must reflect only future states to maintain causal identification."
+    },
+    {
+      "concept": "temporal ordering in panel data",
+      "correct": "My model specification respects temporal ordering in panel data by predicting current outcomes using only covariates that were measured in prior observation periods.",
+      "incorrect": "My model specification respects temporal ordering in panel data by predicting current outcomes using only covariates that were measured in future observation periods."
+    },
+    {
+      "concept": "temporal ordering in panel data",
+      "correct": "To avoid simultaneity bias, I must maintain proper temporal ordering in my panel data so that the treatment precedes the outcome in every unit.",
+      "incorrect": "To avoid simultaneity bias, I must maintain proper temporal ordering in my panel data so that the outcome precedes the treatment in every unit."
+    },
+    {
+      "concept": "temporal ordering in panel data",
+      "correct": "Because I preserved the temporal ordering in my panel data, my estimates are not contaminated by reverse causality where future events affect past predictors.",
+      "incorrect": "Because I preserved the temporal ordering in my panel data, my estimates are not contaminated by reverse causality where past events affect future predictors."
+    },
+    {
+      "concept": "temporal ordering in panel data",
+      "correct": "I checked the temporal ordering in my panel data, verifying that my policy change variable occurs at a time strictly before the measured outcomes.",
+      "incorrect": "I checked the temporal ordering in my panel data, verifying that my policy change variable occurs at a time strictly after the measured outcomes."
+    }
+  ],
+  "wrappers": [
+    "I've got responses from a customer survey we ran last quarter and I'm trying to work out whether the difference between two regions is worth writing up.",
+    "We collected readings from about sixty sensors across the plant over three months and I need to figure out what to do with them.",
+    "I have enrolment and outcome data for a tutoring programme at four schools and I'm trying to work out whether it did anything.",
+    "My team pulled sales figures for the last two years by store and I'm trying to make sense of the pattern before the review meeting.",
+    "I've got yield measurements from a field trial with three different treatments and I'm not sure how to summarise what happened.",
+    "We ran a small pilot with about ninety participants and now I need to decide what we can reasonably say about the results.",
+    "I have appointment and no-show records for a clinic going back eighteen months and I want to understand what drives the cancellations.",
+    "I'm looking at engagement numbers for two versions of an onboarding flow and trying to decide which one we should keep.",
+    "I've got water quality samples from twelve sites collected monthly and I'm trying to work out whether anything is actually changing.",
+    "We have shift-level productivity data from the warehouse and I need to figure out what's behind the variation between teams.",
+    "I've got test scores before and after a curriculum change across a few dozen classrooms and I'm trying to interpret them.",
+    "I have delivery times for about four thousand orders and I'm trying to work out where the delays are coming from.",
+    "We surveyed our members about renewal intentions and I'm trying to figure out what the responses actually tell us.",
+    "I've got patient recovery times from two different treatment protocols and I need to summarise them for a report.",
+    "I have attendance and performance records for a training programme and I'm trying to work out whether they're related.",
+    "We tracked app usage for a few thousand people over six weeks and now I'm trying to make sense of the drop-off.",
+    "I've got soil measurements from plots under two different management approaches and I'm trying to interpret the differences.",
+    "I have match statistics for a season across every team and I'm trying to work out what actually predicts the results.",
+    "We collected feedback scores from customers after support calls and I'm trying to understand what's driving the low ones.",
+    "I've got equipment failure records going back four years and I'm trying to work out whether the new maintenance schedule helped.",
+    "I have income and spending data for a few hundred households and I'm trying to summarise the patterns sensibly.",
+    "We ran an experiment with two versions of a landing page and I'm trying to decide what the numbers actually support.",
+    "I've got germination rates from several seed batches under different conditions and I need to work out what to conclude.",
+    "I have wait times recorded at three different service desks and I'm trying to figure out whether the differences matter.",
+    "We collected air temperature and humidity readings across a building for a month and I'm trying to interpret the variation."
+  ]
+}

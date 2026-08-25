@@ -1,0 +1,2973 @@
+[
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a stratified random sampling technique to ensure proportional representation of each demographic group in the survey.",
+    "low": "The project lead specified stratified random sampling to ensure proportional representation of each demographic group in the survey.",
+    "tech_shared": [
+      "demographic",
+      "proportional",
+      "representation",
+      "sampling",
+      "stratified"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm going to resample the manufacturing data using stratified sampling to ensure proportional representation from each production line for this quality control analysis.",
+    "low": "The quality assurance manager told me to resample the manufacturing data using stratified sampling to ensure proportional representation from each production line.",
+    "tech_shared": [
+      "manufacturing",
+      "production",
+      "proportional",
+      "representation",
+      "sampling",
+      "stratified"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm trying to optimize the logistic regression model by adding interaction terms between income and education, hoping to improve predictive power.",
+    "low": "We were advised to optimize the logistic regression model by adding interaction terms between income and education to improve predictive power.",
+    "tech_shared": [
+      "interaction",
+      "model",
+      "predictive",
+      "regression"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a generalized additive model to predict crop yield based on rainfall, temperature, and soil nutrient levels, allowing for non-linear relationships.",
+    "low": "My advisor suggested using a generalized additive model to predict crop yield based on rainfall, temperature, and soil nutrient levels, allowing for non-linear relationships.",
+    "tech_shared": [
+      "generalized",
+      "model",
+      "non-linear",
+      "relationships",
+      "temperature"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I chose to segment the customers using hierarchical clustering based on their purchase history and demographics, to tailor marketing campaigns.",
+    "low": "My manager directed me to segment the customers using hierarchical clustering, informed by their purchase history and demographics for marketing.",
+    "tech_shared": [
+      "clustering",
+      "demographics",
+      "hierarchical"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m exploring the interaction effect between treatment and age by including a cross-product term in the logistic regression.",
+    "low": "The report requires me to examine the interaction between treatment and age using a cross-product term in the logistic regression.",
+    "tech_shared": [
+      "cross-product",
+      "interaction",
+      "regression"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I opted for a Tukey biweight estimator in the robust regression to mitigate the impact of outliers in the yield data.",
+    "low": "The team requested a Tukey biweight estimator for the robust regression, to handle potential outliers in the yield values.",
+    "tech_shared": [
+      "outliers",
+      "regression"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I segmented the ecological data into clusters using hierarchical clustering and evaluated the silhouette score to refine the groupings.",
+    "low": "The analysis plan outlined using hierarchical clustering to segment the ecological data, and assessing the silhouette score to validate the results.",
+    "tech_shared": [
+      "clustering",
+      "ecological",
+      "hierarchical",
+      "silhouette"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I used a rolling average with a window of seven days to smooth out the daily transportation volume and visualize any trends.",
+    "low": "I was told to apply a rolling average with a window of seven days to smooth the daily transportation volume for trend analysis.",
+    "tech_shared": [
+      "transportation"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To account for the repeated measures in the survey, I\u2019m using a mixed-effects model with random intercepts for each participant.",
+    "low": "They advised I implement a mixed-effects model with random intercepts for each participant to handle the survey's structure.",
+    "tech_shared": [
+      "intercepts",
+      "mixed-effects",
+      "model",
+      "participant"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After seeing the outliers flagged by the boxplot, I applied a Winsorization transformation to reduce their influence on the median.",
+    "low": "The boxplot showed some real outliers, so I\u2019m using a Winsorization transformation to deal with them and see what happens.",
+    "tech_shared": [
+      "outliers",
+      "transformation",
+      "winsorization"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "To account for autocorrelation, I'm implementing a first-order autoregressive error term in the time series analysis of the athlete's performance data.",
+    "low": "To account for autocorrelation, I'm implementing a first-order autoregressive error term in the athlete's performance data; it\u2019s giving me some trouble.",
+    "tech_shared": [
+      "autocorrelation",
+      "autoregressive",
+      "first-order",
+      "implementing",
+      "performance"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The clustering looks messy, so I\u2019m adjusting the silhouette width threshold to refine the groupings based on cohesion.",
+    "low": "I\u2019m adjusting the silhouette width threshold because the clustering output doesn\u2019t look right at all.",
+    "tech_shared": [
+      "clustering",
+      "silhouette"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m applying a Bayesian hierarchical model to these ecological data, knowing that the full conditional distributions are difficult to sample from.",
+    "low": "I am exploring a Bayesian hierarchical model for these ecological data and looking for the easiest full conditional distributions to sample.",
+    "tech_shared": [
+      "bayesian",
+      "conditional",
+      "distributions",
+      "ecological",
+      "hierarchical",
+      "model",
+      "sample"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using penalized regression to handle the multicollinearity; the cross-validation score isn't fantastic, but it\u2019s a trade-off.",
+    "low": "I'm trying penalized regression because the multicollinearity is an issue, and the cross-validation score seems pretty good so far.",
+    "tech_shared": [
+      "cross-validation",
+      "multicollinearity",
+      "regression"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I adjusted the batch size in TensorFlow to reduce memory usage, which slightly slows down the training process.",
+    "low": "I'm tweaking the batch size in TensorFlow to see if it improves the training speed on my system.",
+    "tech_shared": [
+      "tensorflow"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a logistic regression model in SPSS and exploring different link functions, checking how they affect the Nagelkerke R-squared.",
+    "low": "I'm running the logistic regression model in SPSS using the default link function, and reporting the Nagelkerke R-squared.",
+    "tech_shared": [
+      "model",
+      "nagelkerke",
+      "regression",
+      "spss"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I adjusted the kernel density estimation bandwidth in Python\u2019s SciPy library to better capture the peaks in the manufacturing defect distribution.",
+    "low": "I followed the script and let Python\u2019s SciPy library calculate the kernel density estimation for the manufacturing defect distribution.",
+    "tech_shared": [
+      "distribution",
+      "estimation",
+      "manufacturing",
+      "python"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "To handle the missing values in this ecological dataset, I imputed using a k-nearest neighbors method with a weighting of 0.7.",
+    "low": "I followed the protocol and imputed missing values in the ecological dataset using k-nearest neighbors with a weighting of 0.7.",
+    "tech_shared": [
+      "ecological",
+      "imputed",
+      "weighting"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm creating a custom cost function for the optimization algorithm to penalize large deviations from the target in the manufacturing process.",
+    "low": "I'm running the optimization algorithm using the default cost function provided to minimize deviations from the target in manufacturing.",
+    "tech_shared": [
+      "deviations",
+      "manufacturing",
+      "optimization"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using the Gibbs sampling algorithm, tweaking the chain lengths to achieve better mixing for this Bayesian hierarchical model.",
+    "low": "I\u2019m running the Gibbs sampling algorithm, using the default chain lengths provided for the Bayesian hierarchical model.",
+    "tech_shared": [
+      "bayesian",
+      "hierarchical",
+      "model",
+      "sampling"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I needed to normalize the survey data, so I recoded the Likert scale using a Z-score transformation to reduce skewness.",
+    "low": "Following the protocol, I applied a Z-score transformation to normalize the survey data and the Likert scale.",
+    "tech_shared": [
+      "transformation"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "The RANSAC algorithm kept producing outliers, so I decreased the inlier threshold to see if that improved the fit.",
+    "low": "I used the RANSAC algorithm to identify outliers, accepting the default inlier threshold settings provided by the software.",
+    "tech_shared": [
+      "outliers"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "To evaluate the effectiveness of the new fertilizer blend, I used ANOVA with a post-hoc Tukey test and adjusted the alpha level.",
+    "low": "I conducted an ANOVA with a post-hoc Tukey test to evaluate the fertilizer blend's effectiveness, adhering to the standard alpha level.",
+    "tech_shared": [
+      "anova",
+      "effectiveness",
+      "fertilizer"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m cleaning the manufacturing process data, and I'm using a rolling average to smooth out the sensor spikes.",
+    "low": "I\u2019m cleaning the manufacturing process data and using a rolling average to smooth out sensor spikes as specified in the SOP.",
+    "tech_shared": [
+      "manufacturing"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m running a simulation of the logistics network in AnyLogic, changing the truck capacity parameters to see how it impacts delivery times.",
+    "low": "I\u2019m executing the simulation of the logistics network in AnyLogic using the parameters defined by the initial project setup.",
+    "tech_shared": [
+      "parameters",
+      "simulation"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [],
+    "overlap": 1.0,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The generalized linear model indicates that fertilizer application rates have a non-linear effect on crop yield; I\u2019ll add a polynomial term to capture this.",
+    "low": "The generalized linear model indicates that fertilizer application rates have a non-linear effect on crop yield; I'll see how adding a term changes things.",
+    "tech_shared": [
+      "application",
+      "fertilizer",
+      "generalized",
+      "model",
+      "non-linear"
+    ],
+    "tech_only_high": [
+      "polynomial"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.833,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To explore the interaction effect, I've included a polynomial term for age in the regression model, checking for non-linearity.",
+    "low": "The review board requested a polynomial term for age in the regression model; I\u2019m now checking for non-linearity.",
+    "tech_shared": [
+      "model",
+      "non-linearity",
+      "polynomial",
+      "regression"
+    ],
+    "tech_only_high": [
+      "interaction"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I implemented a hierarchical Bayesian model in JAGS to account for the nested structure in the student performance data.",
+    "low": "I'm working through the example code for a hierarchical Bayesian model in JAGS that someone else provided for the student performance data.",
+    "tech_shared": [
+      "bayesian",
+      "hierarchical",
+      "model",
+      "performance"
+    ],
+    "tech_only_high": [
+      "implemented"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm adjusting the regularization parameter in the ridge regression to minimize the cross-validated error and improve the model fit.",
+    "low": "I was asked to optimize the ridge regression by tuning the regularization parameter to see if it reduces the cross-validated error.",
+    "tech_shared": [
+      "cross-validated",
+      "regression",
+      "regularization",
+      "ridge"
+    ],
+    "tech_only_high": [
+      "model"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m adjusting the hyperparameters in my sales forecasting model using cross-validation to minimize the mean absolute percentage error on the holdout set.",
+    "low": "I'm tweaking the hyperparameters in my sales forecasting model to see if I can improve the accuracy, using a cross-validation approach.",
+    "tech_shared": [
+      "cross-validation",
+      "forecasting",
+      "hyperparameters",
+      "model"
+    ],
+    "tech_only_high": [
+      "percentage"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA results showed a significant interaction effect between fertilizer type and soil pH, which I\u2019ll investigate further with post-hoc tests.",
+    "low": "Running an ANOVA, and I'm seeing a significant interaction between fertilizer and pH; I need to look into what's happening there.",
+    "tech_shared": [
+      "anova",
+      "fertilizer",
+      "interaction",
+      "significant"
+    ],
+    "tech_only_high": [
+      "investigate"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm resampling the survey data with bootstrapping to get confidence intervals around the mean age and account for the non-replacement.",
+    "low": "I'm resampling the survey data with bootstrapping to get confidence intervals around the mean age, since the numbers seem unstable.",
+    "tech_shared": [
+      "bootstrapping",
+      "confidence",
+      "intervals",
+      "resampling"
+    ],
+    "tech_only_high": [
+      "non-replacement"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I ran the propensity score matching with a logistic regression, acknowledging that it will introduce some bias around the matching thresholds.",
+    "low": "I\u2019m using a logistic regression for propensity score matching and trying to decide which thresholds give the cleanest treatment effect.",
+    "tech_shared": [
+      "matching",
+      "propensity",
+      "regression",
+      "thresholds"
+    ],
+    "tech_only_high": [
+      "acknowledging"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m implementing a Monte Carlo simulation to estimate the confidence interval, expecting it to take a while to converge.",
+    "low": "I'm using a Monte Carlo simulation to get a sense of the confidence interval around this estimate.",
+    "tech_shared": [
+      "confidence",
+      "estimate",
+      "interval",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "implementing"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m creating a new clustering solution using the elbow method in Python\u2019s scikit-learn to optimize the number of clusters for student performance data.",
+    "low": "I'm applying the clustering solution with the pre-determined number of clusters in Python\u2019s scikit-learn to the student performance data.",
+    "tech_shared": [
+      "clustering",
+      "performance",
+      "python",
+      "scikit-learn"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "pre-determined"
+    ],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "After bootstrapping, I adjusted the confidence interval level in Python because the original one was too narrow given the spread.",
+    "low": "I ran the bootstrapping in Python and accepted the confidence interval as it was generated, before incorporating it into the report.",
+    "tech_shared": [
+      "bootstrapping",
+      "confidence",
+      "interval",
+      "python"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "incorporating"
+    ],
+    "overlap": 0.8,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "After running the Monte Carlo simulation, I noticed the confidence intervals were wider than expected; I\u2019ll increase the number of iterations.",
+    "low": "I ran the Monte Carlo simulation, and the confidence intervals seem unusually wide, following the process described in the training materials.",
+    "tech_shared": [
+      "confidence",
+      "intervals",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "iterations"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m segmenting customers based on their purchase history using a hierarchical clustering algorithm, then plotting the dendrogram for review.",
+    "low": "We're asked to group customers by purchase history using hierarchical clustering, and I\u2019m building a dendrogram to visualize the segments.",
+    "tech_shared": [
+      "clustering",
+      "dendrogram",
+      "hierarchical"
+    ],
+    "tech_only_high": [
+      "segmenting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a propensity score matching approach to address selection bias in the observational study of patient outcomes following the new therapy.",
+    "low": "Patient outcomes in the observational study are tricky, so I'm exploring propensity score matching to make the groups more comparable.",
+    "tech_shared": [
+      "matching",
+      "observational",
+      "propensity"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "comparable"
+    ],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The coefficient for ad spend is insignificant in the regression, which suggests this campaign is not driving the observed increase in sales conversions.",
+    "low": "The coefficient for ad spend is insignificant in the regression, and I'm looking into why these sales figures are so uneven.",
+    "tech_shared": [
+      "coefficient",
+      "insignificant",
+      "regression"
+    ],
+    "tech_only_high": [
+      "conversions"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using a mixed-effects model with random intercepts for school, because the variance between schools is likely impacting student test scores.",
+    "low": "I\u2019m using a mixed-effects model with random intercepts for school, and I need to see how it affects the student test score analysis.",
+    "tech_shared": [
+      "intercepts",
+      "mixed-effects",
+      "model"
+    ],
+    "tech_only_high": [
+      "variance"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I segmented the agricultural field into zones using NDVI values and then applied a spatial regression model to account for spatial autocorrelation.",
+    "low": "The NDVI values showed some spatial variation across the agricultural field, so I segmented it into zones and ran a spatial regression model.",
+    "tech_shared": [
+      "agricultural",
+      "model",
+      "regression"
+    ],
+    "tech_only_high": [
+      "autocorrelation"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "For this customer segmentation analysis, I opted for K-means clustering and accepted that the results will depend heavily on the initialization.",
+    "low": "I\u2019m evaluating different clustering methods for this customer segmentation and wondering which algorithm is most sensitive to initialization.",
+    "tech_shared": [
+      "clustering",
+      "initialization",
+      "segmentation"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "evaluating"
+    ],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm adjusting the kernel width in the Gaussian process regression model in GPy to better capture the non-linearity in the ecological data.",
+    "low": "I\u2019m using the default kernel width setting in the Gaussian process regression model in GPy to model the ecological data trends.",
+    "tech_shared": [
+      "ecological",
+      "model",
+      "regression"
+    ],
+    "tech_only_high": [
+      "non-linearity"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m adjusting the cutoff for the chi-squared test in SPSS to account for the overdispersion in the ecological data.",
+    "low": "I used the default cutoff for the chi-squared test in SPSS as per the protocol for analyzing the ecological data.",
+    "tech_shared": [
+      "chi-squared",
+      "ecological",
+      "spss"
+    ],
+    "tech_only_high": [
+      "overdispersion"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m iterating on the parameters of the particle swarm optimization in Python to get better convergence for the training data.",
+    "low": "I\u2019m running the particle swarm optimization in Python using the standard set of parameters for training.",
+    "tech_shared": [
+      "optimization",
+      "parameters",
+      "python"
+    ],
+    "tech_only_high": [
+      "convergence"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m processing the ecological sensor data using TensorFlow; I added a custom layer to improve the model's accuracy.",
+    "low": "I\u2019m processing the ecological sensor data using TensorFlow following the existing pipeline established by the team.",
+    "tech_shared": [
+      "ecological",
+      "processing",
+      "tensorflow"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "established"
+    ],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a Markov chain Monte Carlo simulation in JAGS, tweaking the burn-in period to achieve convergence in the sports performance model.",
+    "low": "I\u2019m running the Markov chain Monte Carlo simulation in JAGS, using the standard burn-in period for the sports performance model.",
+    "tech_shared": [
+      "model",
+      "performance",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "convergence"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.75,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm filtering the dataset for outliers using the IQR method and then applying a robust regression to reduce influence.",
+    "low": "The team recommended filtering outliers using the IQR method and then applying a robust regression to mitigate influence.",
+    "tech_shared": [
+      "outliers",
+      "regression"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "recommended"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m implementing a Kalman filter to smooth the transportation network traffic flow data, with a focus on minimizing the state-space error covariance matrix.",
+    "low": "The senior engineer asked me to implement a Kalman filter to smooth the transportation network traffic flow data, specifying focus on minimizing the state-space error covariance matrix.",
+    "tech_shared": [
+      "covariance",
+      "minimizing",
+      "state-space",
+      "transportation"
+    ],
+    "tech_only_high": [
+      "implementing"
+    ],
+    "tech_only_low": [
+      "specifying"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To test the hypothesis, I applied a Kruskal-Wallis test to the clinical trial results, looking at the p-value to assess significance across treatment groups.",
+    "low": "The review board requested that I apply a Kruskal-Wallis test to the clinical trial results, focusing on the p-value to assess significance across treatment groups.",
+    "tech_shared": [
+      "kruskal-wallis",
+      "significance"
+    ],
+    "tech_only_high": [
+      "hypothesis"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To account for autocorrelation in the time series, I\u2019m using a lagged variable in the ARIMA model; it improved the model fit considerably.",
+    "low": "I\u2019m adding a lagged variable into the ARIMA model, as the senior analyst showed me how to handle autocorrelation.",
+    "tech_shared": [
+      "autocorrelation",
+      "model"
+    ],
+    "tech_only_high": [
+      "considerably"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a Dirichlet process mixture model because of the unknown number of clusters in the customer segmentation data.",
+    "low": "I\u2019m trying out the Dirichlet process mixture model that was recommended for the customer segmentation data analysis.",
+    "tech_shared": [
+      "model",
+      "segmentation"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "recommended"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "After initial inspection, I opted for a Poisson distribution in the time series model to account for the count data from the factory floor.",
+    "low": "The team suggested using a Poisson distribution within the time series model because of the count data coming from the factory floor.",
+    "tech_shared": [
+      "distribution",
+      "model"
+    ],
+    "tech_only_high": [
+      "inspection"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a generalized linear mixed model, specifically with a random intercept, to account for the clustering in the longitudinal survey data.",
+    "low": "My supervisor suggested a generalized linear mixed model with a random intercept to account for the clustering observed in the longitudinal survey data.",
+    "tech_shared": [
+      "clustering",
+      "generalized",
+      "longitudinal",
+      "model"
+    ],
+    "tech_only_high": [
+      "specifically"
+    ],
+    "tech_only_low": [
+      "supervisor"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To handle the missing data in the shipment records, I employed multiple imputation, creating five imputed datasets and averaging the results.",
+    "low": "The data quality report recommended multiple imputation to handle the missing data in the shipment records, so I am creating five imputed datasets.",
+    "tech_shared": [
+      "imputation",
+      "imputed"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "recommended"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I chose to employ a negative binomial model due to the overdispersion observed in the count data from the survey responses.",
+    "low": "The survey data has overdispersion, so I'm using the negative binomial model, which was suggested as the appropriate approach.",
+    "tech_shared": [
+      "model",
+      "overdispersion"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "appropriate"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The clustering analysis reveals distinct community structures in the transport network, which I'm examining further to optimize routing efficiency.",
+    "low": "The clustering analysis shows some groupings within the transport network, and I'm exploring what these patterns might mean for routing efficiency.",
+    "tech_shared": [
+      "clustering",
+      "efficiency"
+    ],
+    "tech_only_high": [
+      "structures"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The log-likelihood ratio test indicated a significant improvement with the interaction term, so I\u2019m adding it to the regression model.",
+    "low": "I\u2019m trying to see if adding an interaction term improves the regression model, and I ran a log-likelihood ratio test.",
+    "tech_shared": [
+      "interaction",
+      "log-likelihood",
+      "model",
+      "regression"
+    ],
+    "tech_only_high": [
+      "improvement",
+      "significant"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The simulation results indicated a type I error rate above 0.05, so I adjusted the significance threshold to maintain power.",
+    "low": "The simulation results are a bit high, and I\u2019m reviewing the significance threshold to make sure it\u2019s appropriate.",
+    "tech_shared": [
+      "significance",
+      "simulation"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "appropriate"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a propensity score matching algorithm to reduce selection bias when comparing treatment groups in this clinical trial.",
+    "low": "I applied a propensity score matching algorithm because there are differences between the treatment groups that I need to account for.",
+    "tech_shared": [
+      "matching",
+      "propensity"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "differences"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The GLM residuals are not normally distributed, so I\u2019m applying a Yeo-Johnson transformation to the dependent variable before refitting the model.",
+    "low": "The GLM residuals look skewed; I tried a Yeo-Johnson transformation to the dependent variable hoping that would fix it.",
+    "tech_shared": [
+      "glm",
+      "residuals",
+      "transformation",
+      "yeo-johnson"
+    ],
+    "tech_only_high": [
+      "distributed",
+      "model"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After checking the residuals, I realized the OLS assumptions weren't met, so I\u2019m switching to quantile regression.",
+    "low": "Checking the residuals, I see something weird, so I\u2019m switching to quantile regression to see if that helps.",
+    "tech_shared": [
+      "regression",
+      "residuals"
+    ],
+    "tech_only_high": [
+      "assumptions"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I capped the outliers at the 99th percentile because I knew it would slightly bias the bootstrapped confidence intervals, but it's cleaner for the visualization.",
+    "low": "I\u2019m trying to determine the best way to handle these outliers to give me reliable bootstrapped confidence intervals for this data.",
+    "tech_shared": [
+      "bootstrapped",
+      "confidence",
+      "intervals",
+      "outliers"
+    ],
+    "tech_only_high": [
+      "percentile",
+      "visualization"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m experimenting with different aggregation methods in Spark to calculate the rolling average of daily package deliveries, seeing if it affects latency.",
+    "low": "I\u2019m running the Spark job to calculate the daily package deliveries, using the standard aggregation method to compute total volume.",
+    "tech_shared": [
+      "aggregation",
+      "deliveries"
+    ],
+    "tech_only_high": [
+      "experimenting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m normalizing the gene expression data with the DESeq2 function in R to address batch effects between the clinical cohorts.",
+    "low": "I'm running the DESeq2 function in R to normalize the gene expression data, as outlined in the clinical lab\u2019s SOP.",
+    "tech_shared": [
+      "expression",
+      "r"
+    ],
+    "tech_only_high": [
+      "normalizing"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm experimenting with different regularization strengths in the Lasso regression within scikit-learn to minimize overfitting on this education outcomes dataset.",
+    "low": "I\u2019m using the default Lasso regression in scikit-learn with the specified regularization strength for this education outcomes dataset.",
+    "tech_shared": [
+      "lasso",
+      "regression",
+      "regularization",
+      "scikit-learn"
+    ],
+    "tech_only_high": [
+      "experimenting",
+      "overfitting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm modifying the ANOVA model to incorporate a quadratic term for age, and then assessing the model fit using AIC.",
+    "low": "I\u2019m running the ANOVA model with the standard linear term for age, and reporting the AIC value as is.",
+    "tech_shared": [
+      "anova",
+      "model"
+    ],
+    "tech_only_high": [
+      "incorporate"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m tweaking the hyperparameters in the gradient boosting model in XGBoost to reduce overfitting on the sales forecast data.",
+    "low": "I'm executing the gradient boosting model in XGBoost using the default hyperparameters for the sales forecast data.",
+    "tech_shared": [
+      "hyperparameters",
+      "model"
+    ],
+    "tech_only_high": [
+      "overfitting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm building a custom aggregation function in Python using Pandas to calculate the weighted average inventory turnover.",
+    "low": "I used the standard Pandas aggregation function in Python to calculate the inventory turnover metric.",
+    "tech_shared": [
+      "aggregation",
+      "python"
+    ],
+    "tech_only_high": [
+      "weighted"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m calculating the variance components in the mixed-effects model for this agricultural trial and re-centering the predictors.",
+    "low": "I\u2019m implementing the mixed-effects model for this agricultural trial, calculating the variance components as outlined in the protocol.",
+    "tech_shared": [
+      "agricultural",
+      "calculating",
+      "components",
+      "mixed-effects",
+      "model",
+      "variance"
+    ],
+    "tech_only_high": [
+      "predictors",
+      "re-centering"
+    ],
+    "tech_only_low": [
+      "implementing"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m modifying the logistic regression model\u2019s regularization term to improve its performance on the clinical validation set.",
+    "low": "I\u2019m implementing a logistic regression model and using the suggested regularization term for performance in the clinical setting.",
+    "tech_shared": [
+      "model",
+      "performance",
+      "regression",
+      "regularization"
+    ],
+    "tech_only_high": [
+      "validation"
+    ],
+    "tech_only_low": [
+      "implementing"
+    ],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the data in R to account for the overdispersion, then adjusting the beta coefficient estimates to see if it stabilizes.",
+    "low": "Following the protocol, I'm resampling the data in R and taking the beta coefficient estimates as they are presented.",
+    "tech_shared": [
+      "coefficient",
+      "estimates",
+      "r",
+      "resampling"
+    ],
+    "tech_only_high": [
+      "overdispersion",
+      "stabilizes"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.667,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m resampling the dataset with replacement to create 1000 bootstrap samples and estimate the confidence intervals for the mean yield of the wheat crop.",
+    "low": "The standard operating procedure directs us to resample with replacement to create bootstrap samples for estimating confidence intervals of the wheat crop yield.",
+    "tech_shared": [
+      "bootstrap",
+      "confidence",
+      "intervals",
+      "replacement",
+      "samples"
+    ],
+    "tech_only_high": [
+      "estimate",
+      "resampling"
+    ],
+    "tech_only_low": [
+      "estimating"
+    ],
+    "overlap": 0.625,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To minimize overfitting, I used cross-validation to select the optimal regularization parameter for the random forest model.",
+    "low": "I\u2019m following the guidelines to implement cross-validation and find the best regularization parameter for the random forest model.",
+    "tech_shared": [
+      "cross-validation",
+      "model",
+      "regularization"
+    ],
+    "tech_only_high": [
+      "overfitting"
+    ],
+    "tech_only_low": [
+      "guidelines"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m bootstrapping the confidence intervals for the median reaction time to see how robust the estimate is across different resamples.",
+    "low": "The stakeholders wanted to see confidence intervals on the median reaction time, so I\u2019m bootstrapping to generate them.",
+    "tech_shared": [
+      "bootstrapping",
+      "confidence",
+      "intervals"
+    ],
+    "tech_only_high": [
+      "estimate"
+    ],
+    "tech_only_low": [
+      "stakeholders"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm calculating the Gini coefficient to measure income inequality within each geographic region, and the variations are striking.",
+    "low": "We need the Gini coefficient for each region to assess inequality, so I\u2019m calculating it and compiling the results.",
+    "tech_shared": [
+      "calculating",
+      "coefficient",
+      "inequality"
+    ],
+    "tech_only_high": [
+      "geographic",
+      "variations"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019ve applied a Shapiro-Wilk test to evaluate the normality assumption for the residuals, and it looks like a transformation might be needed.",
+    "low": "My manager asked me to run a Shapiro-Wilk test on the residuals to check for normality; I'm looking at the p-value now.",
+    "tech_shared": [
+      "normality",
+      "residuals",
+      "shapiro-wilk"
+    ],
+    "tech_only_high": [
+      "assumption",
+      "transformation"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To mitigate multicollinearity, I decided to drop the advertising spend variable from the regression; the variance inflation factors were getting too high.",
+    "low": "I was told to drop the advertising spend variable from the regression because the variance inflation factors were deemed problematic.",
+    "tech_shared": [
+      "advertising",
+      "regression",
+      "variance"
+    ],
+    "tech_only_high": [
+      "multicollinearity"
+    ],
+    "tech_only_low": [
+      "problematic"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I normalized the data using a z-score transformation; the skewed distribution of customer satisfaction scores was impacting the PCA analysis.",
+    "low": "The team instructed me to normalize the data with a z-score transformation due to the skewed distribution of customer satisfaction scores affecting the PCA.",
+    "tech_shared": [
+      "distribution",
+      "satisfaction",
+      "transformation"
+    ],
+    "tech_only_high": [
+      "normalized"
+    ],
+    "tech_only_low": [
+      "instructed"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m performing a Wilcoxon signed-rank test to compare the distribution of pre- and post-treatment scores, given the non-normality of the data.",
+    "low": "The protocol specifies a Wilcoxon signed-rank test to compare the pre- and post-treatment scores, in light of the non-normality of the data.",
+    "tech_shared": [
+      "non-normality",
+      "post-treatment",
+      "signed-rank"
+    ],
+    "tech_only_high": [
+      "distribution",
+      "performing"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "After the initial ANOVA, I decided to run a Tukey post-hoc test to see which treatment groups differed significantly in educational attainment.",
+    "low": "The project lead told me to follow up the ANOVA with a Tukey post-hoc test to identify the key differences in educational attainment scores.",
+    "tech_shared": [
+      "anova",
+      "attainment",
+      "educational"
+    ],
+    "tech_only_high": [
+      "significantly"
+    ],
+    "tech_only_low": [
+      "differences"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm adjusting the lambda parameter in the Bayesian hierarchical model to better reflect the prior knowledge about the population variance.",
+    "low": "The team decided to use a Bayesian hierarchical model and I'm working through adjusting the lambda parameter to get it running correctly.",
+    "tech_shared": [
+      "bayesian",
+      "hierarchical",
+      "model"
+    ],
+    "tech_only_high": [
+      "population",
+      "variance"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I applied a Kruskal-Wallis test to these ecological samples and then did post-hoc Dunn tests to compare all possible pairings.",
+    "low": "I\u2019m running a Kruskal-Wallis test on these ecological samples, following the protocol from the lab manual for the downstream comparisons.",
+    "tech_shared": [
+      "ecological",
+      "kruskal-wallis",
+      "samples"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "comparisons",
+      "downstream"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "After checking the autocorrelation function, I chose to use a differenced time series to remove the serial correlation before forecasting.",
+    "low": "The documentation indicated that a differenced time series should be used to remove serial correlation when forecasting.",
+    "tech_shared": [
+      "correlation",
+      "differenced",
+      "forecasting"
+    ],
+    "tech_only_high": [
+      "autocorrelation"
+    ],
+    "tech_only_low": [
+      "documentation"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA results were significant, but further investigation with Tukey's HSD showed that the difference was only between group A and group B.",
+    "low": "The ANOVA showed a statistically significant difference, and I'm now trying to figure out which groups are different using post-hoc tests.",
+    "tech_shared": [
+      "anova",
+      "difference",
+      "significant"
+    ],
+    "tech_only_high": [
+      "investigation"
+    ],
+    "tech_only_low": [
+      "statistically"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm resampling the survey data with bootstrapping to account for the observed instability in the confidence intervals around the means.",
+    "low": "The confidence intervals for the means of my survey data are jumping around a lot, so I\u2019m trying a bootstrapping approach.",
+    "tech_shared": [
+      "bootstrapping",
+      "confidence",
+      "intervals"
+    ],
+    "tech_only_high": [
+      "instability",
+      "resampling"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a penalized regression with Lasso to select the most important predictors from the manufacturing process data and prevent overfitting.",
+    "low": "The manufacturing data has a lot of variables, so I am using penalized regression with Lasso to find the most relevant ones.",
+    "tech_shared": [
+      "lasso",
+      "manufacturing",
+      "regression"
+    ],
+    "tech_only_high": [
+      "overfitting",
+      "predictors"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm exploring the sensitivity of my transport model by performing a Monte Carlo simulation with perturbed demand parameters.",
+    "low": "I\u2019m running a Monte Carlo simulation on the transport model, changing some demand parameters to see how the results change.",
+    "tech_shared": [
+      "model",
+      "parameters",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "performing",
+      "sensitivity"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm adjusting the hyperparameters of the XGBoost model in Python, hoping to improve the recall on this sales dataset.",
+    "low": "I\u2019m implementing the standard XGBoost model in Python, using the hyperparameters provided in the company template for sales projections.",
+    "tech_shared": [
+      "hyperparameters",
+      "model",
+      "python"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "implementing",
+      "projections"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm modifying the Markov chain parameters within the simulation in AnyLogic to model the increased response rate to the promotional campaign.",
+    "low": "I\u2019m running the Markov chain simulation in AnyLogic using the provided parameters, reflecting the current promotional campaign strategy.",
+    "tech_shared": [
+      "parameters",
+      "promotional",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "model"
+    ],
+    "tech_only_low": [
+      "reflecting"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "To account for the seasonality, I\u2019m applying a Fourier series as a covariate in the mixed-effects model.",
+    "low": "I'm including a Fourier series as a covariate in the mixed-effects model, matching the provided example script.",
+    "tech_shared": [
+      "covariate",
+      "mixed-effects",
+      "model"
+    ],
+    "tech_only_high": [
+      "seasonality"
+    ],
+    "tech_only_low": [
+      "matching"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "After running the regression, I used the `lm()` function to adjust the confidence intervals based on the sample size.",
+    "low": "I ran the regression using the `lm()` function as outlined in the methodology document and recorded the provided confidence intervals.",
+    "tech_shared": [
+      "confidence",
+      "intervals",
+      "regression"
+    ],
+    "tech_only_high": [
+      "sample"
+    ],
+    "tech_only_low": [
+      "methodology"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m calculating the Gini coefficient for this sales data using Python and optimized the calculation loop for speed.",
+    "low": "I\u2019m calculating the Gini coefficient for this sales data using Python according to the standard procedure in the documentation.",
+    "tech_shared": [
+      "calculating",
+      "coefficient",
+      "python"
+    ],
+    "tech_only_high": [
+      "calculation"
+    ],
+    "tech_only_low": [
+      "documentation"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m iterating on the regression model, adjusting the regularization penalty to reduce overfitting on the sales data.",
+    "low": "I\u2019m running the regression model, using the regularization penalty specified in the project guidelines for the sales data.",
+    "tech_shared": [
+      "model",
+      "regression",
+      "regularization"
+    ],
+    "tech_only_high": [
+      "overfitting"
+    ],
+    "tech_only_low": [
+      "guidelines"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m standardizing the survey responses in Excel, then experimenting with different weighting schemes to improve the Cronbach's alpha.",
+    "low": "I'm standardizing the survey responses in Excel exactly as shown in the template, then reporting the Cronbach's alpha.",
+    "tech_shared": [
+      "cronbach's",
+      "excel",
+      "standardizing"
+    ],
+    "tech_only_high": [
+      "experimenting",
+      "weighting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm manipulating the feature vectors in scikit-learn to see if that improves the AUC for the logistic regression model.",
+    "low": "I used scikit-learn to implement the logistic regression model, accepting the default feature scaling parameters.",
+    "tech_shared": [
+      "model",
+      "regression",
+      "scikit-learn"
+    ],
+    "tech_only_high": [
+      "manipulating"
+    ],
+    "tech_only_low": [
+      "parameters"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the survey data with stratified weights in R to account for the uneven distribution across regions.",
+    "low": "I\u2019m following the protocol; I\u2019m resampling the survey data with stratified weights in R as instructed.",
+    "tech_shared": [
+      "r",
+      "resampling",
+      "stratified"
+    ],
+    "tech_only_high": [
+      "distribution"
+    ],
+    "tech_only_low": [
+      "instructed"
+    ],
+    "overlap": 0.6,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To better understand the impact of rainfall on crop yield, I\u2019m creating interaction terms between temperature and precipitation in the linear model.",
+    "low": "I'm adding interaction terms for temperature and precipitation in the linear model, as outlined in the agricultural research guidelines.",
+    "tech_shared": [
+      "interaction",
+      "model",
+      "precipitation",
+      "temperature"
+    ],
+    "tech_only_high": [
+      "understand"
+    ],
+    "tech_only_low": [
+      "agricultural",
+      "guidelines"
+    ],
+    "overlap": 0.571,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The clustered standard errors from the mixed-effects model showed a significant effect for treatment, suggesting heterogeneous responses in the clinical trial.",
+    "low": "I calculated clustered standard errors for the mixed-effects model and noticed a significant effect for the treatment group I\u2019m looking at.",
+    "tech_shared": [
+      "clustered",
+      "mixed-effects",
+      "model",
+      "significant"
+    ],
+    "tech_only_high": [
+      "heterogeneous",
+      "suggesting"
+    ],
+    "tech_only_low": [
+      "calculated"
+    ],
+    "overlap": 0.571,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The mixed-effects model\u2019s random intercept variance was excessively large, so I constrained it to a smaller value during optimization using L-BFGS-B.",
+    "low": "The mixed-effects model is having trouble converging; the random intercept variance seems unusually big, so I am limiting the optimization with L-BFGS-B.",
+    "tech_shared": [
+      "mixed-effects",
+      "model",
+      "optimization",
+      "variance"
+    ],
+    "tech_only_high": [
+      "constrained",
+      "excessively"
+    ],
+    "tech_only_low": [
+      "converging"
+    ],
+    "overlap": 0.571,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a mixed-effects model for this longitudinal survey data, focusing on random intercepts for individual respondents to account for baseline differences.",
+    "low": "My supervisor suggested using a mixed-effects model for this longitudinal survey data, recommending random intercepts to account for baseline differences.",
+    "tech_shared": [
+      "differences",
+      "intercepts",
+      "longitudinal",
+      "mixed-effects",
+      "model"
+    ],
+    "tech_only_high": [
+      "individual",
+      "respondents"
+    ],
+    "tech_only_low": [
+      "recommending",
+      "supervisor"
+    ],
+    "overlap": 0.556,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I bootstrapped the confidence intervals for the regression coefficients in R because the standard errors seemed underestimated.",
+    "low": "The team specified that we should bootstrap the confidence intervals for the regression coefficients in R to address potential underestimation.",
+    "tech_shared": [
+      "coefficients",
+      "confidence",
+      "intervals",
+      "r",
+      "regression"
+    ],
+    "tech_only_high": [
+      "bootstrapped",
+      "underestimated"
+    ],
+    "tech_only_low": [
+      "bootstrap",
+      "underestimation"
+    ],
+    "overlap": 0.556,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m investigating why the bootstrap confidence intervals for the regression coefficients in this manufacturing process are so wide, suspecting a lack of independence in the data.",
+    "low": "The bootstrap confidence intervals for the coefficients in this manufacturing data are really big; I'm looking at the data to see what's causing the wide intervals.",
+    "tech_shared": [
+      "bootstrap",
+      "coefficients",
+      "confidence",
+      "intervals",
+      "manufacturing"
+    ],
+    "tech_only_high": [
+      "independence",
+      "investigating",
+      "regression",
+      "suspecting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.556,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "After calculating the Cohen's d, I decided to present the results with a 95% confidence interval to quantify the uncertainty around the effect size.",
+    "low": "The team asked me to calculate Cohen\u2019s d and present the results with a 95% confidence interval to quantify the effect size.",
+    "tech_shared": [
+      "confidence",
+      "interval"
+    ],
+    "tech_only_high": [
+      "calculating",
+      "uncertainty"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a penalized regression to handle the multicollinearity; the elastic net seemed most appropriate for this data.",
+    "low": "My supervisor suggested a penalized regression to deal with the multicollinearity; she thought elastic net was a good starting point.",
+    "tech_shared": [
+      "multicollinearity",
+      "regression"
+    ],
+    "tech_only_high": [
+      "appropriate"
+    ],
+    "tech_only_low": [
+      "supervisor"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m refactoring the logistic regression pipeline in Python to include feature scaling before training, based on my exploration of the data.",
+    "low": "The project lead asked me to refactor the logistic regression pipeline and apply feature scaling before the training phase in Python.",
+    "tech_shared": [
+      "python",
+      "regression"
+    ],
+    "tech_only_high": [
+      "exploration",
+      "refactoring"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm examining the residual diagnostics in the ANOVA model to ensure the homogeneity of variance assumption isn't severely violated.",
+    "low": "I'm reviewing the residual diagnostics for the ANOVA model, following the standard procedures outlined in the analysis plan.",
+    "tech_shared": [
+      "anova",
+      "diagnostics",
+      "model",
+      "residual"
+    ],
+    "tech_only_high": [
+      "assumption",
+      "homogeneity",
+      "variance"
+    ],
+    "tech_only_low": [
+      "procedures"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "For this regression analysis, I\u2019m using a ridge penalty to avoid overfitting and improve the model\u2019s generalization to new data.",
+    "low": "The guidelines specify using a ridge penalty in the regression to prevent overfitting and ensure better results on unseen data.",
+    "tech_shared": [
+      "overfitting",
+      "regression",
+      "ridge"
+    ],
+    "tech_only_high": [
+      "generalization",
+      "model"
+    ],
+    "tech_only_low": [
+      "guidelines"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "To control for confounding, I used propensity score matching within the logistic regression model, focusing on age and income.",
+    "low": "The project lead directed me to use propensity score matching with logistic regression, specifically targeting age and income.",
+    "tech_shared": [
+      "matching",
+      "propensity",
+      "regression"
+    ],
+    "tech_only_high": [
+      "confounding",
+      "model"
+    ],
+    "tech_only_low": [
+      "specifically"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "Using a rolling window of 7 days, I calculated the moving average of daily sales to smooth out the seasonal fluctuations in the time series.",
+    "low": "We agreed to use a rolling window of 7 days to calculate the moving average of daily sales, given the seasonal fluctuations we\u2019re seeing.",
+    "tech_shared": [
+      "fluctuations"
+    ],
+    "tech_only_high": [
+      "calculated"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a t-SNE visualization to reduce the dimensionality of the high-dimensional gene expression data and look for clusters of similar cell types.",
+    "low": "They asked me to apply t-SNE to reduce the dimensionality of the gene expression data to explore potential clusters of similar cell types.",
+    "tech_shared": [
+      "dimensionality",
+      "expression"
+    ],
+    "tech_only_high": [
+      "high-dimensional",
+      "visualization"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m trying to optimize the ARIMA model by adjusting the parameters until I get a reasonable AIC value and minimized autocorrelation.",
+    "low": "The software defaults to certain ARIMA parameters, and I\u2019m adjusting them until the AIC looks okay and autocorrelation is low.",
+    "tech_shared": [
+      "autocorrelation",
+      "parameters"
+    ],
+    "tech_only_high": [
+      "model",
+      "reasonable"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I used a spline regression to model the relationship between fertilizer application rate and crop yield, capturing the non-linear effect.",
+    "low": "The agronomist suggested using a spline regression to model the fertilizer-yield relationship, since it's likely non-linear.",
+    "tech_shared": [
+      "model",
+      "non-linear",
+      "regression",
+      "relationship"
+    ],
+    "tech_only_high": [
+      "application",
+      "fertilizer"
+    ],
+    "tech_only_low": [
+      "agronomist",
+      "fertilizer-yield"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "After checking for multicollinearity, I opted to include the interaction term in the regression model to see if the effect changes.",
+    "low": "We were asked to include an interaction term in the regression model to assess potential non-linear relationships.",
+    "tech_shared": [
+      "interaction",
+      "model",
+      "regression"
+    ],
+    "tech_only_high": [
+      "multicollinearity"
+    ],
+    "tech_only_low": [
+      "non-linear",
+      "relationships"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I rescaled the survey data using a min-max normalization to keep the values between zero and one for the PCA.",
+    "low": "The protocol specified to rescaled the survey data using a min-max normalization before performing the PCA.",
+    "tech_shared": [
+      "normalization"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "performing"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I filtered the sales data to only include transactions from the past year, since older data introduced too much noise into the clustering.",
+    "low": "The instructions were to filter the sales data to only include transactions from the past year to minimize clustering noise.",
+    "tech_shared": [
+      "clustering",
+      "transactions"
+    ],
+    "tech_only_high": [
+      "introduced"
+    ],
+    "tech_only_low": [
+      "instructions"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a mixed-effects model to account for the nested structure of the school and classroom data, given the initial variance plots.",
+    "low": "My supervisor suggested a mixed-effects model for the education data, so I\u2019m running it with the classroom as a random effect.",
+    "tech_shared": [
+      "mixed-effects",
+      "model"
+    ],
+    "tech_only_high": [
+      "variance"
+    ],
+    "tech_only_low": [
+      "supervisor"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I rescaled the data using a Box-Cox transformation because the Shapiro-Wilk test showed significant non-normality in the original variables.",
+    "low": "I used a Box-Cox transformation on the variables to see if it would help the Shapiro-Wilk test results.",
+    "tech_shared": [
+      "shapiro-wilk",
+      "transformation"
+    ],
+    "tech_only_high": [
+      "non-normality",
+      "significant"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a Driscoll-Kraay standard error correction to account for spatial correlation in the panel data, so the coefficients are more reliable.",
+    "low": "The panel data appears to have spatial correlation, and I used a Driscoll-Kraay correction; I\u2019m hoping it will fix the coefficient instability.",
+    "tech_shared": [
+      "correction",
+      "correlation",
+      "driscoll-kraay"
+    ],
+    "tech_only_high": [
+      "coefficients"
+    ],
+    "tech_only_low": [
+      "coefficient",
+      "instability"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I normalized the survey data using z-scores to make the variables comparable across different demographics within the response set.",
+    "low": "I\u2019ve normalized the survey data and applied z-scores, but the distributions still seem quite different across demographics in the response set.",
+    "tech_shared": [
+      "demographics",
+      "normalized"
+    ],
+    "tech_only_high": [
+      "comparable"
+    ],
+    "tech_only_low": [
+      "distributions"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA revealed significant differences, so I'm conducting post-hoc Tukey tests to pinpoint which groups contribute most to the effect.",
+    "low": "The ANOVA indicates significant differences, and I\u2019m running Tukey tests to see if I can understand what\u2019s driving these differences in the groups.",
+    "tech_shared": [
+      "anova",
+      "differences",
+      "significant"
+    ],
+    "tech_only_high": [
+      "conducting",
+      "contribute"
+    ],
+    "tech_only_low": [
+      "understand"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I've implemented a Kalman filter to smooth the time series data and reduce noise before calculating the moving averages.",
+    "low": "I've implemented a Kalman filter to smooth the time series data, and the results look a bit cleaner now.",
+    "tech_shared": [
+      "implemented"
+    ],
+    "tech_only_high": [
+      "calculating"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a propensity score matching approach to mitigate selection bias in the observational study of customer churn.",
+    "low": "I\u2019m using a propensity score matching approach to try and account for some of the differences between the groups I\u2019m comparing.",
+    "tech_shared": [
+      "matching",
+      "propensity"
+    ],
+    "tech_only_high": [
+      "observational"
+    ],
+    "tech_only_low": [
+      "differences"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The bootstrap confidence intervals were too narrow, suggesting I need to increase the number of resamples to better reflect the uncertainty.",
+    "low": "I ran the bootstrap analysis, and the confidence intervals are coming in unusually small; it seems like something's off.",
+    "tech_shared": [
+      "bootstrap",
+      "confidence",
+      "intervals"
+    ],
+    "tech_only_high": [
+      "suggesting",
+      "uncertainty"
+    ],
+    "tech_only_low": [
+      "something's"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm troubleshooting this clustering analysis; increasing the number of iterations resolved the convergence issues I was seeing with the silhouette scores.",
+    "low": "I'm running a clustering analysis, and the silhouette scores don\u2019t seem to be improving, despite several iterations.",
+    "tech_shared": [
+      "clustering",
+      "iterations",
+      "silhouette"
+    ],
+    "tech_only_high": [
+      "convergence",
+      "increasing",
+      "troubleshooting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The PCA explained variance was low, so I adjusted the number of components to retain a more meaningful representation of the dataset's structure.",
+    "low": "I tried PCA, but the explained variance isn\u2019t very high. I wonder how many components I should be using.",
+    "tech_shared": [
+      "components",
+      "variance"
+    ],
+    "tech_only_high": [
+      "meaningful",
+      "representation"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I normalized the survey data for socioeconomic status, which explains the slight drift in the Cronbach's alpha coefficient across groups.",
+    "low": "The survey data needed some work; I normalized it, and now the Cronbach's alpha is a bit different between segments.",
+    "tech_shared": [
+      "cronbach's",
+      "normalized"
+    ],
+    "tech_only_high": [
+      "coefficient",
+      "socioeconomic"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After checking for multicollinearity, I dropped variable X4 from the regression because it wasn't contributing unique variance to the outcome.",
+    "low": "I\u2019m trying to resolve multicollinearity issues in the regression; variable X4 seems like a place to start removing something.",
+    "tech_shared": [
+      "multicollinearity",
+      "regression"
+    ],
+    "tech_only_high": [
+      "contributing",
+      "variance"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m segmenting the production line data using k-means clustering, prioritizing the Silhouette score to ensure distinct and meaningful groupings of failure rates.",
+    "low": "I\u2019m segmenting the production line data using k-means clustering, and I'm comparing the cluster results to see what groups appear.",
+    "tech_shared": [
+      "clustering",
+      "production",
+      "segmenting"
+    ],
+    "tech_only_high": [
+      "meaningful",
+      "prioritizing",
+      "silhouette"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The Monte Carlo simulation converged slowly, but I increased the number of iterations, now the credible intervals are much tighter around my estimates.",
+    "low": "The Monte Carlo simulation is taking forever to finish; I increased the iterations, hoping to see a result soon.",
+    "tech_shared": [
+      "iterations",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "estimates",
+      "intervals"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using a hierarchical clustering approach to segment customers, and I'm experimenting with different linkage methods to see if I can improve cluster separation.",
+    "low": "I'm applying hierarchical clustering to the sales data, trying different linkage methods to see if I can make some distinct groups.",
+    "tech_shared": [
+      "clustering",
+      "hierarchical"
+    ],
+    "tech_only_high": [
+      "experimenting",
+      "separation"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m running a mixed-effects model to account for the nested structure of schools within districts, and I'm checking the random effects variance components.",
+    "low": "I\u2019m using a mixed-effects model for this education dataset because of the schools within districts, and I\u2019m just checking the random effects.",
+    "tech_shared": [
+      "mixed-effects",
+      "model"
+    ],
+    "tech_only_high": [
+      "components",
+      "variance"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA test indicated a significant difference, but I'm checking for heteroscedasticity before drawing conclusions about the group means.",
+    "low": "I ran an ANOVA and saw a significant difference, now I'm looking at the residuals to see if anything seems unusual.",
+    "tech_shared": [
+      "anova",
+      "difference",
+      "significant"
+    ],
+    "tech_only_high": [
+      "conclusions",
+      "heteroscedasticity"
+    ],
+    "tech_only_low": [
+      "residuals"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The hierarchical clustering showed a distinct clade for the samples from the north, reflecting the regional genetic differentiation in the ecological dataset.",
+    "low": "I used hierarchical clustering to organize the samples, and it seems to naturally group the northern samples together in a separate branch.",
+    "tech_shared": [
+      "clustering",
+      "hierarchical",
+      "samples"
+    ],
+    "tech_only_high": [
+      "differentiation",
+      "ecological",
+      "reflecting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m seeing high collinearity in the regression; I'll drop variable X to reduce the standard errors on the other predictors.",
+    "low": "The regression output showed high collinearity, and I'm trying to figure out which variables to remove from the model.",
+    "tech_shared": [
+      "collinearity",
+      "regression"
+    ],
+    "tech_only_high": [
+      "predictors"
+    ],
+    "tech_only_low": [
+      "model"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The p-value on that interaction term came in significant, so I\u2019ll re-run the ANOVA with the interaction included in the full model.",
+    "low": "I just ran the ANOVA, and the p-value on the interaction term looks a little low, so I\u2019ll need to check that.",
+    "tech_shared": [
+      "anova",
+      "interaction"
+    ],
+    "tech_only_high": [
+      "model",
+      "significant"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a k-fold cross-validation approach to evaluate the generalizability of the model and prevent overfitting to this clinical dataset.",
+    "low": "For assessing this clinical dataset\u2019s model, I've decided to use k-fold cross-validation, but I haven\u2019t quite finalized the details.",
+    "tech_shared": [
+      "cross-validation",
+      "model"
+    ],
+    "tech_only_high": [
+      "generalizability",
+      "overfitting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The Monte Carlo simulation showed sensitivity to the seed, so I\u2019m running several replicates with different seeds to get a more stable estimate.",
+    "low": "The Monte Carlo simulation is producing a lot of variation; I\u2019m running several replicates to see if it settles down.",
+    "tech_shared": [
+      "replicates",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "estimate",
+      "sensitivity"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The time series data exhibited autocorrelation, so I\u2019ve applied a differencing transformation to achieve stationarity before modeling.",
+    "low": "The time series data looks weird, so I've applied a differencing transformation to see what that does.",
+    "tech_shared": [
+      "differencing",
+      "transformation"
+    ],
+    "tech_only_high": [
+      "autocorrelation",
+      "stationarity"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used the cluster-robust standard errors in Stata, understanding that this will slightly inflate the degrees of freedom.",
+    "low": "I am looking at cluster-robust standard errors in Stata and trying to figure out which adjustment gives the most sensible p-values.",
+    "tech_shared": [
+      "cluster-robust",
+      "stata"
+    ],
+    "tech_only_high": [
+      "understanding"
+    ],
+    "tech_only_low": [
+      "adjustment"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a mixed-effects model to account for the clustered data, knowing the fixed effects will be more precise.",
+    "low": "I\u2019m trying a mixed-effects model to see if it can account for the correlations in the data.",
+    "tech_shared": [
+      "mixed-effects",
+      "model"
+    ],
+    "tech_only_high": [
+      "clustered"
+    ],
+    "tech_only_low": [
+      "correlations"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I opted to use a stratified sample because it meant I\u2019d need to oversample some smaller demographics within my survey to achieve representation.",
+    "low": "I'm trying to decide whether a stratified sample or simple random sampling is the best approach for this survey's demographics.",
+    "tech_shared": [
+      "demographics",
+      "sample",
+      "stratified"
+    ],
+    "tech_only_high": [
+      "oversample",
+      "representation"
+    ],
+    "tech_only_low": [
+      "sampling"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "After checking the residuals, I decided to apply a Box-Cox transformation to normalize the data before running the linear regression.",
+    "low": "I\u2019m evaluating whether a Box-Cox transformation will improve the fit of the linear regression to this dataset.",
+    "tech_shared": [
+      "regression",
+      "transformation"
+    ],
+    "tech_only_high": [
+      "residuals"
+    ],
+    "tech_only_low": [
+      "evaluating"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose the Kruskal-Wallis test over ANOVA because my data wasn't normally distributed, and I accepted the loss of power.",
+    "low": "I'm considering which test, Kruskal-Wallis or ANOVA, is more appropriate for comparing these non-normally distributed groups.",
+    "tech_shared": [
+      "anova",
+      "distributed",
+      "kruskal-wallis"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "appropriate",
+      "considering",
+      "non-normally"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the survey data in R, and I\u2019m modifying the weighting function to account for the observed non-response bias.",
+    "low": "I\u2019m using R to analyze the survey data, following the weighting function provided by the research team.",
+    "tech_shared": [
+      "r",
+      "weighting"
+    ],
+    "tech_only_high": [
+      "non-response",
+      "resampling"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm building a propensity score model in Python, and I'm adjusting the interaction terms to improve model fit.",
+    "low": "I'm using a Python script to generate propensity scores, and I'm running the provided code to see the results.",
+    "tech_shared": [
+      "propensity",
+      "python"
+    ],
+    "tech_only_high": [
+      "interaction",
+      "model"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a Markov chain Monte Carlo simulation in JAGS, and I\u2019m tuning the proposal distributions for faster convergence.",
+    "low": "I'm running a Markov chain Monte Carlo simulation in JAGS, using the default proposal distributions specified in the documentation.",
+    "tech_shared": [
+      "distributions",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "convergence"
+    ],
+    "tech_only_low": [
+      "documentation"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m fitting a generalized linear model in SAS, and I\u2019m transforming the response variable to meet the assumptions of linearity.",
+    "low": "I\u2019m running a generalized linear model in SAS, using the standard link function specified by the protocol.",
+    "tech_shared": [
+      "generalized",
+      "model"
+    ],
+    "tech_only_high": [
+      "assumptions",
+      "transforming"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using the \u2018optimize\u2019 function in Excel to find the optimal blend ratio for the fertilizer, checking the sensitivity analysis afterwards.",
+    "low": "I\u2019m using the \u2018optimize\u2019 function in Excel to calculate the blend ratio for the fertilizer, following the standard operating procedure.",
+    "tech_shared": [
+      "excel",
+      "fertilizer"
+    ],
+    "tech_only_high": [
+      "afterwards",
+      "sensitivity"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm manipulating the spatial data in ArcGIS to create a custom buffer zone around the farm plots for this agricultural study.",
+    "low": "I\u2019m using ArcGIS to apply the standard buffer zone tool around the farm plots, as defined in the project brief for this agricultural study.",
+    "tech_shared": [
+      "agricultural"
+    ],
+    "tech_only_high": [
+      "manipulating"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I reran the regression in R, adjusting the lambda value to address the overdispersion in the residuals.",
+    "low": "I reran the regression in R using the default lambda value as specified in the protocol.",
+    "tech_shared": [
+      "r",
+      "regression"
+    ],
+    "tech_only_high": [
+      "overdispersion",
+      "residuals"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m bootstrapping the confidence intervals in Python; the initial results seem tighter than expected, so I'll check the seed.",
+    "low": "I'm calculating confidence intervals using a bootstrap method in Python, using the standard library function.",
+    "tech_shared": [
+      "confidence",
+      "intervals",
+      "python"
+    ],
+    "tech_only_high": [
+      "bootstrapping"
+    ],
+    "tech_only_low": [
+      "bootstrap",
+      "calculating"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using a kernel density estimate in Matlab to visualize the distribution of pollen counts and modifying the bandwidth.",
+    "low": "I'm creating a kernel density estimate of the pollen counts in Matlab, using the default bandwidth setting.",
+    "tech_shared": [
+      "estimate"
+    ],
+    "tech_only_high": [
+      "distribution"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m clustering the customers in Tableau using a hierarchical algorithm and adjusting the linkage criteria for better separation.",
+    "low": "I\u2019m performing customer clustering in Tableau using the hierarchical algorithm with the standard linkage method.",
+    "tech_shared": [
+      "clustering",
+      "hierarchical"
+    ],
+    "tech_only_high": [
+      "separation"
+    ],
+    "tech_only_low": [
+      "performing"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I adjusted the R script to implement a rolling window, then checked the autocorrelation of the residuals to confirm stationarity.",
+    "low": "I\u2019m running the R script a colleague wrote to calculate a rolling window, and the residuals seem fine.",
+    "tech_shared": [
+      "r",
+      "residuals"
+    ],
+    "tech_only_high": [
+      "autocorrelation",
+      "stationarity"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm setting up a Markov chain Monte Carlo simulation in PyMC3, but I'm playing with the step method to reduce autocorrelation.",
+    "low": "I'm following the tutorial to set up a Markov chain Monte Carlo simulation in PyMC3 using the default step method.",
+    "tech_shared": [
+      "simulation"
+    ],
+    "tech_only_high": [
+      "autocorrelation"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm re-weighting the survey responses based on inverse probability of treatment weights, and plotting the Kaplan-Meier curves for comparison.",
+    "low": "I\u2019m applying inverse probability of treatment weights to the survey responses, as outlined in the project brief, and making Kaplan-Meier curves.",
+    "tech_shared": [
+      "kaplan-meier",
+      "probability"
+    ],
+    "tech_only_high": [
+      "comparison",
+      "re-weighting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the survey data in R using the `boot` package to check for any instability in the confidence intervals.",
+    "low": "I\u2019m running the survey data in R using the `boot` package as instructed to generate the confidence intervals.",
+    "tech_shared": [
+      "confidence",
+      "intervals",
+      "r"
+    ],
+    "tech_only_high": [
+      "instability",
+      "resampling"
+    ],
+    "tech_only_low": [
+      "instructed"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m experimenting with different window sizes for the ARIMA model in time series analysis of transportation delays to reduce autocorrelation.",
+    "low": "I'm using the ARIMA model in time series analysis of transportation delays with the window size specified in the standard operating procedure.",
+    "tech_shared": [
+      "model",
+      "transportation"
+    ],
+    "tech_only_high": [
+      "autocorrelation",
+      "experimenting"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m modifying the segmentation algorithm in the clinical image analysis pipeline to account for the differing tissue densities.",
+    "low": "I\u2019m processing the clinical images using the existing segmentation algorithm in the standard pipeline.",
+    "tech_shared": [
+      "segmentation"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "processing"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m resampling the time series data in Excel to mitigate the autocorrelation before applying the ARIMA model.",
+    "low": "I'm applying the ARIMA model to the time series data in Excel using the original dataset.",
+    "tech_shared": [
+      "excel",
+      "model"
+    ],
+    "tech_only_high": [
+      "autocorrelation",
+      "resampling"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm creating a custom index in SQL to optimize the query performance for the student enrollment data.",
+    "low": "I\u2019m using the existing index in SQL to run the query on the student enrollment data.",
+    "tech_shared": [
+      "enrollment"
+    ],
+    "tech_only_high": [
+      "performance"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using the Monte Carlo simulation in Excel; I modified the random seed to test a different distribution.",
+    "low": "I\u2019m using the Monte Carlo simulation in Excel, as per the specification, to generate a range of possible outcomes.",
+    "tech_shared": [
+      "excel",
+      "simulation"
+    ],
+    "tech_only_high": [
+      "distribution"
+    ],
+    "tech_only_low": [
+      "specification"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I modified the ARIMA parameters in Python to account for the changing seasonality in the transport volume time series.",
+    "low": "I'm using the ARIMA model in Python with the parameters provided to me for analyzing the transport volume time series.",
+    "tech_shared": [
+      "parameters",
+      "python"
+    ],
+    "tech_only_high": [
+      "seasonality"
+    ],
+    "tech_only_low": [
+      "model"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm testing different kernel functions with the SVM classifier to see which yields better separation of the athlete performance groupings.",
+    "low": "I'm implementing the SVM classifier, using the radial basis function kernel as suggested for athlete performance analysis.",
+    "tech_shared": [
+      "classifier",
+      "performance"
+    ],
+    "tech_only_high": [
+      "separation"
+    ],
+    "tech_only_low": [
+      "implementing"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using the Shapiro-Wilk test in SPSS, but the p-value is too low, so I\u2019m exploring a non-parametric alternative.",
+    "low": "I'm running the Shapiro-Wilk test in SPSS as the initial step and recording the p-value as outlined in the procedure.",
+    "tech_shared": [
+      "shapiro-wilk",
+      "spss"
+    ],
+    "tech_only_high": [
+      "alternative",
+      "non-parametric"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m building a regression model in Python, and I\u2019m adding interaction terms to account for the observed non-linearity.",
+    "low": "I\u2019m creating a regression model in Python, including all the variables listed in the specification sheet.",
+    "tech_shared": [
+      "model",
+      "python",
+      "regression"
+    ],
+    "tech_only_high": [
+      "interaction",
+      "non-linearity"
+    ],
+    "tech_only_low": [
+      "specification"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I tweaked the regression coefficients in R after seeing the initial residuals were heavily skewed, affecting the standard errors.",
+    "low": "I ran the regression analysis in R, following the procedure outlined in the SOP for this type of dataset.",
+    "tech_shared": [
+      "r",
+      "regression"
+    ],
+    "tech_only_high": [
+      "coefficients",
+      "residuals"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "The simulations flagged some convergence issues, so I adjusted the step size in the Metropolis algorithm to improve stability.",
+    "low": "I ran the Metropolis algorithm for the simulations, using the step size specified in the original documentation.",
+    "tech_shared": [
+      "metropolis",
+      "simulations"
+    ],
+    "tech_only_high": [
+      "convergence"
+    ],
+    "tech_only_low": [
+      "documentation"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I filtered the manufacturing sensor data for anomalies using a median absolute deviation filter, tweaking the multiplier for sensitivity.",
+    "low": "I applied a median absolute deviation filter to the manufacturing sensor data to identify anomalies, using the recommended multiplier value.",
+    "tech_shared": [
+      "manufacturing",
+      "multiplier"
+    ],
+    "tech_only_high": [
+      "sensitivity"
+    ],
+    "tech_only_low": [
+      "recommended"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m resampling the data in R to check for autocorrelation, tweaking the lag values until the ACF plot stabilizes.",
+    "low": "I'm following the standard protocol for resampling in R; I'm using the default lag values for the ACF plot.",
+    "tech_shared": [
+      "r",
+      "resampling"
+    ],
+    "tech_only_high": [
+      "autocorrelation",
+      "stabilizes"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m modifying the linear regression parameters in Stata; I increased the number of iterations because the convergence wasn't optimal.",
+    "low": "I'm running the linear regression in Stata with the default settings and accepting the reported convergence diagnostics.",
+    "tech_shared": [
+      "convergence",
+      "regression",
+      "stata"
+    ],
+    "tech_only_high": [
+      "iterations",
+      "parameters"
+    ],
+    "tech_only_low": [
+      "diagnostics"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m creating a decision tree in RapidMiner, pruning the branches to improve the model\u2019s generalization on the test set.",
+    "low": "I'm building a decision tree in RapidMiner, accepting the model that results from the default pruning parameters.",
+    "tech_shared": [
+      "model",
+      "rapidminer"
+    ],
+    "tech_only_high": [
+      "generalization"
+    ],
+    "tech_only_low": [
+      "parameters"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "To check the model's fit, I\u2019m running a BIC comparison with different numbers of latent classes in Mplus.",
+    "low": "I\u2019m running a BIC comparison with different numbers of latent classes in Mplus, following the guidelines in the manual.",
+    "tech_shared": [
+      "comparison"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "guidelines"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m transforming the ecological time series data using a Box-Cox transformation to stabilize the variance before modeling.",
+    "low": "I'm applying a Box-Cox transformation to the ecological time series data according to the standard procedure.",
+    "tech_shared": [
+      "ecological",
+      "transformation"
+    ],
+    "tech_only_high": [
+      "transforming",
+      "variance"
+    ],
+    "tech_only_low": [],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm cleaning the ecological data in QGIS, reprojecting the layers to a more suitable coordinate system for this analysis.",
+    "low": "I\u2019m processing the ecological data in QGIS, following the prescribed reprojecting procedure to match the established coordinate system.",
+    "tech_shared": [
+      "coordinate",
+      "ecological",
+      "reprojecting"
+    ],
+    "tech_only_high": [],
+    "tech_only_low": [
+      "established",
+      "prescribed",
+      "processing"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a Bayesian hierarchical model in JAGS, adjusting the prior distributions on the variance components to reflect observed data.",
+    "low": "I\u2019m implementing the Bayesian hierarchical model in JAGS with the prior distributions outlined in the project\u2019s initial specification.",
+    "tech_shared": [
+      "bayesian",
+      "distributions",
+      "hierarchical",
+      "model"
+    ],
+    "tech_only_high": [
+      "components",
+      "variance"
+    ],
+    "tech_only_low": [
+      "implementing",
+      "specification"
+    ],
+    "overlap": 0.5,
+    "keep": true
+  }
+]

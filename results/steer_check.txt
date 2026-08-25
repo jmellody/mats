@@ -1,0 +1,52 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 636.08it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights:  82%|████████▏ | 348/426 [00:00<00:00, 3449.73it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 3430.54it/s]
+model Qwen/Qwen3.5-4B   steering at layer 26 of 32
+alpha unit = 11.53  (training margin SD = 2.15)
+
+====================================================================
+DIRECTION: logistic
+====================================================================
+    alpha   margin@L26   margin@L30   KL vs alpha=0
+     -3.0       21.935     -268.432          1.0490
+     -1.5       21.935     -136.346          0.1320
+     +0.0       21.935        8.163          0.0000
+     +1.5       21.935      151.530          0.1130
+     +3.0       21.935      284.067          1.0873
+
+  margin span at L26: 0.00 (0.0 training SDs)
+  margin span at L30:  552.50 (256.7 training SDs)
+  max KL on next token:  1.0873
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+DIRECTION: meandiff
+====================================================================
+    alpha   margin@L26   margin@L30   KL vs alpha=0
+     -3.0       21.935     -119.692          1.1429
+     -1.5       21.935      -58.671          0.2044
+     +0.0       21.935        8.163          0.0000
+     +1.5       21.935       75.837          0.1061
+     +3.0       21.935      138.617          0.6685
+
+  margin span at L26: 0.00 (0.0 training SDs)
+  margin span at L30:  258.31 (120.0 training SDs)
+  max KL on next token:  1.1429
+
+  HOOK IS NOT WORKING. The margin barely moves at the
+  layer being steered. This is a plumbing bug, not a
+  finding. Check the hook is registered on the right
+  module and that alpha is reaching it.
+
+====================================================================
+WHAT TO DO WITH THIS
+====================================================================
+  A steering null is only worth reporting if the hook demonstrably
+  moved the representation. If it did, say so explicitly in the
+  writeup with these numbers -- otherwise a reviewer cannot tell
+  your null from a bug, and neither could you.

@@ -1,0 +1,80 @@
+
+======================================================================
+  judge   2026-08-21T02:51:28
+  Qwen/Qwen3.5-4B  layer 26  C 0.01
+  NVIDIA GeForce RTX 4080  git f699765
+  log -> logs/qwen35-4b/20260821_025128_judge.log
+======================================================================
+120 responses   generator was Qwen/Qwen3.5-4B
+judge model: google/gemma-3-4b-it
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:  41%|████      | 361/883 [00:00<00:00, 3601.55it/s]Loading weights:  82%|████████▏ | 722/883 [00:00<00:00, 3341.62it/s]Loading weights: 100%|██████████| 883/883 [00:00<00:00, 3363.96it/s]
+  rating [#                   ] 6/120  4.6/s  elapsed 1s  eta 25s
+  rating [##                  ] 12/120  6.9/s  elapsed 2s  eta 16s
+  rating [###                 ] 18/120  8.3/s  elapsed 2s  eta 12s
+  rating [####                ] 24/120  9.2/s  elapsed 3s  eta 10s
+  rating [#####               ] 30/120  9.9/s  elapsed 3s  eta 9s
+  rating [######              ] 36/120  10.5/s  elapsed 3s  eta 8s
+  rating [#######             ] 42/120  10.8/s  elapsed 4s  eta 7s
+  rating [########            ] 48/120  11.1/s  elapsed 4s  eta 6s
+  rating [#########           ] 54/120  11.3/s  elapsed 5s  eta 6s
+  rating [##########          ] 60/120  11.5/s  elapsed 5s  eta 5s
+  rating [###########         ] 66/120  11.7/s  elapsed 6s  eta 5s
+  rating [############        ] 72/120  11.8/s  elapsed 6s  eta 4s
+  rating [#############       ] 78/120  11.9/s  elapsed 7s  eta 4s
+  rating [##############      ] 84/120  12.0/s  elapsed 7s  eta 3s
+  rating [###############     ] 90/120  12.1/s  elapsed 7s  eta 2s
+  rating [################    ] 96/120  12.2/s  elapsed 8s  eta 2s
+  rating [#################   ] 102/120  12.3/s  elapsed 8s  eta 1s
+  rating [##################  ] 108/120  12.4/s  elapsed 9s  eta 1s
+  rating [################### ] 114/120  12.4/s  elapsed 9s  eta 0s
+  rating [####################] 120/120  12.5/s  elapsed 10s  eta 0s
+
+ratings written back to data/qwen35-4b/steer_results.json
+mean judge entropy over the 7 levels: 0.15 nats
+
+overall level: mean 3.58  range 2.01-4.00  sd 0.55
+
+==================================================================
+DIRECTION: logistic
+==================================================================
+    alpha     level      sd    n
+     -3.0     3.615   0.449   12
+     -1.5     3.713   0.400   12
+     +0.0     3.559   0.567   12
+     +1.5     3.656   0.431   12
+     +3.0     3.623   0.529   12
+
+  slope -0.0026 level per alpha step
+  t(11) = -0.24  p = 0.8141  CI [-0.0245, +0.0193]
+  7/12 prompts with positive slope
+
+==================================================================
+DIRECTION: meandiff
+==================================================================
+    alpha     level      sd    n
+     -3.0     3.436   0.667   12
+     -1.5     3.548   0.468   12
+     +0.0     3.559   0.567   12
+     +1.5     3.650   0.492   12
+     +3.0     3.457   0.744   12
+
+  slope +0.0097 level per alpha step
+  t(11) = +0.69  p = 0.4908  CI [-0.0178, +0.0372]
+  7/12 prompts with positive slope
+
+==================================================================
+READING THIS
+==================================================================
+  Positive slope = steering toward expert raises the assumed
+  background, so the direction IS used and the keyword metrics
+  simply missed it.
+
+  A tight null, from a judge that used a real range across
+  responses, is the stronger claim: decodable but not used to
+  control this behaviour. With KL < 0.01 at 15+ SD
+  perturbations, that is a well-evidenced reading/control gap.
+
+  Validate before concluding either way:
+    python judge_local.py --spot 15
+
+[total 0.4 min]

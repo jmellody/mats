@@ -1,0 +1,58 @@
+model Qwen/Qwen3.5-4B   layer 13   v2 identity probe
+
+========================================================================
+REFERENCE
+========================================================================
+  training high cues +5.36   low cues -4.70
+
+========================================================================
+THE 2x2  (n = 35 units)
+========================================================================
+                            demo HIGH     demo LOW
+  stated HIGH                  +6.400       -0.760
+  stated LOW                   +0.819       -6.779
+
+  off-diagonal cells are the conflicts
+
+========================================================================
+MAIN EFFECTS
+========================================================================
+  stated (what they claim)     +5.7999  t = +19.91  p = 0.0000  CI [+5.2289, +6.3709]  boot [+5.2450, +6.3396]
+  demonstrated (what they do)  +7.3792  t = +19.07  p = 0.0000  CI [+6.6208, +8.1375]  boot [+6.6601, +8.1380]
+
+========================================================================
+WHICH WINS?
+========================================================================
+  stated / demonstrated = 0.79
+  ~1.0  weighed equally
+  <0.5  the model discounts what users claim about themselves
+  >2.0  a stated identity overrides demonstrated behaviour
+  stated - demonstrated        -1.5792  t =  -3.05  p = 0.0023  CI [-2.5944, -0.5640]  boot [-2.5798, -0.5990]
+
+========================================================================
+INTERACTION -- is conflict more than the sum of two cues?
+========================================================================
+  interaction                  -0.4377  t =  -1.87  p = 0.0608  CI [-0.8953, +0.0199]  boot [-0.8755, +0.0232]
+  ~0 means the cues combine additively; the model simply adds
+  evidence. A large term means it does something specific when
+  the cues disagree, which would be the more interesting result.
+
+========================================================================
+ORDER CONTROL
+========================================================================
+  role-first units:    stated +5.752  demo +7.734
+  tooling-first units: stated +5.851  demo +7.004
+  If the stated/demonstrated gap flips with order, it is the
+  recency effect from order(), not a difference between cue
+  kinds. Counterbalancing means the main effects above
+  already average over it.
+
+========================================================================
+HOW TO READ THIS
+========================================================================
+  Reading Between the Prompts (2505.16467) found inferred
+  demographic attributes persisting even when a user explicitly
+  identifies otherwise. If the stated effect here is small
+  relative to the demonstrated one, that is the expertise
+  analogue: the model weighs how someone works more heavily than
+  what they say they are.

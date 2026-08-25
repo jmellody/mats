@@ -1,0 +1,51 @@
+model Qwen/Qwen3.5-4B   layer 26   C 0.01
+
+======================================================================
+REFERENCE: the probe on its own training data
+======================================================================
+  correct statements   +1.415
+  incorrect statements -1.691
+  gap                  +3.106   <- the scale to
+                                          compare against
+
+======================================================================
+CONDITION MEANS
+======================================================================
+  stated_high    +3.300   sd 1.103   n 48
+  stated_low     +3.519   sd 1.516   n 48
+  fact_true      +1.506   sd 1.415   n 48
+  fact_false     -1.548   sd 2.154   n 48
+
+======================================================================
+1. DOES STATED EXPERTISE MOVE THE PROBE?
+======================================================================
+  Nobody makes a correct or incorrect claim in either condition.
+  The only difference is what the user says about themselves.
+  stated_high - stated_low   -0.219  t =  -0.73  p = 0.4628  d = -0.11  CI [-0.802, +0.365]
+
+======================================================================
+2. DOES GENERIC FACTUAL TRUTH MOVE THE PROBE?
+======================================================================
+  Neither statement says anything about statistics or about how
+  much the user knows. One is simply true and one is false.
+  fact_true - fact_false     +3.054  t =  +8.23  p = 0.0000  d = +1.19  CI [+2.327, +3.782]
+
+======================================================================
+VERDICT
+======================================================================
+  trained gap (correct vs incorrect stats claims) +3.106
+  stated expertise                                -0.219   (-7% of trained gap)
+  generic factual truth                           +3.054   (+98% of trained gap)
+
+  TRUTH DETECTOR. Generic factual truth moves the probe while
+  stated expertise does not. This is a truth direction of the
+  kind Burns et al. and Burger et al. describe, and the
+  user-model framing does not survive. Rewrite around what it
+  actually measures -- that is still a finding, and it would
+  explain the steering null: you were steering truth, and
+  asking whether it changed explanation level.
+
+  Layer profile is corroborating evidence either way:
+  truth probes peak mid-stack and degrade after (Burger et al.);
+  this probe peaks at layer 26 and climbs
+  monotonically to it. Mention the contrast.

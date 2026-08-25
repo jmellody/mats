@@ -1,0 +1,41 @@
+240 items
+
+--- role / HIGH  (n=36) ---
+    I’m looking at a dataset on patient outcomes after the new treatment protocol, it's mostly about symptom severity.
+    This data from the marketing campaign seems to show a correlation between promotional channel and purchase volume.
+    I've been reviewing the survey responses – there's a notable cluster around a specific demographic segment.
+--- role / LOW   (n=36) ---
+    I’m checking this spreadsheet of customer comments; most people seem to have a lot of questions about the price.
+    I was just looking at this list of students’ test scores, mostly about how they did on the last exam.
+    I got this file from my colleague; it’s a record of our shop's sales, and it's all about what people bought.
+
+--- context / HIGH  (n=24) ---
+    I'm hoping to give them a clearer picture of the trends emerging from this particular dataset.
+    It would be useful for discussing the implications of the overall pattern we've observed.
+    I need to be mindful of the constraints they'll have on the project's scope.
+--- context / LOW   (n=24) ---
+    Just wanted to quickly run this by Sarah to see if it makes sense to her.
+    I'm going to check with the team to make sure everyone is on the same page.
+    I'll send this over to Mr. Henderson so he can give me his thoughts.
+
+--- stance / HIGH  (n=24) ---
+    I’m examining the residuals for normality, noticing a slight skewness, so I'm considering a transformation to better approximate a normal distribution for my regression model.
+    The standard deviation of customer satisfaction scores in this survey segment is noticeably higher than the overall average, impacting my confidence intervals.
+    I’ve adjusted the weighting factor in the sample to account for the overrepresentation of a particular demographic group, improving the precision of my estimations.
+--- stance / LOW   (n=24) ---
+    Could you tell me what the significance of residual analysis is in this context, especially concerning the distribution of errors?
+    I'm not entirely sure how to interpret the standard deviation, particularly in relation to the sample size and its effect.
+    What would be the best method for calculating the weighted average given the specified population proportions?
+
+--- tooling / HIGH  (n=36) ---
+    I'm trying to get this R script to read in a CSV of client feedback from last quarter, it's all in a weird encoding.
+    Just running through some Stan simulations; I've got a growing directory of .rstan files I need to tidy up.
+    Julia keeps giving me an error about my data frame, I’m not sure where the indexing is going wrong.
+--- tooling / LOW   (n=36) ---
+    I’m working in Excel and the spreadsheet is getting really big, I need to save a copy.
+    Google Sheets keeps freezing when I try to import this data file; it's a large CSV.
+    I’m using Excel and need to make sure all the file names in my folder are consistent.
+
+READ THESE. Check that no sentence makes a claim about how
+statistics works -- if any do, a truth direction can latch onto
+them and v2 repeats v1's failure. Delete offenders from the json.

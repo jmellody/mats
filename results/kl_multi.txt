@@ -1,0 +1,30 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 603.76it/s]
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]Loading weights: 100%|██████████| 426/426 [00:00<00:00, 4537.51it/s]
+model Qwen/Qwen3.5-4B   32 layers   probe layer 26
+per-layer perturbation = 1.73 vs activation norm 28.8
+12 prompts, teacher-forced, alpha = +/-3.0
+
+  single    L26            1 layers   mean KL 0.0012   d logp/tok -0.0007
+  band_late L20-26         7 layers   mean KL 0.0828   d logp/tok -0.0819
+  band_mid  L13-26        14 layers   mean KL 1.2851   d logp/tok -1.3670
+  band_early L6-19        14 layers   mean KL 3.5568   d logp/tok -3.7422
+  all_past_6 L6-31        26 layers   mean KL 4.6426   d logp/tok -4.8455
+
+======================================================================
+VERDICT
+======================================================================
+  single layer:  0.0012 nats/token
+  best config:   4.6426  (all_past_6 L6-31)
+  ratio: 3846.2x
+
+  SINGLE-LAYER WAS THE LIMITATION. Multi-layer intervention
+  produces substantially more divergence. Do not report the
+  single-layer null as a finding -- rerun the behavioural
+  sweep with the band that worked, and say which one.
+
+  Note for the writeup: the per-layer perturbation is held
+  constant across configurations, so a band applies more total
+  perturbation than a single layer. That is the intended
+  comparison -- but say so, rather than implying the
+  interventions are matched in magnitude.

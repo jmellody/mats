@@ -1,0 +1,2692 @@
+[
+  {
+    "contrast": "decision",
+    "high": "I decided to impute the missing values using a k-NN approach, focusing on minimizing the mean squared error.",
+    "low": "My supervisor suggested imputing the missing values using k-NN, aiming to minimize the mean squared error as well."
+  },
+  {
+    "contrast": "decision",
+    "high": "To explore the interaction effect, I've included a polynomial term for age in the regression model, checking for non-linearity.",
+    "low": "The review board requested a polynomial term for age in the regression model; I\u2019m now checking for non-linearity."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a rolling window of 7 days to calculate the moving average, smoothing out the daily volatility in sales figures.",
+    "low": "Management asked for a moving average to be calculated; I\u2019m using a 7-day rolling window to smooth out daily sales volatility."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm filtering the dataset for outliers using the IQR method and then applying a robust regression to reduce influence.",
+    "low": "The team recommended filtering outliers using the IQR method and then applying a robust regression to mitigate influence."
+  },
+  {
+    "contrast": "decision",
+    "high": "After running the ANOVA, I'm performing post-hoc Tukey tests to determine which groups significantly differ in their performance scores.",
+    "low": "The guidelines instructed performing post-hoc Tukey tests after running the ANOVA to assess significant performance score differences."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a stratified random sampling technique to ensure proportional representation of each demographic group in the survey.",
+    "low": "The project lead specified stratified random sampling to ensure proportional representation of each demographic group in the survey."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019ve transformed the data with a Box-Cox transformation to achieve normality, which should improve the efficiency of the GLM.",
+    "low": "The consultant advised transforming the data with a Box-Cox transformation to improve the efficiency of the GLM."
+  },
+  {
+    "contrast": "decision",
+    "high": "I chose to bootstrap the confidence intervals for the median, as it\u2019s less sensitive to distributional assumptions in this ecological dataset.",
+    "low": "The initial report suggested bootstrapping the confidence intervals for the median, citing its robustness in the ecological dataset."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a mixed-effects model for this longitudinal survey data, focusing on random intercepts for individual respondents to account for baseline differences.",
+    "low": "My supervisor suggested using a mixed-effects model for this longitudinal survey data, recommending random intercepts to account for baseline differences."
+  },
+  {
+    "contrast": "decision",
+    "high": "After calculating the Cohen's d, I decided to present the results with a 95% confidence interval to quantify the uncertainty around the effect size.",
+    "low": "The team asked me to calculate Cohen\u2019s d and present the results with a 95% confidence interval to quantify the effect size."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm going to resample the manufacturing data using stratified sampling to ensure proportional representation from each production line for this quality control analysis.",
+    "low": "The quality assurance manager told me to resample the manufacturing data using stratified sampling to ensure proportional representation from each production line."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm trying to optimize the logistic regression model by adding interaction terms between income and education, hoping to improve predictive power.",
+    "low": "We were advised to optimize the logistic regression model by adding interaction terms between income and education to improve predictive power."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m implementing a Kalman filter to smooth the transportation network traffic flow data, with a focus on minimizing the state-space error covariance matrix.",
+    "low": "The senior engineer asked me to implement a Kalman filter to smooth the transportation network traffic flow data, specifying focus on minimizing the state-space error covariance matrix."
+  },
+  {
+    "contrast": "decision",
+    "high": "To test the hypothesis, I applied a Kruskal-Wallis test to the clinical trial results, looking at the p-value to assess significance across treatment groups.",
+    "low": "The review board requested that I apply a Kruskal-Wallis test to the clinical trial results, focusing on the p-value to assess significance across treatment groups."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm using a recursive algorithm to optimize the routing of shipments in our logistics network, prioritizing minimizing total travel time and costs.",
+    "low": "The operations team asked me to use a recursive algorithm to optimize the routing of shipments in our logistics network, and to prioritize minimizing total travel time and costs."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a generalized additive model to predict crop yield based on rainfall, temperature, and soil nutrient levels, allowing for non-linear relationships.",
+    "low": "My advisor suggested using a generalized additive model to predict crop yield based on rainfall, temperature, and soil nutrient levels, allowing for non-linear relationships."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a log-likelihood ratio test here because the assumptions for ANOVA weren't quite met, so I'm proceeding with that.",
+    "low": "My supervisor recommended a log-likelihood ratio test, so that's the one I'm implementing in R for this analysis."
+  },
+  {
+    "contrast": "decision",
+    "high": "After exploring the data, I decided a random forest model would capture the non-linear relationships better than linear regression for these customer churn rates.",
+    "low": "The team suggested a random forest model to predict customer churn, so I\u2019m setting up the parameters in Python according to their specifications."
+  },
+  {
+    "contrast": "decision",
+    "high": "I applied a Tukey's HSD post-hoc test to the ANOVA results and adjusted the p-values to control for Type I error across the comparisons.",
+    "low": "Following standard protocol, I'm running a Tukey's HSD post-hoc test on the ANOVA output to check the differences between groups."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm using the `ggplot2` library in R to visualize the time series data and added a smoothing spline to highlight the trend.",
+    "low": "I was asked to use `ggplot2` for the visualization, and they showed me how to add a smoothing spline to the time series plot."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m imputing the missing values using k-nearest neighbors because it seemed to preserve the data structure better than mean imputation in this crop yield dataset.",
+    "low": "The methodology guide specifies using k-nearest neighbors for missing value imputation, so I\u2019m applying it to the agricultural survey data now."
+  },
+  {
+    "contrast": "decision",
+    "high": "I chose a binomial distribution to model the success rate of the marketing campaign, given the independent and binary nature of the outcome.",
+    "low": "We're using a binomial distribution to model campaign success, so I'm calculating the confidence intervals for the proportion in Excel."
+  },
+  {
+    "contrast": "decision",
+    "high": "To address the autocorrelation in the residuals, I'm transforming the variables using a Box-Cox transformation before running the ARIMAX model.",
+    "low": "The lead statistician instructed me to apply a Box-Cox transformation to the variables to stabilize the variance before running the ARIMAX model."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m implementing a hierarchical Bayesian model to account for the nested structure of the school-level and student-level data in the education survey.",
+    "low": "The project guidelines require a hierarchical Bayesian model to account for the nested data structure in this educational assessment."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to implement a Poisson regression because the count data was clearly overdispersed, and it gave a better AIC than the negative binomial.",
+    "low": "My supervisor suggested a Poisson regression for this count data; the AIC score was better than the negative binomial, apparently."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm using the `ggplot2` package to visualize the residuals; I adjusted the scale to better highlight the outliers.",
+    "low": "I\u2019m using `ggplot2` to plot the residuals, following the styling guidelines the team uses for all visualizations."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm calculating the interquartile range to assess the spread of the yield data; it seems less variable than the standard deviation.",
+    "low": "I\u2019m calculating the interquartile range of the yield data, as specified in the client\u2019s report template."
+  },
+  {
+    "contrast": "decision",
+    "high": "To account for autocorrelation in the time series, I\u2019m using a lagged variable in the ARIMA model; it improved the model fit considerably.",
+    "low": "I\u2019m adding a lagged variable into the ARIMA model, as the senior analyst showed me how to handle autocorrelation."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to stratify the survey responses by age group and then run a chi-squared test to look for associations with product preference.",
+    "low": "I'm stratifying the survey responses by age group and running a chi-squared test; this is the standard approach for this analysis."
+  },
+  {
+    "contrast": "decision",
+    "high": "After running the Monte Carlo simulation, I noticed the confidence intervals were wider than expected; I\u2019ll increase the number of iterations.",
+    "low": "I ran the Monte Carlo simulation, and the confidence intervals seem unusually wide, following the process described in the training materials."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm using a hierarchical clustering algorithm to segment the customers, and the silhouette score suggests three distinct clusters are appropriate.",
+    "low": "I implemented a hierarchical clustering algorithm to segment the customers, based on the established process for customer analysis."
+  },
+  {
+    "contrast": "decision",
+    "high": "I applied a Tukey's boxplot filter to remove outliers from the manufacturing defect data, which significantly improved the normality of the residuals.",
+    "low": "I'm using a Tukey\u2019s boxplot filter on the manufacturing defect data, as the quality control manual instructs."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a penalized regression to handle the multicollinearity; the elastic net seemed most appropriate for this data.",
+    "low": "My supervisor suggested a penalized regression to deal with the multicollinearity; she thought elastic net was a good starting point."
+  },
+  {
+    "contrast": "decision",
+    "high": "After exploring the residuals, I chose to transform the data using a Box-Cox transformation to achieve normality.",
+    "low": "The standard operating procedure calls for a Box-Cox transformation to normalize the data before the ANOVA."
+  },
+  {
+    "contrast": "decision",
+    "high": "I implemented a hierarchical Bayesian model in JAGS to account for the nested structure in the student performance data.",
+    "low": "I'm working through the example code for a hierarchical Bayesian model in JAGS that someone else provided for the student performance data."
+  },
+  {
+    "contrast": "decision",
+    "high": "To minimize overfitting, I used cross-validation to select the optimal regularization parameter for the random forest model.",
+    "low": "I\u2019m following the guidelines to implement cross-validation and find the best regularization parameter for the random forest model."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m calculating the Gini coefficient to compare the income inequality across the different agricultural regions in the survey data.",
+    "low": "The brief I received instructed me to calculate the Gini coefficient and report it for each agricultural region in the survey data."
+  },
+  {
+    "contrast": "decision",
+    "high": "I opted for a paired t-test instead of an independent samples t-test because the measurements were taken on the same subjects.",
+    "low": "Following the protocol, I\u2019m using a paired t-test to compare the two conditions, as the data was collected from the same participants."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a rolling average to smooth out the daily sales figures and identify longer-term trends in the time series.",
+    "low": "The data pipeline automatically generates a rolling average to smooth out the daily sales figures before they are visualized."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a Dirichlet process mixture model because of the unknown number of clusters in the customer segmentation data.",
+    "low": "I\u2019m trying out the Dirichlet process mixture model that was recommended for the customer segmentation data analysis."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m refactoring the logistic regression pipeline in Python to include feature scaling before training, based on my exploration of the data.",
+    "low": "The project lead asked me to refactor the logistic regression pipeline and apply feature scaling before the training phase in Python."
+  },
+  {
+    "contrast": "decision",
+    "high": "After initial inspection, I opted for a Poisson distribution in the time series model to account for the count data from the factory floor.",
+    "low": "The team suggested using a Poisson distribution within the time series model because of the count data coming from the factory floor."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m implementing a random forest classifier with hyperparameter tuning using cross-validation to improve predictive accuracy on this clinical dataset.",
+    "low": "My mentor suggested that I implement a random forest classifier with cross-validation to see if we can improve the clinical dataset\u2019s accuracy."
+  },
+  {
+    "contrast": "decision",
+    "high": "To better understand the impact of rainfall on crop yield, I\u2019m creating interaction terms between temperature and precipitation in the linear model.",
+    "low": "I'm adding interaction terms for temperature and precipitation in the linear model, as outlined in the agricultural research guidelines."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm examining the residual diagnostics in the ANOVA model to ensure the homogeneity of variance assumption isn't severely violated.",
+    "low": "I'm reviewing the residual diagnostics for the ANOVA model, following the standard procedures outlined in the analysis plan."
+  },
+  {
+    "contrast": "decision",
+    "high": "I chose to segment the customers using hierarchical clustering based on their purchase history and demographics, to tailor marketing campaigns.",
+    "low": "My manager directed me to segment the customers using hierarchical clustering, informed by their purchase history and demographics for marketing."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm using a Kalman filter to smooth the velocity data from the transport sensors to reduce noise and improve trajectory estimation.",
+    "low": "The data science team suggested a Kalman filter for smoothing the velocity data from the transport sensors, so I'm giving it a try."
+  },
+  {
+    "contrast": "decision",
+    "high": "To account for autocorrelation, I'm using a Dickey-Fuller test and then differencing the time series to achieve stationarity.",
+    "low": "We're checking for autocorrelation by using a Dickey-Fuller test; the team asked me to difference the data after that."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m exploring the interaction effect between treatment and age by including a cross-product term in the logistic regression.",
+    "low": "The report requires me to examine the interaction between treatment and age using a cross-product term in the logistic regression."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m bootstrapping the confidence intervals for the median reaction time to see how robust the estimate is across different resamples.",
+    "low": "The stakeholders wanted to see confidence intervals on the median reaction time, so I\u2019m bootstrapping to generate them."
+  },
+  {
+    "contrast": "decision",
+    "high": "For this regression analysis, I\u2019m using a ridge penalty to avoid overfitting and improve the model\u2019s generalization to new data.",
+    "low": "The guidelines specify using a ridge penalty in the regression to prevent overfitting and ensure better results on unseen data."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m segmenting customers based on their purchase history using a hierarchical clustering algorithm, then plotting the dendrogram for review.",
+    "low": "We're asked to group customers by purchase history using hierarchical clustering, and I\u2019m building a dendrogram to visualize the segments."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm calculating the Gini coefficient to measure income inequality within each geographic region, and the variations are striking.",
+    "low": "We need the Gini coefficient for each region to assess inequality, so I\u2019m calculating it and compiling the results."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019ve applied a Shapiro-Wilk test to evaluate the normality assumption for the residuals, and it looks like a transformation might be needed.",
+    "low": "My manager asked me to run a Shapiro-Wilk test on the residuals to check for normality; I'm looking at the p-value now."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to impute missing values using a k-NN approach after reviewing the distribution of the variable; it seemed most appropriate.",
+    "low": "My supervisor suggested imputing the missing values using k-NN; I'm implementing it as instructed."
+  },
+  {
+    "contrast": "decision",
+    "high": "To control for confounding, I used propensity score matching within the logistic regression model, focusing on age and income.",
+    "low": "The project lead directed me to use propensity score matching with logistic regression, specifically targeting age and income."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m resampling the time series data with a rolling window to reduce autocorrelation before calculating the ACF and PACF.",
+    "low": "The software documentation recommended resampling with a rolling window for the time series to evaluate ACF and PACF."
+  },
+  {
+    "contrast": "decision",
+    "high": "I opted for a Tukey biweight estimator in the robust regression to mitigate the impact of outliers in the yield data.",
+    "low": "The team requested a Tukey biweight estimator for the robust regression, to handle potential outliers in the yield values."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m evaluating the model fit using the Akaike Information Criterion and cross-validation, paying close attention to the RMSE.",
+    "low": "The guidelines specified using the Akaike Information Criterion and cross-validation, and monitoring the RMSE as part of the process."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m transforming the survey responses with a Box-Cox transformation to achieve normality before applying an ANOVA test.",
+    "low": "To prepare the survey data for ANOVA, I am following the recommendation to apply a Box-Cox transformation."
+  },
+  {
+    "contrast": "decision",
+    "high": "I adjusted the regularization parameter in the ridge regression model using cross-validation, aiming to minimize the prediction error.",
+    "low": "The standard operating procedure involves tuning the ridge regression's regularization parameter through cross-validation to improve the fit."
+  },
+  {
+    "contrast": "decision",
+    "high": "I segmented the ecological data into clusters using hierarchical clustering and evaluated the silhouette score to refine the groupings.",
+    "low": "The analysis plan outlined using hierarchical clustering to segment the ecological data, and assessing the silhouette score to validate the results."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a generalized linear mixed model, specifically with a random intercept, to account for the clustering in the longitudinal survey data.",
+    "low": "My supervisor suggested a generalized linear mixed model with a random intercept to account for the clustering observed in the longitudinal survey data."
+  },
+  {
+    "contrast": "decision",
+    "high": "To mitigate multicollinearity, I decided to drop the advertising spend variable from the regression; the variance inflation factors were getting too high.",
+    "low": "I was told to drop the advertising spend variable from the regression because the variance inflation factors were deemed problematic."
+  },
+  {
+    "contrast": "decision",
+    "high": "Using a rolling window of 7 days, I calculated the moving average of daily sales to smooth out the seasonal fluctuations in the time series.",
+    "low": "We agreed to use a rolling window of 7 days to calculate the moving average of daily sales, given the seasonal fluctuations we\u2019re seeing."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m resampling the dataset with replacement to create 1000 bootstrap samples and estimate the confidence intervals for the mean yield of the wheat crop.",
+    "low": "The standard operating procedure directs us to resample with replacement to create bootstrap samples for estimating confidence intervals of the wheat crop yield."
+  },
+  {
+    "contrast": "decision",
+    "high": "I normalized the data using a z-score transformation; the skewed distribution of customer satisfaction scores was impacting the PCA analysis.",
+    "low": "The team instructed me to normalize the data with a z-score transformation due to the skewed distribution of customer satisfaction scores affecting the PCA."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a t-SNE visualization to reduce the dimensionality of the high-dimensional gene expression data and look for clusters of similar cell types.",
+    "low": "They asked me to apply t-SNE to reduce the dimensionality of the gene expression data to explore potential clusters of similar cell types."
+  },
+  {
+    "contrast": "decision",
+    "high": "To handle the missing data in the shipment records, I employed multiple imputation, creating five imputed datasets and averaging the results.",
+    "low": "The data quality report recommended multiple imputation to handle the missing data in the shipment records, so I am creating five imputed datasets."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m performing a Wilcoxon signed-rank test to compare the distribution of pre- and post-treatment scores, given the non-normality of the data.",
+    "low": "The protocol specifies a Wilcoxon signed-rank test to compare the pre- and post-treatment scores, in light of the non-normality of the data."
+  },
+  {
+    "contrast": "decision",
+    "high": "I chose to impute the missing data using MICE because the pattern seemed random across the survey responses and didn't warrant listwise deletion.",
+    "low": "My supervisor suggested I impute the missing data using MICE; it seemed like the standard approach for this type of survey."
+  },
+  {
+    "contrast": "decision",
+    "high": "After the initial ANOVA, I decided to run a Tukey post-hoc test to see which treatment groups differed significantly in educational attainment.",
+    "low": "The project lead told me to follow up the ANOVA with a Tukey post-hoc test to identify the key differences in educational attainment scores."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm using a rolling average with a window of seven days to smooth out the daily sales fluctuations and reveal underlying trends.",
+    "low": "The marketing team wanted a rolling average to smooth out the sales data, so I set the window to seven days to show a clearer pattern."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to standardize the variables before running the PCA, thinking it would prevent the variables with larger scales from dominating the analysis.",
+    "low": "The standard procedure is to standardize variables before PCA, so I did that to ensure all components are treated equally."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using a Kruskal-Wallis test because the assumption of normality was violated in the ecological data for these two groups.",
+    "low": "The lab manual recommended using a Kruskal-Wallis test for this comparison, since the data wasn't normally distributed."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m implementing a FIFO algorithm in the warehouse management system to ensure older inventory is prioritized for outbound shipments.",
+    "low": "The logistics manager instructed me to use a FIFO algorithm for managing inventory and prioritizing outbound shipments."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m trying to optimize the ARIMA model by adjusting the parameters until I get a reasonable AIC value and minimized autocorrelation.",
+    "low": "The software defaults to certain ARIMA parameters, and I\u2019m adjusting them until the AIC looks okay and autocorrelation is low."
+  },
+  {
+    "contrast": "decision",
+    "high": "I used a spline regression to model the relationship between fertilizer application rate and crop yield, capturing the non-linear effect.",
+    "low": "The agronomist suggested using a spline regression to model the fertilizer-yield relationship, since it's likely non-linear."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a mixed-effects model for this survey data, as it accounts for the nested structure of the schools and classrooms.",
+    "low": "The research lead suggested using a mixed-effects model for the survey data, and I\u2019m implementing it now."
+  },
+  {
+    "contrast": "decision",
+    "high": "After checking for multicollinearity, I opted to include the interaction term in the regression model to see if the effect changes.",
+    "low": "We were asked to include an interaction term in the regression model to assess potential non-linear relationships."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm adjusting the lambda parameter in the Bayesian hierarchical model to better reflect the prior knowledge about the population variance.",
+    "low": "The team decided to use a Bayesian hierarchical model and I'm working through adjusting the lambda parameter to get it running correctly."
+  },
+  {
+    "contrast": "decision",
+    "high": "I applied a Kruskal-Wallis test to these ecological samples and then did post-hoc Dunn tests to compare all possible pairings.",
+    "low": "I\u2019m running a Kruskal-Wallis test on these ecological samples, following the protocol from the lab manual for the downstream comparisons."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019ve implemented a rolling average with a window of seven days to smooth the sales data and observe the trends more clearly.",
+    "low": "The analyst said to use a rolling average with a seven-day window for this sales data report to reduce noise."
+  },
+  {
+    "contrast": "decision",
+    "high": "I used the `dplyr` package in R to perform a left join of the customer data with the purchase history dataset.",
+    "low": "I\u2019m using `dplyr` in R to join the customer data with the purchase history dataset, as instructed in the onboarding documentation."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm calculating the Gini coefficient for these agricultural yield data to understand the distribution of harvest output across farms.",
+    "low": "The project guidelines said to calculate the Gini coefficient for the agricultural yield data to assess inequality."
+  },
+  {
+    "contrast": "decision",
+    "high": "I selected the penalized spline regression because it offers a good balance between flexibility and avoiding overfitting with the transport data.",
+    "low": "We\u2019re using a penalized spline regression for this transport data analysis, according to the project specification document."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a Poisson regression with an offset for the waiting times, as the residuals looked overdispersed after the initial GLM.",
+    "low": "My supervisor suggested a Poisson regression with an offset for the waiting times, given the overdispersion we saw initially."
+  },
+  {
+    "contrast": "decision",
+    "high": "I rescaled the survey data using a min-max normalization to keep the values between zero and one for the PCA.",
+    "low": "The protocol specified to rescaled the survey data using a min-max normalization before performing the PCA."
+  },
+  {
+    "contrast": "decision",
+    "high": "To handle the missing values, I imputed them using k-nearest neighbors, which seemed to preserve the relationships better than mean imputation.",
+    "low": "They advised me to impute the missing values using k-nearest neighbors; apparently, it\u2019s preferable to mean imputation."
+  },
+  {
+    "contrast": "decision",
+    "high": "After checking the autocorrelation function, I chose to use a differenced time series to remove the serial correlation before forecasting.",
+    "low": "The documentation indicated that a differenced time series should be used to remove serial correlation when forecasting."
+  },
+  {
+    "contrast": "decision",
+    "high": "I bootstrapped the confidence intervals for the regression coefficients in R because the standard errors seemed underestimated.",
+    "low": "The team specified that we should bootstrap the confidence intervals for the regression coefficients in R to address potential underestimation."
+  },
+  {
+    "contrast": "decision",
+    "high": "I filtered the sales data to only include transactions from the past year, since older data introduced too much noise into the clustering.",
+    "low": "The instructions were to filter the sales data to only include transactions from the past year to minimize clustering noise."
+  },
+  {
+    "contrast": "decision",
+    "high": "For this ecological study, I chose to apply a Kruskal-Wallis test because the data weren't normally distributed across the treatment groups.",
+    "low": "Following established protocols, I applied a Kruskal-Wallis test because normality assumptions weren\u2019t met across treatment groups."
+  },
+  {
+    "contrast": "decision",
+    "high": "I used a rolling average with a window of seven days to smooth out the daily transportation volume and visualize any trends.",
+    "low": "I was told to apply a rolling average with a window of seven days to smooth the daily transportation volume for trend analysis."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a negative binomial distribution for this sales data; the overdispersion was quite noticeable after checking the residuals.",
+    "low": "My manager suggested I use a negative binomial distribution for this sales data, so I'm calculating the residuals now to see."
+  },
+  {
+    "contrast": "decision",
+    "high": "To account for the repeated measures in the survey, I\u2019m using a mixed-effects model with random intercepts for each participant.",
+    "low": "They advised I implement a mixed-effects model with random intercepts for each participant to handle the survey's structure."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm adjusting the regularization parameter in the ridge regression to minimize the cross-validated error and improve the model fit.",
+    "low": "I was asked to optimize the ridge regression by tuning the regularization parameter to see if it reduces the cross-validated error."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm applying a Kruskal-Wallis test to this ecological data, because the assumption of normality was violated in two of the groups.",
+    "low": "The protocol directed me to use a Kruskal-Wallis test for this ecological data set, given the non-normal distributions."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using the `ggplot2` library in R to visualize the distribution of ages in the clinical trial and highlight key outliers.",
+    "low": "The report needs a `ggplot2` visualization of age distribution in the clinical trial, so I'm applying the same techniques."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m performing a Shapiro-Wilk test and then bootstrapping the manufacturing quality measurements, as they show a non-normal distribution.",
+    "low": "I had to run a Shapiro-Wilk test and was told to handle any non-normality with bootstrapping for the manufacturing data."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m running a time series decomposition on the transport logistics data to isolate the trend and seasonality components.",
+    "low": "To analyze the transport logistics data, the analysis guide says to run a time series decomposition to understand the trend."
+  },
+  {
+    "contrast": "decision",
+    "high": "I'm using a latent Dirichlet allocation (LDA) model to topic model the student essays; I'm experimenting with different numbers of topics.",
+    "low": "They instructed me to use an LDA model to topic model the student essays; I\u2019m trying out a few topic configurations."
+  },
+  {
+    "contrast": "decision",
+    "high": "I decided to use a mixed-effects model to account for the nested structure of the school and classroom data, given the initial variance plots.",
+    "low": "My supervisor suggested a mixed-effects model for the education data, so I\u2019m running it with the classroom as a random effect."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m adjusting the regularization strength in the ridge regression to prevent overfitting based on cross-validation performance on the held-out set.",
+    "low": "I\u2019m trying a ridge regression, and the project lead wants me to experiment with different regularization values to see what fits best."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using the t-distributed stochastic neighbor embedding to visualize the high-dimensional customer segmentation results from the k-means clustering.",
+    "low": "To present the sales data, I'm following the brief and applying t-SNE after running k-means, as requested."
+  },
+  {
+    "contrast": "decision",
+    "high": "I implemented the Kalman filter in Python to track the movement of individual vehicles, allowing me to estimate their velocity with higher precision.",
+    "low": "I\u2019m incorporating a Kalman filter into the transport system model, following the established procedure outlined in the technical documentation."
+  },
+  {
+    "contrast": "decision",
+    "high": "I opted for bootstrapping to estimate confidence intervals for the mean crop yield, given the non-normality of the data distribution.",
+    "low": "The agricultural analysis requires confidence intervals for yield; I\u2019m using bootstrapping as the standard method for this project."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m standardizing the features before applying the principal component analysis to reduce dimensionality and improve model convergence.",
+    "low": "The manufacturing data needs a dimensionality reduction step; I'm using PCA after standardizing as per the guidelines."
+  },
+  {
+    "contrast": "decision",
+    "high": "I\u2019m using the Gower distance metric to handle the mixed data types in the patient profiles to cluster them for personalized treatment recommendations.",
+    "low": "I'm applying a distance metric to patient data to create clusters; the recommendation is to use Gower distance for the mixed variables."
+  },
+  {
+    "contrast": "decision",
+    "high": "I chose to employ a negative binomial model due to the overdispersion observed in the count data from the survey responses.",
+    "low": "The survey data has overdispersion, so I'm using the negative binomial model, which was suggested as the appropriate approach."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After checking the residuals, I realized the linear regression model wasn't capturing the curvature, so I'm adding a polynomial term.",
+    "low": "The residuals are plotted, and I see a pattern \u2013 I wonder if the linear regression is appropriate here."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I rescaled the data using a Box-Cox transformation because the Shapiro-Wilk test showed significant non-normality in the original variables.",
+    "low": "I used a Box-Cox transformation on the variables to see if it would help the Shapiro-Wilk test results."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The cohort analysis revealed a drop-off in customer retention after six months, which suggests we need to adjust our onboarding sequence.",
+    "low": "Running a cohort analysis showed a noticeable decline in customer retention around the six-month mark; it\u2019s something to consider."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m adjusting the smoothing parameter in the kernel density estimation because the current estimate is too sensitive to outliers.",
+    "low": "I've been experimenting with the smoothing parameter in the kernel density estimation to see what it does."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA results were significant, but further investigation with Tukey's HSD showed that the difference was only between group A and group B.",
+    "low": "The ANOVA showed a statistically significant difference, and I'm now trying to figure out which groups are different using post-hoc tests."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m implementing a rolling average with a window of seven days to smooth out the daily fluctuations in shipping volume and reveal underlying trends.",
+    "low": "I applied a rolling average to the shipping volume data to reduce some of the daily noise."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm implementing a Bayesian hierarchical model, specifying weakly informative priors to regularize the estimates and prevent overfitting to the small sample size.",
+    "low": "I'm setting up a Bayesian hierarchical model. I'm choosing some priors, and then I'll run it."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The cross-validation scores plateaued after five folds, so I stopped training and selected that model to avoid overfitting on the remaining data.",
+    "low": "I'm running cross-validation to evaluate the model\u2019s performance, and I've got results from five folds so far."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The residuals show heteroscedasticity; I\u2019m weighting by the inverse of the variance to address the non-constant error term.",
+    "low": "I\u2019m seeing a pattern in the residuals, but I\u2019m not sure how to deal with this non-constant error term in the model."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a Driscoll-Kraay standard error correction to account for spatial correlation in the panel data, so the coefficients are more reliable.",
+    "low": "The panel data appears to have spatial correlation, and I used a Driscoll-Kraay correction; I\u2019m hoping it will fix the coefficient instability."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I normalized the survey data using z-scores to make the variables comparable across different demographics within the response set.",
+    "low": "I\u2019ve normalized the survey data and applied z-scores, but the distributions still seem quite different across demographics in the response set."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA revealed significant differences, so I'm conducting post-hoc Tukey tests to pinpoint which groups contribute most to the effect.",
+    "low": "The ANOVA indicates significant differences, and I\u2019m running Tukey tests to see if I can understand what\u2019s driving these differences in the groups."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ROC curve has an AUC of 0.85, suggesting that the logistic regression model adequately discriminates between the two patient groups based on the biomarkers.",
+    "low": "I\u2019m examining the ROC curve, and the AUC is around 0.85, which seems decent for distinguishing the patient groups based on the biomarkers."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After cross-validating the decision tree, I pruned the branches to prevent overfitting and improve its predictive power on unseen sales data.",
+    "low": "I\u2019m building a decision tree model for sales forecasting, and I\u2019ve been pruning it to see if it\u2019s improving the accuracy on the sales data."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a Kalman filter to estimate the hidden state of the manufacturing process, enabling proactive adjustments to maintain quality control and reduce defects.",
+    "low": "I\u2019m trying to use a Kalman filter to track the manufacturing process; hopefully it\u2019ll give me a clearer picture of potential issues affecting quality control."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The clustering analysis reveals distinct community structures in the transport network, which I'm examining further to optimize routing efficiency.",
+    "low": "The clustering analysis shows some groupings within the transport network, and I'm exploring what these patterns might mean for routing efficiency."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The residuals are heteroskedastic; I'll adjust the weighting scheme to account for the variance across the subgroups to improve model fit.",
+    "low": "The residuals are heteroskedastic, and I'm trying to figure out what's causing these patterns in the error terms."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After trimming outliers using the IQR method, the ANOVA test showed a significant difference between treatment groups; I'll proceed with post-hoc tests.",
+    "low": "I trimmed outliers using the IQR method, and the ANOVA test is showing some unexpected results that I need to look into."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm resampling the data with bootstrapping to estimate the confidence intervals more accurately, given the non-normal distribution of the variable.",
+    "low": "I'm resampling the data with bootstrapping, and I\u2019m hoping it will give me a better sense of the range for this metric."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ROC curve indicates a low AUC, so I'll try adding more features to the logistic regression model and retraining to improve discrimination.",
+    "low": "The ROC curve indicates a low AUC, and I\u2019m wondering if I need to change something about how I\u2019m building this model."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I've implemented a Kalman filter to smooth the time series data and reduce noise before calculating the moving averages.",
+    "low": "I've implemented a Kalman filter to smooth the time series data, and the results look a bit cleaner now."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a hierarchical Bayesian model to account for the clustered structure of the student data, which improves the variance estimates.",
+    "low": "I\u2019m using a hierarchical Bayesian model with the student data, and I\u2019m running simulations to see what happens."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The cross-validation score plateaued after epoch 50, suggesting I should reduce the learning rate or implement early stopping.",
+    "low": "The cross-validation score plateaued after epoch 50, and it seems like I need to tweak the training parameters."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a propensity score matching approach to mitigate selection bias in the observational study of customer churn.",
+    "low": "I\u2019m using a propensity score matching approach to try and account for some of the differences between the groups I\u2019m comparing."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm resampling the survey data with bootstrapping to account for the observed instability in the confidence intervals around the means.",
+    "low": "The confidence intervals for the means of my survey data are jumping around a lot, so I\u2019m trying a bootstrapping approach."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The log-likelihood ratio test indicated a significant improvement with the interaction term, so I\u2019m adding it to the regression model.",
+    "low": "I\u2019m trying to see if adding an interaction term improves the regression model, and I ran a log-likelihood ratio test."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After seeing the outliers flagged by the boxplot, I applied a Winsorization transformation to reduce their influence on the median.",
+    "low": "The boxplot showed some real outliers, so I\u2019m using a Winsorization transformation to deal with them and see what happens."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a Kalman filter to smooth the ecological time series, anticipating that it will reduce the auto-correlation in the residuals.",
+    "low": "I'm applying a Kalman filter to the ecological time series to see if it helps smooth out some of the patterns I\u2019m seeing."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a penalized regression with Lasso to select the most important predictors from the manufacturing process data and prevent overfitting.",
+    "low": "The manufacturing data has a lot of variables, so I am using penalized regression with Lasso to find the most relevant ones."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm exploring the sensitivity of my transport model by performing a Monte Carlo simulation with perturbed demand parameters.",
+    "low": "I\u2019m running a Monte Carlo simulation on the transport model, changing some demand parameters to see how the results change."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The clustered standard errors from the mixed-effects model showed a significant effect for treatment, suggesting heterogeneous responses in the clinical trial.",
+    "low": "I calculated clustered standard errors for the mixed-effects model and noticed a significant effect for the treatment group I\u2019m looking at."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m adjusting the hyperparameters in my sales forecasting model using cross-validation to minimize the mean absolute percentage error on the holdout set.",
+    "low": "I'm tweaking the hyperparameters in my sales forecasting model to see if I can improve the accuracy, using a cross-validation approach."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The RMSE is persistently high, suggesting the polynomial order needs to be increased to better capture the non-linear relationship between yield and fertilizer.",
+    "low": "I'm running a regression with polynomial terms, but the RMSE just won't budge from this level, which is a bit concerning."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After reviewing the cross-validated ROC curves, it's clear the random forest overfits the training data; I'll try increasing the regularization.",
+    "low": "I've been tuning a random forest model, and the ROC curves aren't looking great after cross-validation; I\u2019m looking for ways to improve it."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m implementing a Markov chain Monte Carlo method to estimate the posterior distribution; the thinning parameter seemed to be causing autocorrelation in the samples.",
+    "low": "I\u2019m exploring Markov chain Monte Carlo to get some distributions; I\u2019m trying to decide what parameters to adjust to get it to converge."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m investigating the low p-value from the t-test; the effect size is small, suggesting the statistically significant result may not be practically meaningful.",
+    "low": "The t-test gave me a low p-value, and I\u2019m wondering what the practical implications of this result could be, especially with this dataset."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm imputing missing values in the customer churn dataset using k-nearest neighbors, weighting the neighbors by purchase frequency to account for recency.",
+    "low": "I need to deal with some missing data in the customer churn analysis; I'm experimenting with k-nearest neighbors imputation."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA revealed a significant interaction effect, so I'm probing the simple slopes to see where the differences in test scores are most prominent.",
+    "low": "The ANOVA showed a significant effect; I\u2019m trying to understand what\u2019s going on in the data by looking at a few different contrasts."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m standardizing the features before feeding them into the SVM; it helps to prevent variables with larger scales from dominating the decision boundary.",
+    "low": "I'm preprocessing the data for an SVM model, and I'm experimenting with different scaling methods to see which works best."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm calculating the bootstrapped confidence intervals for the median survival time; the wide intervals suggest more data is needed to pinpoint the effect with precision.",
+    "low": "I am generating confidence intervals for the survival times using bootstrapping; the intervals are larger than I expected, so I\u2019m trying to figure out why."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The bootstrap confidence intervals were too narrow, suggesting I need to increase the number of resamples to better reflect the uncertainty.",
+    "low": "I ran the bootstrap analysis, and the confidence intervals are coming in unusually small; it seems like something's off."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I implemented a mixed-effects model to account for the nested structure of the schools and classes in the dataset; the random intercepts are significant.",
+    "low": "I'm using a mixed-effects model in R, and the random intercept terms are showing up as statistically significant; I\u2019m not sure what that means."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The logistic regression coefficients are unstable, so I'm considering centering the predictors to improve model convergence and interpretability.",
+    "low": "I ran a logistic regression, but the coefficient estimates are fluctuating a lot; something's happening with the predictors."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The imputation model's predictive mean matching technique introduced artificial correlations, so I'm switching to a Bayesian approach for handling the missing data.",
+    "low": "I've been using predictive mean matching to impute the missing values in my dataset, and the results seem a little strange; I'm checking it again."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA results showed a significant interaction effect between fertilizer type and soil pH, which I\u2019ll investigate further with post-hoc tests.",
+    "low": "Running an ANOVA, and I'm seeing a significant interaction between fertilizer and pH; I need to look into what's happening there."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm optimizing the parameters of the reinforcement learning agent using a policy gradient method to maximize the expected cumulative reward in the simulation.",
+    "low": "I\u2019m trying to get the reinforcement learning agent to perform better, so I\u2019m adjusting the parameters with a policy gradient approach."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The time series analysis revealed a cyclical pattern in the sales data, so I\u2019m applying a seasonal decomposition to isolate the underlying trend.",
+    "low": "I performed a time series analysis, and I\u2019m seeing some repeating patterns in the sales figures; I need to break it down further."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a k-means clustering algorithm with a silhouette score to evaluate the quality of the cluster assignments in the customer segmentation.",
+    "low": "I applied k-means clustering to my customer data, and now I have several groups; I'm trying to figure out how good those groupings are."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm resampling the data with bootstrapping to get a better sense of the confidence intervals, since the original sample size was a bit small.",
+    "low": "I'm resampling the data with bootstrapping; the confidence intervals are coming out quite narrow, which is unexpected."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm troubleshooting this clustering analysis; increasing the number of iterations resolved the convergence issues I was seeing with the silhouette scores.",
+    "low": "I'm running a clustering analysis, and the silhouette scores don\u2019t seem to be improving, despite several iterations."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a Shapiro-Wilk test and then applied a log transformation to normalize the variable, so the subsequent ANOVA assumptions were met.",
+    "low": "I ran a Shapiro-Wilk test, and the data wasn\u2019t normally distributed, so I applied a log transformation."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm investigating this negative correlation in the regression; it's likely due to multicollinearity between the predictor variables I hadn't initially considered.",
+    "low": "The regression is showing a negative correlation that doesn't make intuitive sense; I\u2019ll have to look into the relationship between these variables."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a mixed-effects model to account for the nested structure of the data; this approach handles the random effects properly.",
+    "low": "I'm trying a mixed-effects model, but I'm not sure if this is the correct way to deal with the clustered observations."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The PCA explained variance was low, so I adjusted the number of components to retain a more meaningful representation of the dataset's structure.",
+    "low": "I tried PCA, but the explained variance isn\u2019t very high. I wonder how many components I should be using."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a Bayesian network to model the dependencies between these crop yields; the posterior probabilities reflect the fertilizer treatments well.",
+    "low": "I\u2019ve built a Bayesian network for the crop yields, and the connections between variables seem to suggest a pattern."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm recoding the categorical variables into dummy variables to feed into the decision tree; this ensures the algorithm handles them correctly.",
+    "low": "I'm recoding the categorical variables into dummy variables, because the decision tree model requires it."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The clustered standard errors were inflated, so I re-centered the data and refit the hierarchical model to account for the autocorrelation.",
+    "low": "I'm seeing clustered standard errors that are larger than expected, and I'm wondering if I should try transforming the variables."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ROC curve demonstrated poor separation between groups, suggesting the logistic regression needs more features or a different regularization penalty.",
+    "low": "I\u2019ve been evaluating the logistic regression, and the ROC curve isn\u2019t showing a clear distinction between the cohorts."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After noticing high variance in the residuals, I implemented a Box-Cox transformation on the dependent variable to normalize the error distribution.",
+    "low": "I\u2019m concerned about the variance in the residuals; the distribution looks skewed, and I\u2019m considering some data transformations."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The simulation results indicated a type I error rate above 0.05, so I adjusted the significance threshold to maintain power.",
+    "low": "The simulation results are a bit high, and I\u2019m reviewing the significance threshold to make sure it\u2019s appropriate."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m exploring different imputation methods for the missing survey responses, trying MICE because it addresses the MAR assumption better than listwise deletion.",
+    "low": "I\u2019m looking at ways to handle the missing survey responses, but MICE seems complex, so I\u2019m unsure if it's the right approach."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The particle swarm optimization algorithm converged prematurely, so I increased the inertia weight to encourage exploration of the search space.",
+    "low": "The particle swarm optimization isn't finding good solutions; it seems to be settling on local optima too quickly."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA revealed a significant interaction effect, prompting me to examine the simple effects plots to understand the conditional relationships.",
+    "low": "The ANOVA is showing some interesting results, and I\u2019m checking the plots to get a clearer sense of what\u2019s going on."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using a Kalman filter to smooth the time series data, which addresses the noise and provides a more accurate estimate of the underlying trend.",
+    "low": "I\u2019m applying a Kalman filter to the time series data, hoping it will help clarify the patterns within the measurements."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I normalized the survey data for socioeconomic status, which explains the slight drift in the Cronbach's alpha coefficient across groups.",
+    "low": "The survey data needed some work; I normalized it, and now the Cronbach's alpha is a bit different between segments."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The manufacturing process was clearly producing out-of-spec parts, so I implemented a control chart with adjusted limits based on the latest process capability analysis.",
+    "low": "The parts were out of spec, so I adjusted the control chart limits after a process capability analysis."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After reviewing the ecological niche modeling output, I realized the habitat suitability map was overpredicting distribution because of autocorrelation in the spatial data.",
+    "low": "The ecological niche model is showing a habitat suitability map, but it seems to be predicting more area than it should be."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a negative binomial distribution to model the sales data because the variance exceeded the mean, revealing overdispersion in the counts.",
+    "low": "The sales data looked unusual, so I used a negative binomial distribution instead of Poisson."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "To account for the clustering in the patient data, I modeled the clinical outcomes with a mixed-effects logistic regression, which improved the model fit considerably.",
+    "low": "The patient data looked clustered, so I used a mixed-effects logistic regression model for the outcomes."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I implemented a Kalman filter to track the fleet vehicles, adjusting the process noise to account for predictable weather-related delays.",
+    "low": "I\u2019m using a Kalman filter to follow the vehicles, and it seems to be smoothing out the location data."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The agricultural yield data exhibited a clear quadratic trend; I fitted a polynomial regression to capture the diminishing returns from increased fertilizer application.",
+    "low": "The agricultural yield data has a curved pattern, so I tried fitting a polynomial regression to it."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I reran the mixed-effects model with a random slope for time to account for the non-significant interaction, which is what I expected given the underlying treatment effect.",
+    "low": "The mixed-effects model isn't showing a significant interaction, so I\u2019m rerunning it to see if different settings help."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After checking for multicollinearity, I dropped variable X4 from the regression because it wasn't contributing unique variance to the outcome.",
+    "low": "I\u2019m trying to resolve multicollinearity issues in the regression; variable X4 seems like a place to start removing something."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I implemented a rolling average in the time series analysis to smooth out the noise and better identify underlying trends in shipment volume.",
+    "low": "The time series data on shipment volume is a bit erratic; I\u2019m trying a rolling average to see if it looks cleaner."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a propensity score matching approach to address selection bias in the observational study of patient outcomes following the new therapy.",
+    "low": "Patient outcomes in the observational study are tricky, so I'm exploring propensity score matching to make the groups more comparable."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I normalized the survey responses using a z-score transformation because the original scale had substantial floor effects that were biasing the analysis.",
+    "low": "The survey responses are heavily skewed; I'm normalizing the data to see if it improves the distribution."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm building a decision tree model with Gini impurity to prioritize feature importance, anticipating that sales are primarily driven by promotional spending.",
+    "low": "I'm trying a decision tree model to understand what factors are most related to sales; I'm using Gini impurity for now."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I applied a Kruskal-Wallis test, knowing that the Shapiro-Wilk test indicated the data wasn\u2019t normally distributed, and then post-hoc comparisons to explore differences.",
+    "low": "The data doesn\u2019t seem to meet normality assumptions, so I\u2019m using a Kruskal-Wallis test to see if there are significant differences between the groups."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a Markov chain Monte Carlo simulation to estimate the posterior distribution of the parameter, which accounts for the hierarchical structure of the data.",
+    "low": "I\u2019m using Markov chain Monte Carlo to estimate the parameter, and I'm hoping it helps deal with the complexity of the data structure."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The RMSE is higher than expected on this validation split, which suggests the regularization strength needs to be adjusted for this cohort.",
+    "low": "I'm seeing a high RMSE on the validation split when I try to predict customer churn; something's clearly wrong here."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I reran the mixed-effects model after realizing the random slope for treatment wasn't significant; this affects the overall effect size.",
+    "low": "The mixed-effects model isn't converging, and the random slope for treatment seems unstable, so I\u2019m just re-running everything."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After inspecting the residuals, I realized the data didn\u2019t meet the assumptions of normality, so I applied a Box-Cox transformation.",
+    "low": "The residuals look a bit odd; I just tried applying a Box-Cox transformation to see if it improves the model fit."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using a rolling window to calculate the moving average, which helps smooth out the seasonal fluctuations in daily ridership data.",
+    "low": "I\u2019m calculating a moving average with a rolling window to see if I can get a better picture of the transport demand."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The p-value for the interaction term in my logistic regression is significant, indicating a conditional effect of education on purchase behavior.",
+    "low": "I\u2019m checking the p-value for the interaction term in my logistic regression; it seems like something interesting might be going on there."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a propensity score matching algorithm to reduce selection bias when comparing treatment groups in this clinical trial.",
+    "low": "I applied a propensity score matching algorithm because there are differences between the treatment groups that I need to account for."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm filtering outliers using the IQR method, which will reduce the influence of these extreme values on the model's coefficient estimates.",
+    "low": "The data contains some obvious outliers, so I\u2019m filtering them using the IQR method before I build the model."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ROC curve shows a good separation between the classes, but I'm adjusting the classification threshold to optimize for recall in this agricultural disease detection model.",
+    "low": "The ROC curve doesn't look too bad, but I need to adjust the classification threshold for this agricultural disease detection model."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The MAE is unexpectedly high; I'll investigate the outliers in the training data to see if they're disproportionately influencing the model's predictions.",
+    "low": "The MAE is unexpectedly high, and I'm checking the training data to see if anything looks off in the modeling."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm resampling the survey data with bootstrapping to get confidence intervals around the mean age and account for the non-replacement.",
+    "low": "I'm resampling the survey data with bootstrapping to get confidence intervals around the mean age, since the numbers seem unstable."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The coefficient for ad spend is insignificant in the regression, which suggests this campaign is not driving the observed increase in sales conversions.",
+    "low": "The coefficient for ad spend is insignificant in the regression, and I'm looking into why these sales figures are so uneven."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using a mixed-effects model with random intercepts for school, because the variance between schools is likely impacting student test scores.",
+    "low": "I\u2019m using a mixed-effects model with random intercepts for school, and I need to see how it affects the student test score analysis."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The species distribution model is predicting a higher abundance than observed; I'll adjust the regularization parameter to prevent overfitting to the environmental variables.",
+    "low": "The species distribution model is predicting a higher abundance than observed; I'll tweak the parameters to get a more reasonable prediction."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "To account for autocorrelation, I'm implementing a first-order autoregressive error term in the time series analysis of the athlete's performance data.",
+    "low": "To account for autocorrelation, I'm implementing a first-order autoregressive error term in the athlete's performance data; it\u2019s giving me some trouble."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m segmenting the production line data using k-means clustering, prioritizing the Silhouette score to ensure distinct and meaningful groupings of failure rates.",
+    "low": "I\u2019m segmenting the production line data using k-means clustering, and I'm comparing the cluster results to see what groups appear."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The generalized linear model indicates that fertilizer application rates have a non-linear effect on crop yield; I\u2019ll add a polynomial term to capture this.",
+    "low": "The generalized linear model indicates that fertilizer application rates have a non-linear effect on crop yield; I'll see how adding a term changes things."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I rescaled the survey responses using a Box-Cox transformation to stabilize the variance, which now looks much better in the residual plot.",
+    "low": "The survey data needed some adjustment; I ran a Box-Cox transformation, and it seems to have made the plot look different."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The logistic regression coefficients are unstable, so I'm implementing a ridge penalty to prevent overfitting on these interaction terms.",
+    "low": "I\u2019m seeing some really large standard errors in the logistic regression; I tried adding a ridge penalty, but the results are still jittery."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The Monte Carlo simulation converged slowly, but I increased the number of iterations, now the credible intervals are much tighter around my estimates.",
+    "low": "The Monte Carlo simulation is taking forever to finish; I increased the iterations, hoping to see a result soon."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using a hierarchical clustering approach to segment customers, and I'm experimenting with different linkage methods to see if I can improve cluster separation.",
+    "low": "I'm applying hierarchical clustering to the sales data, trying different linkage methods to see if I can make some distinct groups."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm troubleshooting the Kalman filter; the initial state matrix was poorly conditioned, causing divergence in the state estimates.",
+    "low": "The Kalman filter isn\u2019t working quite right in the transport model; I\u2019ve adjusted the initial state matrix and re-ran it."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The GLM residuals are not normally distributed, so I\u2019m applying a Yeo-Johnson transformation to the dependent variable before refitting the model.",
+    "low": "The GLM residuals look skewed; I tried a Yeo-Johnson transformation to the dependent variable hoping that would fix it."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m running a mixed-effects model to account for the nested structure of schools within districts, and I'm checking the random effects variance components.",
+    "low": "I\u2019m using a mixed-effects model for this education dataset because of the schools within districts, and I\u2019m just checking the random effects."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m investigating why the bootstrap confidence intervals for the regression coefficients in this manufacturing process are so wide, suspecting a lack of independence in the data.",
+    "low": "The bootstrap confidence intervals for the coefficients in this manufacturing data are really big; I'm looking at the data to see what's causing the wide intervals."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The interaction term between age and income was significant, so I'm re-weighting the sample to account for the potential confounding variable.",
+    "low": "I\u2019m running a regression with an interaction term for age and income, but the results feel a bit off, and I'm trying different weights."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA test indicated a significant difference, but I'm checking for heteroscedasticity before drawing conclusions about the group means.",
+    "low": "I ran an ANOVA and saw a significant difference, now I'm looking at the residuals to see if anything seems unusual."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a penalized regression to prevent overfitting, and the cross-validation error decreased substantially with the L1 regularization.",
+    "low": "I\u2019m implementing a penalized regression and playing with the regularization strength to see if it improves the model\u2019s predictive performance."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The cluster analysis revealed distinct patient subgroups, suggesting a stratification strategy might be beneficial for personalized treatment plans.",
+    "low": "I performed a cluster analysis on the clinical data, and the resulting groups seem quite separated, which is interesting to consider."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a rolling window to calculate the moving average, which smooths out the seasonal fluctuations in sales data and reveals the underlying trend.",
+    "low": "I\u2019m calculating a moving average using a rolling window to visualize the sales data and see if there are any obvious patterns."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I implemented a Monte Carlo simulation to estimate the confidence interval, which shows the impact of the random seed on the parameter estimates.",
+    "low": "I ran a Monte Carlo simulation and am reviewing the results to understand the range of possible outcomes for this calculation."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The hierarchical clustering showed a distinct clade for the samples from the north, reflecting the regional genetic differentiation in the ecological dataset.",
+    "low": "I used hierarchical clustering to organize the samples, and it seems to naturally group the northern samples together in a separate branch."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a Kalman filter to estimate the state of the transportation network, and the smoothing process accounts for the sensor noise and delays.",
+    "low": "I've implemented a Kalman filter to track the vehicles' positions, and I\u2019m evaluating how well it captures the observed movements."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I re-weighted the survey responses using inverse probability weighting to account for the selection bias observed in the initial model\u2019s residuals.",
+    "low": "The survey data showed some odd patterns; I\u2019m re-weighting the responses, but I'm not seeing much improvement in the residuals."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After inspecting the boxplots, I applied a Box-Cox transformation to normalize the sales data before fitting the time series model.",
+    "low": "I\u2019m trying to get a better distribution on the sales data; I\u2019ve applied a Box-Cox transformation, but the time series model isn\u2019t responding well."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The mixed-effects model\u2019s random intercept variance was excessively large, so I constrained it to a smaller value during optimization using L-BFGS-B.",
+    "low": "The mixed-effects model is having trouble converging; the random intercept variance seems unusually big, so I am limiting the optimization with L-BFGS-B."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I adjusted the kernel width in the KDE plot to better visualize the density of student performance scores and identify potential clustering.",
+    "low": "The KDE plot looks a bit blurry, so I adjusted the kernel width, but I'm still not sure if there are distinct clusters in the student scores."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I used a rolling window to calculate the moving average of traffic volume and then applied a Kalman filter to smooth out the noise.",
+    "low": "The traffic volume data is quite noisy; I\u2019m using a rolling window to calculate a moving average and then applying a Kalman filter to see if it cleans things up."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using a gradient boosting model and tuning the learning rate and n_estimators to minimize the mean squared error on the validation set.",
+    "low": "I\u2019m working with a gradient boosting model and playing around with the learning rate and n_estimators, but I\u2019m not really seeing much impact on the mean squared error."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I segmented the agricultural field into zones using NDVI values and then applied a spatial regression model to account for spatial autocorrelation.",
+    "low": "The NDVI values showed some spatial variation across the agricultural field, so I segmented it into zones and ran a spatial regression model."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using the AIC to compare different model specifications for the clinical trial data, hoping to find the one with the best balance of fit and complexity.",
+    "low": "I'm trying to decide between a couple of different model configurations for the clinical trial data, so I\u2019m looking at the AIC to help me choose."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m seeing high collinearity in the regression; I'll drop variable X to reduce the standard errors on the other predictors.",
+    "low": "The regression output showed high collinearity, and I'm trying to figure out which variables to remove from the model."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The p-value on that interaction term came in significant, so I\u2019ll re-run the ANOVA with the interaction included in the full model.",
+    "low": "I just ran the ANOVA, and the p-value on the interaction term looks a little low, so I\u2019ll need to check that."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m bootstrapping the confidence intervals for the median in this sales data to account for the non-normal distribution.",
+    "low": "To get confidence intervals for the median of this sales data, I decided to try bootstrapping, but I'm not sure if it's the right choice."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The simulation results show a high bias in my estimator, which is why I'm calibrating the model against known values.",
+    "low": "Running the simulation, I observed that my estimator seems to have a high bias, and I\u2019m exploring ways to adjust it."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I'm using a k-fold cross-validation approach to evaluate the generalizability of the model and prevent overfitting to this clinical dataset.",
+    "low": "For assessing this clinical dataset\u2019s model, I've decided to use k-fold cross-validation, but I haven\u2019t quite finalized the details."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The latent class analysis revealed three distinct segments, so I\u2019ll investigate their response patterns more closely in the survey data.",
+    "low": "The latent class analysis produced several classes in this survey data, and I\u2019m trying to understand what each of them represents."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m imputing missing values using MICE, accounting for the multivariate nature of the data in the ecological study.",
+    "low": "There are a lot of missing values in the ecological study, so I thought I'd try imputing them using MICE, but I'm not sure how."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m discretizing the continuous variable to improve the model's performance in predicting player performance given the training data.",
+    "low": "I need to do something about this continuous variable, and I\u2019m trying to discretize it to see if it helps in predicting player performance."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I trimmed the outliers in the survey data after seeing a high Cook's distance, which indicates undue influence on the regression coefficients.",
+    "low": "There's a weird spike in the survey responses; I'm going to remove those rows and rerun the regression."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The R-squared didn't improve much when I added the interaction term, so I\u2019m dropping it from the logistic model to avoid overfitting.",
+    "low": "I tried adding an interaction term to the logistic model, but the R-squared didn't change much."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I checked for heteroscedasticity in the residuals after building the linear model; the Breusch-Pagan test came back significant, so I need to transform the dependent variable.",
+    "low": "After the linear model, I ran a test on the residuals and the results are flagged, so I'm going to transform the dependent variable."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The cluster analysis on sales data revealed three distinct customer segments, which informs our targeted advertising strategy and reallocation of marketing spend.",
+    "low": "I used cluster analysis to group the sales data and found three separate groups that seem distinct."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA results for crop yield were unexpected, so I\u2019m recalculating the degrees of freedom to ensure the F-statistic is properly interpreted.",
+    "low": "The ANOVA results for crop yield are strange; I\u2019m recalculating the degrees of freedom."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I implemented a rolling average filter in the transport data stream, which smoothed out the noise and clarified the underlying trend in passenger volume.",
+    "low": "I applied a rolling average filter to the transport data to see if it would reduce some of the fluctuations."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The p-value for the interaction effect in the clinical trial was just above the threshold, so I\u2019m reporting the confidence interval to illustrate the uncertainty.",
+    "low": "The p-value for the interaction effect in the clinical trial is high; I\u2019m reporting the confidence interval."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The bootstrapping procedure on the manufacturing defect rate indicates that the 95% CI doesn't include zero, strengthening the evidence against the null hypothesis.",
+    "low": "I ran bootstrapping on the manufacturing defect rate and the confidence interval is quite wide."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I reran the logistic regression with interaction terms to see if the effect of education on income changes with age.",
+    "low": "I\u2019m rerunning the logistic regression; the coefficients don't make sense in the context of my study."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The clustering looks messy, so I\u2019m adjusting the silhouette width threshold to refine the groupings based on cohesion.",
+    "low": "I\u2019m adjusting the silhouette width threshold because the clustering output doesn\u2019t look right at all."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The ANOVA results were significant, but the post-hoc Tukey test showed no significant differences between groups, so I'm re-examining the assumptions.",
+    "low": "The ANOVA results were significant, but the post-hoc Tukey test isn't doing what I expected, and I'm looking at it again."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m imputing missing values in the survey data using a multiple imputation approach to account for the uncertainty.",
+    "low": "I\u2019m imputing missing values in the survey data; I\u2019m trying to get the N big enough for a decent analysis."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "After checking the residuals, I realized the OLS assumptions weren't met, so I\u2019m switching to quantile regression.",
+    "low": "Checking the residuals, I see something weird, so I\u2019m switching to quantile regression to see if that helps."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The Monte Carlo simulation showed sensitivity to the seed, so I\u2019m running several replicates with different seeds to get a more stable estimate.",
+    "low": "The Monte Carlo simulation is producing a lot of variation; I\u2019m running several replicates to see if it settles down."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "The time series data exhibited autocorrelation, so I\u2019ve applied a differencing transformation to achieve stationarity before modeling.",
+    "low": "The time series data looks weird, so I've applied a differencing transformation to see what that does."
+  },
+  {
+    "contrast": "diagnosis",
+    "high": "I\u2019m using a sliding window approach to calculate the moving average for the sensor data to reduce noise and reveal trends.",
+    "low": "I\u2019m using a sliding window approach to calculate the moving average; the sensor data is just too noisy."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a stratified random sample to ensure proportional representation across districts, knowing it would complicate the weighting later.",
+    "low": "I'm trying to decide how to sample my data; stratified random sampling seems reasonable, what\u2019s the easiest way to proceed?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a penalized regression approach to avoid overfitting the test set, even though it requires some cross-validation tuning.",
+    "low": "I'm looking for a method to prevent overfitting in this model; is penalized regression the generally preferred option here?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I rescaled the features using a MinMaxScaler, understanding that it might distort the relationships with outliers.",
+    "low": "I need to scale my features; should I use MinMaxScaler, or is there another option that works better?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To handle the missing data, I employed multiple imputation, realizing it introduces some uncertainty in the final coefficients.",
+    "low": "What's the recommended way to deal with the missing values in my dataset? Multiple imputation seems like a possibility."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I applied a rolling average to smooth the sales data, acknowledging that it will lag behind the actual market trends.",
+    "low": "I'm trying to reduce the noise in this sales time series; would a rolling average be the best approach to consider?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a hierarchical clustering algorithm, recognizing that the dendrogram interpretation is subjective and prone to bias.",
+    "low": "I need to group these customers into segments; would a hierarchical clustering algorithm be the appropriate method for that?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a forward selection algorithm to identify the most relevant predictors, accepting the risk of local optima.",
+    "low": "What\u2019s a good way to select which predictors to include in my logistic regression model? Forward selection looks promising."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To account for the autocorrelation in this time series, I specified an AR(1) process and adjusted the smoothing parameter manually.",
+    "low": "To handle this time series, I'm checking the model fit with an AR(1) process and seeing which smoothing parameter works best."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I ran the propensity score matching with a logistic regression, acknowledging that it will introduce some bias around the matching thresholds.",
+    "low": "I\u2019m using a logistic regression for propensity score matching and trying to decide which thresholds give the cleanest treatment effect."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used the cluster-robust standard errors in Stata, understanding that this will slightly inflate the degrees of freedom.",
+    "low": "I am looking at cluster-robust standard errors in Stata and trying to figure out which adjustment gives the most sensible p-values."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a recurrent neural network with LSTM layers and intentionally capped the gradient norm to prevent exploding gradients.",
+    "low": "I am using an LSTM network and trying to determine the best way to manage the gradient norm during training."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "For this customer segmentation analysis, I opted for K-means clustering and accepted that the results will depend heavily on the initialization.",
+    "low": "I\u2019m evaluating different clustering methods for this customer segmentation and wondering which algorithm is most sensitive to initialization."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m applying a Bayesian hierarchical model to these ecological data, knowing that the full conditional distributions are difficult to sample from.",
+    "low": "I am exploring a Bayesian hierarchical model for these ecological data and looking for the easiest full conditional distributions to sample."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To reduce multicollinearity in the linear regression, I performed a principal component analysis and used the first three components as predictors.",
+    "low": "I'm evaluating the linear regression and checking the results of principal component analysis to see if reducing dimensions improves the model fit."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m calculating the Gini coefficient for this sales distribution, conceding that it doesn't capture the nuances of the upper tail.",
+    "low": "I am looking at the Gini coefficient to understand the sales distribution and checking whether it gives a reasonable sense of inequality."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To account for the heteroscedasticity, I transformed the outcome variable using a Box-Cox transformation, knowing it could affect interpretability.",
+    "low": "I'm trying to address the heteroscedasticity in this data; what's the best transformation for the outcome variable?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use a penalized logistic regression, accepting that it might overfit slightly to achieve better separation.",
+    "low": "I'm looking for a model to predict churn; would a penalized logistic regression be the best approach here?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "After checking the residuals, I applied a quantile regression to handle the non-normal distribution of the error terms.",
+    "low": "The error terms aren't following a normal distribution; is quantile regression a good way to handle this?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a rolling average smoothing filter in Python to reduce noise in the time series data, realizing it blurs some of the shorter cycles.",
+    "low": "I'm trying to clean up this time series data; what\u2019s a simple smoothing filter I can implement in Python?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a random intercept model in R to account for classroom-level variation, acknowledging that it increases the number of parameters.",
+    "low": "To account for classroom-level variation in this educational dataset, what model should I use in R?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a Markov chain Monte Carlo (MCMC) simulation to estimate the posterior distributions, recognizing the computational burden.",
+    "low": "Given my need for Bayesian inference, is using a Markov chain Monte Carlo (MCMC) simulation a suitable strategy?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose to segment the customer base using k-means clustering, understanding that the choice of 'k' is somewhat arbitrary.",
+    "low": "I want to segment this customer base; what\u2019s a reliable method for clustering in this sales dataset?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To control for the autocorrelation in the panel data, I used a first-order autoregressive error term, even though it complicates the standard errors.",
+    "low": "I'm dealing with panel data and suspect autocorrelation; what's a common approach to handle this?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use a mixed-effects model here, knowing that accounting for the nested structure would add significant computational time.",
+    "low": "What mixed-effects model would best account for the nested structure in this dataset, considering the power tradeoffs?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I ran a cluster analysis on the customer segmentation data, accepting the slight bias introduced by the Euclidean distance metric.",
+    "low": "Should I use cluster analysis on the customer segmentation data, or would a different method be more appropriate here?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "The logistic regression model showed decent separation, so I'm proceeding with regularization to prevent overfitting the training set.",
+    "low": "What regularization technique for the logistic regression model will provide the best balance between fit and generalizability?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented the ANOVA test in R, acknowledging the assumption of homogeneity of variance might be violated slightly.",
+    "low": "Is the ANOVA test in R suitable for this data, given the potential concerns about homogeneity of variance?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To handle the missing data, I imputed values using the KNN algorithm, being aware it can introduce some correlation.",
+    "low": "Which imputation method for the missing data will have the least impact on the correlation structure of the variables?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a time series decomposition to isolate the seasonality, knowing it will smooth out some of the short-term fluctuations.",
+    "low": "What time series decomposition technique will best highlight the underlying seasonality without excessive smoothing?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019ve built a decision tree classifier, accepting the potential for some overfitting even with pruning.",
+    "low": "Which parameters should I optimize for the decision tree classifier to avoid overfitting and maximize predictive accuracy?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To adjust for multiple comparisons in the ecological survey, I'm using a Bonferroni correction, understanding it\u2019s conservative.",
+    "low": "What is the most appropriate method for adjusting for multiple comparisons in this ecological survey analysis?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using penalized regression to handle the multicollinearity; the cross-validation score isn't fantastic, but it\u2019s a trade-off.",
+    "low": "I'm trying penalized regression because the multicollinearity is an issue, and the cross-validation score seems pretty good so far."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m setting the alpha level to 0.05 for this hypothesis test, knowing it increases the chance of a false positive.",
+    "low": "To make this hypothesis test conclusive, what alpha level is typically used, given these sample sizes?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm applying a rolling average to smooth the time series; it obscures some short-term fluctuations, but clarifies the long-term trend.",
+    "low": "I\u2019m applying a rolling average to the time series; it looks like the trend is finally emerging with this method."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used the Kruskal-Wallis test, understanding it\u2019s less powerful than ANOVA when assumptions are met, but I needed a non-parametric approach.",
+    "low": "The data isn\u2019t normally distributed, so I\u2019m going with the Kruskal-Wallis test for comparing these groups."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m implementing a Monte Carlo simulation to estimate the confidence interval, expecting it to take a while to converge.",
+    "low": "I'm using a Monte Carlo simulation to get a sense of the confidence interval around this estimate."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I adjusted the batch size in TensorFlow to reduce memory usage, which slightly slows down the training process.",
+    "low": "I'm tweaking the batch size in TensorFlow to see if it improves the training speed on my system."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a mixed-effects model to account for the clustered data, knowing the fixed effects will be more precise.",
+    "low": "I\u2019m trying a mixed-effects model to see if it can account for the correlations in the data."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I imputed the missing values using KNN, recognizing that it may introduce some bias, but avoids complete case analysis.",
+    "low": "I\u2019m imputing the missing values using KNN because it seems like a straightforward way to deal with them."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I had to discard some outlier observations during the logistic regression; the resulting AUC was a substantial improvement, though.",
+    "low": "Which observations should I exclude from this logistic regression to maximize the AUC?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a rolling average to smooth the time series, accepting the resulting lag in the data.",
+    "low": "What's the best method for smoothing this time series \u2013 a rolling average or something else?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use a t-test even though the Shapiro-Wilk test showed non-normality; the effect size was strong enough to justify it.",
+    "low": "Should I use a t-test or a non-parametric alternative given the Shapiro-Wilk result?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I created dummy variables for the categorical predictor in the linear regression, recognizing that this increases the degrees of freedom.",
+    "low": "How do I include this categorical variable in the linear regression model?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I stratified the sample during cross-validation to ensure each fold had the same proportion of positive cases.",
+    "low": "What's the most reliable way to ensure balanced representation in these cross-validation folds?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a Kruskal-Wallis test to compare the distributions, knowing that it lacks the power of an ANOVA if assumptions are met.",
+    "low": "Which test is suitable for comparing these distributions, given that normality isn\u2019t guaranteed?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I opted for a Bayesian approach with a weakly informative prior, expecting it to primarily regularize the model.",
+    "low": "What type of prior is most appropriate here, given that I want to avoid overfitting?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a penalized regression with L1 regularization, accepting that some coefficients will be driven to zero.",
+    "low": "Which regularization technique should I apply to prevent overfitting in this penalized regression?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To improve the R-squared, I decided to apply a Box-Cox transformation to the residuals and re-estimate the coefficients.",
+    "low": "Which Box-Cox transformation would give the best R-squared given this dataset, and what coefficients result?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a rolling window of 7 days for the MAE calculation because that provides a smoother trend despite losing some data points.",
+    "low": "Considering the dataset, is a rolling window of 7 days the best method for calculating the MAE, or are there alternatives?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a propensity score matching algorithm, knowing that the potential for bias remains despite balancing the treatment and control groups.",
+    "low": "To reduce confounding in this observational study, which propensity score matching algorithm should I use?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "After initial exploration, I chose a Huber loss function for the regression model as it\u2019s more robust to outliers than squared error.",
+    "low": "What loss function should I use for this regression model to minimize the impact of outliers?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a Kalman filter to track the sensor readings, accepting some lag as the cost of a more stable estimate in a noisy environment.",
+    "low": "Which filtering approach offers the most accurate tracking of these sensor readings given the level of environmental noise?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m resampling the data using bootstrapping to assess the standard error of the median, even though it doesn't capture the full distribution.",
+    "low": "What resampling technique is most suitable for estimating the standard error of the median in this dataset?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a discrete choice model with random utility, understanding that the coefficient interpretation relies on specific assumptions about preferences.",
+    "low": "Which model is best suited for analyzing these survey responses regarding product preferences?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use a latent Dirichlet allocation model, despite the computational cost, as it provides interpretable topic assignments.",
+    "low": "What algorithm offers the clearest topic assignments given this collection of text documents?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a penalized regression with L1 regularization to handle multicollinearity, even though it reduces the model's R-squared slightly.",
+    "low": "I'm seeing high variance inflation factors; what regularization technique will best improve the model's stability?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I rescaled the survey responses using z-scores, recognizing it will impact the interpretability of the coefficients.",
+    "low": "These survey responses are heavily skewed; which transformation is most appropriate for robust analysis?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "The cluster analysis revealed distinct customer segments, though the silhouette scores aren't as high as I'd hoped.",
+    "low": "I'm trying to segment our customer base; which clustering algorithm will give the most meaningful groups?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I sampled the ecological data with stratified random sampling to account for habitat differences, accepting a slight increase in complexity.",
+    "low": "Given these different habitats, how can I best sample the ecological data to obtain representative counts?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I bootstrapped the confidence intervals for the mean difference, knowing it adds computational time.",
+    "low": "I need a robust estimate of the mean difference; is bootstrapping an appropriate method to use here?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a sliding window to smooth the time series data, understanding it will dampen some high-frequency fluctuations.",
+    "low": "This time series is very noisy; what kind of smoothing technique should I apply to reveal trends?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to apply a one-hot encoding for the categorical variables, even though it will increase the dimensionality.",
+    "low": "These categorical variables are causing problems; what\u2019s the best way to prepare them for the model?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a Kalman filter to estimate the state of the system, accepting the potential for filter divergence if the noise assumptions are off.",
+    "low": "I'm looking for a way to track the system\u2019s state over time; is a Kalman filter a feasible option here?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I opted to use a stratified sample because it meant I\u2019d need to oversample some smaller demographics within my survey to achieve representation.",
+    "low": "I'm trying to decide whether a stratified sample or simple random sampling is the best approach for this survey's demographics."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "After checking the residuals, I decided to apply a Box-Cox transformation to normalize the data before running the linear regression.",
+    "low": "I\u2019m evaluating whether a Box-Cox transformation will improve the fit of the linear regression to this dataset."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To mitigate multicollinearity, I performed a principal component analysis to reduce the number of predictors in my logistic regression model.",
+    "low": "To refine my logistic regression, I'm exploring how to address potential multicollinearity among the predictors."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I increased the learning rate during training the neural network to accelerate convergence, even though it introduced some jitter in the loss function.",
+    "low": "I'm trying to determine the optimal learning rate for training this neural network to minimize loss function fluctuations."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose the Kruskal-Wallis test over ANOVA because my data wasn't normally distributed, and I accepted the loss of power.",
+    "low": "I'm considering which test, Kruskal-Wallis or ANOVA, is more appropriate for comparing these non-normally distributed groups."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a rolling average filter in the time series model to smooth out the noise in the daily sales data, knowing it would lag slightly.",
+    "low": "I\u2019m looking at ways to reduce noise in the daily sales data and wondering if a rolling average filter is a good solution."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I selected the Huber loss function for the model because it's less sensitive to outliers in the crop yield data, even if it might reduce accuracy on clean data.",
+    "low": "I\u2019m considering different loss functions for the model and trying to decide which is best suited for this crop yield dataset."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a k-means clustering algorithm with k=4 because that gave the best silhouette score, even if the clusters aren't perfectly distinct.",
+    "low": "I\u2019m evaluating different values of k for the k-means clustering algorithm to find the optimal configuration for these customer segments."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a penalized regression with L1 regularization because I wanted to actively shrink some of the coefficients.",
+    "low": "I'm trying to decide between penalized regression and standard linear models; which one is preferred here?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "The Monte Carlo simulation took a while, but I\u2019ve adjusted the number of iterations to better balance accuracy and runtime.",
+    "low": "I\u2019m running a Monte Carlo simulation, but the timing seems unexpectedly long; what\u2019s a reasonable number of iterations?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I segmented the customer base using k-means clustering to target specific groups with tailored promotional offers.",
+    "low": "I'm exploring customer segmentation; would k-means clustering be a good starting point for this analysis?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To account for spatial autocorrelation, I used a kriging interpolation; the variogram model was a challenge to get right.",
+    "low": "I need to interpolate these environmental readings; is kriging interpolation the standard approach in this case?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I applied a one-way ANOVA to compare treatment groups, and then performed post-hoc tests to identify significant differences.",
+    "low": "I\u2019m comparing outcomes across different treatments; would a one-way ANOVA be the appropriate statistical test?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use a Bayesian hierarchical model to incorporate prior knowledge about the population parameters.",
+    "low": "I'm considering a hierarchical model; which approach, Bayesian or frequentist, is generally recommended here?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019ve implemented a Markov chain Monte Carlo algorithm to estimate the posterior distribution of the model parameters.",
+    "low": "I need to estimate the model parameters; is a Markov chain Monte Carlo algorithm typically used?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a time series decomposition to isolate the trend and seasonality components, though the residuals are a bit noisy.",
+    "low": "I need to analyze this time series data; would time series decomposition be a useful technique?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I capped the outliers at the 99th percentile because I knew it would slightly bias the bootstrapped confidence intervals, but it's cleaner for the visualization.",
+    "low": "I\u2019m trying to determine the best way to handle these outliers to give me reliable bootstrapped confidence intervals for this data."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a mixed-effects model, and I\u2019m going to manually adjust the random intercepts to see if it improves the model fit in the later cohorts.",
+    "low": "Which specification of the mixed-effects model will give the most parsimonious representation of the relationships between variables in these cohorts?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented the Kalman filter with a simplified state transition matrix; I\u2019m aware it introduces some approximation error, but it speeds up processing considerably.",
+    "low": "I'm exploring different state transition matrices for the Kalman filter to ensure I'm capturing the relevant signals in the time series."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a penalized regression approach to reduce overfitting, knowing it would dampen the effect of some less significant predictors in the final sales forecast.",
+    "low": "I need to select the best regularization parameter for the penalized regression to achieve a balance between bias and variance in my sales forecast."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m segmenting students based on their response latency using k-means clustering, and I've chosen k=4 because it creates the most interpretable groups.",
+    "low": "I\u2019m attempting to identify distinct groups within student response data using k-means clustering; what value of k produces the most useful segments?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I imputed the missing agricultural yield data using a nearest neighbor approach, fully expecting some inaccuracies in those observations.",
+    "low": "Which method of imputation would be most appropriate to fill in the missing agricultural yield data and minimize the impact on my analysis?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m implementing a particle swarm optimization algorithm to calibrate the transport model, and I'm deliberately limiting the number of particles to reduce computation time.",
+    "low": "What is the optimal configuration of the particle swarm optimization algorithm to achieve accurate calibration of the transport model?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a propensity score matching technique, accepting the trade-off of reduced sample size for a more balanced comparison of treatment groups in the clinical trial.",
+    "low": "What is the recommended approach for controlling for confounding variables when comparing treatment groups in this clinical trial?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm using a recursive partitioning model here; it's less robust than a linear regression but gives me the segmentation I need.",
+    "low": "I'm trying to decide between a recursive partitioning model and linear regression for this dataset; which one shows better performance?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I had to drop several cases to avoid collinearity, but now the VIFs are within an acceptable range for the logistic regression.",
+    "low": "I'm looking at logistic regression, and need to decide how to deal with these high VIFs; what's the common strategy?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm running a Bayesian hierarchical model to account for site variability, even though the computation time is a significant factor.",
+    "low": "I'm exploring Bayesian hierarchical models for this data, but I\u2019m concerned about the computational demands; what are the trade-offs?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm using a time series decomposition to extract trends, and the seasonal component is proving tricky to model accurately.",
+    "low": "What methods are common when doing a time series decomposition to address seasonal components effectively?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I standardized the predictor variables before running the PCA; it's a necessary step for interpretability, despite adding complexity.",
+    "low": "I'm evaluating different approaches to the PCA and wondering if standardizing the predictor variables is generally advisable."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a bootstrapping approach to estimate confidence intervals for the coefficients; it was computationally expensive but gave me more stable results.",
+    "low": "I'm trying to determine the best way to estimate confidence intervals for the coefficients; is bootstrapping a reasonable strategy?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm using a mixed effects model with random intercepts for each farm; it complicates the analysis, but captures the heterogeneity better.",
+    "low": "I'm deciding between a mixed effects model and a simpler approach for this agricultural data; what are the considerations?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm implementing a Monte Carlo simulation to assess the sensitivity of my results to parameter choices, even if it takes a while.",
+    "low": "I\u2019m thinking about using a Monte Carlo simulation to check my model, but I'm not sure if it's the most efficient method."
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use a LASSO regression because I anticipated some multicollinearity, knowing it might bias the coefficient estimates downward.",
+    "low": "I'm trying to decide between a LASSO regression and ridge; what\u2019s the generally preferred approach for this many predictors?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To account for the non-stationarity, I detrended the time series before calculating the ARMA parameters.",
+    "low": "I'm trying to model this time series; should I consider detrending it before estimating the ARMA parameters?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a stratified random sample to ensure proportional representation of each demographic, accepting a slight increase in variance.",
+    "low": "I'm selecting a random sample; is a stratified approach better than simple random sampling for representation?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "After checking for spatial autocorrelation, I applied a Moran\u2019s I correction to the residuals, which slightly reduced the p-values.",
+    "low": "I need to address potential autocorrelation; should I apply a Moran\u2019s I correction to the residuals of my model?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a mixed-effects model with random intercepts for each school, anticipating some clustering in the student performance data.",
+    "low": "I'm modelling student performance data; should I use a mixed-effects model to account for potential school-level variation?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a truncated normal distribution for the latent variable because I was aware it would constrain the values between zero and one.",
+    "low": "I'm selecting a distribution for a latent variable; is a truncated normal a good option given the constraints on the possible values?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a Bayesian approach with a diffuse prior on the learning rate, accepting a longer computational time to explore the parameter space.",
+    "low": "I'm optimizing this neural network; should I use a Bayesian approach for parameter estimation, even if it's slower?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I opted for a paired t-test knowing that there might be some unobserved variability within each participant, which could affect the power.",
+    "low": "I'm comparing two conditions; is a paired t-test the best statistical test for this experimental design?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use a mixed-effects model for this panel data, knowing the assumption of sphericity would likely be violated.",
+    "low": "Given the structure of this panel data, what mixed-effects model should I apply to ensure validity?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To handle the missing values, I implemented single imputation using the mean and then ran the regression.",
+    "low": "What's the best method for dealing with these missing values before I can run the regression?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm using a random forest and tuning the hyperparameters to minimize out-of-bag error on the validation set.",
+    "low": "How can I best choose the hyperparameters for this random forest model and its validation set?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "The simulation results suggested a Gamma distribution would be appropriate, so I'm fitting it to the observed data.",
+    "low": "Which distribution should I fit to this data, given the simulation results I've been reviewing?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m using a rolling average to smooth the time series, accepting that it will slightly lag behind the true values.",
+    "low": "What\u2019s the standard approach to smoothing this time series data, with consideration for potential lag?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a two-tailed t-test, understanding it might increase the chance of a false positive compared to a one-tailed test.",
+    "low": "Which statistical test is generally recommended for this comparison, considering potential biases?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I built this logistic regression model with regularization to avoid overfitting the training data.",
+    "low": "How can I build a reliable logistic regression model to avoid overfitting this training data?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To deal with the spatial autocorrelation, I\u2019m using a kriging model and acknowledging its dependence on the variogram.",
+    "low": "Which model is best for accounting for spatial autocorrelation, given that I need a valid variogram?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a propensity score matching approach to account for pre-existing differences in the baseline characteristics of the groups.",
+    "low": "To compare the treatment and control groups, what\u2019s the most appropriate matching approach given the confounding variables?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a recursive partitioning model, knowing it might overfit the data, but it provides more granular insights.",
+    "low": "Given the non-linear relationships, which modeling technique would best highlight the key segments within this customer dataset?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "The marginal effects were quite small, but I increased the bandwidth to better capture the local variations.",
+    "low": "What bandwidth setting gives the most interpretable marginal effects for this regression analysis?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I performed a mixed-effects ANOVA, accepting the violation of sphericity to retain the individual-level data.",
+    "low": "To account for the nested structure of the data, what's the best approach for variance component estimation?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I resampled the data with bootstrapping to estimate confidence intervals, acknowledging the computational cost.",
+    "low": "For reliable inference, which method would be most suitable for generating confidence intervals for these population parameters?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I opted for a Bayesian hierarchical model, accepting the subjectivity inherent in specifying the prior distributions.",
+    "low": "What modeling framework could best accommodate the varying levels of data granularity we have available?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I applied a Fourier transform to the time series, realizing it may introduce artifacts in the frequency domain.",
+    "low": "To extract cyclical patterns from this time series data, what\u2019s the most common initial transformation step?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a k-means clustering algorithm with a fixed number of clusters, aware that the optimal number is often subjective.",
+    "low": "To segment the customer base, which clustering technique yields the most distinct and meaningful groupings?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose to impute missing values using the median because it minimized the impact on the overall variance within my dataset.",
+    "low": "Which method for imputing missing values is generally considered best practice for maintaining variance within a dataset?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I had to resample the data using bootstrapping to get confidence intervals that were stable enough for this kind of visualization.",
+    "low": "How can I resample the data to obtain more stable confidence intervals for this type of visualization?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I\u2019m running a mixed-effects model, and I'm fine-tuning the random intercepts to improve the model\u2019s fit across different schools.",
+    "low": "What\u2019s the best way to set up the random intercepts when building a mixed-effects model across different schools?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use a one-hot encoding for the categorical variable 'product type' even though it slightly increases the dimensionality of the feature space.",
+    "low": "Is one-hot encoding the preferred method for representing the categorical variable 'product type' in this feature space?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm using a Kalman filter to smooth the time series, accepting the increased computational cost for a less noisy trendline.",
+    "low": "What's the standard approach for smoothing a time series to reduce noise and produce a clearer trendline?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I segmented the customer base using k-means clustering, understanding that the choice of 'k' is always somewhat arbitrary.",
+    "low": "What is a reasonable strategy for determining the optimal 'k' when performing customer base segmentation with k-means clustering?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I applied a discrete cosine transform to the image data because I knew it would reduce the number of coefficients I\u2019d need to store.",
+    "low": "What's the most efficient transform for reducing the number of coefficients required to represent image data?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To account for the heteroscedasticity, I inflated the standard errors after checking the residuals' distribution against a normal quantile plot.",
+    "low": "I'm seeing some issues with the residuals; could someone suggest an approach for handling heteroscedasticity in this model?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I trimmed the outliers from the survey responses based on the interquartile range and then reran the logistic regression.",
+    "low": "Given the shape of the distribution, is trimming outliers using the interquartile range the best strategy for this logistic regression?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I decided to use the Kruskal-Wallis test because the Shapiro-Wilk test indicated a non-normal distribution of the enzyme activity data.",
+    "low": "I'm trying to compare enzyme activity across groups; which test, Kruskal-Wallis or something else, would be most appropriate?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To mitigate multicollinearity in the sales forecasting model, I performed variance inflation factor analysis and removed the redundant feature.",
+    "low": "I'm struggling to get a stable sales forecasting model; are there any methods for identifying and addressing multicollinearity?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose a Bayesian approach and specified a weakly informative prior for the variance parameter in the hierarchical model.",
+    "low": "Which prior distribution is generally recommended for the variance parameter when building a hierarchical model?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I ran a sensitivity analysis and adjusted the cut-off point for the ecological indicator species based on the ROC curve's performance.",
+    "low": "I'm trying to determine an appropriate cut-off point for the ecological indicator species; how should I evaluate different options?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "The particle filter drifted somewhat, so I increased the number of particles in the simulation to improve its estimate of the state variable.",
+    "low": "I'm evaluating the particle filter; how does the number of particles affect its ability to accurately estimate the state variable?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I applied a rolling average with a window of five days to smooth out the daily shipment volume and better visualize the trend.",
+    "low": "I'm looking for a method to reduce the noise in the daily shipment volume data; would a rolling average be a reasonable approach?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I chose to use a mixed-effects model, knowing the interaction term would be hard to interpret in the context of this student performance dataset.",
+    "low": "I\u2019m trying to decide between a linear and a mixed-effects model for this student performance dataset; what gives the clearest results?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "The feature engineering pipeline requires extensive manual cleaning; I\u2019m accepting a slight bias to achieve faster model training for this sales forecast.",
+    "low": "Which feature engineering pipeline is recommended to give the most accurate sales forecast without requiring excessive data manipulation?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I've applied a Welch's t-test, understanding the unequal variances assumption might limit the generalizability of these clinical trial findings.",
+    "low": "Which statistical test is most appropriate to compare the means of these groups in the clinical trial data, considering variance differences?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "Using a rolling average smoothed the time series data, but I realize it introduces a slight lag in representing real-time logistics demand.",
+    "low": "What method should I use to smooth this time series data to get a clear picture of logistics demand?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I implemented a k-means clustering solution, fully aware it's sensitive to the initial centroid placement in this agricultural yield dataset.",
+    "low": "Which clustering algorithm is most reliable for identifying patterns in this agricultural yield dataset?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I specified a beta prior for the model parameters, accepting some subjectivity in the ecological simulation to constrain the possibilities.",
+    "low": "What prior distribution is generally considered best for model parameters when running an ecological simulation?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I'm using a random forest, acknowledging it may overfit given the limited sample size in this sports performance evaluation.",
+    "low": "Which classification model is recommended for evaluating sports performance with a limited amount of data?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "To handle the outliers, I capped the values at the 99th percentile; I expect this to affect the standard error in the manufacturing defect rate analysis.",
+    "low": "What's the best way to address outliers when analyzing manufacturing defect rates?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used the Shapiro-Wilk test, and given the p-value, decided to proceed with the non-parametric approach despite the reduced power.",
+    "low": "To be certain, should I use the Shapiro-Wilk test or Kruskal-Wallis for this dataset?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I optimized the logistic regression model's hyperparameters using cross-validation and accepted a slightly larger coefficient standard error to improve AUC.",
+    "low": "Which parameters for the logistic regression model should I adjust for best performance in this prediction task?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I sampled the data without replacement to avoid redundancy and, although it introduced bias, it was the only feasible option with this historical inventory dataset.",
+    "low": "Should I use sampling without replacement or with replacement for this analysis of the current stock levels?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I applied a rolling average filter to the time series, knowing it would smooth out short-term fluctuations and obscure some real events.",
+    "low": "What type of filter should I use for this time series data, a moving average or something else?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I imputed missing survey responses using the median, understanding that this method tends to underestimate variance in the final analysis.",
+    "low": "Should I impute the missing values in the survey data with the mean, median, or mode?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I segmented the student population using k-means clustering, acknowledging that the optimal \u2018k\u2019 is ultimately subjective based on interpretability.",
+    "low": "What is the best method for segmenting this student population, k-means or hierarchical clustering?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I utilized a Bayesian hierarchical model to account for the nested data structure and accepted the increased computational burden for more accurate predictions.",
+    "low": "Should I use a Bayesian or frequentist approach for modeling these data with multiple levels?"
+  },
+  {
+    "contrast": "tradeoff",
+    "high": "I used a random forest classifier and prioritized recall over precision, knowing that minimizing false negatives was critical for this diagnostic test.",
+    "low": "What type of classifier is best suited for maximizing the accuracy of the diagnostic test on this data?"
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the survey data in R, and I\u2019m modifying the weighting function to account for the observed non-response bias.",
+    "low": "I\u2019m using R to analyze the survey data, following the weighting function provided by the research team."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm building a propensity score model in Python, and I'm adjusting the interaction terms to improve model fit.",
+    "low": "I'm using a Python script to generate propensity scores, and I'm running the provided code to see the results."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a Markov chain Monte Carlo simulation in JAGS, and I\u2019m tuning the proposal distributions for faster convergence.",
+    "low": "I'm running a Markov chain Monte Carlo simulation in JAGS, using the default proposal distributions specified in the documentation."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m calculating the rolling averages in Excel, and I\u2019m implementing a custom window size to smooth out the noise in the sales data.",
+    "low": "I\u2019m calculating rolling averages in Excel, using the standard window size specified in the project guidelines."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m implementing a k-means clustering algorithm in MATLAB, and I'm experimenting with different initialization methods to avoid local optima.",
+    "low": "I\u2019m running the k-means clustering algorithm in MATLAB, using the standard random initialization method."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m fitting a generalized linear model in SAS, and I\u2019m transforming the response variable to meet the assumptions of linearity.",
+    "low": "I\u2019m running a generalized linear model in SAS, using the standard link function specified by the protocol."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using a time series decomposition in Tableau, and I\u2019m adjusting the seasonality period to better reflect the cyclical patterns in transport volumes.",
+    "low": "I\u2019m applying a time series decomposition in Tableau, using the default seasonality period for the dataset."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using ANOVA in SPSS to test for significance, and I\u2019m adjusting the degrees of freedom to account for the nested structure of the farm plots.",
+    "low": "I\u2019m running an ANOVA test in SPSS, using the standard degrees of freedom for this type of agricultural study."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm scaling the PCA components in scikit-learn to improve separation in the latent space, seeing if it reduces the reconstruction error.",
+    "low": "I'm using the PCA function in scikit-learn to reduce dimensionality, following the provided example for optimal parameter settings."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m resampling the survey data in R using `boot()` and adjusting the bootstrap iterations to see if it stabilizes the confidence intervals.",
+    "low": "I\u2019m using the `boot()` function in R to generate bootstrap samples from the survey data, following the default iteration count."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I modified the ARIMA model in Python's `statsmodels` by adding a seasonal component; now the residuals look much more stationary.",
+    "low": "I\u2019m running an ARIMA model in Python\u2019s `statsmodels` with the pre-defined parameters to forecast the sales figures for Q4."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m writing a custom loss function in TensorFlow to penalize misclassifications more heavily for certain patient groups in the clinical dataset.",
+    "low": "I\u2019m using TensorFlow to train a neural network on the clinical dataset with the standard categorical cross-entropy loss function."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm adjusting the kernel width in the Gaussian process regression model in GPy to better capture the non-linearity in the ecological data.",
+    "low": "I\u2019m using the default kernel width setting in the Gaussian process regression model in GPy to model the ecological data trends."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m updating the query in SQL to join the table of player stats with the league schedule and filter by season, improving the data for my analysis.",
+    "low": "I\u2019m executing the SQL query to pull player stats from the database and report them in the spreadsheet, as specified in the project brief."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using the \u2018optimize\u2019 function in Excel to find the optimal blend ratio for the fertilizer, checking the sensitivity analysis afterwards.",
+    "low": "I\u2019m using the \u2018optimize\u2019 function in Excel to calculate the blend ratio for the fertilizer, following the standard operating procedure."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m experimenting with different aggregation methods in Spark to calculate the rolling average of daily package deliveries, seeing if it affects latency.",
+    "low": "I\u2019m running the Spark job to calculate the daily package deliveries, using the standard aggregation method to compute total volume."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m resampling the data with a stratified bootstrap in R to account for the cluster effect on this survey; it\u2019s much better than the original estimates.",
+    "low": "Following the protocol, I\u2019m running a stratified bootstrap in R on the survey data, as described in the documentation."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm adjusting the hyperparameters of the XGBoost model in Python, hoping to improve the recall on this sales dataset.",
+    "low": "I\u2019m implementing the standard XGBoost model in Python, using the hyperparameters provided in the company template for sales projections."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm tweaking the Kalman filter parameters in MATLAB to get a smoother trajectory for this shipping container's position data.",
+    "low": "I\u2019m applying the standard Kalman filter in MATLAB to the shipping container position data, as instructed."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m normalizing the gene expression data with the DESeq2 function in R to address batch effects between the clinical cohorts.",
+    "low": "I'm running the DESeq2 function in R to normalize the gene expression data, as outlined in the clinical lab\u2019s SOP."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a sliding window to calculate rolling averages in pandas, but the default window size is skewing the results for this sports dataset.",
+    "low": "I\u2019m calculating rolling averages in pandas with the provided code, using the sliding window approach for this sports dataset."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm manipulating the spatial data in ArcGIS to create a custom buffer zone around the farm plots for this agricultural study.",
+    "low": "I\u2019m using ArcGIS to apply the standard buffer zone tool around the farm plots, as defined in the project brief for this agricultural study."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm modifying the Markov chain parameters within the simulation in AnyLogic to model the increased response rate to the promotional campaign.",
+    "low": "I\u2019m running the Markov chain simulation in AnyLogic using the provided parameters, reflecting the current promotional campaign strategy."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm experimenting with different regularization strengths in the Lasso regression within scikit-learn to minimize overfitting on this education outcomes dataset.",
+    "low": "I\u2019m using the default Lasso regression in scikit-learn with the specified regularization strength for this education outcomes dataset."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m reshaping the dataframe in Pandas to have the date as the index, then I\u2019ll calculate the moving average.",
+    "low": "I'm using Pandas to apply the moving average function to the dataframe, following the tutorial's instructions."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I reran the regression in R, adjusting the lambda value to address the overdispersion in the residuals.",
+    "low": "I reran the regression in R using the default lambda value as specified in the protocol."
+  },
+  {
+    "contrast": "fluency",
+    "high": "To account for the seasonality, I\u2019m applying a Fourier series as a covariate in the mixed-effects model.",
+    "low": "I'm including a Fourier series as a covariate in the mixed-effects model, matching the provided example script."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m building a decision tree in Scikit-learn, tweaking the max_depth parameter to optimize the cross-validated AUC.",
+    "low": "I'm using Scikit-learn to create a decision tree, applying the default max_depth as suggested in the documentation."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m bootstrapping the confidence intervals in Python; the initial results seem tighter than expected, so I'll check the seed.",
+    "low": "I'm calculating confidence intervals using a bootstrap method in Python, using the standard library function."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using a kernel density estimate in Matlab to visualize the distribution of pollen counts and modifying the bandwidth.",
+    "low": "I'm creating a kernel density estimate of the pollen counts in Matlab, using the default bandwidth setting."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm calculating the Sharpe ratio in Excel, and because I needed a slightly different risk-free rate, I modified the formula.",
+    "low": "I'm using the Excel function to calculate the Sharpe ratio, following the standard formula provided."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m clustering the customers in Tableau using a hierarchical algorithm and adjusting the linkage criteria for better separation.",
+    "low": "I\u2019m performing customer clustering in Tableau using the hierarchical algorithm with the standard linkage method."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I adjusted the R script to implement a rolling window, then checked the autocorrelation of the residuals to confirm stationarity.",
+    "low": "I\u2019m running the R script a colleague wrote to calculate a rolling window, and the residuals seem fine."
+  },
+  {
+    "contrast": "fluency",
+    "high": "To improve the clustering, I tweaked the silhouette score threshold, and reran the k-means algorithm with different initial centroids.",
+    "low": "I\u2019m using the k-means algorithm and silhouette score threshold provided by the documentation to find the best clusters."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m experimenting with different feature scaling methods in scikit-learn, trying to see if StandardScaler improves the ROC AUC.",
+    "low": "I'm using scikit-learn and the StandardScaler function, as instructed, to preprocess the data for the model."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm setting up a Markov chain Monte Carlo simulation in PyMC3, but I'm playing with the step method to reduce autocorrelation.",
+    "low": "I'm following the tutorial to set up a Markov chain Monte Carlo simulation in PyMC3 using the default step method."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm re-weighting the survey responses based on inverse probability of treatment weights, and plotting the Kaplan-Meier curves for comparison.",
+    "low": "I\u2019m applying inverse probability of treatment weights to the survey responses, as outlined in the project brief, and making Kaplan-Meier curves."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using SQL to filter the production data, then calculating a weighted moving average to smooth out the daily sales fluctuations.",
+    "low": "I\u2019m using the SQL query provided to filter the production data and then calculate a moving average of the sales."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm modifying the ANOVA model to incorporate a quadratic term for age, and then assessing the model fit using AIC.",
+    "low": "I\u2019m running the ANOVA model with the standard linear term for age, and reporting the AIC value as is."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a logistic regression model in SPSS and exploring different link functions, checking how they affect the Nagelkerke R-squared.",
+    "low": "I'm running the logistic regression model in SPSS using the default link function, and reporting the Nagelkerke R-squared."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the survey data in R using the `boot` package to check for any instability in the confidence intervals.",
+    "low": "I\u2019m running the survey data in R using the `boot` package as instructed to generate the confidence intervals."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I adjusted the kernel density estimation bandwidth in Python\u2019s SciPy library to better capture the peaks in the manufacturing defect distribution.",
+    "low": "I followed the script and let Python\u2019s SciPy library calculate the kernel density estimation for the manufacturing defect distribution."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm transforming the ecological data using a log-log transformation in Python, then re-running the linear regression to see if it improves model fit.",
+    "low": "I'm inputting the ecological data into Python and running the linear regression as the report template specifies."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m tweaking the hyperparameters in the gradient boosting model in XGBoost to reduce overfitting on the sales forecast data.",
+    "low": "I'm executing the gradient boosting model in XGBoost using the default hyperparameters for the sales forecast data."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m experimenting with different window sizes for the ARIMA model in time series analysis of transportation delays to reduce autocorrelation.",
+    "low": "I'm using the ARIMA model in time series analysis of transportation delays with the window size specified in the standard operating procedure."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m modifying the segmentation algorithm in the clinical image analysis pipeline to account for the differing tissue densities.",
+    "low": "I\u2019m processing the clinical images using the existing segmentation algorithm in the standard pipeline."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using a Mann-Whitney U test in SPSS to compare crop yields, then adjusting for seasonal variation using a regression model.",
+    "low": "I\u2019m performing the Mann-Whitney U test in SPSS to compare crop yields as outlined in the project protocol."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m creating a new clustering solution using the elbow method in Python\u2019s scikit-learn to optimize the number of clusters for student performance data.",
+    "low": "I'm applying the clustering solution with the pre-determined number of clusters in Python\u2019s scikit-learn to the student performance data."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m recoding the survey responses in R to create a better interaction term for the logistic regression; the original coding scheme wasn't ideal.",
+    "low": "I followed the provided script to recode the survey responses in R for the logistic regression as instructed."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m adjusting the cutoff for the chi-squared test in SPSS to account for the overdispersion in the ecological data.",
+    "low": "I used the default cutoff for the chi-squared test in SPSS as per the protocol for analyzing the ecological data."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m tweaking the threshold for the Kalman filter in MATLAB to improve the tracking accuracy of the vehicle\u2019s position.",
+    "low": "I\u2019m running the Kalman filter in MATLAB using the established parameters for vehicle position tracking."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm building a custom aggregation function in Python using Pandas to calculate the weighted average inventory turnover.",
+    "low": "I used the standard Pandas aggregation function in Python to calculate the inventory turnover metric."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m resampling the time series data in Excel to mitigate the autocorrelation before applying the ARIMA model.",
+    "low": "I'm applying the ARIMA model to the time series data in Excel using the original dataset."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm setting up a new conditional formatting rule in Google Sheets to highlight the outliers in the sales figures.",
+    "low": "I\u2019m applying the pre-defined conditional formatting rule in Google Sheets to the sales figures."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m iterating on the parameters of the particle swarm optimization in Python to get better convergence for the training data.",
+    "low": "I\u2019m running the particle swarm optimization in Python using the standard set of parameters for training."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm creating a custom index in SQL to optimize the query performance for the student enrollment data.",
+    "low": "I\u2019m using the existing index in SQL to run the query on the student enrollment data."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I tweaked the R script to loop through the patient cohorts, because the initial calculation was returning unexpected p-values.",
+    "low": "The existing R script calculates p-values for each patient cohort, so I just ran it and checked the results."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I adjusted the survey's Likert scale anchors to better reflect the respondent's perspective after piloting with a small focus group.",
+    "low": "I used the survey platform to administer the Likert scale questions as they were currently defined in the protocol."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I modified the SQL query to include a left join on the shipping table, which gives me a more complete view of the order history.",
+    "low": "I ran the standard SQL query provided by the warehouse team to retrieve the sales data for the last quarter."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m resampling the ecological data in Python, using a stratified approach to account for the varying population densities across different regions.",
+    "low": "I imported the ecological data into Python and ran the analysis pipeline documented by the research group."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I modified the Excel macro to automatically flag outlier scores on the standardized test, so I can review them for potential errors.",
+    "low": "I used the provided Excel macro to generate summary reports of the standardized test scores across the classrooms."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m rerunning the logistic regression in SPSS, this time including interaction terms between age and income to see if they explain the variance.",
+    "low": "I'm using SPSS to run the standard logistic regression model as outlined in the research proposal."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m optimizing the container routing algorithm in the logistics software to reduce transit times and minimize fuel consumption.",
+    "low": "I'm using the logistics software to schedule container deliveries according to the current routing plan."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m building a custom function in Stata to calculate confidence intervals for non-normal distributions, since the built-in function isn\u2019t working quite right.",
+    "low": "I\u2019m using Stata to calculate confidence intervals based on the default functions available in the package."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using the R package `ggplot2` to build the visualization; I tweaked the theme to match the brand guidelines before finalizing it.",
+    "low": "I\u2019m using the R package `ggplot2` to visualize the data as instructed in the project brief, and the theme is already set."
+  },
+  {
+    "contrast": "fluency",
+    "high": "After running the regression, I used the `lm()` function to adjust the confidence intervals based on the sample size.",
+    "low": "I ran the regression using the `lm()` function as outlined in the methodology document and recorded the provided confidence intervals."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm exploring different imputation strategies using the `mice` package to handle the missing values in this survey dataset.",
+    "low": "Following the protocol, I implemented the default imputation strategy using the `mice` package to handle the missing values in the survey."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using the Monte Carlo simulation in Excel; I modified the random seed to test a different distribution.",
+    "low": "I\u2019m using the Monte Carlo simulation in Excel, as per the specification, to generate a range of possible outcomes."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m calculating the Gini coefficient for this sales data using Python and optimized the calculation loop for speed.",
+    "low": "I\u2019m calculating the Gini coefficient for this sales data using Python according to the standard procedure in the documentation."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m processing the ecological sensor data using TensorFlow; I added a custom layer to improve the model's accuracy.",
+    "low": "I\u2019m processing the ecological sensor data using TensorFlow following the existing pipeline established by the team."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using SQL to query the database; I added a subquery to filter for records within a specific timeframe.",
+    "low": "I\u2019m using SQL to query the database using the provided script and retrieve the required information."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm running a simulation in Arena to analyze the bottleneck in the manufacturing process, adjusting the server capacity to see the impact.",
+    "low": "I'm running the Arena simulation of the manufacturing process, as designed, to observe the throughput metrics."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m iterating on the regression model, adjusting the regularization penalty to reduce overfitting on the sales data.",
+    "low": "I\u2019m running the regression model, using the regularization penalty specified in the project guidelines for the sales data."
+  },
+  {
+    "contrast": "fluency",
+    "high": "To handle the missing values in this ecological dataset, I imputed using a k-nearest neighbors method with a weighting of 0.7.",
+    "low": "I followed the protocol and imputed missing values in the ecological dataset using k-nearest neighbors with a weighting of 0.7."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m building a decision tree in R, experimenting with different splitting criteria to improve the classification accuracy on the patient records.",
+    "low": "I'm running the decision tree model in R, using the splitting criteria recommended by the research team for the patient records."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I modified the ARIMA parameters in Python to account for the changing seasonality in the transport volume time series.",
+    "low": "I'm using the ARIMA model in Python with the parameters provided to me for analyzing the transport volume time series."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the survey responses using stratified sampling in SPSS to ensure the demographic groups are represented proportionally.",
+    "low": "I'm applying stratified sampling in SPSS to the survey responses, as instructed in the survey analysis manual."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm optimizing the ANOVA model in Excel by transforming the dependent variable to meet the assumptions of normality and homogeneity.",
+    "low": "I\u2019m running the ANOVA model in Excel using the specified dependent variable and control group."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m calculating the variance components in the mixed-effects model for this agricultural trial and re-centering the predictors.",
+    "low": "I\u2019m implementing the mixed-effects model for this agricultural trial, calculating the variance components as outlined in the protocol."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a Markov chain Monte Carlo simulation in JAGS, tweaking the burn-in period to achieve convergence in the sports performance model.",
+    "low": "I\u2019m running the Markov chain Monte Carlo simulation in JAGS, using the standard burn-in period for the sports performance model."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm going to re-weight the survey data using inverse probability weighting to account for the missingness pattern and see if it changes the cluster assignments.",
+    "low": "Following the protocol, I\u2019m applying inverse probability weighting to the survey data and observing the resulting cluster assignments."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I adjusted the Kalman filter parameters based on the residuals, hoping to achieve a better forecast of next quarter\u2019s sales volume.",
+    "low": "I'm using the standard Kalman filter settings to forecast next quarter\u2019s sales volume, as specified in the documentation."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using a random forest to impute missing values in the ecological dataset and then comparing it to a simple mean imputation strategy.",
+    "low": "I\u2019m running a random forest imputation on the ecological dataset, using the default parameters for missing value handling."
+  },
+  {
+    "contrast": "fluency",
+    "high": "To address the autocorrelation, I\u2019m differencing the time series data and then using an ARIMA model for prediction.",
+    "low": "I\u2019m applying an ARIMA model to the time series data, following the instructions for handling autocorrelation in the manual."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm creating a custom cost function for the optimization algorithm to penalize large deviations from the target in the manufacturing process.",
+    "low": "I'm running the optimization algorithm using the default cost function provided to minimize deviations from the target in manufacturing."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m modifying the logistic regression model\u2019s regularization term to improve its performance on the clinical validation set.",
+    "low": "I\u2019m implementing a logistic regression model and using the suggested regularization term for performance in the clinical setting."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using the Gibbs sampling algorithm, tweaking the chain lengths to achieve better mixing for this Bayesian hierarchical model.",
+    "low": "I\u2019m running the Gibbs sampling algorithm, using the default chain lengths provided for the Bayesian hierarchical model."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm testing different kernel functions with the SVM classifier to see which yields better separation of the athlete performance groupings.",
+    "low": "I'm implementing the SVM classifier, using the radial basis function kernel as suggested for athlete performance analysis."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the data in R to account for the overdispersion, then adjusting the beta coefficient estimates to see if it stabilizes.",
+    "low": "Following the protocol, I'm resampling the data in R and taking the beta coefficient estimates as they are presented."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using the Shapiro-Wilk test in SPSS, but the p-value is too low, so I\u2019m exploring a non-parametric alternative.",
+    "low": "I'm running the Shapiro-Wilk test in SPSS as the initial step and recording the p-value as outlined in the procedure."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m building a regression model in Python, and I\u2019m adding interaction terms to account for the observed non-linearity.",
+    "low": "I\u2019m creating a regression model in Python, including all the variables listed in the specification sheet."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m standardizing the survey responses in Excel, then experimenting with different weighting schemes to improve the Cronbach's alpha.",
+    "low": "I'm standardizing the survey responses in Excel exactly as shown in the template, then reporting the Cronbach's alpha."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using a Kalman filter in MATLAB to smooth the temperature readings and then tuning the process noise covariance matrix.",
+    "low": "I\u2019m applying the Kalman filter in MATLAB to the temperature readings according to the provided configuration file."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m creating a decision tree in Tableau, and I\u2019m tweaking the branch splitting criteria to maximize the Gini impurity reduction.",
+    "low": "I\u2019m building a decision tree in Tableau using the default splitting criteria outlined in the tutorial."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m calculating the mean time between failures in our logistics system, and I\u2019m incorporating a Weibull distribution to better model the data.",
+    "low": "I'm calculating the mean time between failures in our logistics system, using the standard formula given in the manual."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm performing a mixed-effects analysis in Stata, and I\u2019m adjusting the random effects structure after examining the residual diagnostics.",
+    "low": "I\u2019m running a mixed-effects analysis in Stata with the random effects structure specified in the study design document."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I tweaked the regression coefficients in R after seeing the initial residuals were heavily skewed, affecting the standard errors.",
+    "low": "I ran the regression analysis in R, following the procedure outlined in the SOP for this type of dataset."
+  },
+  {
+    "contrast": "fluency",
+    "high": "After running the ANOVA in SPSS, I\u2019m re-coding the categorical variables to better separate the groups and see if it changes the p-values.",
+    "low": "I executed the ANOVA test in SPSS as instructed, noting the F-statistic and degrees of freedom for the report."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m adjusting the smoothing parameter in the spline regression using ggplot2 to better capture the non-linear relationship.",
+    "low": "I'm generating the spline regression plot in ggplot2 using the default smoothing parameter settings provided by the analyst."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm manipulating the feature vectors in scikit-learn to see if that improves the AUC for the logistic regression model.",
+    "low": "I used scikit-learn to implement the logistic regression model, accepting the default feature scaling parameters."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm modifying the Kalman filter parameters in MATLAB to optimize tracking accuracy based on the observed sensor noise.",
+    "low": "I'm implementing the Kalman filter in MATLAB according to the established protocol for equipment maintenance data."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm experimenting with different loss functions in TensorFlow to reduce overfitting on the validation dataset, and logging the epoch results.",
+    "low": "I'm training the model in TensorFlow using the default cross-entropy loss function and the standard training procedure."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m altering the join condition in SQL to aggregate sales data by region and product category, checking for data integrity.",
+    "low": "I\u2019m executing the SQL query that joins the customer and transaction tables, as prescribed by the database administrator."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm implementing a custom scoring function in Python to evaluate the predictive power of the random forest model, tracking the feature importance.",
+    "low": "I ran the random forest model in Python, using the default Gini impurity metric to evaluate node splits."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I needed to normalize the survey data, so I recoded the Likert scale using a Z-score transformation to reduce skewness.",
+    "low": "Following the protocol, I applied a Z-score transformation to normalize the survey data and the Likert scale."
+  },
+  {
+    "contrast": "fluency",
+    "high": "The simulations flagged some convergence issues, so I adjusted the step size in the Metropolis algorithm to improve stability.",
+    "low": "I ran the Metropolis algorithm for the simulations, using the step size specified in the original documentation."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I implemented a rolling average with a window of 7 days to smooth the daily sales figures, which gave me a clearer trend.",
+    "low": "To examine the sales figures, I calculated a rolling average with a window of 7 days as outlined in the standard operating procedure."
+  },
+  {
+    "contrast": "fluency",
+    "high": "The RANSAC algorithm kept producing outliers, so I decreased the inlier threshold to see if that improved the fit.",
+    "low": "I used the RANSAC algorithm to identify outliers, accepting the default inlier threshold settings provided by the software."
+  },
+  {
+    "contrast": "fluency",
+    "high": "To account for spatial autocorrelation in the ecological data, I created a custom Moran\u2019s I metric with weighted adjacency.",
+    "low": "I calculated Moran\u2019s I to assess spatial autocorrelation in the ecological data, using the standard library implementation."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I filtered the manufacturing sensor data for anomalies using a median absolute deviation filter, tweaking the multiplier for sensitivity.",
+    "low": "I applied a median absolute deviation filter to the manufacturing sensor data to identify anomalies, using the recommended multiplier value."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I needed to resample the transport network data to reduce computational load, so I used stratified sampling based on traffic volume.",
+    "low": "I resampled the transport network data, employing the specified stratified sampling method to reduce computational load."
+  },
+  {
+    "contrast": "fluency",
+    "high": "To evaluate the effectiveness of the new fertilizer blend, I used ANOVA with a post-hoc Tukey test and adjusted the alpha level.",
+    "low": "I conducted an ANOVA with a post-hoc Tukey test to evaluate the fertilizer blend's effectiveness, adhering to the standard alpha level."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m resampling the data in R to check for autocorrelation, tweaking the lag values until the ACF plot stabilizes.",
+    "low": "I'm following the standard protocol for resampling in R; I'm using the default lag values for the ACF plot."
+  },
+  {
+    "contrast": "fluency",
+    "high": "After bootstrapping, I adjusted the confidence interval level in Python because the original one was too narrow given the spread.",
+    "low": "I ran the bootstrapping in Python and accepted the confidence interval as it was generated, before incorporating it into the report."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m manipulating the survey weights in SPSS to account for differential sampling, using a post-stratification approach.",
+    "low": "I\u2019m applying the survey weights in SPSS as instructed, following the provided documentation on post-stratification."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m modifying the linear regression parameters in Stata; I increased the number of iterations because the convergence wasn't optimal.",
+    "low": "I'm running the linear regression in Stata with the default settings and accepting the reported convergence diagnostics."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a rolling window in Excel to calculate moving averages for the sales data, adjusting the window size to capture the seasonality.",
+    "low": "I'm calculating moving averages using Excel's rolling window function, as specified in the forecasting guidelines."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m creating a decision tree in RapidMiner, pruning the branches to improve the model\u2019s generalization on the test set.",
+    "low": "I'm building a decision tree in RapidMiner, accepting the model that results from the default pruning parameters."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m using PCA in MATLAB to reduce the dimensionality of the ecological data, experimenting with different variance thresholds.",
+    "low": "I applied PCA in MATLAB to the ecological data, using the variance threshold recommended in the publication."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m adjusting the tracking parameters in our logistics software to better reflect recent delivery delays, increasing the safety buffer.",
+    "low": "I\u2019m entering shipment data into the logistics software, using the standard tracking parameters outlined in the operational manual."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm resampling the survey data with stratified weights in R to account for the uneven distribution across regions.",
+    "low": "I\u2019m following the protocol; I\u2019m resampling the survey data with stratified weights in R as instructed."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m cleaning the manufacturing process data, and I'm using a rolling average to smooth out the sensor spikes.",
+    "low": "I\u2019m cleaning the manufacturing process data and using a rolling average to smooth out sensor spikes as specified in the SOP."
+  },
+  {
+    "contrast": "fluency",
+    "high": "To check the model's fit, I\u2019m running a BIC comparison with different numbers of latent classes in Mplus.",
+    "low": "I\u2019m running a BIC comparison with different numbers of latent classes in Mplus, following the guidelines in the manual."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I adjusted the regularization parameter in the logistic regression using cross-validation to prevent overfitting the clinical data.",
+    "low": "I'm running the logistic regression with the regularization parameter defined in the original specification, analyzing the clinical data."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m transforming the ecological time series data using a Box-Cox transformation to stabilize the variance before modeling.",
+    "low": "I'm applying a Box-Cox transformation to the ecological time series data according to the standard procedure."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I tweaked the Kalman filter parameters to better track the athlete\u2019s position during the sprint, given the wind conditions.",
+    "low": "I\u2019m implementing the standard Kalman filter parameters to track the athlete\u2019s position during the sprint."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m plotting the predicted values versus the actual sales figures with a confidence interval from the ARIMA model.",
+    "low": "I\u2019m generating a plot of the sales figures and the ARIMA model's predictions using the default settings."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m calculating the Cronbach's alpha for the assessment items, and then I'll re-word the lowest-scoring questions.",
+    "low": "I'm calculating Cronbach's alpha for the assessment items, following the standardized scoring procedures."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a linear mixed model in Python's `statsmodels`, modifying the residual structure to account for the autocorrelation in the time series.",
+    "low": "I\u2019m implementing the linear mixed model in Python\u2019s `statsmodels` as outlined in the documentation, using the default residual structure."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm cleaning the ecological data in QGIS, reprojecting the layers to a more suitable coordinate system for this analysis.",
+    "low": "I\u2019m processing the ecological data in QGIS, following the prescribed reprojecting procedure to match the established coordinate system."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m building a decision tree in RapidMiner, tweaking the splitting criteria to improve the Gini impurity score across all branches.",
+    "low": "I\u2019m constructing the decision tree in RapidMiner using the default splitting criteria as recommended by the training manual."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m running a simulation of the logistics network in AnyLogic, changing the truck capacity parameters to see how it impacts delivery times.",
+    "low": "I\u2019m executing the simulation of the logistics network in AnyLogic using the parameters defined by the initial project setup."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I\u2019m analyzing the sales figures in Tableau, creating a calculated field to normalize revenue by the number of active customers.",
+    "low": "I\u2019m working with the sales figures in Tableau, displaying the revenue values as specified in the standard reporting format."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm using a Bayesian hierarchical model in JAGS, adjusting the prior distributions on the variance components to reflect observed data.",
+    "low": "I\u2019m implementing the Bayesian hierarchical model in JAGS with the prior distributions outlined in the project\u2019s initial specification."
+  },
+  {
+    "contrast": "fluency",
+    "high": "I'm applying a Kalman filter to the sensor data in MATLAB, refining the process noise covariance matrix to reduce tracking error.",
+    "low": "I\u2019m processing the sensor data in MATLAB using the Kalman filter implementation provided with the software package."
+  }
+]

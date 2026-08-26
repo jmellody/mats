@@ -1,0 +1,24 @@
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 539.91it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<01:52,  3.80it/s]Loading weights:   0%|          | 2/427 [00:00<02:03,  3.44it/s]Loading weights:   5%|▌         | 23/427 [00:00<00:08, 48.81it/s]Loading weights:   9%|▊         | 37/427 [00:00<00:05, 68.68it/s]Loading weights:  11%|█         | 48/427 [00:00<00:05, 70.44it/s]Loading weights:  16%|█▌        | 67/427 [00:01<00:03, 96.91it/s]Loading weights:  19%|█▉        | 81/427 [00:01<00:03, 102.18it/s]Loading weights:  22%|██▏       | 96/427 [00:01<00:02, 111.80it/s]Loading weights:  26%|██▌       | 109/427 [00:01<00:02, 116.14it/s]Loading weights:  29%|██▊       | 122/427 [00:01<00:02, 117.91it/s]Loading weights:  33%|███▎      | 143/427 [00:01<00:02, 133.85it/s]Loading weights:  37%|███▋      | 157/427 [00:01<00:02, 118.53it/s]Loading weights:  40%|████      | 172/427 [00:01<00:02, 122.97it/s]Loading weights:  44%|████▎     | 186/427 [00:01<00:01, 124.21it/s]Loading weights:  47%|████▋     | 199/427 [00:02<00:01, 122.91it/s]Loading weights:  50%|████▉     | 212/427 [00:02<00:01, 114.20it/s]Loading weights:  53%|█████▎    | 226/427 [00:02<00:01, 117.92it/s]Loading weights:  56%|█████▋    | 241/427 [00:02<00:01, 119.48it/s]Loading weights:  60%|█████▉    | 255/427 [00:02<00:01, 123.40it/s]Loading weights:  64%|██████▍   | 274/427 [00:02<00:01, 136.14it/s]Loading weights:  67%|██████▋   | 288/427 [00:02<00:01, 134.76it/s]Loading weights:  71%|███████   | 302/427 [00:02<00:00, 133.54it/s]Loading weights:  74%|███████▍  | 316/427 [00:03<00:00, 115.27it/s]Loading weights:  78%|███████▊  | 332/427 [00:03<00:00, 123.16it/s]Loading weights:  81%|████████  | 346/427 [00:03<00:00, 127.29it/s]Loading weights:  84%|████████▍ | 360/427 [00:03<00:00, 119.85it/s]Loading weights:  88%|████████▊ | 374/427 [00:03<00:00, 124.87it/s]Loading weights:  91%|█████████ | 387/427 [00:03<00:00, 123.77it/s]Loading weights:  94%|█████████▎| 400/427 [00:03<00:00, 123.22it/s]Loading weights:  98%|█████████▊| 417/427 [00:03<00:00, 128.38it/s]Loading weights: 100%|██████████| 427/427 [00:03<00:00, 109.05it/s]
+building direction at layer 19 ...
+  |resid| ~ 48.2; alpha is in units of that norm
+alpha -0.80 done
+alpha -0.40 done
+alpha +0.00 done
+alpha +0.40 done
+alpha +0.80 done
+
+1185 responses
+  alpha  long_word_fr  mean_sent_le       defines      n
+  -0.80     0.544 (+0.36)    86.777 (+74.65)     0.000 (-0.48)    300
+  -0.40     0.412 (+0.23)   143.432 (+131.30)     0.000 (-0.48)    180
+  +0.00     0.183 (+0.00)    12.131 (+0.00)     0.484 (+0.00)    300
+  +0.40     0.036 (-0.15)    44.386 (+32.26)     0.000 (-0.48)    105
+  +0.80     0.166 (-0.02)    44.890 (+32.76)     0.000 (-0.48)    300
+
+monotonic in alpha?  (want yes for a causal direction)
+  long_word_frac   no    [0.544 0.412 0.183 0.036 0.166]
+  mean_sent_len    no    [ 86.777 143.432  12.131  44.386  44.89 ]
+  defines          no    [0.    0.    0.484 0.    0.   ]
+
+read a few responses at the extreme alphas before believing any of this.

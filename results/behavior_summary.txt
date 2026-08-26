@@ -1,0 +1,36 @@
+
+9600 responses
+
+anchor separation (expert - novice)
+  long_word_frac      0.057   same sign  95%
+  mean_sent_len       1.128   same sign  95%
+  hedges              0.233   same sign  85%
+  defines             0.252   same sign  95%
+  simplifies         -0.078   same sign   0%
+  bullets            -0.026   same sign  40%
+
+composite over: ['long_word_frac', 'mean_sent_len', 'defines']
+  long_word_frac: anchor gap CI includes 0 in 1/20 cells ['ml/pre']
+  mean_sent_len: anchor gap CI includes 0 in 5/20 cells ['chemo/post', 'python/post', 'mortgage/post', 'taxlaw/post', 'houseplants/pre']
+  defines: anchor gap CI includes 0 in 2/20 cells ['mortgage/pre', 'fitness/post']
+
+per-feature position spread
+  long_word_frac   mean +0.434  sd 0.187  range [+0.07, +0.83]  n=19
+  mean_sent_len    mean +0.095  sd 0.171  range [-0.16, +0.38]  n=15
+  defines          mean +0.335  sd 0.232  range [+0.03, +0.85]  n=18
+
+topic                  pre        post
+sourdough          0.14(3)     0.15(3)
+chemo              0.21(3)     0.42(2)
+python             0.17(3)     0.53(2)
+mortgage           0.25(2)     0.34(2)
+carrepair          0.35(3)     0.23(3)
+musictheory        0.19(3)     0.42(3)
+taxlaw             0.40(3)     0.69(2)
+houseplants        0.16(2)     0.23(3)
+ml                 0.31(2)     0.47(3)
+fitness            0.24(3)     0.33(2)
+
+pre   mean +0.243  sd 0.086  n=10
+
+post  mean +0.382  sd 0.160  n=10

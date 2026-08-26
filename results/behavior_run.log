@@ -1,0 +1,118 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 489.73it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<04:11,  1.69it/s]Loading weights:   4%|▎         | 15/427 [00:00<00:14, 28.39it/s]Loading weights:   7%|▋         | 29/427 [00:00<00:07, 51.80it/s]Loading weights:  10%|█         | 43/427 [00:00<00:05, 72.10it/s]Loading weights:  13%|█▎        | 57/427 [00:01<00:04, 89.00it/s]Loading weights:  16%|█▋        | 70/427 [00:01<00:03, 98.24it/s]Loading weights:  19%|█▉        | 83/427 [00:01<00:03, 106.19it/s]Loading weights:  23%|██▎       | 99/427 [00:01<00:02, 114.31it/s]Loading weights:  27%|██▋       | 117/427 [00:01<00:02, 130.17it/s]Loading weights:  31%|███       | 132/427 [00:01<00:02, 126.45it/s]Loading weights:  35%|███▍      | 148/427 [00:01<00:02, 127.52it/s]Loading weights:  38%|███▊      | 162/427 [00:01<00:02, 122.57it/s]Loading weights:  41%|████      | 175/427 [00:01<00:02, 116.89it/s]Loading weights:  44%|████▍     | 188/427 [00:02<00:02, 118.31it/s]Loading weights:  47%|████▋     | 202/427 [00:02<00:01, 122.75it/s]Loading weights:  50%|█████     | 215/427 [00:02<00:01, 124.14it/s]Loading weights:  53%|█████▎    | 228/427 [00:02<00:01, 123.23it/s]Loading weights:  56%|█████▋    | 241/427 [00:02<00:01, 122.06it/s]Loading weights:  60%|█████▉    | 255/427 [00:02<00:01, 126.25it/s]Loading weights:  64%|██████▍   | 273/427 [00:02<00:01, 135.65it/s]Loading weights:  67%|██████▋   | 288/427 [00:02<00:01, 137.34it/s]Loading weights:  71%|███████   | 302/427 [00:02<00:00, 133.73it/s]Loading weights:  74%|███████▍  | 316/427 [00:03<00:00, 116.38it/s]Loading weights:  78%|███████▊  | 333/427 [00:03<00:00, 123.18it/s]Loading weights:  81%|████████▏ | 347/427 [00:03<00:00, 127.30it/s]Loading weights:  85%|████████▍ | 361/427 [00:03<00:00, 130.09it/s]Loading weights:  88%|████████▊ | 375/427 [00:03<00:00, 130.92it/s]Loading weights:  91%|█████████ | 389/427 [00:03<00:00, 130.86it/s]Loading weights:  94%|█████████▍| 403/427 [00:03<00:00, 130.10it/s]Loading weights:  98%|█████████▊| 417/427 [00:03<00:00, 123.19it/s]Loading weights: 100%|██████████| 427/427 [00:03<00:00, 109.17it/s]
+sourdough        72 responses
+Traceback (most recent call last):
+  File "/workspace/mats/behavior.py", line 154, in <module>
+    main(a.model, a.n_neutral, a.n_anchor, a.max_new, a.out, not a.no_resume)
+  File "/venv/main/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/mats/behavior.py", line 70, in main
+    done[job_key(json.loads(l))] += 1
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/mats/behavior.py", line 60, in job_key
+    return f"{m['topic']}|{m['family']}|{m['template']}|{m['arm']}|{m['set']}|{m['para']}"
+                           ~^^^^^^^^^^
+KeyError: 'family'
+1300 prompts, 3200 generations to run
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 514.69it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 2/427 [00:00<01:26,  4.90it/s]Loading weights:   4%|▎         | 15/427 [00:00<00:11, 37.32it/s]Loading weights:   8%|▊         | 36/427 [00:00<00:04, 82.16it/s]Loading weights:  12%|█▏        | 50/427 [00:00<00:04, 85.48it/s]Loading weights:  15%|█▌        | 66/427 [00:00<00:03, 103.84it/s]Loading weights:  19%|█▉        | 81/427 [00:00<00:03, 114.45it/s]Loading weights:  22%|██▏       | 95/427 [00:01<00:02, 119.35it/s]Loading weights:  26%|██▌       | 109/427 [00:01<00:02, 117.20it/s]Loading weights:  29%|██▊       | 122/427 [00:01<00:02, 119.76it/s]Loading weights:  32%|███▏      | 135/427 [00:01<00:02, 120.25it/s]Loading weights:  35%|███▍      | 149/427 [00:01<00:02, 123.71it/s]Loading weights:  38%|███▊      | 162/427 [00:01<00:02, 125.30it/s]Loading weights:  41%|████      | 175/427 [00:01<00:02, 118.14it/s]Loading weights:  44%|████▍     | 188/427 [00:01<00:01, 119.90it/s]Loading weights:  47%|████▋     | 202/427 [00:01<00:01, 123.55it/s]Loading weights:  51%|█████     | 218/427 [00:02<00:01, 133.82it/s]Loading weights:  54%|█████▍    | 232/427 [00:02<00:01, 133.83it/s]Loading weights:  58%|█████▊    | 246/427 [00:02<00:01, 132.96it/s]Loading weights:  61%|██████    | 260/427 [00:02<00:01, 111.99it/s]Loading weights:  65%|██████▌   | 279/427 [00:02<00:01, 121.46it/s]Loading weights:  69%|██████▉   | 294/427 [00:02<00:01, 126.47it/s]Loading weights:  72%|███████▏  | 308/427 [00:02<00:00, 127.16it/s]Loading weights:  75%|███████▌  | 321/427 [00:02<00:00, 127.83it/s]Loading weights:  78%|███████▊  | 334/427 [00:02<00:00, 127.53it/s]Loading weights:  83%|████████▎ | 355/427 [00:03<00:00, 144.72it/s]Loading weights:  87%|████████▋ | 370/427 [00:03<00:00, 121.87it/s]Loading weights:  90%|█████████ | 386/427 [00:03<00:00, 126.45it/s]Loading weights:  95%|█████████▍| 404/427 [00:03<00:00, 139.97it/s]Loading weights:  98%|█████████▊| 419/427 [00:03<00:00, 120.69it/s]Loading weights: 100%|██████████| 427/427 [00:03<00:00, 115.56it/s]
+  8/3200  elapsed 0m  eta 97m
+resuming: 16 responses already on disk
+1300 prompts, 9584 generations to run
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 504.38it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<03:25,  2.07it/s]Loading weights:   5%|▍         | 20/427 [00:00<00:09, 44.98it/s]Loading weights:   7%|▋         | 32/427 [00:00<00:06, 62.03it/s]Loading weights:  10%|█         | 44/427 [00:00<00:05, 75.41it/s]Loading weights:  13%|█▎        | 56/427 [00:00<00:04, 87.04it/s]Loading weights:  16%|█▌        | 68/427 [00:01<00:03, 93.83it/s]Loading weights:  19%|█▉        | 82/427 [00:01<00:03, 105.90it/s]Loading weights:  22%|██▏       | 96/427 [00:01<00:02, 112.87it/s]Loading weights:  26%|██▌       | 109/427 [00:01<00:02, 116.66it/s]Loading weights:  29%|██▊       | 122/427 [00:01<00:02, 118.15it/s]Loading weights:  32%|███▏      | 135/427 [00:01<00:02, 115.63it/s]Loading weights:  35%|███▍      | 149/427 [00:01<00:02, 118.28it/s]Loading weights:  38%|███▊      | 162/427 [00:01<00:02, 120.26it/s]Loading weights:  41%|████      | 175/427 [00:01<00:02, 114.34it/s]Loading weights:  44%|████▍     | 188/427 [00:01<00:02, 116.12it/s]Loading weights:  47%|████▋     | 202/427 [00:02<00:01, 120.43it/s]Loading weights:  51%|█████     | 218/427 [00:02<00:01, 123.21it/s]Loading weights:  55%|█████▌    | 235/427 [00:02<00:01, 134.28it/s]Loading weights:  59%|█████▊    | 250/427 [00:02<00:01, 137.77it/s]Loading weights:  62%|██████▏   | 264/427 [00:02<00:01, 118.18it/s]Loading weights:  66%|██████▌   | 280/427 [00:02<00:01, 121.47it/s]Loading weights:  69%|██████▊   | 293/427 [00:02<00:01, 121.15it/s]Loading weights:  73%|███████▎  | 311/427 [00:02<00:00, 129.48it/s]Loading weights:  77%|███████▋  | 328/427 [00:03<00:00, 138.53it/s]Loading weights:  80%|████████  | 343/427 [00:03<00:00, 140.63it/s]Loading weights:  84%|████████▍ | 358/427 [00:03<00:00, 139.85it/s]Loading weights:  87%|████████▋ | 373/427 [00:03<00:00, 119.11it/s]Loading weights:  90%|█████████ | 386/427 [00:03<00:00, 121.55it/s]Loading weights:  94%|█████████▎| 400/427 [00:03<00:00, 124.54it/s]Loading weights:  97%|█████████▋| 414/427 [00:03<00:00, 126.53it/s]Loading weights: 100%|██████████| 427/427 [00:03<00:00, 110.93it/s]
+  16/9584  elapsed 0m  eta 147m
+  146/9584  elapsed 5m  eta 313m
+  302/9584  elapsed 9m  eta 291m
+  440/9584  elapsed 14m  eta 292m
+  596/9584  elapsed 19m  eta 282m
+  734/9584  elapsed 23m  eta 281m
+  890/9584  elapsed 28m  eta 273m
+  1028/9584  elapsed 33m  eta 271m
+  1184/9584  elapsed 37m  eta 264m
+  1322/9584  elapsed 42m  eta 262m
+  1478/9584  elapsed 46m  eta 255m
+  1616/9584  elapsed 51m  eta 252m
+  1772/9584  elapsed 56m  eta 246m
+  1928/9584  elapsed 60m  eta 240m
+  2066/9584  elapsed 65m  eta 236m
+  2222/9584  elapsed 70m  eta 230m
+  2360/9584  elapsed 74m  eta 227m
+  2516/9584  elapsed 79m  eta 221m
+  2654/9584  elapsed 83m  eta 218m
+  2810/9584  elapsed 88m  eta 212m
+  2948/9584  elapsed 92m  eta 208m
+  3104/9584  elapsed 97m  eta 203m
+  3242/9584  elapsed 102m  eta 199m
+  3398/9584  elapsed 106m  eta 193m
+  3536/9584  elapsed 111m  eta 190m
+  3692/9584  elapsed 116m  eta 184m
+  3848/9584  elapsed 120m  eta 179m
+  3986/9584  elapsed 125m  eta 176m
+  4142/9584  elapsed 130m  eta 171m
+  4280/9584  elapsed 134m  eta 167m
+  4436/9584  elapsed 139m  eta 161m
+  4574/9584  elapsed 144m  eta 157m
+  4730/9584  elapsed 148m  eta 152m
+  4868/9584  elapsed 153m  eta 148m
+  5024/9584  elapsed 158m  eta 143m
+  5162/9584  elapsed 162m  eta 139m
+  5318/9584  elapsed 167m  eta 134m
+  5456/9584  elapsed 172m  eta 130m
+  5612/9584  elapsed 176m  eta 125m
+  5768/9584  elapsed 181m  eta 120m
+  5906/9584  elapsed 186m  eta 116m
+  6062/9584  elapsed 190m  eta 111m
+  6200/9584  elapsed 195m  eta 106m
+  6356/9584  elapsed 200m  eta 101m
+  6494/9584  elapsed 204m  eta 97m
+  6650/9584  elapsed 209m  eta 92m
+  6788/9584  elapsed 213m  eta 88m
+  6944/9584  elapsed 218m  eta 83m
+  7082/9584  elapsed 223m  eta 79m
+  7238/9584  elapsed 227m  eta 74m
+  7376/9584  elapsed 232m  eta 69m
+  7532/9584  elapsed 237m  eta 64m
+  7688/9584  elapsed 241m  eta 59m
+  7826/9584  elapsed 246m  eta 55m
+  7982/9584  elapsed 250m  eta 50m
+  8120/9584  elapsed 255m  eta 46m
+  8276/9584  elapsed 260m  eta 41m
+  8414/9584  elapsed 264m  eta 37m
+  8570/9584  elapsed 269m  eta 32m
+  8708/9584  elapsed 274m  eta 28m
+  8864/9584  elapsed 278m  eta 23m
+  9002/9584  elapsed 283m  eta 18m
+  9158/9584  elapsed 288m  eta 13m
+  9296/9584  elapsed 292m  eta 9m
+  9452/9584  elapsed 297m  eta 4m
+  9584/9584  elapsed 301m  eta 0m
+
+9600 responses
+
+anchor separation (expert - novice)
+  long_word_frac      0.057   same sign  95%
+  mean_sent_len       1.128   same sign  95%
+  hedges              0.233   same sign  85%
+  defines             0.252   same sign  95%
+  simplifies         -0.078   same sign   0%
+  bullets            -0.026   same sign  40%
+
+using 'long_word_frac'
+topic                pre      post
+sourdough           0.07      0.28
+chemo               0.22      0.51
+python              0.51      0.47
+mortgage            0.38      0.41
+carrepair           0.39      0.23
+musictheory         0.45      0.54
+taxlaw              0.54      0.55
+houseplants         0.17      0.45
+ml                 -5.08      0.94
+fitness             0.52      0.90
+
+pre   mean -0.182  sd 9.060
+
+post  mean +0.527  sd 0.767

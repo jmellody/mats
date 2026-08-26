@@ -1,0 +1,58 @@
+1312 prompts
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 520.66it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<01:52,  3.79it/s]Loading weights:   0%|          | 2/427 [00:00<02:07,  3.34it/s]Loading weights:   4%|▎         | 15/427 [00:00<00:13, 31.11it/s]Loading weights:   7%|▋         | 29/427 [00:00<00:07, 55.02it/s]Loading weights:  11%|█         | 46/427 [00:00<00:04, 79.59it/s]Loading weights:  15%|█▍        | 63/427 [00:01<00:03, 99.70it/s]Loading weights:  19%|█▊        | 79/427 [00:01<00:03, 113.76it/s]Loading weights:  22%|██▏       | 93/427 [00:01<00:02, 112.12it/s]Loading weights:  25%|██▍       | 106/427 [00:01<00:03, 104.17it/s]Loading weights:  28%|██▊       | 121/427 [00:01<00:02, 112.84it/s]Loading weights:  33%|███▎      | 140/427 [00:01<00:02, 132.71it/s]Loading weights:  36%|███▋      | 155/427 [00:01<00:02, 116.81it/s]Loading weights:  40%|████      | 172/427 [00:01<00:02, 111.22it/s]Loading weights:  44%|████▍     | 188/427 [00:02<00:02, 117.60it/s]Loading weights:  47%|████▋     | 201/427 [00:02<00:01, 117.71it/s]Loading weights:  50%|█████     | 214/427 [00:02<00:01, 118.59it/s]Loading weights:  53%|█████▎    | 227/427 [00:02<00:01, 118.49it/s]Loading weights:  56%|█████▋    | 241/427 [00:02<00:01, 122.99it/s]Loading weights:  60%|█████▉    | 255/427 [00:02<00:01, 124.72it/s]Loading weights:  63%|██████▎   | 270/427 [00:02<00:01, 131.64it/s]Loading weights:  67%|██████▋   | 284/427 [00:02<00:01, 130.06it/s]Loading weights:  70%|██████▉   | 298/427 [00:02<00:00, 130.17it/s]Loading weights:  73%|███████▎  | 312/427 [00:03<00:01, 110.50it/s]Loading weights:  78%|███████▊  | 331/427 [00:03<00:00, 124.24it/s]Loading weights:  81%|████████  | 346/427 [00:03<00:00, 128.06it/s]Loading weights:  84%|████████▍ | 360/427 [00:03<00:00, 125.86it/s]Loading weights:  87%|████████▋ | 373/427 [00:03<00:00, 114.58it/s]Loading weights:  90%|█████████ | 385/427 [00:03<00:00, 109.10it/s]Loading weights:  93%|█████████▎| 399/427 [00:03<00:00, 111.44it/s]Loading weights:  97%|█████████▋| 413/427 [00:03<00:00, 118.35it/s]Loading weights: 100%|█████████▉| 426/427 [00:04<00:00, 105.75it/s]Loading weights: 100%|██████████| 427/427 [00:04<00:00, 104.33it/s]
+read position: 'ser\ntest<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+  32/1312  64/1312  96/1312  128/1312  160/1312  192/1312  224/1312  256/1312  288/1312  320/1312  352/1312  384/1312  416/1312  448/1312  480/1312  512/1312  544/1312  576/1312  608/1312  640/1312  672/1312  704/1312  736/1312  768/1312  800/1312  832/1312  864/1312  896/1312  928/1312  960/1312  992/1312  1024/1312  1056/1312  1088/1312  1120/1312  1152/1312  1184/1312  1216/1312  1248/1312  1280/1312  1312/1312
+anchor AUC (build A / test B):  L0=0.651   peak L19=1.000
+cos(suffix-only dir, full dir) = 0.592
+
+topic                  pre        post
+sourdough             0.13        0.24
+chemo                 0.14        0.31
+mortgage              0.16        0.39
+carrepair             0.19        0.39
+taxlaw                0.19        0.42
+fitness               0.19        0.34
+houseplants           0.20        0.34
+musictheory           0.21        0.42
+ml                    0.24        0.51
+python                0.28        0.47
+
+pre  +0.194  (sd 0.077)
+post +0.383  (sd 0.176)
+presupposition effect = +0.189
+
+variance decomposition, within family
+  pre   within=0.0044  between(obs)=0.00208  floor=0.00044  true=0.00164  p=0.000
+  post  within=0.0277  between(obs)=0.00621  floor=0.00277  true=0.00344  p=0.011
+
+paraphrase-set stability (same neutral text, different anchors)
+  pre   var(A vs B) = 0.0001   rho = +0.90 (p=0.000)
+  post  var(A vs B) = 0.0016   rho = +0.72 (p=0.019)
+
+template means within family (residual after presupposition control)
+  pre   +0.21  I'm about to get into {t} again. What should I know going in?
+  pre   +0.16  I've got something coming up involving {t}. Where should I start?
+  pre   +0.16  I'm going to be dealing with {t} shortly. What should I sort out first?
+  pre   +0.16  I'm looking at {t} for something new. What should I think about first?
+  pre   +0.27  I need to take another run at {t}. What do I need to line up?
+  post  +0.22  I tried {t} and it didn't go how I expected. Any ideas?
+  post  +0.24  My {t} isn't working right. What should I check?
+  post  +0.55  I've been doing {t} but something's off. Any thoughts?
+  post  +0.55  I ran into a problem with {t}. What's likely going on?
+  post  +0.35  {t} isn't behaving the way I thought. Where should I look?
+
+BoW on neutral prompts (should be flat across topics)
+  python          -0.392
+  mortgage        -0.390
+  houseplants     -0.390
+  fitness         -0.389
+  chemo           -0.382
+  carrepair       -0.382
+  ml              -0.382
+  sourdough       -0.382
+  musictheory     -0.375
+  taxlaw          -0.373
+  range = 0.0193
+
+-> /workspace/mats/results/probe2_positions.npz

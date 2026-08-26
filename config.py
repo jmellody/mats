@@ -1,7 +1,9 @@
 from pathlib import Path
 
 MODEL = "Qwen/Qwen3.5-9B"
-GEN_MODEL = "meta-llama/Llama-3.2-8B-Instruct"  # generator; must differ from MODEL
+GEN_MODEL = "meta-llama/Llama-3.1-8B-Instruct"  # generator; must differ from MODEL
+THINKING = False
+
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"

@@ -1,0 +1,33 @@
+1052 prompts
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 561.41it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<01:59,  3.56it/s]Loading weights:   0%|          | 2/427 [00:00<02:14,  3.16it/s]Loading weights:   4%|▎         | 15/427 [00:00<00:13, 29.68it/s]Loading weights:   7%|▋         | 29/427 [00:00<00:07, 54.17it/s]Loading weights:  10%|█         | 43/427 [00:00<00:05, 73.72it/s]Loading weights:  13%|█▎        | 55/427 [00:01<00:04, 85.14it/s]Loading weights:  16%|█▌        | 68/427 [00:01<00:03, 95.01it/s]Loading weights:  19%|█▉        | 82/427 [00:01<00:03, 104.87it/s]Loading weights:  22%|██▏       | 96/427 [00:01<00:02, 111.75it/s]Loading weights:  26%|██▋       | 113/427 [00:01<00:02, 124.73it/s]Loading weights:  30%|██▉       | 127/427 [00:01<00:02, 121.43it/s]Loading weights:  34%|███▎      | 144/427 [00:01<00:02, 132.63it/s]Loading weights:  37%|███▋      | 158/427 [00:01<00:02, 115.43it/s]Loading weights:  41%|████      | 173/427 [00:01<00:02, 117.93it/s]Loading weights:  44%|████▍     | 187/427 [00:02<00:01, 121.97it/s]Loading weights:  47%|████▋     | 202/427 [00:02<00:01, 121.94it/s]Loading weights:  51%|█████     | 218/427 [00:02<00:01, 128.43it/s]Loading weights:  55%|█████▌    | 235/427 [00:02<00:01, 127.73it/s]Loading weights:  59%|█████▉    | 253/427 [00:02<00:01, 137.50it/s]Loading weights:  63%|██████▎   | 267/427 [00:02<00:01, 123.54it/s]Loading weights:  66%|██████▌   | 280/427 [00:02<00:01, 123.42it/s]Loading weights:  69%|██████▉   | 294/427 [00:02<00:01, 127.71it/s]Loading weights:  72%|███████▏  | 308/427 [00:03<00:00, 130.04it/s]Loading weights:  76%|███████▌  | 324/427 [00:03<00:00, 132.74it/s]Loading weights:  80%|███████▉  | 341/427 [00:03<00:00, 135.74it/s]Loading weights:  84%|████████▎ | 357/427 [00:03<00:00, 141.15it/s]Loading weights:  87%|████████▋ | 372/427 [00:03<00:00, 121.97it/s]Loading weights:  90%|█████████ | 386/427 [00:03<00:00, 124.47it/s]Loading weights:  94%|█████████▎| 400/427 [00:03<00:00, 127.86it/s]Loading weights:  97%|█████████▋| 414/427 [00:03<00:00, 130.67it/s]Loading weights: 100%|██████████| 427/427 [00:03<00:00, 108.69it/s]
+read position: 'ser\ntest<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n'
+  32/1052  64/1052  96/1052  128/1052  160/1052  192/1052  224/1052  256/1052  288/1052  320/1052  352/1052  384/1052  416/1052  448/1052  480/1052  512/1052  544/1052  576/1052  608/1052  640/1052  672/1052  704/1052  736/1052  768/1052  800/1052  832/1052  864/1052  896/1052  928/1052  960/1052  992/1052  1024/1052  1052/1052
+anchor AUC (build A, test B): L1=0.625  peak L11=1.000
+cos(topic-free suffix dir, full dir) = 0.690
+
+topic              set A     set B
+houseplants         0.17      0.20
+carrepair           0.18      0.16
+sourdough           0.20      0.19
+mortgage            0.22      0.15
+python              0.23      0.22
+musictheory         0.27      0.29
+fitness             0.28      0.24
+chemo               0.32      0.22
+taxlaw              0.34      0.26
+ml                  0.36      0.29
+
+paraphrase-set agreement: rho=0.770 p=0.0092
+
+BoW ordering on neutral prompts
+  fitness         -0.293
+  mortgage        -0.291
+  houseplants     -0.291
+  python          -0.290
+  sourdough       -0.288
+  chemo           -0.288
+  carrepair       -0.288
+  ml              -0.288
+  musictheory     -0.281
+  taxlaw          -0.281

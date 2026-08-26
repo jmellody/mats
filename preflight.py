@@ -44,7 +44,7 @@ def main(name, thinking):
     for lbl, q in [("EXPERT", EXPERT), ("NOVICE", NOVICE)]:
         i = tok(render(tok, q, thinking), return_tensors="pt", add_special_tokens=False).to("cuda")
         with torch.no_grad():
-            o = model.generate(**i, max_new_tokens=180, do_sample=False,
+            o = model.generate(**i, max_new_tokens=300, do_sample=False,
                                pad_token_id=tok.pad_token_id or tok.eos_token_id)
         print(f"\n--- {lbl}\n{tok.decode(o[0, i['input_ids'].shape[1]:], skip_special_tokens=True)}")
 

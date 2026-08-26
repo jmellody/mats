@@ -1,0 +1,41 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 488.93it/s]
+Loading weights:   0%|          | 0/427 [00:00<?, ?it/s]Loading weights:   0%|          | 1/427 [00:00<04:09,  1.71it/s]Loading weights:   5%|▍         | 20/427 [00:00<00:10, 37.49it/s]Loading weights:   9%|▊         | 37/427 [00:00<00:06, 64.91it/s]Loading weights:  12%|█▏        | 50/427 [00:00<00:05, 70.42it/s]Loading weights:  16%|█▌        | 67/427 [00:01<00:03, 91.01it/s]Loading weights:  19%|█▉        | 81/427 [00:01<00:03, 101.10it/s]Loading weights:  22%|██▏       | 95/427 [00:01<00:03, 109.23it/s]Loading weights:  25%|██▌       | 108/427 [00:01<00:02, 109.01it/s]Loading weights:  30%|██▉       | 128/427 [00:01<00:02, 128.03it/s]Loading weights:  34%|███▎      | 144/427 [00:01<00:02, 136.30it/s]Loading weights:  37%|███▋      | 159/427 [00:01<00:02, 120.63it/s]Loading weights:  40%|████      | 172/427 [00:01<00:02, 122.10it/s]Loading weights:  44%|████▎     | 186/427 [00:01<00:01, 125.43it/s]Loading weights:  47%|████▋     | 200/427 [00:02<00:01, 129.35it/s]Loading weights:  50%|█████     | 214/427 [00:02<00:01, 115.98it/s]Loading weights:  53%|█████▎    | 227/427 [00:02<00:01, 115.01it/s]Loading weights:  56%|█████▋    | 241/427 [00:02<00:01, 116.91it/s]Loading weights:  60%|█████▉    | 255/427 [00:02<00:01, 119.63it/s]Loading weights:  63%|██████▎   | 268/427 [00:02<00:01, 120.40it/s]Loading weights:  66%|██████▌   | 281/427 [00:02<00:01, 120.15it/s]Loading weights:  69%|██████▉   | 294/427 [00:02<00:01, 122.11it/s]Loading weights:  72%|███████▏  | 308/427 [00:02<00:00, 126.76it/s]Loading weights:  75%|███████▌  | 321/427 [00:03<00:00, 126.92it/s]Loading weights:  78%|███████▊  | 334/427 [00:03<00:00, 125.15it/s]Loading weights:  83%|████████▎ | 353/427 [00:03<00:00, 139.60it/s]Loading weights:  86%|████████▌ | 367/427 [00:03<00:00, 119.15it/s]Loading weights:  90%|█████████ | 385/427 [00:03<00:00, 131.94it/s]Loading weights:  93%|█████████▎| 399/427 [00:03<00:00, 132.36it/s]Loading weights:  97%|█████████▋| 413/427 [00:03<00:00, 132.31it/s]Loading weights: 100%|██████████| 427/427 [00:03<00:00, 126.17it/s]Loading weights: 100%|██████████| 427/427 [00:03<00:00, 108.84it/s]
+sourdough        48 responses
+chemo            48 responses
+python           48 responses
+mortgage         48 responses
+carrepair        48 responses
+musictheory      48 responses
+taxlaw           48 responses
+houseplants      48 responses
+ml               48 responses
+fitness          48 responses
+
+calibrated position of the default  (0 = novice-addressed, 1 = expert-addressed)
+topic           long_word_  mean_sent_      hedges     defines  simplifies     bullets
+sourdough             0.35        0.27        1.24       -0.06        1.19       -0.85
+chemo                 0.36        0.29      -19.36        0.33       -0.04       -0.79
+python                0.68       -0.27        1.31        1.15        0.49       -2.80
+mortgage              0.66        1.02        1.15        0.08        0.03       -1.77
+carrepair             0.50        1.34       -2.18        0.71       -0.09       -0.29
+musictheory           0.54       -0.41       -0.35        1.28       -0.36        8.41
+taxlaw                0.68       -1.50        1.21        1.13        1.00        1.77
+houseplants           0.29        0.15        5.03        3.65       -0.51        3.06
+ml                 6003.20       -0.15        0.65        0.70        1.58       -0.12
+fitness               0.92        0.04        1.23        0.78        0.49        3.93
+
+anchor separation (expert - novice; near 0 = feature does not respond)
+topic           long_word_  mean_sent_      hedges     defines  simplifies     bullets
+sourdough            0.065       3.445       0.480      -0.033      -0.222      -0.293
+chemo                0.088       4.394      -0.021       0.137      -0.084      -0.695
+python               0.033       0.795       0.298       0.264       0.006      -0.324
+mortgage             0.051       1.793       0.251       0.129      -0.042      -0.287
+carrepair            0.050      -0.314       0.079       0.366      -0.040      -0.142
+musictheory          0.078       1.549       0.483       0.230      -0.170       0.045
+taxlaw               0.107       0.861       0.361       0.430      -0.046       0.404
+houseplants          0.064       1.628       0.069       0.084      -0.092       0.155
+ml                   0.000       2.394       0.678       0.472      -0.083      -1.042
+fitness              0.063       2.113       0.521       0.073      -0.087       0.187
+
+-> /workspace/mats/results/behavior.jsonl

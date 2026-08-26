@@ -1,0 +1,111 @@
+[D 2026-08-25 18:34:04.096 ServerApp] Searching ['/venv/main/etc/jupyter', '/root/.jupyter', '/root/.local/etc/jupyter', '/usr/local/etc/jupyter', '/etc/jupyter'] for config files
+[D 2026-08-25 18:34:04.096 ServerApp] Looking for jupyter_config in /etc/jupyter
+[D 2026-08-25 18:34:04.096 ServerApp] Looking for jupyter_config in /usr/local/etc/jupyter
+[D 2026-08-25 18:34:04.097 ServerApp] Looking for jupyter_config in /root/.local/etc/jupyter
+[D 2026-08-25 18:34:04.097 ServerApp] Looking for jupyter_config in /root/.jupyter
+[D 2026-08-25 18:34:04.097 ServerApp] Looking for jupyter_config in /venv/main/etc/jupyter
+[D 2026-08-25 18:34:04.098 ServerApp] Looking for jupyter_server_config in /etc/jupyter
+[D 2026-08-25 18:34:04.098 ServerApp] Looking for jupyter_server_config in /usr/local/etc/jupyter
+[D 2026-08-25 18:34:04.098 ServerApp] Looking for jupyter_server_config in /root/.local/etc/jupyter
+[D 2026-08-25 18:34:04.098 ServerApp] Looking for jupyter_server_config in /root/.jupyter
+[D 2026-08-25 18:34:04.098 ServerApp] Looking for jupyter_server_config in /venv/main/etc/jupyter
+[D 2026-08-25 18:34:04.107 ServerApp] Paths used for configuration of jupyter_server_config: 
+    	/etc/jupyter/jupyter_server_config.json
+[D 2026-08-25 18:34:04.107 ServerApp] Paths used for configuration of jupyter_server_config: 
+    	/usr/local/etc/jupyter/jupyter_server_config.d/jupyter-archive.json
+    	/usr/local/etc/jupyter/jupyter_server_config.d/jupyter-lsp-jupyter-server.json
+    	/usr/local/etc/jupyter/jupyter_server_config.d/jupyter_server_terminals.json
+    	/usr/local/etc/jupyter/jupyter_server_config.d/jupyterlab.json
+    	/usr/local/etc/jupyter/jupyter_server_config.d/notebook.json
+    	/usr/local/etc/jupyter/jupyter_server_config.d/notebook_shim.json
+    	/usr/local/etc/jupyter/jupyter_server_config.json
+[D 2026-08-25 18:34:04.108 ServerApp] Paths used for configuration of jupyter_server_config: 
+    	/root/.local/etc/jupyter/jupyter_server_config.json
+[D 2026-08-25 18:34:04.108 ServerApp] Paths used for configuration of jupyter_server_config: 
+    	/root/.jupyter/jupyter_server_config.json
+[D 2026-08-25 18:34:04.108 ServerApp] Paths used for configuration of jupyter_server_config: 
+    	/venv/main/etc/jupyter/jupyter_server_config.d/jupyter-lsp-jupyter-server.json
+    	/venv/main/etc/jupyter/jupyter_server_config.d/jupyter_server_terminals.json
+    	/venv/main/etc/jupyter/jupyter_server_config.d/jupyterlab.json
+    	/venv/main/etc/jupyter/jupyter_server_config.d/notebook_shim.json
+    	/venv/main/etc/jupyter/jupyter_server_config.json
+[D 2026-08-25 18:34:04.113 ServerApp] Extension package jupyterlab took 0.0000s to import
+[W 2026-08-25 18:34:04.113 ServerApp] jupyter_archive | error adding extension (enabled: True): The module 'jupyter_archive' could not be found (No module named 'jupyter_archive'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/venv/main/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 365, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/venv/main/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 219, in __init__
+        self._load_metadata()
+      File "/venv/main/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 234, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'jupyter_archive' could not be found (No module named 'jupyter_archive'). Are you sure the extension is installed?
+[D 2026-08-25 18:34:04.127 ServerApp] Extension package jupyter_lsp took 0.0129s to import
+[D 2026-08-25 18:34:04.138 ServerApp] Extension package jupyter_server_terminals took 0.0108s to import
+[W 2026-08-25 18:34:04.138 ServerApp] notebook | error adding extension (enabled: True): The module 'notebook' could not be found (No module named 'notebook'). Are you sure the extension is installed?
+    Traceback (most recent call last):
+      File "/venv/main/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 365, in add_extension
+        extpkg = ExtensionPackage(name=extension_name, enabled=enabled)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/venv/main/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 219, in __init__
+        self._load_metadata()
+      File "/venv/main/lib/python3.12/site-packages/jupyter_server/extension/manager.py", line 234, in _load_metadata
+        raise ExtensionModuleNotFound(msg) from None
+    jupyter_server.extension.utils.ExtensionModuleNotFound: The module 'notebook' could not be found (No module named 'notebook'). Are you sure the extension is installed?
+[D 2026-08-25 18:34:04.139 ServerApp] Extension package notebook_shim took 0.0000s to import
+[I 2026-08-25 18:34:04.139 ServerApp] jupyter_lsp | extension was successfully linked.
+[D 2026-08-25 18:34:04.142 TerminalsExtensionApp] Config changed: {'ServerApp': {'log_level': 'DEBUG', 'jpserver_extensions': <LazyConfigValue {'update': {'jupyter_archive': True, 'jupyter_lsp': True, 'jupyter_server_terminals': True, 'notebook': True, 'notebook_shim': True}}>}, 'ExtensionApp': {'log_level': 'DEBUG'}}
+[D 2026-08-25 18:34:04.143 ServerApp] Config changed: {'ServerApp': {'log_level': 'DEBUG', 'jpserver_extensions': <LazyConfigValue value={'jupyterlab': True, 'jupyter_archive': True, 'jupyter_lsp': True, 'jupyter_server_terminals': True, 'notebook': True, 'notebook_shim': True}>}, 'ExtensionApp': {'log_level': 'DEBUG'}}
+[I 2026-08-25 18:34:04.144 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[D 2026-08-25 18:34:04.148 LabApp] Config changed: {'NotebookApp': {}, 'ServerApp': {'log_level': 'DEBUG', 'jpserver_extensions': <LazyConfigValue value={'jupyterlab': True, 'jupyter_archive': True, 'jupyter_lsp': True, 'jupyter_server_terminals': True, 'notebook': True, 'notebook_shim': True}>}, 'ExtensionApp': {'log_level': 'DEBUG'}}
+[I 2026-08-25 18:34:04.148 ServerApp] jupyterlab | extension was successfully linked.
+[D 2026-08-25 18:34:04.356 ServerApp] Paths used for configuration of jupyter_notebook_config: 
+    	/root/.jupyter/jupyter_notebook_config.json
+[D 2026-08-25 18:34:04.356 ServerApp] Paths used for configuration of jupyter_notebook_config: 
+    	/etc/jupyter/jupyter_notebook_config.json
+[D 2026-08-25 18:34:04.356 ServerApp] Paths used for configuration of jupyter_notebook_config: 
+    	/usr/local/etc/jupyter/jupyter_notebook_config.d/jupyterlab.json
+    	/usr/local/etc/jupyter/jupyter_notebook_config.json
+[D 2026-08-25 18:34:04.356 ServerApp] Paths used for configuration of jupyter_notebook_config: 
+    	/root/.local/etc/jupyter/jupyter_notebook_config.json
+[D 2026-08-25 18:34:04.356 ServerApp] Paths used for configuration of jupyter_notebook_config: 
+    	/root/.jupyter/jupyter_notebook_config.json
+[D 2026-08-25 18:34:04.357 ServerApp] Paths used for configuration of jupyter_notebook_config: 
+    	/venv/main/etc/jupyter/jupyter_notebook_config.d/jupyterlab.json
+    	/venv/main/etc/jupyter/jupyter_notebook_config.json
+[I 2026-08-25 18:34:04.357 ServerApp] notebook_shim | extension was successfully linked.
+[D 2026-08-25 18:34:04.358 ServerApp] Config changed: {'ExtensionApp': {'log_level': 'DEBUG'}, 'NotebookApp': {}, 'ServerApp': {'log_level': 'DEBUG', 'jpserver_extensions': <LazyConfigValue value={'jupyterlab': True, 'jupyter_archive': True, 'jupyter_lsp': True, 'jupyter_server_terminals': True, 'notebook': True, 'notebook_shim': True}>}}
+[I 2026-08-25 18:34:04.374 ServerApp] notebook_shim | extension was successfully loaded.
+[D 2026-08-25 18:34:04.375 ServerApp] [lsp] rootUri will be file:///workspace/mats
+[D 2026-08-25 18:34:04.375 ServerApp] [lsp] virtualDocumentsUri will be file:///workspace/mats/.virtual_documents
+[I 2026-08-25 18:34:04.376 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2026-08-25 18:34:04.376 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[D 2026-08-25 18:34:04.378 ServerApp] Paths used for configuration of page_config: 
+    	/etc/jupyter/labconfig/page_config.json
+[D 2026-08-25 18:34:04.379 ServerApp] Paths used for configuration of page_config: 
+    	/usr/local/etc/jupyter/labconfig/page_config.json
+[D 2026-08-25 18:34:04.379 ServerApp] Paths used for configuration of page_config: 
+    	/root/.local/etc/jupyter/labconfig/page_config.json
+[D 2026-08-25 18:34:04.379 ServerApp] Paths used for configuration of page_config: 
+    	/root/.jupyter/labconfig/page_config.json
+[D 2026-08-25 18:34:04.379 ServerApp] Paths used for configuration of page_config: 
+    	/venv/main/etc/jupyter/labconfig/page_config.json
+[I 2026-08-25 18:34:04.379 LabApp] JupyterLab extension loaded from /venv/main/lib/python3.12/site-packages/jupyterlab
+[I 2026-08-25 18:34:04.379 LabApp] JupyterLab application directory is /venv/main/share/jupyter/lab
+[I 2026-08-25 18:34:04.379 LabApp] Extension Manager is 'pypi'.
+[D 2026-08-25 18:34:04.380 LabApp] Plugins in PyPIExtensionManager will managed on the sys_prefix level
+[D 2026-08-25 18:34:04.404 LabApp] Extensions list will be fetched from https://pypi.org/pypi.
+[D 2026-08-25 18:34:04.404 LabApp] Plugins in PluginManager will managed on the sys_prefix level
+[D 2026-08-25 18:34:04.405 ServerApp] Paths used for configuration of default_setting_overrides: 
+    	/etc/jupyter/labconfig/default_setting_overrides.json
+[D 2026-08-25 18:34:04.405 ServerApp] Paths used for configuration of default_setting_overrides: 
+    	/usr/local/etc/jupyter/labconfig/default_setting_overrides.json
+[D 2026-08-25 18:34:04.405 ServerApp] Paths used for configuration of default_setting_overrides: 
+    	/root/.local/etc/jupyter/labconfig/default_setting_overrides.json
+[D 2026-08-25 18:34:04.405 ServerApp] Paths used for configuration of default_setting_overrides: 
+    	/root/.jupyter/labconfig/default_setting_overrides.json
+[D 2026-08-25 18:34:04.406 ServerApp] Paths used for configuration of default_setting_overrides: 
+    	/venv/main/etc/jupyter/labconfig/default_setting_overrides.json
+[I 2026-08-25 18:34:04.407 ServerApp] jupyterlab | extension was successfully loaded.
+[C 2026-08-25 18:34:04.408 ServerApp] Running as root is not recommended. Use --allow-root to bypass.
+[D 2026-08-25 18:34:04.408 ServerApp] Exiting application: jupyter-server

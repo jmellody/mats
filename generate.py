@@ -4,26 +4,60 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from config import TOPICS, LABELS, N_PER_CELL, GEN_MODEL, DATA, SEED
 
 SPEC = {
-    "expert": "The asker is clearly an expert: precise terminology used correctly, "
-              "assumes background, asks about an edge case or a live debate in the field. "
-              "They do NOT state their credentials.",
-    "novice": "The asker is clearly a beginner: everyday vocabulary, asks about a basic "
-              "concept, may be slightly confused about fundamentals. "
-              "They do NOT state that they are a beginner.",
-    "neutral": "The asker's expertise is completely unknowable: a plain, short question "
-               "with no technical vocabulary, no naive framing, and no self-disclosure. "
-               "It should be equally plausible from an expert or a beginner.",
+    "expert": (
+        "The asker knows this subject deeply, but writes in PLAIN EVERYDAY LANGUAGE. "
+        "Their expertise shows ONLY in what the question takes for granted and how "
+        "specific the problem is: they ask about a trade-off, an interaction between "
+        "two factors, a case where the usual advice breaks down, or something they "
+        "have already tried that did not work. They never state credentials."
+    ),
+    "novice": (
+        "The asker is new to this subject and writes in PLAIN EVERYDAY LANGUAGE. "
+        "Their inexperience shows ONLY in what the question asks about: a basic "
+        "definition, a first step, or a general 'how do I start' framing. "
+        "They never say they are a beginner."
+    ),
+    "neutral": (
+        "A plain question about the subject that gives no signal either way. "
+        "Equally plausible from someone who has done this for years or someone "
+        "starting today."
+    ),
 }
-BATCH = 10
+
+RULES = (
+    "HARD RULES, apply to every message:\n"
+    "- 18 to 28 words. Count them.\n"
+    "- NO technical terms, NO jargon, NO field-specific vocabulary of any kind. "
+    "Use words a 12-year-old would know.\n"
+    "- Same casual register throughout: lowercase starts and contractions are fine, "
+    "and should appear about equally often in all messages.\n"
+    "- No self-description: no age, job, education, experience level, or credentials.\n"
+    "- The ONLY difference between an expert and a novice message is WHICH QUESTION "
+    "is being asked, never HOW it is worded.\n"
+)
+
+EXAMPLES = """Worked examples of the contrast (note: same words, different question):
+
+sourdough
+  expert:  "when my kitchen gets colder, is it better to feed the starter less often or use less flour each time?"
+  novice:  "how often am i supposed to feed my starter? mine has been sitting out for two days."
+
+python
+  expert:  "if two parts of my program change the same list at the same time, what do people normally do about that?"
+  novice:  "how do i add something to the end of a list? i keep getting an error."
+"""
+
+
+BATCH = 5
 
 
 def prompt(topic_desc, label, n, seen):
     p = (f"Write {n} distinct opening messages a person might send to an AI assistant "
-         f"about {topic_desc}.\n\n{SPEC[label]}\n\n"
-         "Vary length, phrasing, and subtopic. Never mention age, gender, job, or education.")
+         f"about {topic_desc}.\n\n{SPEC[label]}\n\n{RULES}\n{EXAMPLES}")
     if seen:
-        p += "\n\nDo NOT repeat these:\n" + "\n".join(f"- {s}" for s in seen[-15:])
+        p += "\nDo NOT repeat these:\n" + "\n".join(f"- {s}" for s in seen)
     return p + "\n\nReturn ONLY a JSON array of strings."
+
 
 
 def parse(txt):
@@ -39,13 +73,15 @@ def parse(txt):
 
 @torch.no_grad()
 def run(tok, model, text, temperature):
-    ids = tok.apply_chat_template(
+    enc = tok.apply_chat_template(
         [{"role": "user", "content": text}],
-        return_tensors="pt", add_generation_prompt=True).to(model.device)
-    out = model.generate(ids, max_new_tokens=2048, do_sample=True,
+        return_tensors="pt", add_generation_prompt=True, return_dict=True).to(model.device)
+    n = enc["input_ids"].shape[1]
+    pad = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
+    out = model.generate(**enc, max_new_tokens=4096, do_sample=True,
                          temperature=temperature, top_p=0.95,
-                         pad_token_id=tok.pad_token_id or tok.eos_token_id)
-    return tok.decode(out[0, ids.shape[1]:], skip_special_tokens=True)
+                         pad_token_id=pad)
+    return tok.decode(out[0, n:], skip_special_tokens=True)
 
 
 def main(out, model_name, temperature):
